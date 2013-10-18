@@ -1,0 +1,17 @@
+{% include header.html %}
+ 
+{% for post in site.posts limit: 10 %}
+
+            <div class="rotLeft rotTop pageBack"></div>
+            <div class="rotRight rotTop pageBack"></div>
+            <div class="container page">
+                <div class="pageTitle">{{ post.title }}</div>
+                {{ post.content }}
+            </div>
+            <div class="rotLeft rotBottom pageBack"></div>
+            <div class="rotRight rotBottom pageBack"></div>
+
+{% endfor %}
+
+{% include footer.html %}
+ 
