@@ -18,6 +18,7 @@ h1 {
     padding: 10px 20px;
     background-color: #b0cb2c;
     box-shadow: 5px 3px #70840e;
+    font-size: 2.25em;
 }
 
 h2 {
@@ -35,6 +36,7 @@ h4 {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Arial, sarif;
     font-weight: 900;
+    margin: 0.5em 0;
 }
 
 hr {
@@ -76,6 +78,10 @@ p {
 p>a {
     color: #70840e;
     font-weight: bold;
+    text-decoration: none;
+    border-bottom-style: dashed;
+    border-bottom-color: #70840e;
+    border-bottom-width: 1px;
 }
 
 p>a:hover {
@@ -160,10 +166,13 @@ pre>code {
 .pageTitle {
     font-family: 'Lobster', cursive;
     font-size: 4.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
     
     text-shadow: 0px 0px 10px #666;
     filter: dropshadow(color=#fff, offx=2, offy=2);
+    border-bottom-style: solid;
+    border-bottom-color: #70840e;
+    border-bottom-width: 3px;
 }
 
 .rotBottom.rotLeft {
