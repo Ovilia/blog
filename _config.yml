@@ -1,0 +1,9 @@
+﻿name: "Blog of Wenli Zhang"
+description: ""
+
+url: "http://localhost:1235/blog"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
