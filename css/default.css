@@ -84,7 +84,7 @@ p {
     margin: 0.8em 0;
 }
 
-p>a {
+a {
     color: #70840e;
     font-weight: bold;
     text-decoration: none;
@@ -93,7 +93,7 @@ p>a {
     border-bottom-width: 1px;
 }
 
-p>a:hover {
+a:hover {
     background-color: #70840e;
     color: #d4e583;
     text-shadow: 1px 1px 0px #666;
@@ -106,6 +106,11 @@ p>a:hover {
     -moz-transition: background-color 0.8s;
     -o-transition: background-color 0.8s;
     transition: background-color 0.8s;
+}
+
+h1>a {
+    border: 0;
+    text-shadow: 1px 1px #eee;
 }
 
 code {
@@ -216,6 +221,12 @@ p>img {
     border-width: 3px;
     border-color: #70840e;
     max-width: 100%;
+}
+
+.time {
+    font-family: cursive;
+    color: #70840e;
+    margin: -0.5em 0 -0.3em 0;
 }
 
 #footerDiv {

@@ -7,6 +7,7 @@
             <div class="container page">
                 <div class="pageTitle">{{ post.title }}</div>
                 {{ post.content }}
+                {% include comment.html %}
             </div>
             <div class="rotLeft rotBottom pageBack"></div>
             <div class="rotRight rotBottom pageBack"></div>

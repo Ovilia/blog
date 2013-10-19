@@ -1,0 +1,29 @@
+{% include header.html %}
+ 
+
+            <div class="rotLeft rotTop pageBack"></div>
+            <div class="rotRight rotTop pageBack"></div>
+            <div class="container page">
+                <div class="pageTitle">Blog of Wenli Zhang</div>
+                
+                <p>I'm <a href="http://zhangwenli.com">Wenli Zhang</a> and this blog is concerned about Web Front-End and other interesting topics. Please feel free to <a href="#disqus_thread">leave a comment</a> or contact me by <a href="mailto:OviliaZhang@gmail.com">email</a> if you have any question.</p>
+                
+                <h1>Recent Posts</h1>
+                
+                {% for post in site.posts limit: 16 %}
+                
+                    <blockquote>
+                        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                        <div class="time">{{ post.time }}</div>
+                        <p>{{ post.excerpt | markdownify }}</p>
+                        <h5><a href="{{ post.url }}" target="_blank">More...</a></h5>
+                    </blockquote>
+                
+                {% endfor %}
+
+                {% include comment.html %}
+            </div>
+            <div class="rotLeft rotBottom pageBack"></div>
+            <div class="rotRight rotBottom pageBack"></div>
+
+{% include footer.html %}
