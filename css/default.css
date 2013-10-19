@@ -229,6 +229,19 @@ p>img {
     margin: -0.5em 0 -0.3em 0;
 }
 
+#homeDiv {
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/me64.png);
+}
+
+#homeDiv:hover {
+    background-image: url(../img/home64.png);
+}
+
 #footerDiv {
     width: 100%;
 }

@@ -1,6 +1,7 @@
 ﻿name: "Blog of Wenli Zhang"
 description: ""
 
+safe: true
 url: "http://zhangwenli.com/blog"
 
 paginate: 10
