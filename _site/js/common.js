@@ -1,6 +1,6 @@
 window.onload = function() {
     // lazy load js and css
-    LazyLoad.js('../../ovilia.github.com/js/jquery-1.9.0.js', function () {
+    LazyLoad.js('../js/jquery-1.9.0.js', function () {
         LazyLoad.js('js/unviel.min.js', function () {
             $("img").unveil();
         });
