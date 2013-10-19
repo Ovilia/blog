@@ -13,10 +13,10 @@
                 {% for post in site.posts limit: 16 %}
                 
                     <blockquote>
-                        <h3><a href="blog{{ post.url }}">{{ post.title }}</a></h3>
+                        <h3><a href=".{{ post.url }}">{{ post.title }}</a></h3>
                         <div class="time">{{ post.time }}</div>
                         <p>{{ post.excerpt | markdownify }}</p>
-                        <h5><a href="blog{{ post.url }}" target="_blank">More...</a></h5>
+                        <h5><a href=".{{ post.url }}" target="_blank">More...</a></h5>
                     </blockquote>
                 
                 {% endfor %}

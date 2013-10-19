@@ -17,21 +17,15 @@
         <title>{{ site.name }}</title>
         <meta name="description" content="{{ site.description }}" />
         
-        <link rel="shortcut icon" href="img/me.ico">
+        <link rel="shortcut icon" href="{{ site.url }}/img/me.ico">
             
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/default.css" />
         
         
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         
-        <script type="text/javascript" src="js/lazyLoad.js"></script>
-        <script type="text/javascript" src="js/common.js"></script>
-            
-        <!-- Following scripts are using lazy loading --->
-        <!--link rel="stylesheet" type="text/css" href="css/emojify.min.css" />
-        <script type="text/javascript" src="js/emojify.min.js"></script>        
-        <script type="text/javascript" src="http://zhangwenli.com/js/jquery-1.9.0.js"></script>
-        <script type="text/javascript" src="js/unviel.min.js"></script-->
+        <script type="text/javascript" src="{{ site.url }}/js/lazyLoad.js"></script>
+        <script type="text/javascript" src="{{ site.url }}/js/common.js"></script>
     </head>
     
     <body>
