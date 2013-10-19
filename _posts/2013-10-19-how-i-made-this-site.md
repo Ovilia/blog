@@ -23,8 +23,8 @@ Now, let's start to learn how to make this cool site! :yum:
 
 Notice the difference between the following two images. 
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-1.png" />
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-2.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-1.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-2.png" />
 
 I would not regard this amazing without the interaction with mouse moving. But it's a really cool effect when your mouse seems to be a light source.
 
@@ -32,12 +32,12 @@ This can be easily achieved using CSS and a little JavaScript. And now I'm going
 
 #### First of all, I Photoshoped two *Tao*-like images.
 
-<img src="img/loading.png" data-src="http://zhangwenli.com/image/tao.png" width="200px" />
-<img src="img/loading.png" data-src="http://zhangwenli.com/image/taoWords.png" width="200px" />
+<img src="{{ site.url }}/img/loading.png" data-src="http://zhangwenli.com/image/tao.png" width="200px" />
+<img src="{{ site.url }}/img/loading.png" data-src="http://zhangwenli.com/image/taoWords.png" width="200px" />
 
 Make sure they are of the same size and the second image cover on the first one entirely so that it looks like:
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-3.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-3.png" />
 
 This can be easily achieved by using some simple CSS. Set the CSS of the second image to be `position: relative;` and `top: -400px;`, which means to move the second image `400px` (height of the images) up than its original position.
 
@@ -77,7 +77,7 @@ We set the `box-shadow` to be `100px 100px 100px #333` now just to check if ever
 
 Suppose you did everything as was told above, you should probably get something like this:
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-4.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-4.png" />
 
 It seem's that the shadow is slightly way from the images. But the fact is that even the two images are not in the same position, althrough you may not notice this due to the transparent background.
 
@@ -87,13 +87,13 @@ If you're careful enough, you may find that two adjcent images will have a *gap*
 
 Now, we have the gap eliminated:
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-5.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-5.png" />
 
 ####Then, add mouse event.
 
 We want to create soft-shadow effect as shown in the following image:
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-2.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-2.png" />
 
 The idea here is to add a mouse move event listener and change the `opacity` to be smaller and shadow `offset` to be larger when mouse position is away from the center of screen. 
 
@@ -136,7 +136,7 @@ The complete code would be:
 
 1) PhotoShop a paper-like image.
 
-<img src="img/loading.png" data-src="img/sketch.jpg" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/sketch.jpg" />
 
 2) Set the background of this post to be this image.
 
@@ -200,7 +200,7 @@ Now, with HTML
     
 we can get:
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-6.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-6.png" />
 
 To make it look better, we would like to move the sheets in the background a little.
 
@@ -214,7 +214,7 @@ To make it look better, we would like to move the sheets in the background a lit
 
 Now, we can get an elegant effect:
 
-<img src="img/loading.png" data-src="img/post/2013-10-19-how-i-made-this-site-7.png" />
+<img src="{{ site.url }}/img/loading.png" data-src="{{ site.url }}/img/post/2013-10-19-how-i-made-this-site-7.png" />
 
 # More About My Blog
 
