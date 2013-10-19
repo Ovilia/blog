@@ -16,15 +16,8 @@
         <meta charset="utf-8">
         <title>Blog of Wenli Zhang</title>
         <meta name="description" content="" />
-        
-        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
             
         <link rel="stylesheet" type="text/css" href="css/default.css" />
-        
-        <link rel="stylesheet" type="text/css" href="css/emojify.min.css" />
-        <script type="text/javascript" src="js/emojify.min.js"></script>
-        
-        <script type="text/javascript" src="js/common.js"></script>
     </head>
     
     <body>
@@ -55,7 +48,8 @@
 
 <p>Notice the difference between the following two images.</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-1.png" alt="Tao image 1" /> <img src="img/2013-10-19-how-i-made-this-site-2.png" alt="Tao image 2" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-1.png" />
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-2.png" /></p>
 
 <p>I would not regard this amazing without the interaction with mouse moving. But it's a really cool effect when your mouse seems to be a light source.</p>
 
@@ -63,12 +57,12 @@
 
 <h4>First of all, I Photoshoped two <em>Tao</em>-like images.</h4>
 
-<p><img src="http://zhangwenli.com/image/tao.png" width="200px" />
-<img src="http://zhangwenli.com/image/taoWords.png" width="200px" /></p>
+<p><img src="img/me128.png" data-src="http://zhangwenli.com/image/tao.png" width="200px" />
+<img src="img/me128.png" data-src="http://zhangwenli.com/image/taoWords.png" width="200px" /></p>
 
 <p>Make sure they are of the same size and the second image cover on the first one entirely so that it looks like:</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-3.png" alt="Two image covered together" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-3.png" /></p>
 
 <p>This can be easily achieved by using some simple CSS. Set the CSS of the second image to be <code>position: relative;</code> and <code>top: -400px;</code>, which means to move the second image <code>400px</code> (height of the images) up than its original position.</p>
 
@@ -110,7 +104,7 @@
 
 <p>Suppose you did everything as was told above, you should probably get something like this:</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-4.png" alt="Wrong output image" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-4.png" /></p>
 
 <p>It seem's that the shadow is slightly way from the images. But the fact is that even the two images are not in the same position, althrough you may not notice this due to the transparent background.</p>
 
@@ -120,13 +114,13 @@
 
 <p>Now, we have the gap eliminated:</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-5.png" alt="Correct output image" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-5.png" /></p>
 
 <h4>Then, add mouse event.</h4>
 
 <p>We want to create soft-shadow effect as shown in the following image:</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-2.png" alt="Soft-shadow effect" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-2.png" /></p>
 
 <p>The idea here is to add a mouse move event listener and change the <code>opacity</code> to be smaller and shadow <code>offset</code> to be larger when mouse position is away from the center of screen.</p>
 
@@ -171,7 +165,7 @@
 
 <p>1) PhotoShop a paper-like image.</p>
 
-<p><img src="img/sketch.jpg" alt="Paper-like background" /></p>
+<p><img src="img/me128.png" data-src="img/sketch.jpg" /></p>
 
 <p>2) Set the background of this post to be this image.</p>
 
@@ -240,7 +234,7 @@
 
 <p>we can get:</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-6.png" alt="Rotation with error position" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-6.png" /></p>
 
 <p>To make it look better, we would like to move the sheets in the background a little.</p>
 
@@ -255,7 +249,7 @@
 
 <p>Now, we can get an elegant effect:</p>
 
-<p><img src="img/2013-10-19-how-i-made-this-site-7.png" alt="Elegant effect of rotated sheets of pages" /></p>
+<p><img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-7.png" /></p>
 
 <h1>More About My Blog</h1>
 
@@ -282,6 +276,17 @@
                 </div>
             </div>
         </div>
+        
+        
+        
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+            
+        <link rel="stylesheet" type="text/css" href="css/emojify.min.css" />
+        <script type="text/javascript" src="js/emojify.min.js"></script>
+        
+        <script type="text/javascript" src="http://zhangwenli.com/js/jquery-1.9.0.js"></script>
+        <script type="text/javascript" src="js/unviel.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
     </body>
 </html>
 

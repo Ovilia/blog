@@ -21,7 +21,8 @@ Now, let's start to learn how to make this cool site! :yum:
 
 Notice the difference between the following two images. 
 
-![Tao image 1][2] ![Tao image 2][3]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-1.png" />
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-2.png" />
 
 I would not regard this amazing without the interaction with mouse moving. But it's a really cool effect when your mouse seems to be a light source.
 
@@ -29,12 +30,12 @@ This can be easily achieved using CSS and a little JavaScript. And now I'm going
 
 #### First of all, I Photoshoped two *Tao*-like images.
 
-<img src="http://zhangwenli.com/image/tao.png" width="200px" />
-<img src="http://zhangwenli.com/image/taoWords.png" width="200px" />
+<img src="img/me128.png" data-src="http://zhangwenli.com/image/tao.png" width="200px" />
+<img src="img/me128.png" data-src="http://zhangwenli.com/image/taoWords.png" width="200px" />
 
 Make sure they are of the same size and the second image cover on the first one entirely so that it looks like:
 
-![Two image covered together][8]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-3.png" />
 
 This can be easily achieved by using some simple CSS. Set the CSS of the second image to be `position: relative;` and `top: -400px;`, which means to move the second image `400px` (height of the images) up than its original position.
 
@@ -74,7 +75,7 @@ We set the `box-shadow` to be `100px 100px 100px #333` now just to check if ever
 
 Suppose you did everything as was told above, you should probably get something like this:
 
-![Wrong output image][9]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-4.png" />
 
 It seem's that the shadow is slightly way from the images. But the fact is that even the two images are not in the same position, althrough you may not notice this due to the transparent background.
 
@@ -84,13 +85,13 @@ If you're careful enough, you may find that two adjcent images will have a *gap*
 
 Now, we have the gap eliminated:
 
-![Correct output image][10]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-5.png" />
 
 ####Then, add mouse event.
 
 We want to create soft-shadow effect as shown in the following image:
 
-![Soft-shadow effect][3]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-2.png" />
 
 The idea here is to add a mouse move event listener and change the `opacity` to be smaller and shadow `offset` to be larger when mouse position is away from the center of screen. 
 
@@ -133,7 +134,7 @@ The complete code would be:
 
 1) PhotoShop a paper-like image.
 
-![Paper-like background][11]
+<img src="img/me128.png" data-src="img/sketch.jpg" />
 
 2) Set the background of this post to be this image.
 
@@ -197,7 +198,7 @@ Now, with HTML
     
 we can get:
 
-![Rotation with error position][12]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-6.png" />
 
 To make it look better, we would like to move the sheets in the background a little.
 
@@ -211,7 +212,7 @@ To make it look better, we would like to move the sheets in the background a lit
 
 Now, we can get an elegant effect:
 
-![Elegant effect of rotated sheets of pages][13]
+<img src="img/me128.png" data-src="img/2013-10-19-how-i-made-this-site-7.png" />
 
 # More About My Blog
 
@@ -224,17 +225,9 @@ There're many good posts about how to set up a blog with Jekyll and GitHub, and 
 I'm going to write more about Web Front-End technology and possibly some other interesting topics (e.g.: Face Detection and Machine Learning). Hope it can be helpful for you! :blush:
 
   [1]: http://zhangwenli.com
-  [2]: img/2013-10-19-how-i-made-this-site-1.png
-  [3]: img/2013-10-19-how-i-made-this-site-2.png
   [4]: https://github.com/hassankhan/emojify.js
   [5]: https://github.com
   [6]: http://jekyllrb.com
   [7]: http://www.andrewmunsell.com/tutorials/jekyll-by-example/
-  [8]: img/2013-10-19-how-i-made-this-site-3.png
-  [9]: img/2013-10-19-how-i-made-this-site-4.png
-  [10]: img/2013-10-19-how-i-made-this-site-5.png
-  [11]: img/sketch.jpg
-  [12]: img/2013-10-19-how-i-made-this-site-6.png
-  [13]: img/2013-10-19-how-i-made-this-site-7.png
   [14]: https://github.com/hassankhan/emojify.js
   [15]: http://benweet.github.io/stackedit/
