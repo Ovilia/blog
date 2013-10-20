@@ -65,6 +65,12 @@ blockquote>p>code {
     text-shadow: 1px 1px #333;
 }
 
+blockquote>h5 {
+    float: right;
+    position: relative;
+    top: -20px;
+}
+
 ul, ol {
     margin: 10px 2em;
     font-family: Arial, sarif;
