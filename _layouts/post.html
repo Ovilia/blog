@@ -10,6 +10,15 @@
             <div class="rotRight rotTop pageBack"></div>
             <div class="container page">
                 <div class="pageTitle">{{ post.title }}</div>
+                
+                <div class="time">{{ post.time }}</div>
+                        
+                <div id="tagPanel">
+                {% for tag in post.tags %}
+                    <div class="tag">{{ tag }}</div>
+                {% endfor%}
+                </div>
+                
                 {{ post.content }}
                 {% include comment.html %}
             </div>

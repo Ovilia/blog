@@ -235,6 +235,25 @@ p>img {
     margin: -0.5em 0 -0.3em 0;
 }
 
+.tag {
+    background-color: #70840e;
+    padding: 2px 5px;
+    margin-right: 5px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 1px #333;
+}
+
+.tag:hover {
+    color: #d4e583;
+    transition: 0.5s;
+}
+
+#tagPanel {
+    margin: 5px 0 -5px 0;
+}
+
 #homeDiv {
     position: absolute;
     left: 15px;
