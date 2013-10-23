@@ -47,6 +47,28 @@ hr {
     margin: 10px 0;
 }
 
+code {
+    background-color: #d4e583;
+    color: #000;
+    box-shadow: inset 0px 0px 5px 1px #999;
+    padding: 3px 9px;
+    font-size: 90%;
+    border-radius: 5px;
+    font-family: Consolas, "Courier New", Courier;
+}
+
+pre>code {
+    box-shadow: inset 1px 1px 15px 1px #333;
+    display: block;
+    padding: 20px;
+    margin: 5px 0;
+    background-color: #70840e;
+    color: #fff;
+    text-shadow: 1px 1px 0px #333;
+    filter: dropshadow(color=#333, offx=1, offy=1);
+    overflow-x: auto;
+}
+
 blockquote {
     background-color: #d4e583;
     margin: 20px 0;
@@ -55,14 +77,14 @@ blockquote {
     border-left-style: solid;
     border-left-color: #70840e;
     border-left-width: 5px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
-blockquote>p>code {
-    background: #70840e;
-    color: #d4e583;
-    box-shadow: inset 0px 0px 5px 1px #333;
-    text-shadow: 1px 1px #333;
+blockquote code {
+    background: #70840e !important;
+    color: #d4e583 !important;
+    box-shadow: inset 0px 0px 5px 1px #333 !important;
+    text-shadow: 1px 1px #333 !important;
 }
 
 blockquote>h5 {
@@ -117,28 +139,6 @@ a:hover {
 h1>a {
     border: 0;
     text-shadow: 1px 1px #eee;
-}
-
-code {
-    background-color: #d4e583;
-    color: #000;
-    box-shadow: inset 0px 0px 5px 1px #999;
-    padding: 3px 9px;
-    font-size: 90%;
-    border-radius: 5px;
-    font-family: Consolas, "Courier New", Courier;
-}
-
-pre>code {
-    box-shadow: inset 1px 1px 15px 1px #333;
-    display: block;
-    padding: 20px;
-    margin: 5px 0;
-    background-color: #70840e;
-    color: #fff;
-    text-shadow: 1px 1px 0px #333;
-    filter: dropshadow(color=#333, offx=1, offy=1);
-    overflow-x: auto;
 }
 
 .page {
