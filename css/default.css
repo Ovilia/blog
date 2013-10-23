@@ -47,21 +47,11 @@ hr {
     margin: 10px 0;
 }
 
-code {
-    background-color: #d4e583;
-    color: #000;
-    box-shadow: inset 0px 0px 5px 1px #999;
-    padding: 3px 9px;
-    font-size: 90%;
-    border-radius: 5px;
-    font-family: Consolas, "Courier New", Courier;
-}
-
 pre>code {
     box-shadow: inset 1px 1px 15px 1px #333;
     display: block;
     padding: 20px;
-    margin: 5px 0;
+    margin: 2px 0;
     background-color: #70840e;
     color: #fff;
     text-shadow: 1px 1px 0px #333;
@@ -80,11 +70,16 @@ blockquote {
     font-size: 90%;
 }
 
-blockquote code {
-    background: #70840e !important;
-    color: #d4e583 !important;
-    box-shadow: inset 0px 0px 5px 1px #333 !important;
-    text-shadow: 1px 1px #333 !important;
+code {
+    background: #fdff99;
+    color: #000;
+    box-shadow: inset 0px 0px 3px 1px #b0cb2c;
+    text-shadow: 1px 1px #d4e583;
+    padding: 2px 8px;
+    margin: 5px 0;
+    font-size: 90%;
+    border-radius: 5px;
+    font-family: Consolas, "Courier New", Courier;
 }
 
 blockquote>h5 {
