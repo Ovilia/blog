@@ -27,33 +27,29 @@ There're five ***primitive types*** in JavaScript, namely `Null`, `Undefined`, `
 
 When you assign a variable to be primitive type, the value of the variable on the right side is copied. As for reference type, the reference of the variable on the right side is assign to left one.
 
-```
-var a = 32;
-var b = a;
-b = 16;
-console.log(a); // a is still 32
-
-var a = {
-    x: 2,
-    y: 3
-};
-var b = a;
-b.x = 4;
-console.log(a); // a is {x: 4, y: 3}
-
-b = {           // reference b to another object
-    u: 5,
-    v: 6
-}; 
-console.log(a); // a is still {x: 4, y: 3}
-```
+    var a = 32;
+    var b = a;
+    b = 16;
+    console.log(a); // a is still 32
+    
+    var a = {
+        x: 2,
+        y: 3
+    };
+    var b = a;
+    b.x = 4;
+    console.log(a); // a is {x: 4, y: 3}
+    
+    b = {           // reference b to another object
+        u: 5,
+        v: 6
+    }; 
+    console.log(a); // a is still {x: 4, y: 3}
 
 You may be suprised at `String`'s being a primitive type if you are from C++ or some other languages. But in JavaScript, once a `String` is created, it cannot be changed anymore. 
 
-```
-var a = "Hello, ";
-a += "World!";
-```
+    var a = "Hello, ";
+    a += "World!";
 
 In the above code, when executing the second line, the previous value `"Hello, "` and the new value `"World!"` are used to create a new `String` object and make `a` reference the concatenated result.
 
@@ -118,11 +114,9 @@ First of all, we want to know when they will return a float number.
 
 It's clear that `parseInt()` always returns an integer if input is legal while float number for `parseFloat()`. But what about `Number()`?
 
-```
-Number("1.2");   // 1.2
-Number("2.0");   // 2.0
-Number("3");     // 3
-```
+    Number("1.2");   // 1.2
+    Number("2.0");   // 2.0
+    Number("3");     // 3
 
 ## Unexpected Characters
 
@@ -130,11 +124,9 @@ There are characters which are not expected in a number (e.g.: `"r"` and `"t"` a
 
 ### `"e"`
 
-```
-Number("9.1e3");        // 9100
-parseInt("9.1e3");      // 9
-parseFloat("9.1e3");    // 9100
-```
+    Number("9.1e3");        // 9100
+    parseInt("9.1e3");      // 9
+    parseFloat("9.1e3");    // 9100
 
 `"9.1e3"` is a legal form of scientific notion, so we *expect* JavaScript gives us the correct answer `9100`. But unfortunately, `parseInt()` surprised us with the output of `9`. I said that we should learn JavaScript better and know what to expect. So let's think about why it gives `9`.
 
@@ -148,15 +140,13 @@ It won't check if there's `"e"` for scientific notion. This is another example o
 
 Now, I'd like to test the case when `"e"` is in an illegal position (as defined in scientific notion).
 
-```
-Number("e3");        // NaN
-parseInt("e3");      // NaN
-parseFloat("e3");    // NaN
-
-Number("3e");        // NaN
-parseInt("3e");      // 3
-parseFloat("3e");    // 3
-```
+    Number("e3");        // NaN
+    parseInt("e3");      // NaN
+    parseFloat("e3");    // NaN
+    
+    Number("3e");        // NaN
+    parseInt("3e");      // 3
+    parseFloat("3e");    // 3
 
 When `"e"` is at the first position, all of them give `NaN`, which make sense as they're illegal, although the whole story is more complicated than you might think.
 
@@ -166,35 +156,29 @@ In this way, all results of `"3e"` are the same as that of `"3ee3"` respectively
 
 ### Decimal Point
 
-```
-Number(".3");        // 0.3
-parseInt(".3");      // NaN
-parseFloat(".3");    // 0.3
-```
+    Number(".3");        // 0.3
+    parseInt(".3");      // NaN
+    parseFloat(".3");    // 0.3
 
 Decimal point (`.`) is legal to `Number()` and `parseFloat()`, but illegal to `parseInt()`. Since there's no legal character before an illegal one, `parseInt()` returns `NaN`. 
 
 If you think this is strange, consider the following case:
 
-```
-Number("2.3");       // 2.3
-parseInt("2.3");     // 2
-parseFloat("2.3");   // 2.3
-```
+    Number("2.3");       // 2.3
+    parseInt("2.3");     // 2
+    parseFloat("2.3");   // 2.3
 
 There's nothing magic here. But if you think twice, you would probably find `parseInt()`'s judging algorithm is efficient since it just ignore from the starting illegal character.
 
 Now, what if we abuse decimal point?
 
-```
-Number("2..3");        // NaN
-parseInt("2..3");      // 2
-parseFloat("2..3");    // 2
-
-Number("2.3.4");       // NaN
-parseInt("2.3.4");     // 2
-parseFloat("2.3.4");   // 2.3
-```
+    Number("2..3");        // NaN
+    parseInt("2..3");      // 2
+    parseFloat("2..3");    // 2
+    
+    Number("2.3.4");       // NaN
+    parseInt("2.3.4");     // 2
+    parseFloat("2.3.4");   // 2.3
 
 Just bear it in mind that `parseInt()` and `parseFloat()` tends to ignore from the first illegal character while `Numbur()` checks them completely.
 
@@ -202,15 +186,13 @@ Just bear it in mind that `parseInt()` and `parseFloat()` tends to ignore from t
 
 Other illegal characters include `"q"`, `"@"`, `"?"` and so on. 
 
-```
-Number("d");            // NaN
-parseInt("d");          // NaN
-parseFloat("d");        // NaN
-
-Number("2.3d");         // NaN
-parseInt("2.3d");       // 2
-parseFloat("2.3d");     // 2.3
-```
+    Number("d");            // NaN
+    parseInt("d");          // NaN
+    parseFloat("d");        // NaN
+    
+    Number("2.3d");         // NaN
+    parseInt("2.3d");       // 2
+    parseFloat("2.3d");     // 2.3
 
 I believe you are more confident now.
 
@@ -219,37 +201,31 @@ I believe you are more confident now.
 <a href="http://stackoverflow.com/questions/2803145/is-there-0b-or-something-similar-to-represent-a-binary-number-in-javascript#answer-2803188" target="_blank">JavaScript does't support numeric literals in binary.</a>
 
 
-```
-// Hexadecimal
-Number("0x11");            // 17
-parseInt("0x11");          // 17
-parseFloat("0x11");        // 0
-
-// Octal
-Number("011");             // 11
-parseInt("011");           // 11
-parseFloat("011");         // 11
-```
+    // Hexadecimal
+    Number("0x11");            // 17
+    parseInt("0x11");          // 17
+    parseFloat("0x11");        // 0
+    
+    // Octal
+    Number("011");             // 11
+    parseInt("011");           // 11
+    parseFloat("011");         // 11
 
 `"0x11"` is recognized as hexadecimal by `Number()` and `parseInt()`, but as decimal by `parseFloat()` (the leading zero is ignored). `"011"` is not recognized as octal in all cases.
 
 > There is a discrepancy between ECMAScript 3 and 5 in regard to using parseInt() with a string that looks like an octal literal. For example:
 
-> ```
-> // 56 (octal) in ECMAScript 3, 0 (decimal) in ECMAScript 5
-> var num = parseInt("070");
-> ```
+>     // 56 (octal) in ECMAScript 3, 0 (decimal) in ECMAScript 5
+>     var num = parseInt("070");
 
 > *Professional JavaScript for Web Programmers, Nicholas C. Zakas*
 
 With `parseInt()`, you can set the radix explicitly.
 
-```
-parseInt("010", 2);       // 2
-parseInt("010", 3);       // 3
-parseInt("010", 8);       // 8
-parseInt("010", 16);      // 16
-```
+    parseInt("010", 2);       // 2
+    parseInt("010", 3);       // 3
+    parseInt("010", 8);       // 8
+    parseInt("010", 16);      // 16
 
 In general, `Number()` supports hexadecimal but not octal; `parseInt()` recognize in hexadecimal be default but can set the radix explicitly; `parseFloat()` only support decimal form.
 
