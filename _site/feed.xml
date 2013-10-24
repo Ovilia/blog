@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog of Wenli Zhang</title>
+        <description>Web Front-End Blog by Wenli Zhang</description>
+        <link>http://zhangwenli.com/blog</link>
+        <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>RSS Is Now Available!</title>
+                <description>&lt;h1&gt;RSS Me!&lt;/h1&gt;
+
+&lt;p&gt;RSS is now available and you can access RSS of this blog site at &lt;a href=&quot;http://zhangwenli.com/blog/feed.xml&quot; target=&quot;_blank&quot;&gt;http://zhangwenli.com/blog/feed.xml&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Email Subscription&lt;/h1&gt;
+
+&lt;p&gt;Since there's no ideal way to subscribe by email without a server, you may &lt;a href=&quot;mailto:OviliaZhang@gmail.com?subject=Blog+Subscription&amp;body=Please+send+me+an+email+when+you+have+new+posts.&quot; title=&quot;OviliaZhang@gmail.com&quot; target=&quot;_blank&quot;&gt;send me an email in one click&lt;/a&gt; so that I'll email you as soon as I post a new blog.&lt;/p&gt;
+
+&lt;h3&gt;Thanks for your support! :smiley:&lt;/h3&gt;
+</description>
+                <pubDate>Thu, 24 Oct 2013 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2013/10/24/rss-is-now-available/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/10/24/rss-is-now-available/</guid>
+            </item>
+        
+            <item>
+                <title>Converting To Numbers In JavaScript</title>
+                <description>&lt;blockquote&gt;&lt;h3&gt;What you will learn in this post&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;Number()&lt;/code&gt;, &lt;code&gt;parstInt()&lt;/code&gt; and &lt;code&gt;parseFloat&lt;/code&gt; are three ways to convert to &lt;code&gt;Number&lt;/code&gt; type in JavaScript. However, they act differently and may suprise you in some cases. In this post, I would like to talk about what to expect from they and why they act differently.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;JavaScript is &lt;strong&gt;STRANGE&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Sometimes we think someone or something is strange only because we expect differently.&lt;/p&gt;
+
+&lt;p&gt;So, rather than complaining about how strange JavaScript is, why don't we get to know more about it, and learn what to expect from it? After all, everything and everyone are imperfect in this world, and you can't just abandon them all and be alone by yourself, not to mention that even yourself may seem strange to others. :cry:&lt;/p&gt;
+
+&lt;h1&gt;Types In JavaScript&lt;/h1&gt;
+
+&lt;p&gt;There're five &lt;strong&gt;&lt;em&gt;primitive types&lt;/em&gt;&lt;/strong&gt; in JavaScript, namely &lt;code&gt;Null&lt;/code&gt;, &lt;code&gt;Undefined&lt;/code&gt;, &lt;code&gt;Boolean&lt;/code&gt;, &lt;code&gt;Number&lt;/code&gt; and &lt;code&gt;String&lt;/code&gt;. Other than that is the &lt;code&gt;Object&lt;/code&gt; type, which is called the &lt;strong&gt;&lt;em&gt;reference type&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Primitive values are simple pieces of data that are stored on the stack, which is to say that their value is stored directly in the location that the variable accesses. Reference values, on the other hand, are objects that are stored in the heap, meaning that the value stored in the variable location is a pointer to a location in memory where the object is stored.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Professional JavaScript for Web Programmers, Nicholas C. Zakas&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;When you assign a variable to be primitive type, the value of the variable on the right side is copied. As for reference type, the reference of the variable on the right side is assign to left one.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = 32;
+var b = a;
+b = 16;
+console.log(a); // a is still 32
+
+var a = {
+    x: 2,
+    y: 3
+};
+var b = a;
+b.x = 4;
+console.log(a); // a is {x: 4, y: 3}
+
+b = {           // reference b to another object
+    u: 5,
+    v: 6
+}; 
+console.log(a); // a is still {x: 4, y: 3}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You may be suprised at &lt;code&gt;String&lt;/code&gt;'s being a primitive type if you are from C++ or some other languages. But in JavaScript, once a &lt;code&gt;String&lt;/code&gt; is created, it cannot be changed anymore.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = &quot;Hello, &quot;;
+a += &quot;World!&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the above code, when executing the second line, the previous value &lt;code&gt;&quot;Hello, &quot;&lt;/code&gt; and the new value &lt;code&gt;&quot;World!&quot;&lt;/code&gt; are used to create a new &lt;code&gt;String&lt;/code&gt; object and make &lt;code&gt;a&lt;/code&gt; reference the concatenated result.&lt;/p&gt;
+
+&lt;h1&gt;Convertion Rules&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;Number()&lt;/code&gt; is the constructor of &lt;code&gt;Number&lt;/code&gt; type. With &lt;code&gt;Number(&quot;2.3&quot;)&lt;/code&gt;, we can get a number &lt;code&gt;2.3&lt;/code&gt;. &lt;code&gt;parseInt()&lt;/code&gt; converts input to an integer, while &lt;code&gt;parseFloat()&lt;/code&gt; to a float number.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;+&lt;/code&gt; operator does exactly as &lt;code&gt;Number()&lt;/code&gt; when converting.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Professional JavaScript for Web Programmers&lt;/em&gt; described the convertion rules in full but you may find it hard to remember all these rules. So, let's first have a look at them and then I'll explain about it.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;h3&gt;&lt;code&gt;Number()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;Number()&lt;/code&gt; function performs conversions based on these rules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When applied to &lt;code&gt;Boolean&lt;/code&gt; values, &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt; get converted into &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;0&lt;/code&gt;, respectively.&lt;/li&gt;
+&lt;li&gt;When applied to numbers, the value is simply passed through and returned.&lt;/li&gt;
+&lt;li&gt;When applied to &lt;code&gt;null&lt;/code&gt;, &lt;code&gt;Number()&lt;/code&gt; returns &lt;code&gt;0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When applied to &lt;code&gt;undefined&lt;/code&gt;, &lt;code&gt;Number()&lt;/code&gt; returns &lt;code&gt;NaN&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When applied to strings, the following rules are applied:
+
+&lt;ul&gt;
+&lt;li&gt;If the string contains only numbers, optionally preceded by a plus or minus sign, it is always converted to a decimal number, so &lt;code&gt;&quot;1&quot;&lt;/code&gt; becomes &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;&quot;123&quot;&lt;/code&gt; becomes &lt;code&gt;123&lt;/code&gt;, and &lt;code&gt;&quot;011&quot;&lt;/code&gt; becomes &lt;code&gt;11&lt;/code&gt; (note: leading zeros are ignored).&lt;/li&gt;
+&lt;li&gt;If the string contains a valid floating-point format, such as &lt;code&gt;&quot;1.1&quot;&lt;/code&gt;, it is converted into the appropriate floating-point numeric value (once again, leading zeros are ignored).&lt;/li&gt;
+&lt;li&gt;If the string contains a valid hexadecimal format, such as &lt;code&gt;&quot;0xf&quot;&lt;/code&gt;, it is converted into an integer that matches the hexadecimal value.&lt;/li&gt;
+&lt;li&gt;If the string is empty (contains no characters), it is converted to &lt;code&gt;0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If the string contains anything other than these previous formats, it is converted
+into &lt;code&gt;NaN&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;When applied to objects, the &lt;code&gt;valueOf()&lt;/code&gt; method is called and the returned value is converted based on the previously described rules. If that conversion results in &lt;code&gt;NaN&lt;/code&gt;, the &lt;code&gt;toString()&lt;/code&gt; method is called and the rules for converting strings are applied.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;&lt;code&gt;parseInt()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;parseInt()&lt;/code&gt; function examines the string much more closely to see if it matches a number pattern.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Leading white space in the string is ignored until the first non–white space character is found.&lt;/li&gt;
+&lt;li&gt;If this first character isn't a number, the minus sign, or the plus sign, &lt;code&gt;parseInt()&lt;/code&gt; always returns &lt;code&gt;NaN&lt;/code&gt;, which means the
+empty string returns &lt;code&gt;NaN&lt;/code&gt; (unlike with &lt;code&gt;Number()&lt;/code&gt;, which returns &lt;code&gt;0&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;If the first character is a number, plus, or minus, then the conversion goes on to the second character and continues on until either the end of the string is reached or a nonnumeric character is found. For instance, &lt;code&gt;&quot;1234blue&quot;&lt;/code&gt; is converted to &lt;code&gt;1234&lt;/code&gt; because &lt;code&gt;&quot;blue&quot;&lt;/code&gt; is completely ignored. Similarly, &lt;code&gt;&quot;22.5&quot;&lt;/code&gt; will be converted to &lt;code&gt;22&lt;/code&gt; because the decimal is not a valid integer character.&lt;/li&gt;
+&lt;li&gt;Assuming that the first character in the string is a number, the &lt;code&gt;parseInt()&lt;/code&gt; function also recognizes the various integer formats (decimal, octal, and hexadecimal, as discussed previously). This means when the string begins with &lt;code&gt;&quot;0x&quot;&lt;/code&gt;, it is interpreted as a hexadecimal integer; if it begins with &lt;code&gt;&quot;0&quot;&lt;/code&gt; followed by a number, it is interpreted as an octal value.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;&lt;code&gt;parseFloat()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;parseFloat()&lt;/code&gt; function works in a similar way to &lt;code&gt;parseInt()&lt;/code&gt;, looking at each character starting in position &lt;code&gt;0&lt;/code&gt;. It also continues to parse the string until it reaches either the end of the string or a character that is invalid in a floating-point number. This means that a decimal point is valid the first time it appears, but a second decimal point is invalid and the rest of the string is ignored, resulting in &lt;code&gt;&quot;22.34.5&quot;&lt;/code&gt; being converted to &lt;code&gt;22.34&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another difference in &lt;code&gt;parseFloat()&lt;/code&gt; is that initial zeros are always ignored. This function will recognize any of the floating-point formats discussed earlier, as well as the decimal format (leading zeros are always ignored). Hexadecimal numbers always become &lt;code&gt;0&lt;/code&gt;. Because &lt;code&gt;parseFloat()&lt;/code&gt; parses only decimal values, there is no radix mode.&lt;/p&gt;
+
+&lt;p&gt;A final note: if the string represents a whole number (no decimal point or only a zero after the decimal point), &lt;code&gt;parseFloat()&lt;/code&gt; returns an integer.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Professional JavaScript for Web Programmers, Nicholas C. Zakas&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;OK, I doubt you've read that word by word. :stuck_out_tongue:&lt;/p&gt;
+
+&lt;p&gt;Well, you don't have to, because I'm going to explain those confusing rules.&lt;/p&gt;
+
+&lt;h1&gt;Learn By Examples&lt;/h1&gt;
+
+&lt;p&gt;Converting string to number is always the most confusing part for all &lt;code&gt;Number()&lt;/code&gt;, &lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; methods. Although we can infer that the results of passing &lt;code&gt;&quot;2.3&quot;&lt;/code&gt; to those functions would be &lt;code&gt;2.3&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, and &lt;code&gt;2.3&lt;/code&gt; respectively, we may probably be wrong when things get complicated.&lt;/p&gt;
+
+&lt;h2&gt;Float Number&lt;/h2&gt;
+
+&lt;p&gt;First of all, we want to know when they will return a float number.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;In JavaScript, there's no strict line between an integer and a float number. Numbers are stored as integer if there's no decimal part. So both &lt;code&gt;console.log(3.0)&lt;/code&gt; and &lt;code&gt;console.log(3)&lt;/code&gt; output &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;It's clear that &lt;code&gt;parseInt()&lt;/code&gt; always returns an integer if input is legal while float number for &lt;code&gt;parseFloat()&lt;/code&gt;. But what about &lt;code&gt;Number()&lt;/code&gt;?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;1.2&quot;);   // 1.2
+Number(&quot;2.0&quot;);   // 2.0
+Number(&quot;3&quot;);     // 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Unexpected Characters&lt;/h2&gt;
+
+&lt;p&gt;There are characters which are not expected in a number (e.g.: &lt;code&gt;&quot;r&quot;&lt;/code&gt; and &lt;code&gt;&quot;t&quot;&lt;/code&gt; are never expect, while &lt;code&gt;&quot;e&quot;&lt;/code&gt; may be part of a scientific notion (but not &lt;code&gt;&quot;ee&quot;&lt;/code&gt;)). &lt;code&gt;Number()&lt;/code&gt;, &lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; judge them differently and may result in &lt;code&gt;NaN&lt;/code&gt; (stands for &lt;em&gt;Not a Number&lt;/em&gt;) or just ignore them. So, let's try them out one by one.&lt;/p&gt;
+
+&lt;h3&gt;&lt;code&gt;&quot;e&quot;&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;9.1e3&quot;);        // 9100
+parseInt(&quot;9.1e3&quot;);      // 9
+parseFloat(&quot;9.1e3&quot;);    // 9100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;&quot;9.1e3&quot;&lt;/code&gt; is a legal form of scientific notion, so we &lt;em&gt;expect&lt;/em&gt; JavaScript gives us the correct answer &lt;code&gt;9100&lt;/code&gt;. But unfortunately, &lt;code&gt;parseInt()&lt;/code&gt; surprised us with the output of &lt;code&gt;9&lt;/code&gt;. I said that we should learn JavaScript better and know what to expect. So let's think about why it gives &lt;code&gt;9&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;parseInt()&lt;/code&gt; always returns an integer if the input is legal (in the way it thinks). So a simple implementation is to check from the first character whether is a number. If true, loop until the last character which is a number. So &lt;code&gt;parseInt(&quot;g34&quot;)&lt;/code&gt; returns &lt;code&gt;NaN&lt;/code&gt; and &lt;code&gt;parseInt(&quot;34g&quot;)&lt;/code&gt; returns &lt;code&gt;34&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It won't check if there's &lt;code&gt;&quot;e&quot;&lt;/code&gt; for scientific notion. This is another example of &lt;a href=&quot;http://www.jwz.org/doc/worse-is-better.html&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Worse is Better&lt;/em&gt;&lt;/a&gt;, which argues &lt;strong&gt;&lt;em&gt;It is more important for the implementation to be simple than the interface&lt;/em&gt;&lt;/strong&gt;. This makes sense to me. After all, you can still use &lt;code&gt;Number()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; in this case.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; are similar in that they both ignore from the first illegal character. But &lt;code&gt;&quot;e&quot;&lt;/code&gt; is illegal to &lt;code&gt;parseInt()&lt;/code&gt; but legal to &lt;code&gt;parseFloat()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This may seems a little confusing, but I believe this is because scientific notion is mostly used as float rather than integer.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Now, I'd like to test the case when &lt;code&gt;&quot;e&quot;&lt;/code&gt; is in an illegal position (as defined in scientific notion).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;e3&quot;);        // NaN
+parseInt(&quot;e3&quot;);      // NaN
+parseFloat(&quot;e3&quot;);    // NaN
+
+Number(&quot;3e&quot;);        // NaN
+parseInt(&quot;3e&quot;);      // 3
+parseFloat(&quot;3e&quot;);    // 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When &lt;code&gt;&quot;e&quot;&lt;/code&gt; is at the first position, all of them give &lt;code&gt;NaN&lt;/code&gt;, which make sense as they're illegal, although the whole story is more complicated than you might think.&lt;/p&gt;
+
+&lt;p&gt;When &lt;code&gt;&quot;e&quot;&lt;/code&gt; is at the last position, however, &lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; returns &lt;code&gt;3&lt;/code&gt;. It's easy to understand that of &lt;code&gt;parseInt()&lt;/code&gt;, since we've discussed above. But it may surprise you a little that &lt;code&gt;parseFloat()&lt;/code&gt; also returns &lt;code&gt;3&lt;/code&gt;. In this case, &lt;code&gt;parseFloat()&lt;/code&gt; is different from &lt;code&gt;Number()&lt;/code&gt; in their judging method. &lt;code&gt;parseFloat()&lt;/code&gt; checks until the first illegal (which does not include &lt;code&gt;&quot;e&quot;&lt;/code&gt;) or last character, while the last &lt;code&gt;&quot;e&quot;&lt;/code&gt; falls in &lt;code&gt;Number()&lt;/code&gt; is rule of &lt;em&gt;If the string contains anything other than these previous formats, it is converted into NaN&lt;/em&gt;, as mentioned in &lt;em&gt;Professional JavaScript for Web Programmers&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this way, all results of &lt;code&gt;&quot;3e&quot;&lt;/code&gt; are the same as that of &lt;code&gt;&quot;3ee3&quot;&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;h3&gt;Decimal Point&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;.3&quot;);        // 0.3
+parseInt(&quot;.3&quot;);      // NaN
+parseFloat(&quot;.3&quot;);    // 0.3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Decimal point (&lt;code&gt;.&lt;/code&gt;) is legal to &lt;code&gt;Number()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt;, but illegal to &lt;code&gt;parseInt()&lt;/code&gt;. Since there's no legal character before an illegal one, &lt;code&gt;parseInt()&lt;/code&gt; returns &lt;code&gt;NaN&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you think this is strange, consider the following case:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;2.3&quot;);       // 2.3
+parseInt(&quot;2.3&quot;);     // 2
+parseFloat(&quot;2.3&quot;);   // 2.3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There's nothing magic here. But if you think twice, you would probably find &lt;code&gt;parseInt()&lt;/code&gt;'s judging algorithm is efficient since it just ignore from the starting illegal character.&lt;/p&gt;
+
+&lt;p&gt;Now, what if we abuse decimal point?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;2..3&quot;);        // NaN
+parseInt(&quot;2..3&quot;);      // 2
+parseFloat(&quot;2..3&quot;);    // 2
+
+Number(&quot;2.3.4&quot;);       // NaN
+parseInt(&quot;2.3.4&quot;);     // 2
+parseFloat(&quot;2.3.4&quot;);   // 2.3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Just bear it in mind that &lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; tends to ignore from the first illegal character while &lt;code&gt;Numbur()&lt;/code&gt; checks them completely.&lt;/p&gt;
+
+&lt;h3&gt;Other Characters&lt;/h3&gt;
+
+&lt;p&gt;Other illegal characters include &lt;code&gt;&quot;q&quot;&lt;/code&gt;, &lt;code&gt;&quot;@&quot;&lt;/code&gt;, &lt;code&gt;&quot;?&quot;&lt;/code&gt; and so on.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Number(&quot;d&quot;);            // NaN
+parseInt(&quot;d&quot;);          // NaN
+parseFloat(&quot;d&quot;);        // NaN
+
+Number(&quot;2.3d&quot;);         // NaN
+parseInt(&quot;2.3d&quot;);       // 2
+parseFloat(&quot;2.3d&quot;);     // 2.3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I believe you are more confident now.&lt;/p&gt;
+
+&lt;h2&gt;Hexadecimal and Octal&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2803145/is-there-0b-or-something-similar-to-represent-a-binary-number-in-javascript#answer-2803188&quot; target=&quot;_blank&quot;&gt;JavaScript does't support numeric literals in binary.&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Hexadecimal
+Number(&quot;0x11&quot;);            // 17
+parseInt(&quot;0x11&quot;);          // 17
+parseFloat(&quot;0x11&quot;);        // 0
+
+// Octal
+Number(&quot;011&quot;);             // 11
+parseInt(&quot;011&quot;);           // 11
+parseFloat(&quot;011&quot;);         // 11
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;&quot;0x11&quot;&lt;/code&gt; is recognized as hexadecimal by &lt;code&gt;Number()&lt;/code&gt; and &lt;code&gt;parseInt()&lt;/code&gt;, but as decimal by &lt;code&gt;parseFloat()&lt;/code&gt; (the leading zero is ignored). &lt;code&gt;&quot;011&quot;&lt;/code&gt; is not recognized as octal in all cases.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;There is a discrepancy between ECMAScript 3 and 5 in regard to using parseInt() with a string that looks like an octal literal. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// 56 (octal) in ECMAScript 3, 0 (decimal) in ECMAScript 5
+var num = parseInt(&quot;070&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Professional JavaScript for Web Programmers, Nicholas C. Zakas&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;With &lt;code&gt;parseInt()&lt;/code&gt;, you can set the radix explicitly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;parseInt(&quot;010&quot;, 2);       // 2
+parseInt(&quot;010&quot;, 3);       // 3
+parseInt(&quot;010&quot;, 8);       // 8
+parseInt(&quot;010&quot;, 16);      // 16
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In general, &lt;code&gt;Number()&lt;/code&gt; supports hexadecimal but not octal; &lt;code&gt;parseInt()&lt;/code&gt; recognize in hexadecimal be default but can set the radix explicitly; &lt;code&gt;parseFloat()&lt;/code&gt; only support decimal form.&lt;/p&gt;
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In conclusion, &lt;code&gt;Number()&lt;/code&gt; checks the whole string so it's more strict than the other two methods. &lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; stop checking and ignore from the first illegal character, although they may have different judgment on whether a character is legal. &lt;code&gt;Number()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt; supports scientific notion while &lt;code&gt;parseInt()&lt;/code&gt; enables you to set radix explicitly.&lt;/p&gt;
+
+&lt;p&gt;There's no remarkable advantage over the choice of &lt;code&gt;Number()&lt;/code&gt;, &lt;code&gt;parseInt()&lt;/code&gt; and &lt;code&gt;parseFloat()&lt;/code&gt;. You'd better have more information of your input and output form and then, choose a more suitable one for your situation.&lt;/p&gt;
+
+&lt;p&gt;I believe the above hasn't covered all conditions when converting to numbers in JavaScript. But hopefully, it does offer some information on how JavaScript deals with number converting. :yum:&lt;/p&gt;
+</description>
+                <pubDate>Wed, 23 Oct 2013 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2013/10/23/converting-to-numbers-in-javascript/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/10/23/converting-to-numbers-in-javascript/</guid>
+            </item>
+        
+            <item>
+                <title>How I made this site</title>
+                <description>&lt;p&gt;I've re-designed &lt;a href=&quot;http://zhangwenli.com&quot;&gt;my personal site&lt;/a&gt; recently since the old version had too much description words, which is not the best design I could offer as a Web Front-End Designer :smirk:. You may probably find some interesting features at this site (especially the &lt;a href=&quot;http://zhangwenli.com&quot;&gt;home page&lt;/a&gt;), so this post is served as an introduction of how to implement them.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;h3&gt;What You Will Learn In This Post&lt;/h3&gt;
+
+&lt;h4&gt;Shadow Effect&lt;/h4&gt;
+
+&lt;p&gt;There's a &lt;em&gt;Tao&lt;/em&gt;-like image at &lt;a href=&quot;http://zhangwenli.com&quot;&gt;home page&lt;/a&gt; (you should probably have a look at it if you haven't yet). With mouse moving around, its shadow would move correspondingly with mouse position, which makes your mouse seem like a light source!&lt;/p&gt;
+
+&lt;h4&gt;Paper-like Background&lt;/h4&gt;
+
+&lt;p&gt;Background of this post looks like 3 sheets of paper. If you found that interesting, you may learn how to implement it in the following introduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Now, let's start to learn how to make this cool site! :yum:&lt;/p&gt;
+
+&lt;h1&gt;Shadow Effect&lt;/h1&gt;
+
+&lt;p&gt;Notice the difference between the following two images.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-1.png&quot; /&gt;
+&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I would not regard this amazing without the interaction with mouse moving. But it's a really cool effect when your mouse seems to be a light source.&lt;/p&gt;
+
+&lt;p&gt;This can be easily achieved using CSS and a little JavaScript. And now I'm going to explain how to do it.&lt;/p&gt;
+
+&lt;h4&gt;First of all, I Photoshoped two &lt;em&gt;Tao&lt;/em&gt;-like images.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/image/tao.png&quot; width=&quot;200px&quot; /&gt;
+&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/image/taoWords.png&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure they are of the same size and the second image cover on the first one entirely so that it looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This can be easily achieved by using some simple CSS. Set the CSS of the second image to be &lt;code&gt;position: relative;&lt;/code&gt; and &lt;code&gt;top: -400px;&lt;/code&gt;, which means to move the second image &lt;code&gt;400px&lt;/code&gt; (height of the images) up than its original position.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/* The first image */
+#titleTao {
+    width: 400px;
+    height: 400px;
+}
+
+/* The second image */
+#titleWords {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: -400px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;p&gt;If you're wondering why we don't just Photoshop the image merged by these two image, that's because only in this way can we change the &lt;code&gt;opacity&lt;/code&gt; of the second image, which will be explained later.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h4&gt;Secondly, add another &lt;code&gt;div&lt;/code&gt; to be shadow.&lt;/h4&gt;
+
+&lt;p&gt;We need the &lt;code&gt;div&lt;/code&gt; to be a circle with the same size with those in the images. So we set its &lt;code&gt;border-radius&lt;/code&gt; to be the radius of cicles in the images, which is &lt;code&gt;5 / 6&lt;/code&gt; of &lt;code&gt;400px&lt;/code&gt;, and its &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; to be double radius size. The left &lt;code&gt;1 / 6&lt;/code&gt; can be occupied by &lt;code&gt;margin&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We set the &lt;code&gt;box-shadow&lt;/code&gt; to be &lt;code&gt;100px 100px 100px #333&lt;/code&gt; now just to check if everything's going on well here.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#titleCircle {
+    width: 333px;
+    height: 333px;
+    border-radius: 176px;
+    margin: 33px 0 0 33px;
+    position: relative;
+    top: -767px;
+    box-shadow: 100px 100px 100px #333;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;What's wrong?&lt;/h4&gt;
+
+&lt;p&gt;Suppose you did everything as was told above, you should probably get something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-4.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It seem's that the shadow is slightly way from the images. But the fact is that even the two images are not in the same position, althrough you may not notice this due to the transparent background.&lt;/p&gt;
+
+&lt;p&gt;So, what's wrong?&lt;/p&gt;
+
+&lt;p&gt;If you're careful enough, you may find that two adjcent images will have a &lt;em&gt;gap&lt;/em&gt; even if &lt;code&gt;margin&lt;/code&gt; and &lt;code&gt;padding&lt;/code&gt; are set to be &lt;code&gt;0&lt;/code&gt;. This is exactly what caused the problem in our case, and can be settled by setting the &lt;code&gt;display&lt;/code&gt; attribute of image to be &lt;code&gt;block&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, we have the gap eliminated:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-5.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;Then, add mouse event.&lt;/h4&gt;
+
+&lt;p&gt;We want to create soft-shadow effect as shown in the following image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The idea here is to add a mouse move event listener and change the &lt;code&gt;opacity&lt;/code&gt; to be smaller and shadow &lt;code&gt;offset&lt;/code&gt; to be larger when mouse position is away from the center of screen.&lt;/p&gt;
+
+&lt;p&gt;Here's how to implement it with jQuery.&lt;/p&gt;
+
+&lt;p&gt;We first calculate mouse position in screen with unified &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt;. So top-left corner of the screen is &lt;code&gt;(-1, -1)&lt;/code&gt; and bottom-right is &lt;code&gt;(1, 1)&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(window).mousemove(function(e) {
+    var x = (0.5 - e.clientX / $(window).width()) * 2;
+    var y = (0.5 - e.clientY / $(window).height()) * 2;
+    // ...
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, calculate &lt;code&gt;r&lt;/code&gt; to represent distance from center to mouse position. We use &lt;code&gt;var r = Math.sqrt((x * x + y * y) / 2);&lt;/code&gt; instead of &lt;code&gt;var r = Math.sqrt((x * x + y * y));&lt;/code&gt; so that &lt;code&gt;r&lt;/code&gt; is also unified (between &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;We can set the &lt;code&gt;opacity&lt;/code&gt; to be &lt;code&gt;1 - r&lt;/code&gt; or, in my case, to be &lt;code&gt;1 - Math.sqrt(r);&lt;/code&gt;, so that it's non-linear and may offer better effect.&lt;/p&gt;
+
+&lt;p&gt;The complete code would be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(window).mousemove(function(e) {
+    var x = (0.5 - e.clientX / $(window).width()) * 2;
+    var y = (0.5 - e.clientY / $(window).height()) * 2;
+    var r = Math.sqrt((x * x + y * y) / 2);
+    var op = 1 - Math.sqrt(r);
+    $('#titleCircle').css({
+        'box-shadow': 300 * x + 'px ' + 300 * y + 'px '
+            + 300 * r + 'px #333',
+        'opacity': op
+    });
+    $('#titleWords').css({
+        'opacity': op
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;$('#titleCircle')&lt;/code&gt; is the circle used as shadow and &lt;code&gt;$('#titleWords')&lt;/code&gt; is the image with words on it.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h1&gt;Paper-like Background&lt;/h1&gt;
+
+&lt;h4&gt;It's easy to make the background of this post to be &lt;em&gt;paper-like&lt;/em&gt;.&lt;/h4&gt;
+
+&lt;p&gt;1) PhotoShop a paper-like image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/sketch.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2) Set the background of this post to be this image.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.page {
+    background: url(../image/sketch.jpg);
+    background-color: #eee;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) Add some shadow if you wish.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.page {
+    background: url(../image/sketch.jpg);
+    background-color: #eee;
+    box-shadow: 0px 0px 10px 5px #666;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;Key step: Add another two sheets with rotation.&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;.pageBack&lt;/code&gt; is used for all sheets of paper in the background.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.pageBack {
+    width: 100%;
+    height: 200px;
+    background: url(../image/sketch.jpg);
+    background-color: #eee;
+    z-index: -10;
+    position: relative;
+    box-shadow: 0px 0px 10px 5px #666;
+    -webkit-backface-visibility: hidden;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;-webkit-backface-visibility: hidden;&lt;/code&gt; is used to eliminate the jaggies caused by rotation which works only on webkit platform.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;We need another two classes to represent rotation of two sheets:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.rotLeft {
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+
+.rotRight {
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, with HTML&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;rotLeft rotTop pageBack&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&quot;rotRight rotTop pageBack&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&quot;page&quot;&amp;gt;
+    &amp;lt;!-- content here --&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&quot;rotLeft rotBottom pageBack&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&quot;rotRight rotBottom pageBack&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;we can get:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-6.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To make it look better, we would like to move the sheets in the background a little.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.rotTop.rotLeft {
+    left: 10px;
+}
+
+.rotTop.rotRight {
+    left: -10px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, we can get an elegant effect:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-how-i-made-this-site-7.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt;More About My Blog&lt;/h1&gt;
+
+&lt;p&gt;I use &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt; to host my blog and I don't have any database which can be accessed all the time. So I decide to build a static blog. After some research, I chose &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; out of its competitors, due mostly to its close relation to GitHub.&lt;/p&gt;
+
+&lt;p&gt;There're many good posts about how to set up a blog with Jekyll and GitHub, and I'm not going to dive into it. For those who want to know about this, I would recommend &lt;em&gt;Andrew Munsell&lt;/em&gt;'s article &lt;a href=&quot;http://www.andrewmunsell.com/tutorials/jekyll-by-example/&quot;&gt;Learning Jekyll By Example: Build a Jekyll Website, Start to Finish&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://benweet.github.io/stackedit/&quot;&gt;StackEdit&lt;/a&gt; is used to edit my posts and &lt;a href=&quot;https://github.com/hassankhan/emojify.js&quot;&gt;emojify.js&lt;/a&gt; is used to interprete emotion expressions like &lt;code&gt;:smiley:&lt;/code&gt; into :smiley:.&lt;/p&gt;
+
+&lt;p&gt;I'm going to write more about Web Front-End technology and possibly some other interesting topics (e.g.: Face Detection and Machine Learning). Hope it can be helpful for you! :blush:&lt;/p&gt;
+</description>
+                <pubDate>Sat, 19 Oct 2013 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2013/10/19/how-i-made-this-site/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/10/19/how-i-made-this-site/</guid>
+            </item>
+        
+    </channel>
+</rss>
