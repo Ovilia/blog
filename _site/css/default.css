@@ -137,7 +137,7 @@ h1>a {
 }
 
 .license {
-    margin: 20px 0 50px 0;
+    margin: 20px 0;
     padding: 10px;
     border: 3px groove #b0cb2c;
     font-family: 'Times New Roman', Arial;
@@ -259,6 +259,19 @@ p>img {
 
 #tagPanel {
     margin: 5px 0 -5px 0;
+}
+
+.olderNewer {
+    font-size: 120%;
+    margin-bottom: 100px;
+}
+
+.olderNewer > div {
+    margin: 10px 0;
+}
+
+.recentPost {
+    float: right;
 }
 
 #homeDiv {
