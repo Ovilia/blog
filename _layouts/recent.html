@@ -1,10 +1,6 @@
 {% include header.html %}
 
         <title>{{ site.name }}</title>
- 
-            <a href="http://zhangwenli.com">
-                <div id="homeDiv"></div>
-            </a>
 
             <div class="rotLeft rotTop pageBack"></div>
             <div class="rotRight rotTop pageBack"></div>
@@ -39,6 +35,26 @@
                     </a>
                     <div><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Every blog post in this site</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://zhangwenli.com" property="cc:attributionName" rel="cc:attributionURL">Wenli Zhang</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>, based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/ovilia/blog" rel="dct:source">http://github.com/ovilia/blog</a>. </div>
                     <div>You must reference <code>Author: &lt;a href=&quot;http://zhangwenli.com&quot;&gt;Wenli Zhang&lt;/a&gt;</code> explictly along with this license note if you want to re-post the content, either completely or partially.</div>
+                </div>
+                
+                <h1 id="friendTitle">Friend List</h1>
+                <p>Now, let me introduce some of my friends who (also :blush:) write excellent blogs.</p>
+                <div id="friendDiv">
+                    <div class="friend fri_liyao">
+                        <a href="http://liyaos.com" target="_blank" title="Yao Li">
+                            <img src="/blog/img/loading.gif" data-src="/blog/img/li-yao128.png" />
+                        </a>
+                    </div>
+                    <div class="friend fri_chaobin">
+                        <a href="http://zhchbin.github.io/" target="_blank" title="Chaobin Zhang">
+                            <img src="/blog/img/loading.gif" data-src="/blog/img/chao-bin128.png" />
+                        </a>
+                    </div>
+                    <div class="friend fri_zhipeng">
+                        <a href="http://jesusjzp.github.io" target="_blank" title="Zhipeng Jiang">
+                            <img src="/blog/img/loading.gif" data-src="/blog/img/zhi-peng128.png" />
+                        </a>
+                    </div>
                 </div>
 
                 {% include comment.html %}

@@ -71,7 +71,7 @@ blockquote {
 }
 
 code {
-    background: #fdff99;
+    background-color: #fdff99;
     color: #000;
     box-shadow: inset 0px 0px 3px 1px #b0cb2c;
     text-shadow: 1px 1px #d4e583;
@@ -274,17 +274,36 @@ p>img {
     float: right;
 }
 
-#homeDiv {
-    position: absolute;
-    left: 15px;
-    top: -15px;
-    width: 64px;
-    height: 64px;
-    background-image: url(../img/me64.png);
+#friendDiv {
+    margin-bottom: 200px;
 }
 
-#homeDiv:hover {
-    background-image: url(../img/home64.png);
+.friend {
+    width: 128px;
+    height: 128px;
+    background-color: #d4e583;
+    border-radius: 64px;
+    float: left;
+    margin-right: -25px;
+    margin-bottom: 20px;
+}
+
+.friend:hover {
+    background-color: #fdff99;
+    transition-duration: 0.5s;
+    z-index: 10;
+}
+
+.friend>a {
+    border: none;
+}
+
+.friend>a:hover {
+    background: transparent;
+}
+
+#disqus_thread {
+    margin-top: 50px;
 }
 
 #footerDiv {
