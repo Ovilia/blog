@@ -292,6 +292,7 @@ p>img {
     background-color: #fdff99;
     transition-duration: 0.5s;
     z-index: 10;
+    box-shadow: 0 0 10px 1px #70840e;
 }
 
 .friend>a {
