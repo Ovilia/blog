@@ -14,6 +14,8 @@ Check [gh-pages branch][1] for source code.
 
 [RSS Is Now Available!][4]
 
+[Sorting in JavaScript][5]
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
     <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" />
 </a>
@@ -24,3 +26,5 @@ Check [gh-pages branch][1] for source code.
   [2]: http://zhangwenli.com/blog/2013/10/19/how-i-made-this-site/
   [3]: http://zhangwenli.com/blog/2013/10/23/converting-to-numbers-in-javascript/
   [4]: http://zhangwenli.com/blog/2013/10/24/rss-is-now-available/
+
+  [5]: http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/
