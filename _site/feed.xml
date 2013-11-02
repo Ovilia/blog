@@ -7,8 +7,8 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
-                <title>Sorting In Javascript</title>
-                <description>&lt;p&gt;Method of sorting an array is defined in &lt;code&gt;Array.prototype.sort&lt;/code&gt;. So in most cases, you don't have to think about how to implement a sort algorithm when writing in JavaScript. But you still need to be careful when you use it, since JavaScript is fragile.&lt;/p&gt;
+                <title>Sorting In JavaScript</title>
+                <description>&lt;p&gt;Method of sorting an array is defined in &lt;code&gt;Array.prototype.sort&lt;/code&gt;. So in most cases, you don't have to think about how to implement a sort algorithm when writing in JavaScript. But you still need to be careful when you use it, since JavaScript is fragile. :disappointed:&lt;/p&gt;
 
 &lt;h1&gt;What's The Problem?&lt;/h1&gt;
 
