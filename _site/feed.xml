@@ -7,6 +7,120 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Sorting In Javascript</title>
+                <description>&lt;p&gt;Method of sorting an array is defined in &lt;code&gt;Array.prototype.sort&lt;/code&gt;. So in most cases, you don't have to think about how to implement a sort algorithm when writing in JavaScript. But you still need to be careful when you use it, since JavaScript is fragile.&lt;/p&gt;
+
+&lt;h1&gt;What's The Problem?&lt;/h1&gt;
+
+&lt;p&gt;JavaScript provides sorting method for &lt;code&gt;Array&lt;/code&gt; type, so that you don't have to write it by yourself.&lt;/p&gt;
+
+&lt;p&gt;Don't celebrate too early! JavaScript may not behave in the way you think it should. :fearful:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var colors = ['red', 'green', 'blue', 'yellow', 'white'];
+console.log(colors.sort());    // [&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;, &quot;white&quot;, &quot;yellow&quot;]
+console.log(colors);           // [&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;, &quot;white&quot;, &quot;yellow&quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Two things we can know from the above example are: Firstly, &lt;code&gt;String&lt;/code&gt; type is sorted in an alphabetic order. Secondly, &lt;code&gt;sort()&lt;/code&gt; method changes the original array rather than generating a new array.&lt;/p&gt;
+
+&lt;p&gt;But it's not sorted in &lt;em&gt;an alphabetic order&lt;/em&gt; in fact.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var colors = ['red', 'green', 'blue', 'Yellow', 'White'];
+console.log(colors.sort());    // [&quot;White&quot;, &quot;Yellow&quot;, &quot;blue&quot;, &quot;green&quot;, &quot;red&quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It compares by each character's &lt;a href=&quot;http://www.asciitable.com/&quot; target=&quot;_blank&quot;&gt;ASCII code&lt;/a&gt; so that uppercase letters are always &lt;em&gt;smaller&lt;/em&gt; than lowercase ones.&lt;/p&gt;
+
+&lt;p&gt;Another thing you need to be careful with is when you sort an array with numbers.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var money = [12, 3, 7.4, 200];
+console.log(money.sort());    // [12, 200, 3, 7.4]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;:open_mouth: Surprise?&lt;/p&gt;
+
+&lt;h1&gt;Why&lt;/h1&gt;
+
+&lt;p&gt;By default, the &lt;code&gt;sort()&lt;/code&gt; method converts &lt;em&gt;everything&lt;/em&gt; into &lt;code&gt;String&lt;/code&gt; and then compares letter by letter. You may wonder why JavaScript isn't smart enough to tell this is an array of numbers and then sort it by numbers' value.&lt;/p&gt;
+
+&lt;p&gt;But if you think twice, you may find that an array can contain different types in JavaScript, so what do you expect to get from the following sorted array?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var everything = ['Red', '$200', 'white', 7.4, 12, true, 0.3, false];
+console.log(everything.sort());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Although I doubt it's a good idea to put all these different types together in an array, this is totally legal in JavaScript. If you think &lt;code&gt;12&lt;/code&gt; should be thought as &lt;em&gt;larger&lt;/em&gt; than &lt;code&gt;7.4&lt;/code&gt;, then, how to sort the whole array?&lt;/p&gt;
+
+&lt;p&gt;OK. Here's how JavaScript deals with it: Convert to &lt;code&gt;String&lt;/code&gt; and compare letter by letter in ASCII code order. So &lt;code&gt;true&lt;/code&gt; is converted to &lt;code&gt;&quot;true&quot;&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt; is converted to &lt;code&gt;&quot;false&quot;&lt;/code&gt; when comparing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var everything = ['Red', '$200', 'white', 7.4, 12, true, 0.3, false];
+console.log(everything.sort()); 
+// [&quot;$200&quot;, 0.3, 12, 7.4, &quot;Red&quot;, false, true, &quot;white&quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1&gt;Comparing Function&lt;/h1&gt;
+
+&lt;p&gt;Sorting arrays with numbers only is still a very common need. So how can I sort them by comparing numbers' value?&lt;/p&gt;
+
+&lt;p&gt;Pass a comparing function to it!&lt;/p&gt;
+
+&lt;h2&gt;Comparing Numbers&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;var money = [12, 3, 7.4, 200];
+var compare = function(a, b) {return a - b;};
+console.log(money.sort(compare)); // [3, 7.4, 12, 200]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, you get what you wanted. :grinning:&lt;/p&gt;
+
+&lt;p&gt;What happens here is that &lt;code&gt;compare&lt;/code&gt; function takes two element and returns a negative number if &lt;code&gt;a&lt;/code&gt; is smaller than &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;0&lt;/code&gt; if &lt;code&gt;a&lt;/code&gt; is equal to &lt;code&gt;b&lt;/code&gt;, a positive number if &lt;code&gt;a&lt;/code&gt; is larger than &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Comparing Objects&lt;/h2&gt;
+
+&lt;p&gt;Comparing function is also useful when we compare objects. Let's say that we want to sort people by their &lt;code&gt;id&lt;/code&gt; rather than their &lt;code&gt;name&lt;/code&gt;, we can define a function to compare people by &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var people = [{
+    name: 'Alice',
+    id: 1234
+}, {
+    name: 'Bob',
+    id: 567
+}];
+var compare = function(a, b) {return a.id - b.id;}
+console.log(people.sort(compare)); // Bob is before Alice now
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Compare Everything&lt;/h2&gt;
+
+&lt;p&gt;What if we sort &lt;code&gt;everything&lt;/code&gt; with &lt;code&gt;compare&lt;/code&gt;?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var everything = [4, 'Red', '$200', 'white', 7.4, 12, true, 0.3, false];
+var compare = function(a, b) {return a - b;};
+console.log(everything.sort(compare)); 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Chrome and Opera: &lt;code&gt;[4, &quot;Red&quot;, &quot;$200&quot;, &quot;white&quot;, false, 0.3, true, 7.4, 12]&lt;/code&gt;;&lt;/p&gt;
+
+&lt;p&gt;Firefox: &lt;code&gt;[false, 0.3, true, 4, &quot;Red&quot;, &quot;$200&quot;, &quot;white&quot;, 7.4, 12]&lt;/code&gt;;&lt;/p&gt;
+
+&lt;p&gt;IE: &lt;code&gt;[&quot;Red&quot;, &quot;$200&quot;, false, 0.3, true, 4, &quot;white&quot;, 7.4, 12]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is so weird! :scream:&lt;/p&gt;
+
+&lt;p&gt;When comparing, &lt;code&gt;a - b&lt;/code&gt; is calculated in &lt;code&gt;compare&lt;/code&gt; so that every element in &lt;code&gt;everything&lt;/code&gt; is converted to &lt;code&gt;Number&lt;/code&gt; when comparing and then do the minus operation. As &lt;code&gt;Number('Red')&lt;/code&gt;, &lt;code&gt;Number('$200')&lt;/code&gt; and &lt;code&gt;Number('white')&lt;/code&gt; give &lt;code&gt;NaN&lt;/code&gt; all, comparing function &lt;code&gt;compare&lt;/code&gt; returns &lt;code&gt;NaN&lt;/code&gt; when they compare to any other element. With the existance of this &lt;code&gt;NaN&lt;/code&gt;, the behavior of &lt;code&gt;Array.prototype.sort&lt;/code&gt; is not defined in the &lt;a href=&quot;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.11&quot; target=&quot;_blank&quot;&gt;ECMA Specification&lt;/a&gt;, so it depends on each platform's implementation.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Calling &lt;code&gt;comparefn(a,b)&lt;/code&gt; always returns the same value &lt;code&gt;v&lt;/code&gt; when given a specific pair of values &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; as its two arguments. Furthermore, &lt;code&gt;Type(v)&lt;/code&gt; is &lt;code&gt;Number&lt;/code&gt;, and &lt;code&gt;v&lt;/code&gt; is not &lt;code&gt;NaN&lt;/code&gt;. Note that this implies that exactly one of &lt;code&gt;a &amp;lt;CF b&lt;/code&gt;, &lt;code&gt;a =CF b&lt;/code&gt;, and &lt;code&gt;a &amp;gt;CF b&lt;/code&gt; will be true for a given pair of a and b.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.11&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;ECMA 262 Specification&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The lesson learned here is that the behavior of sorting with a comparing function that will return &lt;code&gt;NaN&lt;/code&gt; is unpredictable and you should be careful when choosing a suitable comparing function. Again, it's not a good idea to put everything with different types all together in the same array.&lt;/p&gt;
+</description>
+                <pubDate>Sat, 02 Nov 2013 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/</guid>
+            </item>
+        
+            <item>
                 <title>RSS Is Now Available!</title>
                 <description>&lt;h1&gt;RSS Me!&lt;/h1&gt;
 
