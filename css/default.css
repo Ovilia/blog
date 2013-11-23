@@ -332,7 +332,7 @@ p>img {
 
 @media screen and (max-device-width: 600px) {
     body {
-        font-size: 3em;
+        font-size: 2em;
     }
     #contentDiv {
         padding: 50px 5%;
@@ -341,7 +341,7 @@ p>img {
         display: none;
     }
     p {
-        font-size: 3em;
+        font-size: 2em;
         line-height: 150%;
     }
     h1, h2, h3, h4, h5, h6 {
