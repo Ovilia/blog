@@ -5,6 +5,7 @@
 
 body {
     background-color: #b0cb2c;
+    overflow-x: hidden;
 }
 
 ::selection {
