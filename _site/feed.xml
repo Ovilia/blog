@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Blog of Wenli Zhang</title>
+        <title></title>
         <description>Web Front-End Blog by Wenli Zhang</description>
         <link>http://zhangwenli.com/blog</link>
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>Learning List for 2014</title>
+                <description>&lt;p&gt;I was quite busy lately and it has been a month since my &lt;a href=&quot;http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/&quot;&gt;last post&lt;/a&gt;. I didn't learn something new and I felt a little shameful about it. :cry:&lt;/p&gt;
+
+&lt;p&gt;There are courses about which I don't care much but have to spend enough time nevertheless. There are research works I'm eager to make some progress on but still at a loss. There are, as always, decisions to make and promises to keep.&lt;/p&gt;
+
+&lt;p&gt;Last week, I visited a small developing IT company, and was somehow being interviewed as a web front-end programmer. Hopefully, I didn't disappoint the CTO too much, but I did see how much more effort I had to put to be a competent front-end designer.&lt;/p&gt;
+
+&lt;p&gt;Before that day, I thought I was good enough as a front-end programmer. But after the interview, I came to realize that knowing about how to design and implement is not the whole story. I knew about most techniques that I was asked about, but had little experience of using them personally. To be frank, I usually won't learning something new when I don't have to, since the &lt;em&gt;opportunity cost&lt;/em&gt; of learning something new is increasing and increasing. And my pride and complacent are another reasons prevent me from learning.&lt;/p&gt;
+
+&lt;p&gt;I thought seriously about this after that interview and was very thankful for the CTO's questions. I really need to learn these popular techniques and polish myself before I'm ready to be a web front-end designer.&lt;/p&gt;
+
+&lt;p&gt;Here's a list of things I plan to learn through projects in 2014:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bootstrap&lt;/li&gt;
+&lt;li&gt;AngularJS&lt;/li&gt;
+&lt;li&gt;RequireJS&lt;/li&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;li&gt;JavaScript Template Engine&lt;/li&gt;
+&lt;li&gt;JavaScript Language Feature&lt;/li&gt;
+&lt;li&gt;JavaScript Design Pattern&lt;/li&gt;
+&lt;li&gt;LESS&lt;/li&gt;
+&lt;li&gt;SASS&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Maybe the winter holiday is a time to take a break, or an opportunity to carry on. :grin:&lt;/p&gt;
+</description>
+                <pubDate>Tue, 03 Dec 2013 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2013/12/03/learning-list-for-2014/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/12/03/learning-list-for-2014/</guid>
+            </item>
         
             <item>
                 <title>Sorting In JavaScript</title>

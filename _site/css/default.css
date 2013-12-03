@@ -5,6 +5,7 @@
 
 body {
     background-color: #b0cb2c;
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -328,4 +329,23 @@ p>img {
     margin: 0 auto;
     padding: 2em 0;
     color: #fff;
+}
+
+@media screen and (max-device-width: 600px) {
+    body {
+        font-size: 1.75em;
+    }
+    #contentDiv {
+        padding: 50px 5%;
+    }
+    .pageBack {
+        display: none;
+    }
+    p {
+        font-size: 1.75em;
+        line-height: 120%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 150%;
+    }
 }

@@ -4,6 +4,7 @@ time: 2013.11.02 14:39
 layout: post
 tags:
 - JavaScript
+excerpt: How JavaScript <code>Array.prototype.sort</code> behaviors and what you should be careful with when you use it.
 ---
 
 Method of sorting an array is defined in `Array.prototype.sort`. So in most cases, you don't have to think about how to implement a sort algorithm when writing in JavaScript. But you still need to be careful when you use it, since JavaScript is fragile. :disappointed:
