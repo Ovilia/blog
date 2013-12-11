@@ -230,11 +230,17 @@ h1>a {
     padding: 50px 10%;
 }
 
-p>img {
+p>img, p>a>img {
     border: dashed;
     border-width: 3px;
     border-color: #70840e;
     max-width: 100%;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+p>a>img:hover {
+    border-color: #d4e583;
 }
 
 .time {
