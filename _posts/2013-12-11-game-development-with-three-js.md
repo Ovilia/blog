@@ -5,7 +5,7 @@ layout: post
 tags:
 - Three.js
 - JavaScript
-excerpt: Game Development with Three.js is a book a reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.
+excerpt: Game Development with Three.js is a book I reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.
 ---
 # Free e-book Give Away!
 
