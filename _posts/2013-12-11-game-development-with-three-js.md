@@ -10,7 +10,7 @@ excerpt: Game Development with Three.js is a book I reviewed. It's a step-by-ste
 # Free e-book Give Away!
 
 
-<a href="http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&utm_medium=Threejspackt.com&utm_campaign=Threejspackt.com" target="_blank">*Game Development with Three.js*</a> is a book a reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.
+<a href="http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&utm_medium=Threejspackt.com&utm_campaign=Threejspackt.com" target="_blank">*Game Development with Three.js*</a> is a book I reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.
 
 <a href="http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&utm_medium=Threejspackt.com&utm_campaign=Threejspackt.com" target="_blank"><img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2013-10-19-game-development-with-three-js-1.jpg" /></a>
 
