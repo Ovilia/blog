@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Blog of Wenli Zhang</title>
+        <title></title>
         <description>Web Front-End Blog by Wenli Zhang</description>
         <link>http://zhangwenli.com/blog</link>
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
@@ -10,7 +10,7 @@
                 <title>Game Development with Three.js</title>
                 <description>&lt;h1&gt;Free e-book Give Away!&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&amp;utm_medium=Threejspackt.com&amp;utm_campaign=Threejspackt.com&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Game Development with Three.js&lt;/em&gt;&lt;/a&gt; is a book a reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&amp;utm_medium=Threejspackt.com&amp;utm_campaign=Threejspackt.com&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Game Development with Three.js&lt;/em&gt;&lt;/a&gt; is a book I reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&amp;utm_medium=Threejspackt.com&amp;utm_campaign=Threejspackt.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-game-development-with-three-js-1.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 

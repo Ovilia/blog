@@ -243,6 +243,11 @@ p>a>img:hover {
     border-color: #d4e583;
 }
 
+.pageDiv {
+    margin-right: 10px;
+    font-size: 150%;
+}
+
 .time {
     font-family: cursive;
     color: #70840e;
