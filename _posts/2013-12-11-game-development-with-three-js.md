@@ -23,6 +23,12 @@ excerpt: Game Development with Three.js is a book I reviewed. It's a step-by-ste
 
 > By the end of **2013-12-24 10:00:00 AM (GMT)**, I will select two winners with two random numbers indicating comment order.
 
+> ## Winners
+
+> Winners are Lucian Enache and Joanne. Congratulations!
+
+> I'll contact you two later.
+
 ## What you will learn from this book
 
 - Set up a Three.js scene representing a game world
