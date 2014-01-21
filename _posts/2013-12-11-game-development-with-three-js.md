@@ -23,11 +23,19 @@ excerpt: Game Development with Three.js is a book I reviewed. It's a step-by-ste
 
 > By the end of **2013-12-24 10:00:00 AM (GMT)**, I will select two winners with two random numbers indicating comment order.
 
+<<<<<<< HEAD
 > ## Winners
 
 > Winners are Lucian Enache and Joanne. Congratulations!
 
 > I'll contact you two later.
+=======
+> ### Winners
+
+> Winners are Joanne and Lucian Enache. Congratulations!
+
+> I'll contact Packt and you later.
+>>>>>>> 1e09cbc1253697ca7f83de847e15163f1db0721b
 
 ## What you will learn from this book
 
