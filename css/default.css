@@ -248,6 +248,10 @@ p>a>img:hover {
     font-size: 120%;
 }
 
+.simpleNav {
+    text-align: right;
+}
+
 .time {
     font-family: cursive;
     color: #70840e;
