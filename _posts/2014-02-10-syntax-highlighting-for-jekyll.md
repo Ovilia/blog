@@ -1,12 +1,13 @@
 ---
 title: Syntax Highlighting for Jekyll
-time: 2014.02.09 22:08:18
+time: 2014.02.10 01:27:57
 layout: post
 tags:
-- CSS
-- jQuery
-- JavaScript
-excerpt: In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style.
+- Syntax Highlighting
+- GitHub
+- Setup
+- Jekyll
+excerpt: In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.
 ---
 
 > ### What You Will Learn In This Post
