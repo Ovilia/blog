@@ -7,6 +7,41 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Syntax Highlighting for Jekyll</title>
+                <description>&lt;blockquote&gt;&lt;h3&gt;What You Will Learn In This Post&lt;/h3&gt;
+
+&lt;p&gt;In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.&lt;/p&gt;
+
+&lt;h1&gt;pygments-style-github.git&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/hugomaiavieira/pygments-style-github&quot; target=&quot;_blank&quot;&gt;pygments-style-github.git&lt;/a&gt; is a greate project designed to create syntax css files in GitHub style.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git://github.com/hugomaiavieira/pygments-style-github.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;pygments-style-github/
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sudo&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; python setup.py install
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pygmentize -S github -f html &amp;gt; syntax.css
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;That's all you need to do with it. But I spent a lot of time wondering why it's not working, which turns out to be that I typied &lt;code&gt;$ pygmentize ...&lt;/code&gt; into &lt;code&gt;$ python ...&lt;/code&gt; by mistake. :sweat:&lt;/p&gt;
+
+&lt;h1&gt;_config.yml&lt;/h1&gt;
+
+&lt;p&gt;Next, you need to change &lt;code&gt;_config.yml&lt;/code&gt;. Add &lt;code&gt;pygments: true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Write Blogs&lt;/h1&gt;
+
+&lt;p&gt;When writing blogs, you may use &lt;code&gt;{# highlight css #}&lt;/code&gt; and &lt;code&gt;{# endhighlight #}&lt;/code&gt; to bracket your code (replace &lt;code&gt;#&lt;/code&gt; with &lt;code&gt;%&lt;/code&gt;), where &lt;code&gt;css&lt;/code&gt; may be changed into other languages like &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;js&lt;/code&gt; and so on.&lt;/p&gt;
+</description>
+                <pubDate>Mon, 10 Feb 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/02/10/syntax-highlighting-for-jekyll/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/02/10/syntax-highlighting-for-jekyll/</guid>
+            </item>
+        
+            <item>
                 <title>How I made jCorner</title>
                 <description>&lt;blockquote&gt;&lt;h3&gt;What You Will Learn In This Post&lt;/h3&gt;
 
