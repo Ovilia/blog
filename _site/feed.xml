@@ -10,9 +10,7 @@
                 <title>Syntax Highlighting for Jekyll</title>
                 <description>&lt;blockquote&gt;&lt;h3&gt;What You Will Learn In This Post&lt;/h3&gt;
 
-&lt;p&gt;In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.&lt;/p&gt;
+&lt;p&gt;In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.&lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;h1&gt;pygments-style-github.git&lt;/h1&gt;
 
