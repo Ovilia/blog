@@ -45,19 +45,21 @@ Make sure they are of the same size and the second image cover on the first one 
 
 This can be easily achieved by using some simple CSS. Set the CSS of the second image to be `position: relative;` and `top: -400px;`, which means to move the second image `400px` (height of the images) up than its original position.
 
-    /* The first image */
-    #titleTao {
-        width: 400px;
-        height: 400px;
-    }
-    
-    /* The second image */
-    #titleWords {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        top: -400px;
-    }
+{% highlight css %}
+/* The first image */
+#titleTao {
+    width: 400px;
+    height: 400px;
+}
+
+/* The second image */
+#titleWords {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: -400px;
+}
+{% endhighlight %}
 
 > If you're wondering why we don't just Photoshop the image merged by these two image, that's because only in this way can we change the `opacity` of the second image, which will be explained later.
 
@@ -67,15 +69,17 @@ We need the `div` to be a circle with the same size with those in the images. So
 
 We set the `box-shadow` to be `100px 100px 100px #333` now just to check if everything's going on well here.
 
-    #titleCircle {
-        width: 333px;
-        height: 333px;
-        border-radius: 176px;
-        margin: 33px 0 0 33px;
-        position: relative;
-        top: -767px;
-        box-shadow: 100px 100px 100px #333;
-    }
+{% highlight css %}
+#titleCircle {
+    width: 333px;
+    height: 333px;
+    border-radius: 176px;
+    margin: 33px 0 0 33px;
+    position: relative;
+    top: -767px;
+    box-shadow: 100px 100px 100px #333;
+}
+{% endhighlight %}
     
 #### What's wrong?
 
@@ -105,11 +109,13 @@ Here's how to implement it with jQuery.
 
 We first calculate mouse position in screen with unified `x` and `y`. So top-left corner of the screen is `(-1, -1)` and bottom-right is `(1, 1)`:
 
-    $(window).mousemove(function(e) {
-        var x = (0.5 - e.clientX / $(window).width()) * 2;
-        var y = (0.5 - e.clientY / $(window).height()) * 2;
-        // ...
-    });
+{% highlight js %}
+$(window).mousemove(function(e) {
+    var x = (0.5 - e.clientX / $(window).width()) * 2;
+    var y = (0.5 - e.clientY / $(window).height()) * 2;
+    // ...
+});
+{% endhighlight %}
     
 Then, calculate `r` to represent distance from center to mouse position. We use `var r = Math.sqrt((x * x + y * y) / 2);` instead of `var r = Math.sqrt((x * x + y * y));` so that `r` is also unified (between `0` and `1`).
 
@@ -117,20 +123,22 @@ We can set the `opacity` to be `1 - r` or, in my case, to be `1 - Math.sqrt(r);`
 
 The complete code would be:
 
-    $(window).mousemove(function(e) {
-        var x = (0.5 - e.clientX / $(window).width()) * 2;
-        var y = (0.5 - e.clientY / $(window).height()) * 2;
-        var r = Math.sqrt((x * x + y * y) / 2);
-        var op = 1 - Math.sqrt(r);
-        $('#titleCircle').css({
-            'box-shadow': 300 * x + 'px ' + 300 * y + 'px '
-                + 300 * r + 'px #333',
-            'opacity': op
-        });
-        $('#titleWords').css({
-            'opacity': op
-        });
+{% highlight js %}
+$(window).mousemove(function(e) {
+    var x = (0.5 - e.clientX / $(window).width()) * 2;
+    var y = (0.5 - e.clientY / $(window).height()) * 2;
+    var r = Math.sqrt((x * x + y * y) / 2);
+    var op = 1 - Math.sqrt(r);
+    $('#titleCircle').css({
+        'box-shadow': 300 * x + 'px ' + 300 * y + 'px '
+            + 300 * r + 'px #333',
+        'opacity': op
     });
+    $('#titleWords').css({
+        'opacity': op
+    });
+});
+{% endhighlight %}
 
 > `$('#titleCircle')` is the circle used as shadow and `$('#titleWords')` is the image with words on it.
 
@@ -144,63 +152,73 @@ The complete code would be:
 
 2) Set the background of this post to be this image.
 
-    .page {
-        background: url(../image/sketch.jpg);
-        background-color: #eee;
-    }
+{% highlight css %}
+.page {
+    background: url(../image/sketch.jpg);
+    background-color: #eee;
+}
+{% endhighlight %}
 
 3) Add some shadow if you wish.
 
-    .page {
-        background: url(../image/sketch.jpg);
-        background-color: #eee;
-        box-shadow: 0px 0px 10px 5px #666;
-    }
+{% highlight css %}
+.page {
+    background: url(../image/sketch.jpg);
+    background-color: #eee;
+    box-shadow: 0px 0px 10px 5px #666;
+}
+{% endhighlight %}
     
 #### Key step: Add another two sheets with rotation.
 
 `.pageBack` is used for all sheets of paper in the background.
 
-    .pageBack {
-        width: 100%;
-        height: 200px;
-        background: url(../image/sketch.jpg);
-        background-color: #eee;
-        z-index: -10;
-        position: relative;
-        box-shadow: 0px 0px 10px 5px #666;
-        -webkit-backface-visibility: hidden;
-    }
+{% highlight css %}
+.pageBack {
+    width: 100%;
+    height: 200px;
+    background: url(../image/sketch.jpg);
+    background-color: #eee;
+    z-index: -10;
+    position: relative;
+    box-shadow: 0px 0px 10px 5px #666;
+    -webkit-backface-visibility: hidden;
+}
+{% endhighlight %}
 
 > `-webkit-backface-visibility: hidden;` is used to eliminate the jaggies caused by rotation which works only on webkit platform.
 
 We need another two classes to represent rotation of two sheets:
 
-    .rotLeft {
-        transform: rotate(5deg);
-        -ms-transform: rotate(5deg);
-        -webkit-transform: rotate(5deg);
-        -moz-transform: rotate(5deg);
-        -o-transform: rotate(5deg);
-    }
-    
-    .rotRight {
-        transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
-        -o-transform: rotate(-5deg);
-    }
+{% highlight css %}
+.rotLeft {
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+
+.rotRight {
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+{% endhighlight %}
     
 Now, with HTML
 
-    <div class="rotLeft rotTop pageBack"></div>
-    <div class="rotRight rotTop pageBack"></div>
-    <div class="page">
-        <!-- content here -->
-    </div>
-    <div class="rotLeft rotBottom pageBack"></div>
-    <div class="rotRight rotBottom pageBack"></div>
+{% highlight html %}
+<div class="rotLeft rotTop pageBack"></div>
+<div class="rotRight rotTop pageBack"></div>
+<div class="page">
+    <!-- content here -->
+</div>
+<div class="rotLeft rotBottom pageBack"></div>
+<div class="rotRight rotBottom pageBack"></div>
+{% endhighlight %}
     
 we can get:
 
@@ -208,13 +226,15 @@ we can get:
 
 To make it look better, we would like to move the sheets in the background a little.
 
-    .rotTop.rotLeft {
-        left: 10px;
-    }
-    
-    .rotTop.rotRight {
-        left: -10px;
-    }
+{% highlight css %}
+.rotTop.rotLeft {
+    left: 10px;
+}
+
+.rotTop.rotRight {
+    left: -10px;
+}
+{% endhighlight %}
 
 Now, we can get an elegant effect:
 

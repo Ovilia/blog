@@ -5,5 +5,7 @@ url: "http://zhangwenli.com/blog"
 
 paginate: 10
 
+pygments: true
+
 markdown: rdiscount
 permalink: pretty

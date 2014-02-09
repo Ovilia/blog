@@ -15,24 +15,30 @@ JavaScript provides sorting method for `Array` type, so that you don't have to w
 
 Don't celebrate too early! JavaScript may not behave in the way you think it should. :fearful:
 
-    var colors = ['red', 'green', 'blue', 'yellow', 'white'];
-    console.log(colors.sort());    // ["blue", "green", "red", "white", "yellow"]
-    console.log(colors);           // ["blue", "green", "red", "white", "yellow"]
+{% highlight js %}
+var colors = ['red', 'green', 'blue', 'yellow', 'white'];
+console.log(colors.sort());    // ["blue", "green", "red", "white", "yellow"]
+console.log(colors);           // ["blue", "green", "red", "white", "yellow"]
+{% endhighlight %}
 
 Two things we can know from the above example are: Firstly, `String` type is sorted in an alphabetic order. Secondly, `sort()` method changes the original array rather than generating a new array.
 
 But it's not sorted in *an alphabetic order* in fact.
 
-    var colors = ['red', 'green', 'blue', 'Yellow', 'White'];
-    console.log(colors.sort());    // ["White", "Yellow", "blue", "green", "red"]
-    
+{% highlight js %}
+var colors = ['red', 'green', 'blue', 'Yellow', 'White'];
+console.log(colors.sort());    // ["White", "Yellow", "blue", "green", "red"]
+{% endhighlight %}
+
 It compares by each character's <a href="http://www.asciitable.com/" target="_blank">ASCII code</a> so that uppercase letters are always *smaller* than lowercase ones.
 
 Another thing you need to be careful with is when you sort an array with numbers.
 
-    var money = [12, 3, 7.4, 200];
-    console.log(money.sort());    // [12, 200, 3, 7.4]
-    
+{% highlight js %}
+var money = [12, 3, 7.4, 200];
+console.log(money.sort());    // [12, 200, 3, 7.4]
+{% endhighlight %}
+
 :open_mouth: Surprise?
 
 # Why
@@ -41,17 +47,21 @@ By default, the `sort()` method converts *everything* into `String` and then com
 
 But if you think twice, you may find that an array can contain different types in JavaScript, so what do you expect to get from the following sorted array?
 
-    var everything = ['Red', '$200', 'white', 7.4, 12, true, 0.3, false];
-    console.log(everything.sort());
-    
+{% highlight js %}
+var everything = ['Red', '$200', 'white', 7.4, 12, true, 0.3, false];
+console.log(everything.sort());
+{% endhighlight %}
+
 Although I doubt it's a good idea to put all these different types together in an array, this is totally legal in JavaScript. If you think `12` should be thought as *larger* than `7.4`, then, how to sort the whole array?
 
 OK. Here's how JavaScript deals with it: Convert to `String` and compare letter by letter in ASCII code order. So `true` is converted to `"true"` and `false` is converted to `"false"` when comparing.
 
-    var everything = ['Red', '$200', 'white', 7.4, 12, true, 0.3, false];
-    console.log(everything.sort()); 
-    // ["$200", 0.3, 12, 7.4, "Red", false, true, "white"]
-    
+{% highlight js %}
+var everything = ['Red', '$200', 'white', 7.4, 12, true, 0.3, false];
+console.log(everything.sort()); 
+// ["$200", 0.3, 12, 7.4, "Red", false, true, "white"]
+{% endhighlight %}
+
 # Comparing Function
 
 Sorting arrays with numbers only is still a very common need. So how can I sort them by comparing numbers' value?
@@ -60,10 +70,12 @@ Pass a comparing function to it!
 
 ## Comparing Numbers
 
-    var money = [12, 3, 7.4, 200];
-    var compare = function(a, b) {return a - b;};
-    console.log(money.sort(compare)); // [3, 7.4, 12, 200]
-    
+{% highlight js %}
+var money = [12, 3, 7.4, 200];
+var compare = function(a, b) {return a - b;};
+console.log(money.sort(compare)); // [3, 7.4, 12, 200]
+{% endhighlight %}
+
 Now, you get what you wanted. :grinning: 
 
 What happens here is that `compare` function takes two element and returns a negative number if `a` is smaller than `b`, `0` if `a` is equal to `b`, a positive number if `a` is larger than `b`.
@@ -72,24 +84,28 @@ What happens here is that `compare` function takes two element and returns a neg
 
 Comparing function is also useful when we compare objects. Let's say that we want to sort people by their `id` rather than their `name`, we can define a function to compare people by `id`.
 
-    var people = [{
-        name: 'Alice',
-        id: 1234
-    }, {
-        name: 'Bob',
-        id: 567
-    }];
-    var compare = function(a, b) {return a.id - b.id;}
-    console.log(people.sort(compare)); // Bob is before Alice now
-    
+{% highlight js %}
+var people = [{
+    name: 'Alice',
+    id: 1234
+}, {
+    name: 'Bob',
+    id: 567
+}];
+var compare = function(a, b) {return a.id - b.id;}
+console.log(people.sort(compare)); // Bob is before Alice now
+{% endhighlight %}
+
 ## Compare Everything
 
 What if we sort `everything` with `compare`?
 
-    var everything = [4, 'Red', '$200', 'white', 7.4, 12, true, 0.3, false];
-    var compare = function(a, b) {return a - b;};
-    console.log(everything.sort(compare)); 
-    
+{% highlight js %}
+var everything = [4, 'Red', '$200', 'white', 7.4, 12, true, 0.3, false];
+var compare = function(a, b) {return a - b;};
+console.log(everything.sort(compare)); 
+{% endhighlight %}
+
 Chrome and Opera: `[4, "Red", "$200", "white", false, 0.3, true, 7.4, 12]`; 
 
 Firefox: `[false, 0.3, true, 4, "Red", "$200", "white", 7.4, 12]`; 
