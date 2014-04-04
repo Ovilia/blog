@@ -80,7 +80,7 @@ code {
     background-color: #eee;
 }
 
-blockquote>h5 {
+.more {
     float: right;
     position: relative;
     top: -20px;
@@ -128,6 +128,10 @@ a:hover {
     -moz-transition: background-color 0.8s;
     -o-transition: background-color 0.8s;
     transition: background-color 0.8s;
+}
+
+a:visited {
+    color: #666;
 }
 
 h1>a {
@@ -366,5 +370,9 @@ p>a>img:hover {
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: 150%;
+    }
+    .more {
+        font-size: 100%;
+        margin-top: -1em;
     }
 }
