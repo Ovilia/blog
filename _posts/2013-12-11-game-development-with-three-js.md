@@ -2,6 +2,7 @@
 title: Game Development with Three.js
 time: 2013.12.11 20:24
 layout: post
+hide: true
 tags:
 - Three.js
 - JavaScript

@@ -32,7 +32,7 @@
         <div id="contentDiv">
 
 
-<title>Syntax Highlighting for Jekyll</title>
+<title>林麓薮泽，心之所往</title>
  
 <a href="http://zhangwenli.com/blog">
     <div id="homeDiv"></div>
@@ -45,47 +45,35 @@
         <a href="http://zhangwenli.com/blog" class="pageDiv">Blog</a>
     </div>
     
-    <div class="pageTitle">Syntax Highlighting for Jekyll</div>
+    <div class="pageTitle">林麓薮泽，心之所往</div>
     
-    <div class="time">2014.02.10 01:27:57</div>
+    <div class="time">2014.03.10 18:22:07</div>
             
     <div id="tagPanel">
     
-        <div class="tag">Syntax Highlighting</div>
+        <div class="tag">中文</div>
     
-        <div class="tag">GitHub</div>
-    
-        <div class="tag">Setup</div>
-    
-        <div class="tag">Jekyll</div>
+        <div class="tag">书评</div>
     
     </div>
     
-    <blockquote><h3>What You Will Learn In This Post</h3>
+    <p><a href="http://book.douban.com/subject/1044316/" target="_blank"><img class="book-img" src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://img3.douban.com/lpic/s1881721.jpg" /></a>很多时候，我们觉得一本书写得好，未必是它教了我们什么道理；相反，往往说的道理是我们本就知道的，因为只有那些我们认同的才会让我们敬佩和崇拜。</p>
 
-<p>In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.</p></blockquote>
+<p>这本书对我来说也是如此。我一直很向往在深山里隐居的生活，然而这样的生活大概也只能在退休之后才可能有胆量说要去体验一下的，因为似乎人生还有很多责任和担负的呢。</p>
 
-<h1>pygments-style-github.git</h1>
+<p>最早听说这本书的时候，是高中时候语文老师吴老师推荐的。说是本好书，不过我们的年纪估计不会喜欢。当时节选的好像是描写湖的段落，印象不深了，大概就是觉得外国人真是无聊，写个湖还能写一本书。同学间经常学吴老师说话的语气，却也未曾把这些话当真。</p>
 
-<p><a href="http://github.com/hugomaiavieira/pygments-style-github" target="_blank">pygments-style-github.git</a> is a greate project designed to create syntax css files in GitHub style.</p>
+<p>前阵子在手机上下了这本书的电子书，也没看出什么趣味。后来不小心删了，也就不知道看到什么地方了。</p>
 
-<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>git clone git://github.com/hugomaiavieira/pygments-style-github.git
-<span class="nv">$ </span><span class="nb">cd </span>pygments-style-github/
-<span class="nv">$ </span><span class="o">(</span>sudo<span class="o">)</span> python setup.py install
-<span class="nv">$ </span>pygmentize -S github -f html &gt; syntax.css
-</code></pre>
-</div>
+<p>后来在图书馆又看到了这本书，想想挺薄的适合携带就借了来。不得不说，这种书看实体书和电子书的感觉完全不一样。看电子书很容易盯着进度的百分比，想着快点看完，匆匆就翻过去了。而拿着实体书看的时候，突然发现写得确实好啊！</p>
 
+<p>别人对我介绍这本书的时候，都是说这是作者在瓦尔登湖畔自己建造的小木屋里深居简出的生活。这样的描述自然不会让人有什么很想看的冲动，但我看完之后，如果让我介绍这本书，我似乎也只能这么说。然而如果这只是本教你怎么造木房子的房子，大概也不会有什么趣味了。因为这本书最出彩的地方就在于生活在这样的环境中的作者的想法。</p>
 
-<p>That's all you need to do with it. But I spent a lot of time wondering why it's not working, which turns out to be that I typied <code>$ pygmentize ...</code> into <code>$ python ...</code> by mistake. :sweat:</p>
+<p>都说要“听其言观其行”，但有时候，一个人说什么做什么并没有多大差别，更重要的是看他的思考方式。了解一个人对自己的认识，对环境的认识，对他人的认识是一件非常有意思的事情，在我看来这也是人与人最大的差别。“正是一个人怎么看待自己，决定了此人的命运，指向了他的归宿。”</p>
 
-<h1>_config.yml</h1>
+<p>不用看几页就能明显感受到作者是一位有大智慧的人。当然，我并不是说一个向往隐居生活的人就一定比功成名就者来得高明，正如书中说的，每种生活各有不同，并没有哪种生活优于另一种。“非到我们失去了世界之后，我们才开始发现我们自己，认识我们的处境，并且认识了我们的联系之无穷的界限。”</p>
 
-<p>Next, you need to change <code>_config.yml</code>. Add <code>pygments: true</code>.</p>
-
-<h1>Writing Blogs</h1>
-
-<p>When writing blogs, you may use <code>{# highlight css #}</code> and <code>{# endhighlight #}</code> to bracket your code (replace <code>#</code> with <code>%</code>), where <code>css</code> may be changed into other languages like <code>html</code>, <code>js</code> and so on.</p>
+<p>如果有一天，我也可以在一个人迹罕至而又风景优美的林间湖边驻足，我很希望能够在那里常住下来，看看书，想想人生，会是一件多么美好的事啊！</p>
 
     
     <div class="license">
@@ -99,12 +87,12 @@
     <div class="olderNewer">
         
             <div class="olderPost">
-                <a href="http://zhangwenli.com/blog/2014/02/09/how-i-made-jcorner/">Older: How I made jCorner</a>
+                <a href="http://zhangwenli.com/blog/2014/02/10/syntax-highlighting-for-jekyll/">Older: Syntax Highlighting for Jekyll</a>
             </div>
         
         
             <div class="newerPost">
-                <a href="http://zhangwenli.com/blog/2014/03/10/reviewing-walden/">Newer: 林麓薮泽，心之所往</a>
+                <a href="http://zhangwenli.com/blog/2014/03/22/reviewing-my-country-and-my-people/">Newer: 事出沉思，义归翰藻</a>
             </div>
         
         <div class="recentPost">

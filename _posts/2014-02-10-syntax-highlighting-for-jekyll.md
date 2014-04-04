@@ -31,6 +31,6 @@ That's all you need to do with it. But I spent a lot of time wondering why it's 
 
 Next, you need to change `_config.yml`. Add `pygments: true`.
 
-#Write Blogs
+#Writing Blogs
 
 When writing blogs, you may use `{# highlight css #}` and `{# endhighlight #}` to bracket your code (replace `#` with `%`), where `css` may be changed into other languages like `html`, `js` and so on.

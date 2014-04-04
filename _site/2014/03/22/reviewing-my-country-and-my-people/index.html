@@ -32,7 +32,7 @@
         <div id="contentDiv">
 
 
-<title>Syntax Highlighting for Jekyll</title>
+<title>事出沉思，义归翰藻</title>
  
 <a href="http://zhangwenli.com/blog">
     <div id="homeDiv"></div>
@@ -45,47 +45,27 @@
         <a href="http://zhangwenli.com/blog" class="pageDiv">Blog</a>
     </div>
     
-    <div class="pageTitle">Syntax Highlighting for Jekyll</div>
+    <div class="pageTitle">事出沉思，义归翰藻</div>
     
-    <div class="time">2014.02.10 01:27:57</div>
+    <div class="time">2014.03.22 12:43:34</div>
             
     <div id="tagPanel">
     
-        <div class="tag">Syntax Highlighting</div>
+        <div class="tag">中文</div>
     
-        <div class="tag">GitHub</div>
-    
-        <div class="tag">Setup</div>
-    
-        <div class="tag">Jekyll</div>
+        <div class="tag">书评</div>
     
     </div>
     
-    <blockquote><h3>What You Will Learn In This Post</h3>
+    <p><a href="http://book.douban.com/subject/3200831/" target="_blank"><img class="book-img" src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://img5.douban.com/lpic/s3259778.jpg" /></a>林语堂的英语文笔自然是极好的，他善用排比长句，一口气读下来真是酣畅淋漓，真是难为他想得来。如果说这于议论文上尚有限，那于小说上飞文染翰就是不可限量了。这也就是为什么我认为《京华烟云》比本书能够多一颗星的重要原因了。</p>
 
-<p>In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.</p></blockquote>
+<p>这本书的翻译翻成半文言半白话的样子，可能是因为年代比较早，当时翻译文风就是如此。但是我就受不了这样的翻译，要白话就白话，要文言就文言，这样半生不熟的真没有美感。比如“友邦人士之来侨居于中国者，其势不能不感于中国”，不觉得很奇怪吗？这是减一颗星的另外一个原因了。</p>
 
-<h1>pygments-style-github.git</h1>
+<p>若要知晓（古代和近代）中国文化，也不是非读此类议论散文不可的，优秀的小说往往更自然更具象地能够感受出一个民族一个时代的文化——《红楼梦》、《京华烟云》即是如此（后者又很大程度上受到前者的影响）。议论文难免会给有强加于读者的主观性的论调，而于小说则往往让读者忘记这点，虽然本身也不可避免是主观的。小说的高明作者需世事洞然，而其中人物却不能个个是明白人，他们是出于自己的角度看待问题的，作者不应该用自己的论点强加于他们。要做到这点是非常困难的，而《红楼梦》在这方面就非常优秀，就连作者对薛宝钗是贬是褒都让人争论不休。而小说的高明之处就在于此，作者的目的在于搭建一个环境给读者，至于是贬是褒，就由读者自己判定吧。本来这就是一件很主观的事，又何必知道作者的观点而影响了读者自己的判断呢？（咦，扯远了……）</p>
 
-<p><a href="http://github.com/hugomaiavieira/pygments-style-github" target="_blank">pygments-style-github.git</a> is a greate project designed to create syntax css files in GitHub style.</p>
+<p>本书还是站在比较客观的立场上写的，但写一类人毕竟不容易。能抓住一类人的共性已实属不易，太过注重共同点往往会失去对个性的把握。在这方面，应该说林语堂还是做得不错的。</p>
 
-<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>git clone git://github.com/hugomaiavieira/pygments-style-github.git
-<span class="nv">$ </span><span class="nb">cd </span>pygments-style-github/
-<span class="nv">$ </span><span class="o">(</span>sudo<span class="o">)</span> python setup.py install
-<span class="nv">$ </span>pygmentize -S github -f html &gt; syntax.css
-</code></pre>
-</div>
-
-
-<p>That's all you need to do with it. But I spent a lot of time wondering why it's not working, which turns out to be that I typied <code>$ pygmentize ...</code> into <code>$ python ...</code> by mistake. :sweat:</p>
-
-<h1>_config.yml</h1>
-
-<p>Next, you need to change <code>_config.yml</code>. Add <code>pygments: true</code>.</p>
-
-<h1>Writing Blogs</h1>
-
-<p>When writing blogs, you may use <code>{# highlight css #}</code> and <code>{# endhighlight #}</code> to bracket your code (replace <code>#</code> with <code>%</code>), where <code>css</code> may be changed into other languages like <code>html</code>, <code>js</code> and so on.</p>
+<p>本书几乎介绍了中国文化的方方面面，这点从目录就能看出，我也就不再赘述。值得一提的是，如果考量作者所写与当下时代，会发现很多方面已经发生了质变。比如儒家道家思想，你很难在你的朋友中发现以这样的人生观生活着的人，即使号称喜欢道家思想的我，也更多的只是一种遥远的仰望，而不可能有那样的仙风道骨。这些古老的文化，虽然对当代人们的思想潜移默化地起到重要影响，但是作者所描绘的人们的心态和哲学观，我觉得看起来更像是对古代文人的描写，至少是在近代以来就慢慢消失了的。由此可见，五四运动以来，思想上生活状态上的变化是多么显著。任何一个朝代的更替都没有使文化发生如此大的断层，因为这些人从小受的教育就是先哲思想，他们又怎么会自己想出德先生赛先生呢？可见外来文化的冲击之大。徘徊在崇洋媚外和夜郎自大之间，最终竟是精华尽去，徒留糟粕。林语堂所在的那个时代，大概还能感受到这种文化的遗风，这本书便是对这些文化的一种总结。</p>
 
     
     <div class="license">
@@ -99,12 +79,12 @@
     <div class="olderNewer">
         
             <div class="olderPost">
-                <a href="http://zhangwenli.com/blog/2014/02/09/how-i-made-jcorner/">Older: How I made jCorner</a>
+                <a href="http://zhangwenli.com/blog/2014/03/10/reviewing-walden/">Older: 林麓薮泽，心之所往</a>
             </div>
         
         
             <div class="newerPost">
-                <a href="http://zhangwenli.com/blog/2014/03/10/reviewing-walden/">Newer: 林麓薮泽，心之所往</a>
+                <a href="http://zhangwenli.com/blog/2014/03/28/reviewing-1984/">Newer: 皋陶歌虞，奚斯颂鲁</a>
             </div>
         
         <div class="recentPost">

@@ -32,7 +32,7 @@
         <div id="contentDiv">
 
 
-<title>Syntax Highlighting for Jekyll</title>
+<title>皋陶歌虞，奚斯颂鲁</title>
  
 <a href="http://zhangwenli.com/blog">
     <div id="homeDiv"></div>
@@ -45,47 +45,29 @@
         <a href="http://zhangwenli.com/blog" class="pageDiv">Blog</a>
     </div>
     
-    <div class="pageTitle">Syntax Highlighting for Jekyll</div>
+    <div class="pageTitle">皋陶歌虞，奚斯颂鲁</div>
     
-    <div class="time">2014.02.10 01:27:57</div>
+    <div class="time">2014.03.28 10:25:28</div>
             
     <div id="tagPanel">
     
-        <div class="tag">Syntax Highlighting</div>
+        <div class="tag">中文</div>
     
-        <div class="tag">GitHub</div>
-    
-        <div class="tag">Setup</div>
-    
-        <div class="tag">Jekyll</div>
+        <div class="tag">书评</div>
     
     </div>
     
-    <blockquote><h3>What You Will Learn In This Post</h3>
+    <p><a href="http://book.douban.com/subject/5406563/" target="_blank"><img class="book-img" src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://img5.douban.com/lpic/s6272698.jpg" /></a>只读一个开头就知道这一定是一部会被右派追捧的书，奥威尔在这方面讽刺的能力的确十分厉害，厉害到让你很自然地觉得被他讽刺的对象是丑陋的邪恶的不值一提的。这一类书看似振聋发聩，但其实危害也是很大的，因为他只从一个方面看待问题，而又用讽刺的手段让人奉若圭臬，难免沦为不良用心者的工具。</p>
 
-<p>In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.</p></blockquote>
+<p>这是一本被称为“反乌托邦”的小说，如果不是因为恰巧同时又在读《理想国》这一乌托邦鼻祖级的书，或许我不会这么明显地察觉到偏听的危害。《1984》的讽刺非常到位，读起来也津津有味，完全不像《理想国》中让人想丢了书的诡辩式论调。因而，《1984》也就会让读者很自然地觉得国家极端政权是一件多么恐怖的事，一味地强调个人的权利，而没有意识到自己同样是被书控制了思想。</p>
 
-<h1>pygments-style-github.git</h1>
+<p>相比《1984》，我更欣赏《理想国》，这当然不是从表现形式上来说，因为就表现形式而言，前者似乎绝不亚于后者；而是从内容实质上来说。同样是构建了一个虚拟的社会，前者指出极端政府强权的危害，从个人的角度让你感觉到身处这样一个社会的恐怖感，而后者则是从一个建立国家的人的角度探讨，我们要建立一个怎样的国家。如果仔细分析这一差异的话，应该可以发现，前者之所以容易被人接受，是因为读者更多时候把自己作为一个公民去考虑问题的，所以当一个极端强权政府出现的时候，你看到的是自己的利益受到的损害；而后者则是从国家的角度去看待问题的，所以不会让读者有很大的利益关联感。</p>
 
-<p><a href="http://github.com/hugomaiavieira/pygments-style-github" target="_blank">pygments-style-github.git</a> is a greate project designed to create syntax css files in GitHub style.</p>
+<p>我并不想讨论个人利益优先还是集体利益优先，这一问题就像问“我和你妈掉进水里，你先救哪个”一样假设两者的互斥性。很容易想见，一个只重视个人利益的社会或只重视集体的社会，都不是一个理想的社会，奥威尔和苏格拉底并非没有看到这一点，只是有时候你为了说明自己的观点，不得不有选择性地选择论据罢了。</p>
 
-<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>git clone git://github.com/hugomaiavieira/pygments-style-github.git
-<span class="nv">$ </span><span class="nb">cd </span>pygments-style-github/
-<span class="nv">$ </span><span class="o">(</span>sudo<span class="o">)</span> python setup.py install
-<span class="nv">$ </span>pygmentize -S github -f html &gt; syntax.css
-</code></pre>
-</div>
+<p>重要的是，在读《1984》这一类带有浓重倾向性书的时候，要跳脱出自己的经验和自身利益的影响，不仅仅要看书中说了什么，更要看它没有说什么。他说的极端国家强权的危害，这点是对的，但是他就有意不说无政府主义的危害。虽然不能因此说他是个狡猾的人，但读者一定要能察觉到这一点，万不可被书牵着鼻子走。否则，作者虽是个明白人，读者却成了愚人了。</p>
 
-
-<p>That's all you need to do with it. But I spent a lot of time wondering why it's not working, which turns out to be that I typied <code>$ pygmentize ...</code> into <code>$ python ...</code> by mistake. :sweat:</p>
-
-<h1>_config.yml</h1>
-
-<p>Next, you need to change <code>_config.yml</code>. Add <code>pygments: true</code>.</p>
-
-<h1>Writing Blogs</h1>
-
-<p>When writing blogs, you may use <code>{# highlight css #}</code> and <code>{# endhighlight #}</code> to bracket your code (replace <code>#</code> with <code>%</code>), where <code>css</code> may be changed into other languages like <code>html</code>, <code>js</code> and so on.</p>
+<p>如果能够意识到这一点，那么《1984》、《理想国》对比读起来还是很有意义的，正如皋陶歌虞，奚斯颂鲁同见采於孔氏，列于诗书。</p>
 
     
     <div class="license">
@@ -99,13 +81,9 @@
     <div class="olderNewer">
         
             <div class="olderPost">
-                <a href="http://zhangwenli.com/blog/2014/02/09/how-i-made-jcorner/">Older: How I made jCorner</a>
+                <a href="http://zhangwenli.com/blog/2014/03/22/reviewing-my-country-and-my-people/">Older: 事出沉思，义归翰藻</a>
             </div>
         
-        
-            <div class="newerPost">
-                <a href="http://zhangwenli.com/blog/2014/03/10/reviewing-walden/">Newer: 林麓薮泽，心之所往</a>
-            </div>
         
         <div class="recentPost">
             <a href="http://zhangwenli.com/blog">Recent Posts</a>

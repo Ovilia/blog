@@ -2,6 +2,7 @@
 title: Learning List for 2014
 time: 2013.12.03 22:58:12
 layout: post
+hide: true
 tags:
 - Thoughts
 - Web Design
