@@ -235,6 +235,7 @@ p>img, p>a>img {
     max-width: 100%;
     text-decoration: none;
     transition: 0.5s;
+    margin-left: -2em;
 }
 
 p>a>img:hover {

@@ -130,10 +130,6 @@ a:hover {
     transition: background-color 0.8s;
 }
 
-a:visited {
-    color: #666;
-}
-
 h1>a {
     border: 0;
     text-shadow: 1px 1px #eee;
@@ -239,6 +235,7 @@ p>img, p>a>img {
     max-width: 100%;
     text-decoration: none;
     transition: 0.5s;
+    margin-left: -2em;
 }
 
 p>a>img:hover {
