@@ -53,7 +53,7 @@ pre>code {
     display: block;
     padding: 20px;
     margin: 2px 0;
-    background-color: #eee;
+    background-color: #eef3f0;
     filter: dropshadow(color=#333, offx=1, offy=1);
     overflow-x: auto;
 }
@@ -85,7 +85,7 @@ code {
     border-radius: 5px;
     font-family: Consolas, "Courier New", Courier;
     text-shadow: none;
-    background-color: #eee;
+    background-color: #eef3f0;
 }
 
 .more {

@@ -7,6 +7,352 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>01 - The Whole Picture</title>
+                <description>&lt;p&gt;&lt;strong&gt;Ideally, HTML files define the content of Web pages (text, image, video, etc.), CSS the style (how they look like), and JavaScript the interaction (e.g., what happens when user clicks the button). &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The three of them are designed to be decoupled. But the limitation of them makes it sometimes difficult for us to stick on this golden rule. For example, in some cases, we have to use JavaScript to help change the style because CSS cannot do it. This is bad, but sometimes inevitable.&lt;/p&gt;
+
+&lt;p&gt;Before we start, one thing you should always bear it in mind that &lt;strong&gt;never use JavaScript if the effect can be achieved with CSS!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You should first have a look at &lt;a href=&quot;/2014/04/27/01-about-this-series/&quot;&gt;the introduction of this series&lt;/a&gt; if you haven't.&lt;/p&gt;
+
+&lt;h1&gt;HTML&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;h3&gt;What is HTML?&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;HTML&lt;/em&gt; or &lt;em&gt;HyperText Markup Language&lt;/em&gt; is the standard markup language used to create web pages.&lt;/p&gt;
+
+&lt;p&gt;HTML is written in the form of HTML elements consisting of tags enclosed in angle brackets (like &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;). HTML tags most commonly come in pairs like &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/h1&amp;gt;&lt;/code&gt;, although some tags represent empty elements and so are unpaired, for example &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;. The first tag in a pair is the start tag, and the second tag is the end tag (they are also called opening tags and closing tags).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/HTML&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;From Wikipedia&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;Hello, world!&lt;/h2&gt;
+
+&lt;p&gt;Generally speaking, the least thing you need for a Web page is an HTML file.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ol&gt;
+&lt;li&gt;Create a text file (e.g.: &lt;code&gt;hi.txt&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Edit the content of the file to be &lt;code&gt;Hello, world!&lt;/code&gt; in your favorite text editor.&lt;/li&gt;
+&lt;li&gt;Rename the file with suffix &lt;code&gt;.html&lt;/code&gt; (e.g.: &lt;code&gt;hi.html&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Open the file with Web browser (e.g.: Chrome, IE)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You should see &lt;code&gt;Hello, world!&lt;/code&gt; in the Web browser.&lt;/p&gt;
+
+&lt;p&gt;Yes! That's your first Web page! Easy! Right?&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;If you are wondering how can this be a Web page, then...&lt;/p&gt;
+
+&lt;p&gt;Congratulations! Curiosity is one of the most important things to learn Web programming, as well as to learn anything else. Keep ask questions. You may write down them and see if you can answer them by yourself after some time. If not, you're welcomed to email me@zhangwenli.com!&lt;/p&gt;
+
+&lt;p&gt;Here's the explanation. A &lt;em&gt;Web page&lt;/em&gt; is a plain text file, which means it doesn't have format, like font or color, and everything matters is its content. You may know that an HTML should have tags like &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;. But our Web browsers are smart enough to know how to render the page without them.&lt;/p&gt;
+
+&lt;p&gt;This is only a demonstration to show how simple a Web page can be. You should always use tags like &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; in real situation.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;A typical Web page&lt;/h2&gt;
+
+&lt;p&gt;A typical HTML file looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        Hello, world!
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Change the content of &lt;code&gt;hi.html&lt;/code&gt; to be the above code and open it in a browser, you'll find the result is the same as the previous example. But this is a standard way to put it.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt; tells the browser that this file should be rendered as an HTML, which always appears in the first line in an HTML file. Although browsers don't rely on it to know it's an HTML, it's always a good habit to write this explicitly.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt; in the above example are called &lt;em&gt;tags&lt;/em&gt;, which usually appear in pairs. With tags, we can organize the content in a tree-like structure.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt; should always used in any HTML file. Generally speaking, everything should appear inside &lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt; except &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;. Content of the HTML should be written inside &lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt;, while additional information like defining the title or declarating importing other resources usually are inside &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Different tags have different meanings. We'll discuss more about tags in the next post.&lt;/p&gt;
+
+&lt;h1&gt;CSS&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;h3&gt;What is CSS?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Cascading Style Sheets&lt;/strong&gt; (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language.&lt;/p&gt;
+
+&lt;p&gt;CSS is designed primarily &lt;strong&gt;to enable the separation of document content from document presentation&lt;/strong&gt;, including elements such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple pages to share formatting, and reduce complexity and repetition in the structural content (such as by allowing for tableless web design).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot; target=&quot;_blank&quot;&gt;From Wikipedia&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;Change color&lt;/h2&gt;
+
+&lt;p&gt;If I would like to change the color of the &lt;code&gt;Hello, world!&lt;/code&gt; to be red, CSS is the one that can help. Remember that CSS is responsible for how it appears to look.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        Hello, world!
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-01.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, it's red.&lt;/p&gt;
+
+&lt;h2&gt;A more complicated example&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        Hello, world!
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We want to make &lt;code&gt;First&lt;/code&gt; and &lt;code&gt;Second&lt;/code&gt; be red and the background of them be yellow, which can be achieved with the following code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        Hello, world!
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-02.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But what if there're much more &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; elements need to be in this style? Do we have to write &lt;code&gt;style=&quot;color: red; background-color: yellow&quot;&lt;/code&gt; each time? If we want to change the style afterwards, do we have to change each of them?&lt;/p&gt;
+
+&lt;p&gt;You may wonder if we can write a statement like &lt;code&gt;make all h1 to be in red color and the background-color to be yellow&lt;/code&gt;. Yes, we can!&lt;/p&gt;
+
+&lt;h2&gt;Three styles of CSS&lt;/h2&gt;
+
+&lt;p&gt;There are three styles of CSS.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Inline (defined in each tag, as we did above)&lt;/li&gt;
+&lt;li&gt;Internal (defined at the &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt; part of current HTML&lt;/li&gt;
+&lt;li&gt;External (defined in a CSS file and include it at the &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt; part of current HTML&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Inline style&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        Hello, world!
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, &lt;strong&gt;never use inline style in real programming&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h3&gt;Internal style&lt;/h3&gt;
+
+&lt;p&gt;An internal style looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;style &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;yellow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        Hello, world!
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You may notice that it helps reuse the style and the content and style are decoupled in internal style.&lt;/p&gt;
+
+&lt;h3&gt;External style&lt;/h3&gt;
+
+&lt;p&gt;In internal style, style can be reused within this HTML. But in real applications, usually most of the Web pages share the same style. So, how can we reuse the CSS in different HTML files?&lt;/p&gt;
+
+&lt;p&gt;The answer is to put the CSS style in a &lt;code&gt;.css&lt;/code&gt; file rather than inside the HTML file, and include the CSS file in HTML files.&lt;/p&gt;
+
+&lt;p&gt;Now, we have a &lt;code&gt;mystyle.css&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;yellow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And a HTML file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mystyle.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        Hello, world!
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;External style makes it possible to reuse CSS inter- and intra-HTML. Use this style whenever possible.&lt;/p&gt;
+
+&lt;h1&gt;JavaScript&lt;/h1&gt;
+
+&lt;p&gt;Now that we have a basic idea of what HTML and CSS are and how they can work together. If you learn the two of them well enough, it's enough to deal with the most part of a Web page. But from Web 2.0, more interaction with user has been introduced. So knowing about HTML and CSS only is far from enough.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;JavaScript (JS) is a dynamic computer programming language. It is most commonly used as part of web browsers, whose implementations allow client-side scripts to interact with the user, control the browser, communicate asynchronously, and alter the document content that is displayed.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;From Wikipedia&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;Hello, again!&lt;/h2&gt;
+
+&lt;p&gt;As a programming language, JavaScript can be much more complexity than HTML or CSS. Luckily, I don't want to freak you out here. So I'm going to introduce the simple examples of how you can use JavaScript along with HTML and CSS.&lt;/p&gt;
+
+&lt;p&gt;We want to open a message box to say hello to the user when a button is clicked. Here's how you can do this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;alert(&amp;#39;Hello, again!&amp;#39;)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-03.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You may notice this is like the inline style of CSS. Yes! JavaScript can also be written in the internal and external style.&lt;/p&gt;
+
+&lt;p&gt;Internal:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sayHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello, again!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sayHello()&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;External JavaScript &lt;code&gt;hello.js&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sayHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello, again!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;External HTML:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hello.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sayHello()&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;External JavaScript is prefered in most cases. Before you know which cases are excluded, you should always use external style.&lt;/p&gt;
+
+&lt;h2&gt;Use JavaScript to Change CSS&lt;/h2&gt;
+
+&lt;p&gt;Again, &lt;strong&gt;never use JavaScript if the effect can be achieved with CSS!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, if you want to change the color when mouse is moved on an element, CSS is enough:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;But if you want to change the color when mouse has been clicked, only JavaScript can do it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;change&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;change(this)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Change Color!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In this post, we introduced what HTML, CSS and JavaScript are and how they can work together. HTML files define the content of Web pages, CSS the style, and JavaScript the interaction.&lt;/p&gt;
+
+&lt;p&gt;In the following posts, we are going to dig into and have a better understanding of each of them.&lt;/p&gt;
+</description>
+                <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/</guid>
+            </item>
+        
+            <item>
                 <title>00 - About this series</title>
                 <description>&lt;h1&gt;Why do I write this series?&lt;/h1&gt;
 
@@ -16,13 +362,23 @@
 
 &lt;p&gt;It provides the least information you need to know before becoming a Web Front-End Programmer. After that, you can learn more advanced topics to improve yourself.&lt;/p&gt;
 
+&lt;h1&gt;How much do you have to know before becoming a Web Front-End Programmer?&lt;/h1&gt;
+
+&lt;p&gt;Well, that mostly depends on your definition of a &lt;em&gt;Web Front-End Programmer&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;But generally speaking, you should at least have a good understanding of HTML and CSS, while those who don't know about JavaScript or jQuery can hardly be called Web Front-End Programmers nowadays.&lt;/p&gt;
+
+&lt;p&gt;Mastering all these techniques doesn't necessarily makes you a qualified Web Front-End Programmer. Having a good taste is also of great importance. As a programmer, you may probably complain about how bad your taste is, as if it's a necessary contrast to your profound programming skill. So the first thing to do is &lt;strong&gt;Not to be proud of your bad taste!&lt;/strong&gt; After that, I will tell you how to improve your taste and design skill and you may possibly find it even easier than programming.&lt;/p&gt;
+
+&lt;p&gt;That's a long way to go, and I myself is also on the halfway. But hopefully, by the end of this series, you should at least know what to learn to improve yourselves.&lt;/p&gt;
+
 &lt;h1&gt;What can I learn in this series?&lt;/h1&gt;
 
 &lt;p&gt;By the end of this series, you should be able to implement Web pages as you wish to. Related techniques include HTML, CSS, JavaScript, jQuery and some design principals.&lt;/p&gt;
 
 &lt;h1&gt;Who is this series for?&lt;/h1&gt;
 
-&lt;p&gt;Anyone who is interested in this topic can join us. We don't presuppose any former experience with HTML, CSS, JavaScript or other related techniques.&lt;/p&gt;
+&lt;p&gt;Anyone who is interested in this topic can join us. We don't presuppose any former experience with HTML, CSS, JavaScript or other related techniques. However, this series is designed for programmers so that programming experience of any kind is necessary.&lt;/p&gt;
 
 &lt;h1&gt;How is this series organized?&lt;/h1&gt;
 
@@ -35,10 +391,14 @@
 &lt;h1&gt;Get Started!&lt;/h1&gt;
 
 &lt;p&gt;I'm excited now! Let's start our journey!&lt;/p&gt;
+
+&lt;h1&gt;Dedication&lt;/h1&gt;
+
+&lt;p&gt;This series is dedicated to Qianying Hou.&lt;/p&gt;
 </description>
                 <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2014/04/27/01-about-this-series/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/04/27/01-about-this-series/</guid>
+                <link>http://zhangwenli.com/blog/2014/04/27/00-about-this-series/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/04/27/00-about-this-series/</guid>
             </item>
         
             <item>
@@ -424,40 +784,6 @@ Understand the types of Three.js components, including geometries, materials, li
                 <pubDate>Wed, 11 Dec 2013 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2013/12/11/game-development-with-three-js/</link>
                 <guid isPermaLink="true">http://zhangwenli.com/blog/2013/12/11/game-development-with-three-js/</guid>
-            </item>
-        
-            <item>
-                <title>Learning List for 2014</title>
-                <description>&lt;p&gt;I was quite busy lately and it has been a month since my &lt;a href=&quot;http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/&quot;&gt;last post&lt;/a&gt;. I didn't learn something new and I felt a little shameful about it. :cry:&lt;/p&gt;
-
-&lt;p&gt;There are courses about which I don't care much but have to spend enough time nevertheless. There are research works I'm eager to make some progress on but still at a loss. There are, as always, decisions to make and promises to keep.&lt;/p&gt;
-
-&lt;p&gt;Last week, I visited a small developing IT company, and was somehow being interviewed as a web front-end programmer. Hopefully, I didn't disappoint the CTO too much, but I did see how much more effort I had to put to be a competent front-end designer.&lt;/p&gt;
-
-&lt;p&gt;Before that day, I thought I was good enough as a front-end programmer. But after the interview, I came to realize that knowing about how to design and implement is not the whole story. I knew about most techniques that I was asked about, but had little experience of using them personally. To be frank, I usually won't learning something new when I don't have to, since the &lt;em&gt;opportunity cost&lt;/em&gt; of learning something new is increasing and increasing. And my pride and complacent are another reasons prevent me from learning.&lt;/p&gt;
-
-&lt;p&gt;I thought seriously about this after that interview and was very thankful for the CTO's questions. I really need to learn these popular techniques and polish myself before I'm ready to be a web front-end designer.&lt;/p&gt;
-
-&lt;p&gt;Here's a list of things I plan to learn through projects in 2014:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bootstrap&lt;/li&gt;
-&lt;li&gt;AngularJS&lt;/li&gt;
-&lt;li&gt;RequireJS&lt;/li&gt;
-&lt;li&gt;Node.js&lt;/li&gt;
-&lt;li&gt;JavaScript Template Engine&lt;/li&gt;
-&lt;li&gt;JavaScript Language Feature&lt;/li&gt;
-&lt;li&gt;JavaScript Design Pattern&lt;/li&gt;
-&lt;li&gt;LESS&lt;/li&gt;
-&lt;li&gt;SASS&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Maybe the winter holiday is a time to take a break, or an opportunity to carry on. :grin:&lt;/p&gt;
-</description>
-                <pubDate>Tue, 03 Dec 2013 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2013/12/03/learning-list-for-2014/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/12/03/learning-list-for-2014/</guid>
             </item>
         
     </channel>

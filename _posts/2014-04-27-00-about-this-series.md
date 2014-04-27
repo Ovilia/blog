@@ -17,13 +17,23 @@ So, **this series serves as a fast guide to learning Web Front-End Programming**
 
 It provides the least information you need to know before becoming a Web Front-End Programmer. After that, you can learn more advanced topics to improve yourself.
 
+#How much do you have to know before becoming a Web Front-End Programmer?
+
+Well, that mostly depends on your definition of a *Web Front-End Programmer*.
+
+But generally speaking, you should at least have a good understanding of HTML and CSS, while those who don't know about JavaScript or jQuery can hardly be called Web Front-End Programmers nowadays. 
+
+Mastering all these techniques doesn't necessarily makes you a qualified Web Front-End Programmer. Having a good taste is also of great importance. As a programmer, you may probably complain about how bad your taste is, as if it's a necessary contrast to your profound programming skill. So the first thing to do is **Not to be proud of your bad taste!** After that, I will tell you how to improve your taste and design skill and you may possibly find it even easier than programming.
+
+That's a long way to go, and I myself is also on the halfway. But hopefully, by the end of this series, you should at least know what to learn to improve yourselves.
+
 #What can I learn in this series?
 
 By the end of this series, you should be able to implement Web pages as you wish to. Related techniques include HTML, CSS, JavaScript, jQuery and some design principals.
 
 #Who is this series for?
 
-Anyone who is interested in this topic can join us. We don't presuppose any former experience with HTML, CSS, JavaScript or other related techniques.
+Anyone who is interested in this topic can join us. We don't presuppose any former experience with HTML, CSS, JavaScript or other related techniques. However, this series is designed for programmers so that programming experience of any kind is necessary.
 
 #How is this series organized?
 
@@ -36,3 +46,7 @@ After that, we'll learn more about *designing* a Web page.
 #Get Started!
 
 I'm excited now! Let's start our journey!
+
+#Dedication
+
+This series is dedicated to Qianying Hou.
