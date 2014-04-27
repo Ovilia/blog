@@ -15,9 +15,9 @@ excerpt: In this post, we introduced what HTML, CSS and JavaScript are and how t
 
 **Ideally, HTML files define the content of Web pages (text, image, video, etc.), CSS the style (how they look like), and JavaScript the interaction (e.g., what happens when user clicks the button). ** 
 
-The three of them are designed to be decoupled. But the limitation of them makes it sometimes difficult for us to stick on this golden rule. For example, in some cases, we have to use JavaScript to help change the style because CSS cannot do it. This is bad, but sometimes inevitable.
+The three of them are designed to be decoupled. But the limitation of them makes it sometimes difficult for us to stick on this golden rule. For example, in some cases, we have to use JavaScript to help change the style because CSS cannot do it. This is bad, but sometimes inevitable. :disappointed:
 
-Before we start, one thing you should always bear it in mind that **never use JavaScript if the effect can be achieved with CSS!** 
+Before we start, one thing you should always bear it in mind that **never use JavaScript if the effect can be achieved with CSS!** :star2:
 
 You should first have a look at <a href="{{ site.utl }}/2014/04/27/01-about-this-series/">the introduction of this series</a> if you haven't.
 
@@ -42,7 +42,7 @@ Generally speaking, the least thing you need for a Web page is an HTML file.
 
 You should see `Hello, world!` in the Web browser. 
 
-Yes! That's your first Web page! Easy! Right? 
+Yes! That's your first Web page! Easy! Right? :satisfied:
 
 > If you are wondering how can this be a Web page, then... 
 
@@ -90,7 +90,7 @@ Different tags have different meanings. We'll discuss more about tags in the nex
 
 ##Change color
 
-If I would like to change the color of the `Hello, world!` to be red, CSS is the one that can help. Remember that CSS is responsible for how it appears to look.
+If I would like to change the color of the `Hello, world!` to be red, CSS is the one that can help. Remember that CSS is responsible for how it appears to look. :sunglasses:
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ We want to make `First` and `Second` be red and the background of them be yellow
 
 But what if there're much more `<h1>` elements need to be in this style? Do we have to write `style="color: red; background-color: yellow"` each time? If we want to change the style afterwards, do we have to change each of them?
 
-You may wonder if we can write a statement like `make all h1 to be in red color and the background-color to be yellow`. Yes, we can!
+You may wonder if we can write a statement like `make all h1 to be in red color and the background-color to be yellow`. Yes, we can! :scream:
 
 ##Three styles of CSS
 
@@ -170,7 +170,7 @@ There are three styles of CSS.
 </html>
 {% endhighlight %}
 
-Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, **never use inline style in real programming**!
+Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, **never use inline style in real programming**! :boom:
 
 ###Internal style
 
@@ -242,7 +242,7 @@ Now that we have a basic idea of what HTML and CSS are and how they can work tog
 
 ##Hello, again!
 
-As a programming language, JavaScript can be much more complexity than HTML or CSS. Luckily, I don't want to freak you out here. So I'm going to introduce the simple examples of how you can use JavaScript along with HTML and CSS.
+As a programming language, JavaScript can be much more complexity than HTML or CSS. Luckily, I don't want to freak you out here. :joy: So I'm going to introduce the simple examples of how you can use JavaScript along with HTML and CSS.
 
 We want to open a message box to say hello to the user when a button is clicked. Here's how you can do this:
 
@@ -344,4 +344,4 @@ But if you want to change the color when mouse has been clicked, only JavaScript
 
 In this post, we introduced what HTML, CSS and JavaScript are and how they can work together. HTML files define the content of Web pages, CSS the style, and JavaScript the interaction. 
 
-In the following posts, we are going to dig into and have a better understanding of each of them.
+In the following posts, we are going to dig into and have a better understanding of each of them. :clap:

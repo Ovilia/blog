@@ -10,9 +10,9 @@
                 <title>01 - The Whole Picture</title>
                 <description>&lt;p&gt;&lt;strong&gt;Ideally, HTML files define the content of Web pages (text, image, video, etc.), CSS the style (how they look like), and JavaScript the interaction (e.g., what happens when user clicks the button). &lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The three of them are designed to be decoupled. But the limitation of them makes it sometimes difficult for us to stick on this golden rule. For example, in some cases, we have to use JavaScript to help change the style because CSS cannot do it. This is bad, but sometimes inevitable.&lt;/p&gt;
+&lt;p&gt;The three of them are designed to be decoupled. But the limitation of them makes it sometimes difficult for us to stick on this golden rule. For example, in some cases, we have to use JavaScript to help change the style because CSS cannot do it. This is bad, but sometimes inevitable. :disappointed:&lt;/p&gt;
 
-&lt;p&gt;Before we start, one thing you should always bear it in mind that &lt;strong&gt;never use JavaScript if the effect can be achieved with CSS!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Before we start, one thing you should always bear it in mind that &lt;strong&gt;never use JavaScript if the effect can be achieved with CSS!&lt;/strong&gt; :star2:&lt;/p&gt;
 
 &lt;p&gt;You should first have a look at &lt;a href=&quot;/2014/04/27/01-about-this-series/&quot;&gt;the introduction of this series&lt;/a&gt; if you haven't.&lt;/p&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;You should see &lt;code&gt;Hello, world!&lt;/code&gt; in the Web browser.&lt;/p&gt;
 
-&lt;p&gt;Yes! That's your first Web page! Easy! Right?&lt;/p&gt;
+&lt;p&gt;Yes! That's your first Web page! Easy! Right? :satisfied:&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;p&gt;If you are wondering how can this be a Web page, then...&lt;/p&gt;
 
@@ -88,7 +88,7 @@
 
 &lt;h2&gt;Change color&lt;/h2&gt;
 
-&lt;p&gt;If I would like to change the color of the &lt;code&gt;Hello, world!&lt;/code&gt; to be red, CSS is the one that can help. Remember that CSS is responsible for how it appears to look.&lt;/p&gt;
+&lt;p&gt;If I would like to change the color of the &lt;code&gt;Hello, world!&lt;/code&gt; to be red, CSS is the one that can help. Remember that CSS is responsible for how it appears to look. :sunglasses:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
@@ -142,7 +142,7 @@
 
 &lt;p&gt;But what if there're much more &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; elements need to be in this style? Do we have to write &lt;code&gt;style=&quot;color: red; background-color: yellow&quot;&lt;/code&gt; each time? If we want to change the style afterwards, do we have to change each of them?&lt;/p&gt;
 
-&lt;p&gt;You may wonder if we can write a statement like &lt;code&gt;make all h1 to be in red color and the background-color to be yellow&lt;/code&gt;. Yes, we can!&lt;/p&gt;
+&lt;p&gt;You may wonder if we can write a statement like &lt;code&gt;make all h1 to be in red color and the background-color to be yellow&lt;/code&gt;. Yes, we can! :scream:&lt;/p&gt;
 
 &lt;h2&gt;Three styles of CSS&lt;/h2&gt;
 
@@ -171,7 +171,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, &lt;strong&gt;never use inline style in real programming&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, &lt;strong&gt;never use inline style in real programming&lt;/strong&gt;! :boom:&lt;/p&gt;
 
 &lt;h3&gt;Internal style&lt;/h3&gt;
 
@@ -243,7 +243,7 @@
 
 &lt;h2&gt;Hello, again!&lt;/h2&gt;
 
-&lt;p&gt;As a programming language, JavaScript can be much more complexity than HTML or CSS. Luckily, I don't want to freak you out here. So I'm going to introduce the simple examples of how you can use JavaScript along with HTML and CSS.&lt;/p&gt;
+&lt;p&gt;As a programming language, JavaScript can be much more complexity than HTML or CSS. Luckily, I don't want to freak you out here. :joy: So I'm going to introduce the simple examples of how you can use JavaScript along with HTML and CSS.&lt;/p&gt;
 
 &lt;p&gt;We want to open a message box to say hello to the user when a button is clicked. Here's how you can do this:&lt;/p&gt;
 
@@ -345,7 +345,7 @@
 
 &lt;p&gt;In this post, we introduced what HTML, CSS and JavaScript are and how they can work together. HTML files define the content of Web pages, CSS the style, and JavaScript the interaction.&lt;/p&gt;
 
-&lt;p&gt;In the following posts, we are going to dig into and have a better understanding of each of them.&lt;/p&gt;
+&lt;p&gt;In the following posts, we are going to dig into and have a better understanding of each of them. :clap:&lt;/p&gt;
 </description>
                 <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/</link>
@@ -356,7 +356,7 @@
                 <title>00 - About this series</title>
                 <description>&lt;h1&gt;Why do I write this series?&lt;/h1&gt;
 
-&lt;p&gt;&lt;em&gt;Web Front-End Programming&lt;/em&gt; has now been a hot topic. As I have the experience of making Web sites for more than three years, many of my friends asked if I could provide a learning list for them. Well, there are plenty of books, blogs, or other resources available on this topic, many of which are also of great value. But usually you need to spend a long time learning through a book, long after your interest fades away.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Web Front-End Programming&lt;/em&gt; has now been a hot topic. :fire: As I have the experience of making Web sites for more than three years, many of my friends asked if I could provide a learning list for them. Well, there are plenty of books, blogs, or other resources available on this topic, many of which are also of great value. But usually you need to spend a long time learning through a book, long after your interest fades away. :sob:&lt;/p&gt;
 
 &lt;p&gt;So, &lt;strong&gt;this series serves as a fast guide to learning Web Front-End Programming&lt;/strong&gt;.&lt;/p&gt;
 
@@ -368,11 +368,11 @@
 
 &lt;p&gt;But generally speaking, you should at least have a good understanding of HTML and CSS, while those who don't know about JavaScript or jQuery can hardly be called Web Front-End Programmers nowadays.&lt;/p&gt;
 
-&lt;p&gt;Mastering all these techniques doesn't necessarily makes you a qualified Web Front-End Programmer. Having a good taste is also of great importance. As a programmer, you may probably complain about how bad your taste is, as if it's a necessary contrast to your profound programming skill. So the first thing to do is &lt;strong&gt;Not to be proud of your bad taste!&lt;/strong&gt; After that, I will tell you how to improve your taste and design skill and you may possibly find it even easier than programming.&lt;/p&gt;
+&lt;p&gt;Mastering all these techniques doesn't necessarily makes you a qualified Web Front-End Programmer. Having a good taste is also of great importance. As a programmer, you may probably complain about how bad your taste is, as if it's a necessary contrast to your profound programming skill. :joy: So the first thing to do is &lt;strong&gt;Not to be proud of your bad taste!&lt;/strong&gt; After that, I will tell you how to improve your taste and design skill and you may possibly find it even easier than programming.&lt;/p&gt;
 
 &lt;p&gt;That's a long way to go, and I myself is also on the halfway. But hopefully, by the end of this series, you should at least know what to learn to improve yourselves.&lt;/p&gt;
 
-&lt;h1&gt;What can I learn in this series?&lt;/h1&gt;
+&lt;h1&gt;What can you learn in this series?&lt;/h1&gt;
 
 &lt;p&gt;By the end of this series, you should be able to implement Web pages as you wish to. Related techniques include HTML, CSS, JavaScript, jQuery and some design principals.&lt;/p&gt;
 
@@ -390,11 +390,11 @@
 
 &lt;h1&gt;Get Started!&lt;/h1&gt;
 
-&lt;p&gt;I'm excited now! Let's start our journey!&lt;/p&gt;
+&lt;p&gt;I'm excited now! Let's start our journey! :hear_eyes:&lt;/p&gt;
 
 &lt;h1&gt;Dedication&lt;/h1&gt;
 
-&lt;p&gt;This series is dedicated to Qianying Hou.&lt;/p&gt;
+&lt;p&gt;This series is dedicated to Qianying Hou. :girl:&lt;/p&gt;
 </description>
                 <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2014/04/27/00-about-this-series/</link>

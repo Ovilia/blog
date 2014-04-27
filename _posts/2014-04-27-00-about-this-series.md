@@ -11,7 +11,7 @@ excerpt: This is an introduction of the series *Dive into Web Front-End Programm
 
 #Why do I write this series?
 
-*Web Front-End Programming* has now been a hot topic. As I have the experience of making Web sites for more than three years, many of my friends asked if I could provide a learning list for them. Well, there are plenty of books, blogs, or other resources available on this topic, many of which are also of great value. But usually you need to spend a long time learning through a book, long after your interest fades away.
+*Web Front-End Programming* has now been a hot topic. :fire: As I have the experience of making Web sites for more than three years, many of my friends asked if I could provide a learning list for them. Well, there are plenty of books, blogs, or other resources available on this topic, many of which are also of great value. But usually you need to spend a long time learning through a book, long after your interest fades away. :sob:
 
 So, **this series serves as a fast guide to learning Web Front-End Programming**.
 
@@ -23,11 +23,11 @@ Well, that mostly depends on your definition of a *Web Front-End Programmer*.
 
 But generally speaking, you should at least have a good understanding of HTML and CSS, while those who don't know about JavaScript or jQuery can hardly be called Web Front-End Programmers nowadays. 
 
-Mastering all these techniques doesn't necessarily makes you a qualified Web Front-End Programmer. Having a good taste is also of great importance. As a programmer, you may probably complain about how bad your taste is, as if it's a necessary contrast to your profound programming skill. So the first thing to do is **Not to be proud of your bad taste!** After that, I will tell you how to improve your taste and design skill and you may possibly find it even easier than programming.
+Mastering all these techniques doesn't necessarily makes you a qualified Web Front-End Programmer. Having a good taste is also of great importance. As a programmer, you may probably complain about how bad your taste is, as if it's a necessary contrast to your profound programming skill. :joy: So the first thing to do is **Not to be proud of your bad taste!** After that, I will tell you how to improve your taste and design skill and you may possibly find it even easier than programming.
 
 That's a long way to go, and I myself is also on the halfway. But hopefully, by the end of this series, you should at least know what to learn to improve yourselves.
 
-#What can I learn in this series?
+#What can you learn in this series?
 
 By the end of this series, you should be able to implement Web pages as you wish to. Related techniques include HTML, CSS, JavaScript, jQuery and some design principals.
 
@@ -45,8 +45,8 @@ After that, we'll learn more about *designing* a Web page.
 
 #Get Started!
 
-I'm excited now! Let's start our journey!
+I'm excited now! Let's start our journey! :hear_eyes:
 
 #Dedication
 
-This series is dedicated to Qianying Hou.
+This series is dedicated to Qianying Hou. :girl:
