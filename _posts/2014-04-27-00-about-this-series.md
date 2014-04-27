@@ -45,7 +45,7 @@ After that, we'll learn more about *designing* a Web page.
 
 #Get Started!
 
-I'm excited now! Let's start our journey! :hear_eyes:
+I'm excited now! Let's start our journey! :heart_eyes:
 
 #Dedication
 

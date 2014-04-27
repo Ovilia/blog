@@ -269,6 +269,7 @@ p>a>img:hover {
     background-color: #70840e;
     padding: 3px 8px;
     margin-right: 5px;
+	margin-bottom: 5px;
     display: inline-block;
     color: #fff;
     border-radius: 3px;
