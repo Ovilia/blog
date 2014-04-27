@@ -71,6 +71,11 @@ blockquote {
     filter: dropshadow(color=#fff, offx=1, offy=1);
 }
 
+blockquote a {
+	text-shadow: none;
+	filter: none;
+}
+
 code {
     border: dashed 2px #b0cb2c;
     color: #70840e;
@@ -270,6 +275,8 @@ p>a>img:hover {
     box-shadow: 1px 1px 0 1px #333;
     font-family: Consolas, "Courier New", Courier;
 	font-size: 14px;
+	text-shadow: none;
+	filter: none;
 }
 
 .tag:hover {

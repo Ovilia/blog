@@ -27,9 +27,9 @@
                         {% if isZn == false %}
                         <blockquote>
 							{% if post.series %}
-								<a href="#" class="series-recent">Series: {{ post.series }}</a>
+								<a href="{{ site.url }}{{ post.url }}" class="series-recent">Series: {{ post.series }}</a>
 							{% endif %}
-                            <h3><a href=".{{ post.url }}">{{ post.title }}</a></h3>
+                            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
                             <div class="time">{{ post.time }}</div>
                             
                             <div id="tagPanel">

@@ -7,6 +7,41 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>00 - About this series</title>
+                <description>&lt;h1&gt;Why do I write this series?&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Web Front-End Programming&lt;/em&gt; has now been a hot topic. As I have the experience of making Web sites for more than three years, many of my friends asked if I could provide a learning list for them. Well, there are plenty of books, blogs, or other resources available on this topic, many of which are also of great value. But usually you need to spend a long time learning through a book, long after your interest fades away.&lt;/p&gt;
+
+&lt;p&gt;So, &lt;strong&gt;this series serves as a fast guide to learning Web Front-End Programming&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It provides the least information you need to know before becoming a Web Front-End Programmer. After that, you can learn more advanced topics to improve yourself.&lt;/p&gt;
+
+&lt;h1&gt;What can I learn in this series?&lt;/h1&gt;
+
+&lt;p&gt;By the end of this series, you should be able to implement Web pages as you wish to. Related techniques include HTML, CSS, JavaScript, jQuery and some design principals.&lt;/p&gt;
+
+&lt;h1&gt;Who is this series for?&lt;/h1&gt;
+
+&lt;p&gt;Anyone who is interested in this topic can join us. We don't presuppose any former experience with HTML, CSS, JavaScript or other related techniques.&lt;/p&gt;
+
+&lt;h1&gt;How is this series organized?&lt;/h1&gt;
+
+&lt;p&gt;The first post will introduce the whole picture of writing a Web page, and what all these names suggest like HTML, CSS, JavaScript, jQuery.&lt;/p&gt;
+
+&lt;p&gt;The following posts talks about HTML, CSS, JavaScript and jQuery, one topic in each post. Examples will be available and kept as simple as possible in each topic. And in the end of each post, you'll be given homework if you wish to practise more.&lt;/p&gt;
+
+&lt;p&gt;After that, we'll learn more about &lt;em&gt;designing&lt;/em&gt; a Web page.&lt;/p&gt;
+
+&lt;h1&gt;Get Started!&lt;/h1&gt;
+
+&lt;p&gt;I'm excited now! Let's start our journey!&lt;/p&gt;
+</description>
+                <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/04/27/01-about-this-series/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/04/27/01-about-this-series/</guid>
+            </item>
+        
+            <item>
                 <title>皋陶歌虞，奚斯颂鲁</title>
                 <description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/5406563/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;book-img&quot; src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://img5.douban.com/lpic/s6272698.jpg&quot; /&gt;&lt;/a&gt;只读一个开头就知道这一定是一部会被右派追捧的书，奥威尔在这方面讽刺的能力的确十分厉害，厉害到让你很自然地觉得被他讽刺的对象是丑陋的邪恶的不值一提的。这一类书看似振聋发聩，但其实危害也是很大的，因为他只从一个方面看待问题，而又用讽刺的手段让人奉若圭臬，难免沦为不良用心者的工具。&lt;/p&gt;
 
@@ -423,128 +458,6 @@ Understand the types of Three.js components, including geometries, materials, li
                 <pubDate>Tue, 03 Dec 2013 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2013/12/03/learning-list-for-2014/</link>
                 <guid isPermaLink="true">http://zhangwenli.com/blog/2013/12/03/learning-list-for-2014/</guid>
-            </item>
-        
-            <item>
-                <title>Sorting In JavaScript</title>
-                <description>&lt;p&gt;Method of sorting an array is defined in &lt;code&gt;Array.prototype.sort&lt;/code&gt;. So in most cases, you don't have to think about how to implement a sort algorithm when writing in JavaScript. But you still need to be careful when you use it, since JavaScript is fragile. :disappointed:&lt;/p&gt;
-
-&lt;h1&gt;What's The Problem?&lt;/h1&gt;
-
-&lt;p&gt;JavaScript provides sorting method for &lt;code&gt;Array&lt;/code&gt; type, so that you don't have to write it by yourself.&lt;/p&gt;
-
-&lt;p&gt;Don't celebrate too early! JavaScript may not behave in the way you think it should. :fearful:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;yellow&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// [&amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;red&amp;quot;, &amp;quot;white&amp;quot;, &amp;quot;yellow&amp;quot;]&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;           &lt;span class=&quot;c1&quot;&gt;// [&amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;red&amp;quot;, &amp;quot;white&amp;quot;, &amp;quot;yellow&amp;quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Two things we can know from the above example are: Firstly, &lt;code&gt;String&lt;/code&gt; type is sorted in an alphabetic order. Secondly, &lt;code&gt;sort()&lt;/code&gt; method changes the original array rather than generating a new array.&lt;/p&gt;
-
-&lt;p&gt;But it's not sorted in &lt;em&gt;an alphabetic order&lt;/em&gt; in fact.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Yellow&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;White&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// [&amp;quot;White&amp;quot;, &amp;quot;Yellow&amp;quot;, &amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;red&amp;quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;It compares by each character's &lt;a href=&quot;http://www.asciitable.com/&quot; target=&quot;_blank&quot;&gt;ASCII code&lt;/a&gt; so that uppercase letters are always &lt;em&gt;smaller&lt;/em&gt; than lowercase ones.&lt;/p&gt;
-
-&lt;p&gt;Another thing you need to be careful with is when you sort an array with numbers.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;money&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;money&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// [12, 200, 3, 7.4]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;:open_mouth: Surprise?&lt;/p&gt;
-
-&lt;h1&gt;Why&lt;/h1&gt;
-
-&lt;p&gt;By default, the &lt;code&gt;sort()&lt;/code&gt; method converts &lt;em&gt;everything&lt;/em&gt; into &lt;code&gt;String&lt;/code&gt; and then compares letter by letter. You may wonder why JavaScript isn't smart enough to tell this is an array of numbers and then sort it by numbers' value.&lt;/p&gt;
-
-&lt;p&gt;But if you think twice, you may find that an array can contain different types in JavaScript, so what do you expect to get from the following sorted array?&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;everything&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;$200&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;everything&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Although I doubt it's a good idea to put all these different types together in an array, this is totally legal in JavaScript. If you think &lt;code&gt;12&lt;/code&gt; should be thought as &lt;em&gt;larger&lt;/em&gt; than &lt;code&gt;7.4&lt;/code&gt;, then, how to sort the whole array?&lt;/p&gt;
-
-&lt;p&gt;OK. Here's how JavaScript deals with it: Convert to &lt;code&gt;String&lt;/code&gt; and compare letter by letter in ASCII code order. So &lt;code&gt;true&lt;/code&gt; is converted to &lt;code&gt;&quot;true&quot;&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt; is converted to &lt;code&gt;&quot;false&quot;&lt;/code&gt; when comparing.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;everything&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;$200&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;everything&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt; 
-&lt;span class=&quot;c1&quot;&gt;// [&amp;quot;$200&amp;quot;, 0.3, 12, 7.4, &amp;quot;Red&amp;quot;, false, true, &amp;quot;white&amp;quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;Comparing Function&lt;/h1&gt;
-
-&lt;p&gt;Sorting arrays with numbers only is still a very common need. So how can I sort them by comparing numbers' value?&lt;/p&gt;
-
-&lt;p&gt;Pass a comparing function to it!&lt;/p&gt;
-
-&lt;h2&gt;Comparing Numbers&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;money&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;};&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;money&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [3, 7.4, 12, 200]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Now, you get what you wanted. :grinning:&lt;/p&gt;
-
-&lt;p&gt;What happens here is that &lt;code&gt;compare&lt;/code&gt; function takes two element and returns a negative number if &lt;code&gt;a&lt;/code&gt; is smaller than &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;0&lt;/code&gt; if &lt;code&gt;a&lt;/code&gt; is equal to &lt;code&gt;b&lt;/code&gt;, a positive number if &lt;code&gt;a&lt;/code&gt; is larger than &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Comparing Objects&lt;/h2&gt;
-
-&lt;p&gt;Comparing function is also useful when we compare objects. Let's say that we want to sort people by their &lt;code&gt;id&lt;/code&gt; rather than their &lt;code&gt;name&lt;/code&gt;, we can define a function to compare people by &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;people&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Alice&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1234&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;567&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Bob is before Alice now&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;Compare Everything&lt;/h2&gt;
-
-&lt;p&gt;What if we sort &lt;code&gt;everything&lt;/code&gt; with &lt;code&gt;compare&lt;/code&gt;?&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;everything&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;$200&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;};&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;everything&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Chrome and Opera: &lt;code&gt;[4, &quot;Red&quot;, &quot;$200&quot;, &quot;white&quot;, false, 0.3, true, 7.4, 12]&lt;/code&gt;;&lt;/p&gt;
-
-&lt;p&gt;Firefox: &lt;code&gt;[false, 0.3, true, 4, &quot;Red&quot;, &quot;$200&quot;, &quot;white&quot;, 7.4, 12]&lt;/code&gt;;&lt;/p&gt;
-
-&lt;p&gt;IE: &lt;code&gt;[&quot;Red&quot;, &quot;$200&quot;, false, 0.3, true, 4, &quot;white&quot;, 7.4, 12]&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is so weird! :scream:&lt;/p&gt;
-
-&lt;p&gt;When comparing, &lt;code&gt;a - b&lt;/code&gt; is calculated in &lt;code&gt;compare&lt;/code&gt; so that every element in &lt;code&gt;everything&lt;/code&gt; is converted to &lt;code&gt;Number&lt;/code&gt; when comparing and then do the minus operation. As &lt;code&gt;Number('Red')&lt;/code&gt;, &lt;code&gt;Number('$200')&lt;/code&gt; and &lt;code&gt;Number('white')&lt;/code&gt; give &lt;code&gt;NaN&lt;/code&gt; all, comparing function &lt;code&gt;compare&lt;/code&gt; returns &lt;code&gt;NaN&lt;/code&gt; when they compare to any other element. With the existance of this &lt;code&gt;NaN&lt;/code&gt;, the behavior of &lt;code&gt;Array.prototype.sort&lt;/code&gt; is not defined in the &lt;a href=&quot;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.11&quot; target=&quot;_blank&quot;&gt;ECMA Specification&lt;/a&gt;, so it depends on each platform's implementation.&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Calling &lt;code&gt;comparefn(a,b)&lt;/code&gt; always returns the same value &lt;code&gt;v&lt;/code&gt; when given a specific pair of values &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; as its two arguments. Furthermore, &lt;code&gt;Type(v)&lt;/code&gt; is &lt;code&gt;Number&lt;/code&gt;, and &lt;code&gt;v&lt;/code&gt; is not &lt;code&gt;NaN&lt;/code&gt;. Note that this implies that exactly one of &lt;code&gt;a &amp;lt;CF b&lt;/code&gt;, &lt;code&gt;a =CF b&lt;/code&gt;, and &lt;code&gt;a &amp;gt;CF b&lt;/code&gt; will be true for a given pair of a and b.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.11&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;ECMA 262 Specification&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;The lesson learned here is that the behavior of sorting with a comparing function that will return &lt;code&gt;NaN&lt;/code&gt; is unpredictable and you should be careful when choosing a suitable comparing function. Again, it's not a good idea to put everything with different types all together in the same array.&lt;/p&gt;
-</description>
-                <pubDate>Sat, 02 Nov 2013 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/11/02/sorting-in-javascript/</guid>
             </item>
         
     </channel>

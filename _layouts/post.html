@@ -1,6 +1,10 @@
 {% include header.html %}
 
-<title>{{ page.title }}</title>
+<title>{{ page.title }}
+	{% if page.series %}
+		: {{ page.series }}
+	{% endif %}
+</title>
  
 <a href="http://zhangwenli.com/blog">
     <div id="homeDiv"></div>
@@ -28,6 +32,10 @@
     </div>
     
     {{ content }}
+	
+	{% if page.series %}
+		{% include series.html %}
+	{% endif %}
     
     <div class="license">
         <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">

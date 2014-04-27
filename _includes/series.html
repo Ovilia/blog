@@ -6,11 +6,13 @@
 		{% if post.series == page.series %}
 			<li>
 			{% if page.url != post.url %}
-				<a class="series-current" href="{{ site.url }}{{ post.url }}">
+				<a href="{{ site.url }}{{ post.url }}">
 			{% endif %}
+			
 			{{ post.title }}
+			
 			{% if page.url != post.url %}
-			</a>
+				</a>
 			{% endif %}
 			</li>
 		{% endif %}
