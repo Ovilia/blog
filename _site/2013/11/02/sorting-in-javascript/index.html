@@ -66,8 +66,7 @@
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">];</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">colors</span><span class="p">.</span><span class="nx">sort</span><span class="p">());</span>    <span class="c1">// [&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;, &quot;white&quot;, &quot;yellow&quot;]</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">colors</span><span class="p">);</span>           <span class="c1">// [&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;, &quot;white&quot;, &quot;yellow&quot;]</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>Two things we can know from the above example are: Firstly, <code>String</code> type is sorted in an alphabetic order. Secondly, <code>sort()</code> method changes the original array rather than generating a new array.</p>
@@ -76,8 +75,7 @@
 
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;Yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;White&#39;</span><span class="p">];</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">colors</span><span class="p">.</span><span class="nx">sort</span><span class="p">());</span>    <span class="c1">// [&quot;White&quot;, &quot;Yellow&quot;, &quot;blue&quot;, &quot;green&quot;, &quot;red&quot;]</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>It compares by each character's <a href="http://www.asciitable.com/" target="_blank">ASCII code</a> so that uppercase letters are always <em>smaller</em> than lowercase ones.</p>
@@ -86,8 +84,7 @@
 
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">money</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">7.4</span><span class="p">,</span> <span class="mi">200</span><span class="p">];</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">money</span><span class="p">.</span><span class="nx">sort</span><span class="p">());</span>    <span class="c1">// [12, 200, 3, 7.4]</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>:open_mouth: Surprise?</p>
@@ -100,8 +97,7 @@
 
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">everything</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;$200&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="mf">7.4</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="kc">false</span><span class="p">];</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">everything</span><span class="p">.</span><span class="nx">sort</span><span class="p">());</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>Although I doubt it's a good idea to put all these different types together in an array, this is totally legal in JavaScript. If you think <code>12</code> should be thought as <em>larger</em> than <code>7.4</code>, then, how to sort the whole array?</p>
@@ -111,8 +107,7 @@
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">everything</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;$200&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="mf">7.4</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="kc">false</span><span class="p">];</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">everything</span><span class="p">.</span><span class="nx">sort</span><span class="p">());</span> 
 <span class="c1">// [&quot;$200&quot;, 0.3, 12, 7.4, &quot;Red&quot;, false, true, &quot;white&quot;]</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <h1>Comparing Function</h1>
@@ -126,8 +121,7 @@
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">money</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">7.4</span><span class="p">,</span> <span class="mi">200</span><span class="p">];</span>
 <span class="kd">var</span> <span class="nx">compare</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">a</span> <span class="o">-</span> <span class="nx">b</span><span class="p">;};</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">money</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">compare</span><span class="p">));</span> <span class="c1">// [3, 7.4, 12, 200]</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>Now, you get what you wanted. :grinning:</p>
@@ -147,8 +141,7 @@
 <span class="p">}];</span>
 <span class="kd">var</span> <span class="nx">compare</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">a</span><span class="p">.</span><span class="nx">id</span> <span class="o">-</span> <span class="nx">b</span><span class="p">.</span><span class="nx">id</span><span class="p">;}</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">people</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">compare</span><span class="p">));</span> <span class="c1">// Bob is before Alice now</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <h2>Compare Everything</h2>
@@ -158,8 +151,7 @@
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">everything</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;$200&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="mf">7.4</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="kc">false</span><span class="p">];</span>
 <span class="kd">var</span> <span class="nx">compare</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">a</span> <span class="o">-</span> <span class="nx">b</span><span class="p">;};</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">everything</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">compare</span><span class="p">));</span> 
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>Chrome and Opera: <code>[4, "Red", "$200", "white", false, 0.3, true, 7.4, 12]</code>;</p>
