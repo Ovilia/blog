@@ -14,13 +14,17 @@
     </div>
     
     <div class="pageTitle">{{ page.title }}</div>
+	
+	{% if page.series %}
+		{% include series.html %}
+	{% endif %}
     
     <div class="time">{{ page.time }}</div>
             
     <div id="tagPanel">
     {% for tag in page.tags %}
         <div class="tag">{{ tag }}</div>
-    {% endfor%}
+    {% endfor %}
     </div>
     
     {{ content }}

@@ -6,6 +6,7 @@
 body {
     background-color: #b0cb2c;
     overflow-x: hidden;
+    font-family: Arial, sarif;
 }
 
 ::selection {
@@ -24,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     padding: 10px 20px;
     background-color: #b0cb2c;
-    box-shadow: 5px 3px #70840e;
+    box-shadow: 3px 3px #70840e;
     font-size: 2.25em;
     margin: 1.5em 0 0.5em 0;
 }
@@ -66,6 +67,8 @@ blockquote {
     border-left-color: #70840e;
     border-left-width: 5px;
     font-size: 90%;
+    text-shadow: 1px 1px 0px #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=1);
 }
 
 code {
@@ -259,12 +262,14 @@ p>a>img:hover {
 
 .tag {
     background-color: #70840e;
-    padding: 2px 5px;
+    padding: 3px 8px;
     margin-right: 5px;
     display: inline-block;
     color: #fff;
     border-radius: 3px;
     box-shadow: 1px 1px 0 1px #333;
+    font-family: Consolas, "Courier New", Courier;
+	font-size: 14px;
 }
 
 .tag:hover {
@@ -349,6 +354,27 @@ p>a>img:hover {
     width: 200px;
     float: right;
     margin: 0 0 1em 1em;
+}
+
+.series-recent {
+	float: right;
+	background-color: #b0cb2c;
+	padding: 8px 20px;
+	margin-right: -60px;
+	margin-left: 20px;
+	display: inline-block;
+	font-family: 'Times New Roman', Arial, sarif;
+	font-size: 15px;
+	max-width: 200px;
+}
+
+.series-post {
+	font-family: 'Times New Roman', Arial, sarif;
+	font-size: 15px;
+	display: block;
+	background-color: #b0cb2c;
+	padding: 8px 20px;
+	margin-bottom: 20px;
 }
 
 @media screen and (max-device-width: 600px) {
