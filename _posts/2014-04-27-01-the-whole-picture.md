@@ -19,7 +19,7 @@ The three of them are designed to be decoupled. But the limitation of them makes
 
 Before we start, one thing you should always bear it in mind that **never use JavaScript if the effect can be achieved with CSS!** :star2:
 
-You should first have a look at <a href="{{ site.url }}/2014/04/27/01-about-this-series/">the introduction of this series</a> if you haven't.
+You should first have a look at <a href="{{ site.url }}/2014/04/27/00-about-this-series/">the introduction of this series</a> if you haven't.
 
 #HTML
 
