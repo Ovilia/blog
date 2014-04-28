@@ -49,4 +49,4 @@ I'm excited now! Let's start our journey! :heart_eyes:
 
 #Dedication
 
-This series is dedicated to Qianying Hou. :girl:
+This series is dedicated to Qianying Hou:girl:, Tian Chen:dancer: and Kexin Chen:no_good:. 

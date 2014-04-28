@@ -97,14 +97,16 @@
     <span class="nx">v</span><span class="o">:</span> <span class="mi">6</span>
 <span class="p">};</span> 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span> <span class="c1">// a is still {x: 4, y: 3}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>You may be suprised at <code>String</code>'s being a primitive type if you are from C++ or some other languages. But in JavaScript, once a <code>String</code> is created, it cannot be changed anymore.</p>
 
 <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">&quot;Hello, &quot;</span><span class="p">;</span>
 <span class="nx">a</span> <span class="o">+=</span> <span class="s2">&quot;World!&quot;</span><span class="p">;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>In the above code, when executing the second line, the previous value <code>"Hello, "</code> and the new value <code>"World!"</code> are used to create a new <code>String</code> object and make <code>a</code> reference the concatenated result.</p>
@@ -183,7 +185,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <div class="highlight"><pre><code class="js"><span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;1.2&quot;</span><span class="p">);</span>   <span class="c1">// 1.2</span>
 <span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;2.0&quot;</span><span class="p">);</span>   <span class="c1">// 2.0</span>
 <span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;3&quot;</span><span class="p">);</span>     <span class="c1">// 3</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <h2>Unexpected Characters</h2>
@@ -195,7 +198,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <div class="highlight"><pre><code class="js"><span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;9.1e3&quot;</span><span class="p">);</span>        <span class="c1">// 9100</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;9.1e3&quot;</span><span class="p">);</span>      <span class="c1">// 9</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;9.1e3&quot;</span><span class="p">);</span>    <span class="c1">// 9100</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p><code>"9.1e3"</code> is a legal form of scientific notion, so we <em>expect</em> JavaScript gives us the correct answer <code>9100</code>. But unfortunately, <code>parseInt()</code> surprised us with the output of <code>9</code>. I said that we should learn JavaScript better and know what to expect. So let's think about why it gives <code>9</code>.</p>
@@ -217,7 +221,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;3e&quot;</span><span class="p">);</span>        <span class="c1">// NaN</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;3e&quot;</span><span class="p">);</span>      <span class="c1">// 3</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;3e&quot;</span><span class="p">);</span>    <span class="c1">// 3</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>When <code>"e"</code> is at the first position, all of them give <code>NaN</code>, which make sense as they're illegal, although the whole story is more complicated than you might think.</p>
@@ -231,7 +236,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <div class="highlight"><pre><code class="js"><span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;.3&quot;</span><span class="p">);</span>        <span class="c1">// 0.3</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;.3&quot;</span><span class="p">);</span>      <span class="c1">// NaN</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;.3&quot;</span><span class="p">);</span>    <span class="c1">// 0.3</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>Decimal point (<code>.</code>) is legal to <code>Number()</code> and <code>parseFloat()</code>, but illegal to <code>parseInt()</code>. Since there's no legal character before an illegal one, <code>parseInt()</code> returns <code>NaN</code>.</p>
@@ -241,7 +247,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <div class="highlight"><pre><code class="js"><span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;2.3&quot;</span><span class="p">);</span>       <span class="c1">// 2.3</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;2.3&quot;</span><span class="p">);</span>     <span class="c1">// 2</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;2.3&quot;</span><span class="p">);</span>   <span class="c1">// 2.3</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>There's nothing magic here. But if you think twice, you would probably find <code>parseInt()</code>'s judging algorithm is efficient since it just ignore from the starting illegal character.</p>
@@ -255,7 +262,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;2.3.4&quot;</span><span class="p">);</span>       <span class="c1">// NaN</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;2.3.4&quot;</span><span class="p">);</span>     <span class="c1">// 2</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;2.3.4&quot;</span><span class="p">);</span>   <span class="c1">// 2.3</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>Just bear it in mind that <code>parseInt()</code> and <code>parseFloat()</code> tends to ignore from the first illegal character while <code>Numbur()</code> checks them completely.</p>
@@ -271,7 +279,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;2.3d&quot;</span><span class="p">);</span>         <span class="c1">// NaN</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;2.3d&quot;</span><span class="p">);</span>       <span class="c1">// 2</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;2.3d&quot;</span><span class="p">);</span>     <span class="c1">// 2.3</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>I believe you are more confident now.</p>
@@ -289,7 +298,8 @@ empty string returns <code>NaN</code> (unlike with <code>Number()</code>, which 
 <span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;011&quot;</span><span class="p">);</span>             <span class="c1">// 11</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;011&quot;</span><span class="p">);</span>           <span class="c1">// 11</span>
 <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">&quot;011&quot;</span><span class="p">);</span>         <span class="c1">// 11</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p><code>"0x11"</code> is recognized as hexadecimal by <code>Number()</code> and <code>parseInt()</code>, but as decimal by <code>parseFloat()</code> (the leading zero is ignored). <code>"011"</code> is not recognized as octal in all cases.</p>
@@ -308,7 +318,8 @@ var num = parseInt("070");
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;010&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>       <span class="c1">// 3</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;010&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>       <span class="c1">// 8</span>
 <span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;010&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>      <span class="c1">// 16</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>In general, <code>Number()</code> supports hexadecimal but not octal; <code>parseInt()</code> recognize in hexadecimal be default but can set the radix explicitly; <code>parseFloat()</code> only support decimal form.</p>
