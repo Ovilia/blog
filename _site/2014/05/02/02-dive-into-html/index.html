@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38205696-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Web Front-End Blog by Wenli Zhang" />
+        
+        <link rel="shortcut icon" href="/blog/img/me.ico">
+            
+        <link rel="stylesheet" type="text/css" href="/blog/css/syntax.css" />
+        <link rel="stylesheet" type="text/css" href="/blog/css/default.css" />
+        
+        
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+            
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/blog/js/lazyLoad.js"></script>
+        <script type="text/javascript" src="/blog/js/common.js"></script>
+    </head>
+    
+    <body>        
+        <div id="contentDiv">
+
+
+<title>02 - Dive into HTML
+	
+		: Dive into Web Front-End Programming
+	
+</title>
+ 
+<a href="http://zhangwenli.com/blog">
+    <div id="homeDiv"></div>
+</a>
+<div class="rotLeft rotTop pageBack"></div>
+<div class="rotRight rotTop pageBack"></div>
+<div class="container page">
+    <div class="simpleNav">
+        <a href="http://zhangwenli.com" class="pageDiv">Home</a>
+        <a href="http://zhangwenli.com/blog" class="pageDiv">Blog</a>
+    </div>
+    
+    <div class="pageTitle">02 - Dive into HTML</div>
+	
+	
+		<blockquote class="seriesNote">
+	<h4>Series: Dive into Web Front-End Programming</h4>
+	
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<li>
+			
+				<a href="http://zhangwenli.com/blog/2014/04/27/00-about-this-series/">
+			
+			
+			00 - About this series
+			
+			
+				</a>
+			
+			</li>
+		
+	
+		
+			<li>
+			
+				<a href="http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/">
+			
+			
+			01 - The Whole Picture
+			
+			
+				</a>
+			
+			</li>
+		
+	
+		
+			<li>
+			
+			
+			02 - Dive into HTML
+			
+			
+			</li>
+		
+	
+	</ul>
+</blockquote>
+
+	
+    
+    <div class="time">2014.05.02 14:12:00</div>
+            
+    <div id="tagPanel">
+    
+        <div class="tag">Web Design</div>
+    
+        <div class="tag">Tutorial</div>
+    
+        <div class="tag">HTML</div>
+    
+    </div>
+    
+    <blockquote><h3>What will you learn in this post?</h3>
+
+<p>I have introduced what HTML, CSS and JavaScript are and how they can work together in <a href="http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/">my previous post</a>. In this post, we will have a deeper understanding of HTML and learn to make Web pages step by step.</p></blockquote>
+
+<h1>Before We Start</h1>
+
+<p>You can use your favourite text editor to write the examples as shown in this post. If you don't have a preference, I would recommend eithor <a href="http://notepad-plus-plus.org" target="_blank">Notepad++</a> or <a href="http://komodoide.com/komodo-edit/" target="_blank">Komodo Edit</a>.</p>
+
+<p>Install <a href="www.google.com/chrome/" target="_blank">Chrome</a> or <a href="http://www.firefox.com" target="_blank">Firefox</a> if you haven't. You will need <a href="http://getfirebug.com/" target="_blank">Firebug</a> for Firefox in later posts.</p>
+
+<p>You can open the <code>*.html</code> files using your favourite browsers to see the results. No server in needed by the end of this post.</p>
+
+<h1>Tags</h1>
+
+<p>Remember that HTML is responsible for the content of a Web page? This means when you want to add text, buttons, images, videos, sound, and etc., HTML is the one to call for.</p>
+
+<p><em>Tags</em> are used to state the type of the element in an HTML file, e.g. <code>p</code> is used for a paragraph, <code>&lt;img&gt;</code> for an image, and as you can imagine, <code>&lt;video&gt;</code> for a video. Here's the complete list of HTML tags: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML element reference - Mozilla Developer Network</a></p>
+
+<p>Luckily, you don't have to remember all these. :relaxed: I'm going to introduce the most frequently used ones and the other ones can be left until you meet with them in a particular usage.</p>
+
+<p>All the following tags should appear inside the <code>&lt;body&gt;&lt;/body&gt;</code> part.</p>
+
+<h2><code>&lt;p&gt;</code></h2>
+
+<blockquote><p>The HTML <code>&lt;p&gt;</code> element (or <em>HTML Paragraph Element</em>) represents a paragraph of text. Paragraphs are block-level elements.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-01.png" /></p>
+
+<p>This is the <em>default style</em> a Web broswer may <em>probably</em> render it into. But you can always write your own CSS style to overwrite the default style. A <code>&lt;p&gt;&lt;/p&gt;</code> has <em>margin</em> above and below it. A <em>margin</em> is a distance outside current element to keep it from other ones, which will be discussed more in the next post.</p>
+
+<blockquote><p>Web browsers have <em>default style</em> to render each element, e.g. there is margin above and below each <code>&lt;p&gt;&lt;/p&gt;</code> element. Browser default style has the lowest priority, following by external style, internal style and inline style. So an inline style can always overwrite all other styles. We can discuss this topic in future posts.</p>
+
+<p>By <em>probably</em> I mean different Web broswers, or even differnt versions of browsers may possibly have different rendering results of a Web page. By this time, you don't have to worry about this to much.</p></blockquote>
+
+<p>We prefer <code>&lt;p&gt;&lt;/p&gt;</code> not only for the margin, but more importantly, for its representation of a <em>paragraph</em>. :star:</p>
+
+<h2><code>&lt;br&gt;</code></h2>
+
+<p>This is a useful tag, but usually abused by those bad Web programmers. :anger:</p>
+
+<blockquote><p>The HTML <code>&lt;br&gt;</code> Element (or <em>HTML Line Break Element</em>) produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</p>
+
+<p>Do not use <code>&lt;br&gt;</code> to increase the gap between lines of text; use the CSS margin property or the <code>&lt;p&gt;</code> element.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>Using a <em>line break</em> is more like changing the <em>appearance</em> rather than <em>content</em>, so it should be avoided when possible. Use <code>&lt;p&gt;&lt;/p&gt;</code> when you want to display paragraphs and use <code>&lt;br&gt;</code> only when the content between two lines is the same thing and you just need a line break to seperate them visually.</p>
+
+<p>Another thing you need to notice is that, although most HTML tags come in pairs, there are some exceptions. <code>&lt;br&gt;</code> is one of them.</p>
+
+<p>How to remember which ones are the exceptions? Usually, those who never have a child element can come alone, like <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code> and <code>&lt;hr&gt;</code>. You can never imagine what element can come inside a line break, an image or a horizontal rule.</p>
+
+<p>A good habit is to write them like <code>&lt;br /&gt;</code>, <code>&lt;img /&gt;</code>, <code>&lt;hr /&gt;</code> so that you can clearly see that they don't come in pairs.</p>
+
+<blockquote><p>You should always write <code>&lt;script&gt;&lt;/script&gt;</code> in pairs even if it's for external JavaScript and have no child element.</p></blockquote>
+
+<h2><code>&lt;hr&gt;</code></h2>
+
+<blockquote><p>In HTML5 the HTML <code>&lt;hr&gt;</code> element represents a <em>thematic break</em> between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section). In previous versions of HTML, it represented a <em>horizontal rule</em>. It may still be displayed as a horizontal rule in visual browsers, but is now defined in semantic terms, rather than presentational terms.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>From the definition, we can see that in HTML5 (the fifth edition of HTML) <code>&lt;hr&gt;</code> comes from a <em>horizontal rule</em> as appearance to a <em>thematic break</em> as content.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-03.png" /></p>
+
+<h2>Heading Elements</h2>
+
+<blockquote><p>Heading elements implement six levels of document headings, <code>&lt;h1&gt;</code> is the most important and <code>&lt;h6&gt;</code> is the least. A heading element briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>Heading elements of different levels are used to state the section they belong, rather than representing different appearance.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;h1&gt;</span>This is h1.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>This is h2.<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>This is h3.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>This is h4.<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>This is h1.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>This is h1.<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is p.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-04.png" /></p>
+
+<h2><code>&lt;img&gt;</code></h2>
+
+<blockquote><p>The HTML <code>&lt;img&gt;</code> Element (or <em>HTML Image Element</em>) represents an image of the document.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>URL of the image should be stated like: <code>&lt;img src="abc.png" /&gt;</code>, and its location is eithor relative to this HTML file or absolute.</p>
+
+<h2><code>&lt;a&gt;</code></h2>
+
+<blockquote><p>The HTML <code>&lt;a&gt;</code> Element (or the HTML Anchor Element) defines a hyperlink, the named target destination for a hyperlink, or both.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>Use the <code>href</code> attribute to state the location of the link and it's useful to set the <code>target</code> attribute to be <code>_blank</code> when you want browsers open a new tab for the new link.</p>
+
+<div class="highlight"><pre><code class="html">Welcome to visit my <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://zhangwenli.com&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>personal site<span class="nt">&lt;/a&gt;</span>!
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-08.png" /></p>
+
+<p>If you want to put a link on an image, you can simply use this:</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://zhangwenli.com&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;abc.png&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/a&gt;</span>!
+</code></pre></div>
+
+
+<h2>List</h2>
+
+<p>There are two types of lists in HTML, <code>&lt;ol&gt;</code> for ordered list and <code>&lt;ul&gt;</code> for unordered list, both of which have <code>&lt;li&gt;</code> children for list items.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>First<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Second<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Third<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Fourth<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Fifth<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>First<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Second<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Third<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Fourth<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Fifth<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-05.png" /></p>
+
+<h2>Form</h2>
+
+<p>Form is frequently used in Web pages for registering, contact, and etc. You can search <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/divinput" target="_blank"><code>&lt;input&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank"><code>&lt;button&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank"><code>&lt;label&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank"><code>&lt;textarea&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank"><code>&lt;select&gt;</code></a> for later use.</p>
+
+<h2>Table</h2>
+
+<blockquote><p>The HTML Table Element (<code>&lt;table&gt;</code>) represents data in two dimensions or more.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>A typical table looks like:</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Alice<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Bob<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Clair<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Danny<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Elizabeth<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Fay<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-06.png" /></p>
+
+<p><code>&lt;tr&gt;</code> is for a row of cells, and <code>&lt;td&gt;</code> is for a cell containing data.</p>
+
+<h2><code>&lt;div&gt;</code> and <code>&lt;span&gt;</code></h2>
+
+<p>Now are the last two (and yet the most frequently used two) tags I would like to introduce today! :smiley:</p>
+
+<blockquote><p>The HTML <code>&lt;div&gt;</code> element (or <em>HTML Document Division Element</em>) is the <strong>generic container</strong> for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;</span>This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-02.png" /></p>
+
+<p>Note that this looks quite like that of <code>&lt;p&gt;&lt;/p&gt;</code>, with the difference that this don't have a margin above and below the elements. Then, when should we use <code>&lt;div&gt;&lt;/div&gt;</code>? Should we use it when we don't want the margin?</p>
+
+<p>No! :scream:</p>
+
+<p><strong>The margin is the <em>appearance</em> while HTML should only be responsible for the <em>content</em>!</strong> :star:</p>
+
+<blockquote><p>The HTML <code>&lt;span&gt;</code> element is a <strong>generic inline container</strong> for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element whereas a <code>&lt;span&gt;</code> is an inline element.</p>
+
+<p><em>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">Mozilla Developer Network</a></em></p></blockquote>
+
+<p>Let's look at this example to see the difference between <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>This is a <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;color: red&quot;</span><span class="nt">&gt;</span>red<span class="nt">&lt;/div&gt;</span> apple.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is a <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">&quot;color: red&quot;</span><span class="nt">&gt;</span>red<span class="nt">&lt;/span&gt;</span> apple.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-07.png" /></p>
+
+<p><code>&lt;span&gt;</code> is an <em>inline</em> container, which means it won't put the element into a new line, while <code>&lt;div&gt;</code> on the other hand does.</p>
+
+<p>Both of <code>&lt;span&gt;</code> and <code>&lt;div&gt;</code> are <em>generic inline container</em>, so you should use them only when there are no more proper tags to use. And that's why I need to introduce them at last.</p>
+
+<h2>Use Them Together</h2>
+
+<p>I have all the ingredients and let's cook a fantastic meal! :v:</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;h1&gt;</span>Thanks for reading!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is a post by <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://zhangwenli.com&quot;</span><span class="nt">&gt;</span>Wenli<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Currently, there&#39;re three posts in this series:
+    <span class="nt">&lt;ol&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://zhangwenli.com/blog/2014/04/27/00-about-this-series/&quot;</span><span class="nt">&gt;</span>About This Series<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/&quot;</span><span class="nt">&gt;</span>The Whole Picture<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://zhangwenli.com/blog/2014/05/02/02-dive-into-html/&quot;</span><span class="nt">&gt;</span>Dive into HTML<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-09.png" /></p>
+
+<h1>Id</h1>
+
+<p>An <em>id</em> is a universal name for later selection and operation in CSS and JavaScript.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;myName&quot;</span><span class="nt">&gt;</span>Wenli<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p>HTML is case-insensitive, so if there is an element of <code>id="myName"</code>, there shouldn't be another element of <code>id="myname"</code>. Otherwise may cause confusion since CSS is case-insensitive while JavaScript is case-sensitive.</p>
+
+<p>An id is not mandatory, so you can add id to important elements or those you will select in CSS or JavaScript.</p>
+
+<h1>Class</h1>
+
+<p>A <em>class</em> is a group of elements that share the same attributes or need to be operated together. For example, you can select all the elements with class <code>price</code> in JavaScript to calculate the sum, or set the background-color of class <code>price</code> to be yellow.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;firstSeason&quot;</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>1.3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;secondSeason&quot;</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>3.2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;thirdSeason&quot;</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>6.2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;fourthSeason&quot;</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>3.5<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><code>id</code> and <code>class</code> are called <em>attributes</em> of an element. Other attributes are written in the same style. The full list of attributes is available at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">HTML attribute reference - Mozilla Developer Network</a>.</p>
+
+<h1>Conclusion</h1>
+
+<p>In this post, we learned about some most frequently used tags in HTML and their id and class attributes. We learned to write the content of a Web page, despite of its appearance. In the next post, we're going to dive into CSS and there will be more things we can to do with them together. :sunglasses:</p>
+
+<h1>Homework</h1>
+
+<p>Write a single-page introduction of your favourite movie or book. Use the tags introduced as much as possible.</p>
+
+<p>Use no CSS or JavaScript. Sometimes CSS or JavaScript files may be inaccessible in our Web pages. We need to make sure the content can still be readable without CSS or JavaScript.</p>
+
+<p>You can always <a href="mailto:me@zhangwenli.com">email me</a> if you have any question! :yum:</p>
+
+	
+	
+		<blockquote class="seriesNote">
+	<h4>Series: Dive into Web Front-End Programming</h4>
+	
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<li>
+			
+				<a href="http://zhangwenli.com/blog/2014/04/27/00-about-this-series/">
+			
+			
+			00 - About this series
+			
+			
+				</a>
+			
+			</li>
+		
+	
+		
+			<li>
+			
+				<a href="http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/">
+			
+			
+			01 - The Whole Picture
+			
+			
+				</a>
+			
+			</li>
+		
+	
+		
+			<li>
+			
+			
+			02 - Dive into HTML
+			
+			
+			</li>
+		
+	
+	</ul>
+</blockquote>
+
+	
+    
+    <div class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" />
+        </a>
+        <div><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Every blog post in this site</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://zhangwenli.com" property="cc:attributionName" rel="cc:attributionURL">Wenli Zhang</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>, based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/ovilia/blog" rel="dct:source">http://github.com/ovilia/blog</a>. </div>
+        <div>You must reference <code>Author: &lt;a href=&quot;http://zhangwenli.com&quot;&gt;Wenli Zhang&lt;/a&gt;</code> explictly along with this license note if you want to re-post the content, either completely or partially.</div>
+    </div>
+    
+    <div class="olderNewer">
+        
+            <div class="olderPost">
+                <a href="http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/">Older: 01 - The Whole Picture</a>
+            </div>
+        
+        
+        <div class="recentPost">
+            <a href="http://zhangwenli.com/blog">Recent Posts</a>
+        </div>
+    </div>
+    
+    <h1>Comments</h1>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wenli'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+<div class="rotLeft rotBottom pageBack"></div>
+<div class="rotRight rotBottom pageBack"></div>
+
+        </div>
+        
+        <div id="footerDiv">
+            <div id="footerImg"></div>
+            <div id="footerCnt">
+                <div id="footer">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+ 

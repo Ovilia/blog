@@ -62,18 +62,21 @@ blockquote {
     background-color: #d4e583;
     margin: 20px 0;
     padding: 20px 60px;
-    box-shadow: 2px 2px 10px 1px #70840e;
-    border-left-style: solid;
-    border-left-color: #70840e;
-    border-left-width: 5px;
+    border-style: solid;
+    border-color: #70840e;
+    border-width: 0px 1px 0px 7px;
     font-size: 90%;
     text-shadow: 1px 1px 0px #fff;
     filter: dropshadow(color=#fff, offx=1, offy=1);
 }
 
 blockquote a {
-	text-shadow: none;
-	filter: none;
+    text-shadow: none;
+    filter: none;
+}
+
+blockquote p {
+    text-indent: 0;
 }
 
 code {
@@ -86,6 +89,10 @@ code {
     font-family: Consolas, "Courier New", Courier;
     text-shadow: none;
     background-color: #eef3f0;
+}
+
+h1>code, h2>code, h3>code {
+    color: #000;
 }
 
 .more {

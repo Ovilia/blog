@@ -7,6 +7,295 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>02 - Dive into HTML</title>
+                <description>&lt;blockquote&gt;&lt;h3&gt;What will you learn in this post?&lt;/h3&gt;
+
+&lt;p&gt;I have introduced what HTML, CSS and JavaScript are and how they can work together in &lt;a href=&quot;http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/&quot;&gt;my previous post&lt;/a&gt;. In this post, we will have a deeper understanding of HTML and learn to make Web pages step by step.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h1&gt;Before We Start&lt;/h1&gt;
+
+&lt;p&gt;You can use your favourite text editor to write the examples as shown in this post. If you don't have a preference, I would recommend eithor &lt;a href=&quot;http://notepad-plus-plus.org&quot; target=&quot;_blank&quot;&gt;Notepad++&lt;/a&gt; or &lt;a href=&quot;http://komodoide.com/komodo-edit/&quot; target=&quot;_blank&quot;&gt;Komodo Edit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Install &lt;a href=&quot;www.google.com/chrome/&quot; target=&quot;_blank&quot;&gt;Chrome&lt;/a&gt; or &lt;a href=&quot;http://www.firefox.com&quot; target=&quot;_blank&quot;&gt;Firefox&lt;/a&gt; if you haven't. You will need &lt;a href=&quot;http://getfirebug.com/&quot; target=&quot;_blank&quot;&gt;Firebug&lt;/a&gt; for Firefox in later posts.&lt;/p&gt;
+
+&lt;p&gt;You can open the &lt;code&gt;*.html&lt;/code&gt; files using your favourite browsers to see the results. No server in needed by the end of this post.&lt;/p&gt;
+
+&lt;h1&gt;Tags&lt;/h1&gt;
+
+&lt;p&gt;Remember that HTML is responsible for the content of a Web page? This means when you want to add text, buttons, images, videos, sound, and etc., HTML is the one to call for.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tags&lt;/em&gt; are used to state the type of the element in an HTML file, e.g. &lt;code&gt;p&lt;/code&gt; is used for a paragraph, &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; for an image, and as you can imagine, &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; for a video. Here's the complete list of HTML tags: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot;&gt;HTML element reference - Mozilla Developer Network&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Luckily, you don't have to remember all these. :relaxed: I'm going to introduce the most frequently used ones and the other ones can be left until you meet with them in a particular usage.&lt;/p&gt;
+
+&lt;p&gt;All the following tags should appear inside the &lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt; part.&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element (or &lt;em&gt;HTML Paragraph Element&lt;/em&gt;) represents a paragraph of text. Paragraphs are block-level elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-01.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the &lt;em&gt;default style&lt;/em&gt; a Web broswer may &lt;em&gt;probably&lt;/em&gt; render it into. But you can always write your own CSS style to overwrite the default style. A &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; has &lt;em&gt;margin&lt;/em&gt; above and below it. A &lt;em&gt;margin&lt;/em&gt; is a distance outside current element to keep it from other ones, which will be discussed more in the next post.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Web browsers have &lt;em&gt;default style&lt;/em&gt; to render each element, e.g. there is margin above and below each &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; element. Browser default style has the lowest priority, following by external style, internal style and inline style. So an inline style can always overwrite all other styles. We can discuss this topic in future posts.&lt;/p&gt;
+
+&lt;p&gt;By &lt;em&gt;probably&lt;/em&gt; I mean different Web broswers, or even differnt versions of browsers may possibly have different rendering results of a Web page. By this time, you don't have to worry about this to much.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;We prefer &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; not only for the margin, but more importantly, for its representation of a &lt;em&gt;paragraph&lt;/em&gt;. :star:&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;This is a useful tag, but usually abused by those bad Web programmers. :anger:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; Element (or &lt;em&gt;HTML Line Break Element&lt;/em&gt;) produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.&lt;/p&gt;
+
+&lt;p&gt;Do not use &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; to increase the gap between lines of text; use the CSS margin property or the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Using a &lt;em&gt;line break&lt;/em&gt; is more like changing the &lt;em&gt;appearance&lt;/em&gt; rather than &lt;em&gt;content&lt;/em&gt;, so it should be avoided when possible. Use &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; when you want to display paragraphs and use &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; only when the content between two lines is the same thing and you just need a line break to seperate them visually.&lt;/p&gt;
+
+&lt;p&gt;Another thing you need to notice is that, although most HTML tags come in pairs, there are some exceptions. &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; is one of them.&lt;/p&gt;
+
+&lt;p&gt;How to remember which ones are the exceptions? Usually, those who never have a child element can come alone, like &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;. You can never imagine what element can come inside a line break, an image or a horizontal rule.&lt;/p&gt;
+
+&lt;p&gt;A good habit is to write them like &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;hr /&amp;gt;&lt;/code&gt; so that you can clearly see that they don't come in pairs.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;You should always write &lt;code&gt;&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt; in pairs even if it's for external JavaScript and have no child element.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;blockquote&gt;&lt;p&gt;In HTML5 the HTML &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; element represents a &lt;em&gt;thematic break&lt;/em&gt; between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section). In previous versions of HTML, it represented a &lt;em&gt;horizontal rule&lt;/em&gt;. It may still be displayed as a horizontal rule in visual browsers, but is now defined in semantic terms, rather than presentational terms.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;From the definition, we can see that in HTML5 (the fifth edition of HTML) &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; comes from a &lt;em&gt;horizontal rule&lt;/em&gt; as appearance to a &lt;em&gt;thematic break&lt;/em&gt; as content.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-03.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Heading Elements&lt;/h2&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Heading elements implement six levels of document headings, &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the most important and &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the least. A heading element briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Heading elements of different levels are used to state the section they belong, rather than representing different appearance.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;This is h1.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;This is h2.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;This is h3.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h4&amp;gt;&lt;/span&gt;This is h4.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h4&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&amp;gt;&lt;/span&gt;This is h1.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h6&amp;gt;&lt;/span&gt;This is h1.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h6&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is p.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-04.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; Element (or &lt;em&gt;HTML Image Element&lt;/em&gt;) represents an image of the document.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;URL of the image should be stated like: &lt;code&gt;&amp;lt;img src=&quot;abc.png&quot; /&amp;gt;&lt;/code&gt;, and its location is eithor relative to this HTML file or absolute.&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; Element (or the HTML Anchor Element) defines a hyperlink, the named target destination for a hyperlink, or both.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Use the &lt;code&gt;href&lt;/code&gt; attribute to state the location of the link and it's useful to set the &lt;code&gt;target&lt;/code&gt; attribute to be &lt;code&gt;_blank&lt;/code&gt; when you want browsers open a new tab for the new link.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;Welcome to visit my &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;personal site&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-08.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to put a link on an image, you can simply use this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;abc.png&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;List&lt;/h2&gt;
+
+&lt;p&gt;There are two types of lists in HTML, &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; for ordered list and &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; for unordered list, both of which have &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; children for list items.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Third&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Fourth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Fifth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;First&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Third&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Fourth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Fifth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-05.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Form&lt;/h2&gt;
+
+&lt;p&gt;Form is frequently used in Web pages for registering, contact, and etc. You can search &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/divinput&quot; target=&quot;_blank&quot;&gt;&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button&quot; target=&quot;_blank&quot;&gt;&lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label&quot; target=&quot;_blank&quot;&gt;&lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea&quot; target=&quot;_blank&quot;&gt;&lt;code&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select&quot; target=&quot;_blank&quot;&gt;&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;&lt;/a&gt; for later use.&lt;/p&gt;
+
+&lt;h2&gt;Table&lt;/h2&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML Table Element (&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;) represents data in two dimensions or more.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;A typical table looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Alice&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Bob&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Clair&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Danny&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Elizabeth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Fay&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-06.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; is for a row of cells, and &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; is for a cell containing data.&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Now are the last two (and yet the most frequently used two) tags I would like to introduce today! :smiley:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; element (or &lt;em&gt;HTML Document Division Element&lt;/em&gt;) is the &lt;strong&gt;generic container&lt;/strong&gt; for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;) is appropriate.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-02.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that this looks quite like that of &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;, with the difference that this don't have a margin above and below the elements. Then, when should we use &lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;? Should we use it when we don't want the margin?&lt;/p&gt;
+
+&lt;p&gt;No! :scream:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The margin is the &lt;em&gt;appearance&lt;/em&gt; while HTML should only be responsible for the &lt;em&gt;content&lt;/em&gt;!&lt;/strong&gt; :star:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The HTML &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; element is a &lt;strong&gt;generic inline container&lt;/strong&gt; for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; is very much like a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; element, but &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; is a block-level element whereas a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; is an inline element.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Let's look at this example to see the difference between &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;red&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; apple.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;red&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; apple.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-07.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; is an &lt;em&gt;inline&lt;/em&gt; container, which means it won't put the element into a new line, while &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; on the other hand does.&lt;/p&gt;
+
+&lt;p&gt;Both of &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; are &lt;em&gt;generic inline container&lt;/em&gt;, so you should use them only when there are no more proper tags to use. And that's why I need to introduce them at last.&lt;/p&gt;
+
+&lt;h2&gt;Use Them Together&lt;/h2&gt;
+
+&lt;p&gt;I have all the ingredients and let's cook a fantastic meal! :v:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Thanks for reading!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a post by &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Wenli&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Currently, there&amp;#39;re three posts in this series:
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com/blog/2014/04/27/00-about-this-series/&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;About This Series&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+             &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;The Whole Picture&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com/blog/2014/05/02/02-dive-into-html/&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Dive into HTML&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-09.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Id&lt;/h1&gt;
+
+&lt;p&gt;An &lt;em&gt;id&lt;/em&gt; is a universal name for later selection and operation in CSS and JavaScript.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;myName&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Wenli&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;HTML is case-insensitive, so if there is an element of &lt;code&gt;id=&quot;myName&quot;&lt;/code&gt;, there shouldn't be another element of &lt;code&gt;id=&quot;myname&quot;&lt;/code&gt;. Otherwise may cause confusion since CSS is case-insensitive while JavaScript is case-sensitive.&lt;/p&gt;
+
+&lt;p&gt;An id is not mandatory, so you can add id to important elements or those you will select in CSS or JavaScript.&lt;/p&gt;
+
+&lt;h1&gt;Class&lt;/h1&gt;
+
+&lt;p&gt;A &lt;em&gt;class&lt;/em&gt; is a group of elements that share the same attributes or need to be operated together. For example, you can select all the elements with class &lt;code&gt;price&lt;/code&gt; in JavaScript to calculate the sum, or set the background-color of class &lt;code&gt;price&lt;/code&gt; to be yellow.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;firstSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;1.3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;secondSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;thirdSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;6.2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fourthSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.5&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;id&lt;/code&gt; and &lt;code&gt;class&lt;/code&gt; are called &lt;em&gt;attributes&lt;/em&gt; of an element. Other attributes are written in the same style. The full list of attributes is available at &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes&quot; target=&quot;_blank&quot;&gt;HTML attribute reference - Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In this post, we learned about some most frequently used tags in HTML and their id and class attributes. We learned to write the content of a Web page, despite of its appearance. In the next post, we're going to dive into CSS and there will be more things we can to do with them together. :sunglasses:&lt;/p&gt;
+
+&lt;h1&gt;Homework&lt;/h1&gt;
+
+&lt;p&gt;Write a single-page introduction of your favourite movie or book. Use the tags introduced as much as possible.&lt;/p&gt;
+
+&lt;p&gt;Use no CSS or JavaScript. Sometimes CSS or JavaScript files may be inaccessible in our Web pages. We need to make sure the content can still be readable without CSS or JavaScript.&lt;/p&gt;
+
+&lt;p&gt;You can always &lt;a href=&quot;mailto:me@zhangwenli.com&quot;&gt;email me&lt;/a&gt; if you have any question! :yum:&lt;/p&gt;
+</description>
+                <pubDate>Fri, 02 May 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/05/02/02-dive-into-html/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/05/02/02-dive-into-html/</guid>
+            </item>
+        
+            <item>
                 <title>01 - The Whole Picture</title>
                 <description>&lt;p&gt;&lt;strong&gt;Ideally, HTML files define the content of Web pages (text, image, video, etc.), CSS the style (how they look like), and JavaScript the interaction (e.g., what happens when user clicks the button). &lt;/strong&gt;&lt;/p&gt;
 
@@ -63,8 +352,7 @@
         Hello, world!
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Change the content of &lt;code&gt;hi.html&lt;/code&gt; to be the above code and open it in a browser, you'll find the result is the same as the previous example. But this is a standard way to put it.&lt;/p&gt;
@@ -100,8 +388,7 @@
         Hello, world!
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-01.jpg&quot; /&gt;&lt;/p&gt;
@@ -121,8 +408,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;We want to make &lt;code&gt;First&lt;/code&gt; and &lt;code&gt;Second&lt;/code&gt; be red and the background of them be yellow, which can be achieved with the following code:&lt;/p&gt;
@@ -138,8 +424,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-02.jpg&quot; /&gt;&lt;/p&gt;
@@ -172,8 +457,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, &lt;strong&gt;never use inline style in real programming&lt;/strong&gt;! :boom:&lt;/p&gt;
@@ -199,8 +483,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;You may notice that it helps reuse the style and the content and style are decoupled in internal style.&lt;/p&gt;
@@ -217,8 +500,7 @@
     &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;yellow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And a HTML file:&lt;/p&gt;
@@ -235,8 +517,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External style makes it possible to reuse CSS inter- and intra-HTML. Use this style whenever possible.&lt;/p&gt;
@@ -264,8 +545,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;alert(&amp;#39;Hello, again!&amp;#39;)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-03.jpg&quot; /&gt;&lt;/p&gt;
@@ -288,8 +568,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sayHello()&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External JavaScript &lt;code&gt;hello.js&lt;/code&gt;:&lt;/p&gt;
@@ -297,8 +576,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sayHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello, again!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External HTML:&lt;/p&gt;
@@ -313,8 +591,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sayHello()&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External JavaScript is prefered in most cases. Before you know which cases are excluded, you should always use external style.&lt;/p&gt;
@@ -331,8 +608,7 @@
 &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;But if you want to change the color when mouse has been clicked, only JavaScript can do it:&lt;/p&gt;
@@ -351,8 +627,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;change(this)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Change Color!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Conclusion&lt;/h1&gt;
@@ -490,8 +765,7 @@
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;pygments-style-github/
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sudo&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; python setup.py install
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pygmentize -S github -f html &amp;gt; syntax.css
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;That's all you need to do with it. But I spent a lot of time wondering why it's not working, which turns out to be that I typied &lt;code&gt;$ pygmentize ...&lt;/code&gt; into &lt;code&gt;$ python ...&lt;/code&gt; by mistake. :sweat:&lt;/p&gt;
@@ -541,8 +815,7 @@
     &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Divide-and-Conquer&lt;/h1&gt;
@@ -573,8 +846,7 @@
     &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
     &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;code&gt;.jCorner&lt;/code&gt; has three children representing three triangles.&lt;/p&gt;
@@ -584,8 +856,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jCorner_right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jCorner_center&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;That's all we need to do with &lt;code&gt;.jCorner&lt;/code&gt;.&lt;/p&gt;
@@ -604,8 +875,7 @@
     &lt;span class=&quot;k&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
     &lt;span class=&quot;k&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;&lt;code&gt;.jCorner_right&lt;/code&gt;&lt;/h2&gt;
@@ -620,8 +890,7 @@
     &lt;span class=&quot;k&quot;&gt;border-style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
     &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;&lt;code&gt;.jCorner_center&lt;/code&gt;&lt;/h2&gt;
@@ -641,8 +910,7 @@
     &lt;span class=&quot;k&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
     &lt;span class=&quot;k&quot;&gt;border-style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;By now, we can create folding effect completely. Next, we need to make a jQuery plugin, which can set the size and more.&lt;/p&gt;
@@ -690,8 +958,7 @@
         &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/Ovilia/jCorner&quot; target=&quot;_blank&quot;&gt;View on GitHub&lt;/a&gt;&lt;/p&gt;
@@ -733,79 +1000,6 @@
                 <pubDate>Fri, 20 Dec 2013 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2013/12/20/pacht-ebook-bonanza-is-back/</link>
                 <guid isPermaLink="true">http://zhangwenli.com/blog/2013/12/20/pacht-ebook-bonanza-is-back/</guid>
-            </item>
-        
-            <item>
-                <title>Game Development with Three.js</title>
-                <description>&lt;h1&gt;Free e-book Give Away!&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&amp;utm_medium=Threejspackt.com&amp;utm_campaign=Threejspackt.com&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Game Development with Three.js&lt;/em&gt;&lt;/a&gt; is a book I reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&amp;utm_medium=Threejspackt.com&amp;utm_campaign=Threejspackt.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-game-development-with-three-js-1.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;h2&gt;How to get it by free?!&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Two free e-books&lt;/strong&gt; are sponsored by Packt.&lt;/p&gt;
-
-&lt;p&gt;To get one free e-book by free, please &lt;a href=&quot;#disqus_thread&quot;&gt;comment on this post&lt;/a&gt; before &lt;strong&gt;2013-12-24 10:00:00 AM (GMT)&lt;/strong&gt; with your &lt;strong&gt;email address&lt;/strong&gt; and &lt;strong&gt;name&lt;/strong&gt;. Optionally, you can tell us about your experience with Three.js and why you want this book, although this would not add your chance of winning. :smile:&lt;/p&gt;
-
-&lt;p&gt;By the end of &lt;strong&gt;2013-12-24 10:00:00 AM (GMT)&lt;/strong&gt;, I will select two winners with two random numbers indicating comment order.&lt;/p&gt;
-
-&lt;h2&gt;Winners&lt;/h2&gt;
-
-&lt;p&gt;Winners are Lucian Enache and Joanne. Congratulations!&lt;/p&gt;
-
-&lt;p&gt;I'll contact you two later.&lt;/p&gt;
-
-&lt;h3&gt;Winners&lt;/h3&gt;
-
-&lt;p&gt;Winners are Joanne and Lucian Enache. Congratulations!&lt;/p&gt;
-
-&lt;p&gt;I'll contact Packt and you later.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;h2&gt;What you will learn from this book&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Set up a Three.js scene representing a game world
-Understand the types of Three.js components, including geometries, materials, lighting, cameras, and renderers&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Interact with your games using the mouse and keyboard&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Structure your worlds with various approaches to physical collision&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Construct complex levels using several different methods&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Extend the Three.js framework with custom game-specific classes&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Gain insight into development processes and important design and performance considerations for web games&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Achieve a basic understanding of multiplayer game networking&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;In Detail&lt;/h2&gt;
-
-&lt;p&gt;The advent of WebGL and its inclusion in many browsers enabled JavaScript programs running in a web browser to access the GPU without a plugin or extension. Three.js is a next generation high-level library that makes it possible to author complex 3D computer animations that display in the browser using nothing more than a simple text editor. The development of these new tools has opened up the world of real-time 3D computer animations to a far broader spectrum of developers.&lt;/p&gt;
-
-&lt;p&gt;Starting with how to build 3D games on the web using the Three.js graphics library, you will learn how to build 3D worlds with meshes, lighting, user interaction, physics, and more. Along the way, you'll learn how to build great online games through fun examples. Use this book as a guide to embrace the next generation of game development!&lt;/p&gt;
-
-&lt;p&gt;Moving on from the basics, you will learn how to use Three.js to build game worlds using its core components, including renderers, geometries, materials, lighting, cameras, and scenes. Following on from this, you will learn how to work with mouse and keyboard interactions, incorporate game physics, and import custom models and animations. You will also learn how to include effects like particles, sounds, and post-processing. You will start by building a 3D world, and then create a first person shooter game using it. You will then be shown how to imbue this FPS game with a &quot;capture the flag&quot; gameplay objective. With Game Development with Three.js, you will be able to build 3D games on the Web using the Three.js graphics library.&lt;/p&gt;
-
-&lt;h2&gt;Approach&lt;/h2&gt;
-
-&lt;p&gt;A step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.&lt;/p&gt;
-
-&lt;h2&gt;Who this book is for&lt;/h2&gt;
-
-&lt;p&gt;This book is for people interested in programming 3D games for the Web. Readers are expected to have basic knowledge of JavaScript syntax and a basic understanding of HTML and CSS. This book will be useful regardless of prior experience with game programming, whether you intend to build casual side projects or large-scale professional titles.&lt;/p&gt;
-
-&lt;h2&gt;Author&lt;/h2&gt;
-
-&lt;p&gt;Isaac Sukin has been building games since he was eight years old, when he discovered that Nerf Arena Blast came with a copy of Epic Games' Unreal Editor. At 16, he became co-leader of the Community Bonus Pack team, an international group of game developers for the Unreal Engine that won 49 awards over the next few years. He started learning to code around the same time by developing an open source Facebook-style statuses system that thousands of websites have adopted. Since then, he has been increasingly drawn to interactive JavaScript on the web. He created an open source 2D game engine in early 2012 and then dove into Three.js. As of 2013, he is a senior, studying entrepreneurship and information management at the Wharton school at the University of Pennsylvania. He has worked for Twitter, First Round Capital, and Acquia among others, and was previously a freelance consultant and developer. He is also a founder of Dorm Room Fund, a student-run venture capital fund that invests in student-run startups. You can find him on GitHub and Twitter under the alias IceCreamYou or visit his website at www.isaacsukin.com. He has previously published short stories and poetry, but this is his first book.&lt;/p&gt;
-
-&lt;h1&gt;Another e-book in Chinese&lt;/h1&gt;
-
-&lt;p&gt;I've written an e-book on &lt;a href=&quot;http://www.ituring.com.cn/book/1272&quot; target=&quot;_blank&quot;&gt;Introduction to Three.js&lt;/a&gt; in Chinese. Please check out if you are interested.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ituring.com.cn/book/1272&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2013-10-19-game-development-with-three-js-2.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-                <pubDate>Wed, 11 Dec 2013 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2013/12/11/game-development-with-three-js/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2013/12/11/game-development-with-three-js/</guid>
             </item>
         
     </channel>
