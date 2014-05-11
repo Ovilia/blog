@@ -6,7 +6,8 @@
 body {
     background-color: #b0cb2c;
     overflow-x: hidden;
-    font-family: Arial, sarif;
+    font-family: 'Roboto', Arial, 'Microsoft YaHei', sarif;
+    font-weight: 400;
 }
 
 ::selection {
@@ -17,7 +18,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', Arial, sarif;
+    font-family: 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
     font-weight: 900;
     margin: 0.5em 0;
 }
@@ -65,9 +66,7 @@ blockquote {
     border-style: solid;
     border-color: #70840e;
     border-width: 0px 1px 0px 7px;
-    font-size: 90%;
-    text-shadow: 1px 1px 0px #fff;
-    filter: dropshadow(color=#fff, offx=1, offy=1);
+    color: #444;
 }
 
 blockquote a {
@@ -77,6 +76,9 @@ blockquote a {
 
 blockquote p {
     text-indent: 0;
+    font-family: 'Times New Roman', Arial, sarif, 'FangSong';
+    line-height: 1.5em;
+    text-shadow: none;
 }
 
 code {
@@ -111,14 +113,23 @@ li {
 }
 
 p {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, 'Microsoft YaHei', sans-serif;
     font-weight: 200;
     font-size: 1.1em;
-    line-height: 150%;
+    line-height: 1.6em;
     text-shadow: 1px 1px 0px #fff;
     filter: dropshadow(color=#fff, offx=1, offy=1);
     margin: 0.8em 0;
     text-indent: 2em;
+}
+
+em {
+    font-family: Consolas, "Courier New", '仿宋', Courier;
+    font-style: normal;
+}
+
+blockquote em {
+    font-style: italic;
 }
 
 a {
@@ -163,7 +174,7 @@ h1>a {
 }
 
 .page {
-    background: url(../img/sketch.jpg);
+    background: url(../img/sketch.png);
     background-color: #eee;
     margin-top: 5em;
     display: inline-block;
@@ -176,7 +187,7 @@ h1>a {
 .pageBack {
     width: 100%;
     height: 200px;
-    background: url(../img/sketch.jpg);
+    background: url(../img/sketch.png);
     background-color: #eee;
     z-index: -10;
     position: relative;
@@ -212,7 +223,7 @@ h1>a {
 }
 
 .pageTitle {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive, 'Microsoft YaHei';
     font-size: 4.5em;
     margin-bottom: 0.25em;
     

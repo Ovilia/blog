@@ -26,9 +26,9 @@
                         
                         {% if isZn == false %}
                         <blockquote>
-							{% if post.series %}
-								<a href="{{ site.url }}{{ post.url }}" class="series-recent">Series: {{ post.series }}</a>
-							{% endif %}
+			    {% if post.series %}
+				<a href="{{ site.url }}{{ post.url }}" class="series-recent">Series: {{ post.series }}</a>
+			    {% endif %}
                             <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
                             <div class="time">{{ post.time }}</div>
                             
@@ -59,7 +59,7 @@
                         
                         {% if isZn == true %}
                         <blockquote>
-                            <h3><a href=".{{ post.url }}">{{ post.title }}</a></h3>
+                            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
                             <div class="time">{{ post.time }}</div>
                             
                             <div id="tagPanel">
@@ -69,7 +69,7 @@
                             </div>
                             
                             <p>{{ post.excerpt | markdownify }}</p>
-                            <h5 class="more"><a href=".{{ post.url }}" target="_blank">阅读全文</a></h5>
+                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank">阅读全文</a></h5>
                         </blockquote>
                         {% endif %}
                     {% endif %}
