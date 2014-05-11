@@ -409,6 +409,7 @@ p>a>img:hover {
     }
     #contentDiv {
         padding: 50px 5%;
+	width: 90%;
     }
     .pageBack {
         display: none;
