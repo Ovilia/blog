@@ -103,6 +103,17 @@ h1>code, h2>code, h3>code {
     top: -20px;
 }
 
+.deleted {
+    text-decoration: line-through;
+    color: #999;
+    font-style: italic;
+}
+
+.updated {
+    color: #cc4444;
+    font-style: italic;
+}
+
 ul, ol {
     margin: 10px 2em;
     font-family: Arial, sarif;
@@ -287,15 +298,15 @@ p>a>img:hover {
     background-color: #70840e;
     padding: 3px 8px;
     margin-right: 5px;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
     display: inline-block;
     color: #fff;
     border-radius: 3px;
     box-shadow: 1px 1px 0 1px #333;
     font-family: Consolas, "Courier New", Courier;
-	font-size: 14px;
-	text-shadow: none;
-	filter: none;
+    font-size: 14px;
+    text-shadow: none;
+    filter: none;
 }
 
 .tag:hover {
@@ -383,24 +394,24 @@ p>a>img:hover {
 }
 
 .series-recent {
-	float: right;
-	background-color: #b0cb2c;
-	padding: 8px 20px;
-	margin-right: -60px;
-	margin-left: 20px;
-	display: inline-block;
-	font-family: 'Times New Roman', Arial, sarif;
-	font-size: 15px;
-	max-width: 200px;
+    float: right;
+    background-color: #b0cb2c;
+    padding: 8px 20px;
+    margin-right: -60px;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'Times New Roman', Arial, sarif;
+    font-size: 15px;
+    max-width: 200px;
 }
 
 .series-post {
-	font-family: 'Times New Roman', Arial, sarif;
-	font-size: 15px;
-	display: block;
-	background-color: #b0cb2c;
-	padding: 8px 20px;
-	margin-bottom: 20px;
+    font-family: 'Times New Roman', Arial, sarif;
+    font-size: 15px;
+    display: block;
+    background-color: #b0cb2c;
+    padding: 8px 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-device-width: 600px) {
@@ -409,7 +420,7 @@ p>a>img:hover {
     }
     #contentDiv {
         padding: 50px 5%;
-	width: 90%;
+        width: 90%;
     }
     .pageBack {
         display: none;
