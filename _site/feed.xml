@@ -919,7 +919,7 @@
 
 &lt;h1&gt;pygments-style-github.git&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/hugomaiavieira/pygments-style-github&quot; target=&quot;_blank&quot;&gt;pygments-style-github.git&lt;/a&gt; is a greate project designed to create syntax css files in GitHub style.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/hugomaiavieira/pygments-style-github&quot; target=&quot;_blank&quot;&gt;pygments-style-github.git&lt;/a&gt; is a great project designed to create syntax CSS files in GitHub style.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git://github.com/hugomaiavieira/pygments-style-github.git
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;pygments-style-github/

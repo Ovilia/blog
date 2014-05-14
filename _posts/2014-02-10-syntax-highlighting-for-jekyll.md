@@ -16,7 +16,7 @@ excerpt: In this post, I'm going to explain how to set up syntax hightlighting f
 
 #pygments-style-github.git
 
-<a href="http://github.com/hugomaiavieira/pygments-style-github" target="_blank">pygments-style-github.git</a> is a greate project designed to create syntax css files in GitHub style.
+<a href="http://github.com/hugomaiavieira/pygments-style-github" target="_blank">pygments-style-github.git</a> is a great project designed to create syntax CSS files in GitHub style.
 
 {% highlight sh %}
 $ git clone git://github.com/hugomaiavieira/pygments-style-github.git
