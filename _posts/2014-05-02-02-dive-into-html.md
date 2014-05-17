@@ -3,7 +3,7 @@ title: 02 - Dive into HTML
 time: 2014.05.02 14:12:00
 layout: post
 tags:
-- Web Design
+- Web-Design
 - Tutorial
 - HTML
 series: Dive into Web Front-End Programming

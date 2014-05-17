@@ -3,7 +3,7 @@ title: 00 - About this series
 time: 2014.04.27 17:24:00
 layout: post
 tags:
-- Web Design
+- Web-Design
 - Tutorial
 series: Dive into Web Front-End Programming
 excerpt: This is an introduction of the series *Dive into Web Front-End Programming*.

@@ -1,6 +1,6 @@
 ---
 title: Converting To Numbers In JavaScript
-time: 2013.10.23 15:56
+time: 2013.10.23 15:56:00
 layout: post
 tags:
 - JavaScript

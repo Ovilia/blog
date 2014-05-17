@@ -25,9 +25,9 @@
     
     <div class="time">{{ page.time }}</div>
             
-    <div id="tagPanel">
+    <div class="tagPanel">
     {% for tag in page.tags %}
-        <div class="tag">{{ tag }}</div>
+        <a href="{{ site.url }}/tags?tag={{ tag }}"><div class="tag">{{ tag }}</div></a>
     {% endfor %}
     </div>
     

@@ -6,7 +6,7 @@
 body {
     background-color: #b0cb2c;
     overflow-x: hidden;
-    font-family: 'Roboto', Arial, 'Microsoft YaHei', sarif;
+    font-family: Lato, Arial, 'Microsoft YaHei', sarif;
     font-weight: 400;
 }
 
@@ -103,6 +103,10 @@ h1>code, h2>code, h3>code {
     top: -20px;
 }
 
+.no-indent {
+	text-indent: 0;
+}
+
 .deleted {
     text-decoration: line-through;
     color: #999;
@@ -124,8 +128,7 @@ li {
 }
 
 p {
-    font-family: 'Roboto', Arial, 'Microsoft YaHei', sans-serif;
-    font-weight: 200;
+    font-family: Lato, Arial, 'Microsoft YaHei', sans-serif;
     font-size: 1.1em;
     line-height: 1.6em;
     text-shadow: 1px 1px 0px #fff;
@@ -137,6 +140,7 @@ p {
 em {
     font-family: Consolas, "Courier New", '仿宋', Courier;
     font-style: normal;
+	text-shadow: 0px 0px 5px #b0cb2c;
 }
 
 blockquote em {
@@ -289,7 +293,6 @@ p>a>img:hover {
 }
 
 .time {
-    font-family: cursive;
     color: #70840e;
     margin: -0.5em 0 -0.3em 0;
 }
@@ -314,8 +317,27 @@ p>a>img:hover {
     transition: 0.5s;
 }
 
-#tagPanel {
+.tagPanel {
     margin: 5px 0 -5px 0;
+}
+
+.tagPanel a {
+	background-color: transparent;
+	border: none;
+}
+
+.tagPanelAll {
+	margin: -10px 0 20px 0;
+}
+
+.tag-posts {
+	display: none;
+}
+
+.timeAll {
+	float: right;
+	color: #666;
+	font-size: 0.8em;
 }
 
 .olderNewer {
@@ -412,6 +434,20 @@ p>a>img:hover {
     background-color: #b0cb2c;
     padding: 8px 20px;
     margin-bottom: 20px;
+}
+
+.pagination {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.page_number {
+	margin: 0 10px;
+}
+
+.allPostLink {
+	margin-left: 10px;
 }
 
 @media screen and (max-device-width: 600px) {

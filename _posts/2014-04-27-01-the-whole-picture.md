@@ -3,7 +3,7 @@ title: 01 - The Whole Picture
 time: 2014.04.27 19:38:20
 layout: post
 tags:
-- Web Design
+- Web-Design
 - Tutorial
 - HTML
 - CSS

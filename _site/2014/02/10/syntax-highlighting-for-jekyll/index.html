@@ -20,7 +20,7 @@
         <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/default.css" />
         
         
-        <link href='http://fonts.googleapis.com/css?family=Lobster|Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster|Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
             
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -55,15 +55,15 @@
     
     <div class="time">2014.02.10 01:27:57</div>
             
-    <div id="tagPanel">
+    <div class="tagPanel">
     
-        <div class="tag">Syntax Highlighting</div>
+        <a href="http://zhangwenli.com/blog/tags?tag=Syntax-Highlighting"><div class="tag">Syntax-Highlighting</div></a>
     
-        <div class="tag">GitHub</div>
+        <a href="http://zhangwenli.com/blog/tags?tag=GitHub"><div class="tag">GitHub</div></a>
     
-        <div class="tag">Setup</div>
+        <a href="http://zhangwenli.com/blog/tags?tag=Setup"><div class="tag">Setup</div></a>
     
-        <div class="tag">Jekyll</div>
+        <a href="http://zhangwenli.com/blog/tags?tag=Jekyll"><div class="tag">Jekyll</div></a>
     
     </div>
     
@@ -79,8 +79,7 @@
 <span class="nv">$ </span><span class="nb">cd </span>pygments-style-github/
 <span class="nv">$ </span><span class="o">(</span>sudo<span class="o">)</span> python setup.py install
 <span class="nv">$ </span>pygmentize -S github -f html &gt; syntax.css
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>That's all you need to do with it. But I spent a lot of time wondering why it's not working, which turns out to be that I typied <code>$ pygmentize ...</code> into <code>$ python ...</code> by mistake. :sweat:</p>

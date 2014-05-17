@@ -1,6 +1,6 @@
 ---
 title: RSS Is Now Available!
-time: 2013.10.24 13:35
+time: 2013.10.24 13:35:00
 layout: post
 tags:
 - Notice
