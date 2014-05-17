@@ -47,7 +47,7 @@ All the following tags should appear inside the `<body></body>` part.
 
 This is the *default style* a Web broswer may *probably* render it into. But you can always write your own CSS style to overwrite the default style. A `<p></p>` has *margin* above and below it. A *margin* is a distance outside current element to keep it from other ones, which will be discussed more in the next post.
 
-> Web browsers have *default style* to render each element, e.g. there is margin above and below each `<p></p>` element. Browser default style has the lowest priority, following by external style, internal style and inline style. So an inline style can always overwrite all other styles. We can discuss this topic in future posts.
+> Web browsers have *default style* to render each element, e.g. there is margin above and below each `<p></p>` element. Browser default style has the lowest priority, following by external style, internal style and inline style. So an inline style can <span class="deleted">always</span> overwrite all other styles <span class="updated">in most cases, without considering the effect caused by `!important`</span>. We can discuss this topic in future posts.
 
 > By *probably* I mean different Web broswers, or even differnt versions of browsers may possibly have different rendering results of a Web page. By this time, you don't have to worry about this to much.
 
