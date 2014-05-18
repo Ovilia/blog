@@ -7,6 +7,85 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Jekyll Tag Searching</title>
+                <description>&lt;blockquote&gt;&lt;h3&gt;What will you learn in this post?&lt;/h3&gt;
+
+&lt;p&gt;This post introduces how to achieve searching tags with Jekyll, without using a Jekyll Plugin.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Since Jekyll is a &lt;em&gt;static&lt;/em&gt; Website generator, which means the pages are already there before you request, it is hardly possible to for Liquid to get the query string in URL. However, we can use some tricks to make it looks like so.&lt;/p&gt;
+
+&lt;p&gt;The basic idea is to display all posts grouped by tags, and then use CSS &lt;code&gt;display: none&lt;/code&gt; for all except posts with the searching tag. We can get the searching tag in URL query string using JavaScript.&lt;/p&gt;
+
+&lt;h1&gt;Display Posts Grouped by Tags&lt;/h1&gt;
+
+&lt;h3&gt;1. Create a page called &lt;code&gt;tags.html&lt;/code&gt;.&lt;/h3&gt;
+
+&lt;p&gt;Tags can be then searched like &lt;code&gt;http://.../tags/?tag=css&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;2. Get all the tag names in &lt;code&gt;site.tags&lt;/code&gt;.&lt;/h3&gt;
+
+&lt;p&gt;You'd better use &lt;code&gt;-&lt;/code&gt; instead of space in your tag names. Otherwise, if you have a tag named &lt;code&gt;Hello World&lt;/code&gt;, then &lt;code&gt;site.tags&lt;/code&gt; contains &lt;code&gt;Hello&lt;/code&gt; and &lt;code&gt;World&lt;/code&gt;. To avoid this, use &lt;code&gt;Hello-World&lt;/code&gt; as tag name instead.&lt;/p&gt;
+
+&lt;h2&gt;3. For each tag, list all the posts with that tag name.&lt;/h2&gt;
+
+&lt;p&gt;Here we create a &lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; for each tag with &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;class&lt;/code&gt; so that it can be manipulated more easily later.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Ovilia/5248cd4f9b7f50d9652b.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;h3&gt;4. Hide all those &lt;code&gt;tag-posts&lt;/code&gt;.&lt;/h3&gt;
+
+&lt;p&gt;Use CSS to set &lt;code&gt;display: none;&lt;/code&gt; to &lt;code&gt;.tag-posts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;5. Get query string using JavaScript.&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getParameterByName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/[\[]/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;\\[&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/[\]]/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;\\]&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;[\\?&amp;amp;]&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;=([^&amp;amp;#]*)&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;decodeURIComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/\+/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;6. Show posts with the searching tag.&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getParameterByName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag-&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag-&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;display&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;block&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tagTitle&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tagTitle&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Illegal Tag Query&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;7. Add links to tags.&lt;/h3&gt;
+
+&lt;p&gt;Now, you can search tags like &lt;a href=&quot;http://localhost/blog/_site/tags?tag=Jekyll&quot; target=&quot;_blank&quot;&gt;http://zhangwenli.com/blog/tags?tag=Jekyll&lt;/a&gt; in my site.&lt;/p&gt;
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Full code is available at &lt;a href=&quot;https://github.com/Ovilia/blog/blob/gh-pages/tags.html&quot; target=&quot;_blank&quot;&gt;https://github.com/Ovilia/blog/blob/gh-pages/tags.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is an easy way to achieve searching tag for static Jekyll. One disadvantage is that a full list of all posts grouped by tags needs to be loaded whenever a tag is searched. This is not so good when blog posts become large enough. However, this is by far the simplest implementation I can think of.&lt;/p&gt;
+
+&lt;h1&gt;Reference&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;StackOverflow: &lt;a href=&quot;http://stackoverflow.com/questions/1408824/an-easy-way-to-support-tags-in-a-jekyll-blog#answer-21002505&quot; target=&quot;_blank&quot;&gt;An easy way to support tags in a jekyll blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;StackOverflow: &lt;a href=&quot;http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript#answer-901144&quot; target=&quot;_blank&quot;&gt;How can I get query string values in JavaScript?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <pubDate>Sun, 18 May 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/05/18/jekyll-tag-searching/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/05/18/jekyll-tag-searching/</guid>
+            </item>
+        
+            <item>
                 <title>道载万物，洋洋大哉</title>
                 <description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1391191/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;book-img&quot; src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://img5.douban.com/lpic/s1395779.jpg&quot; /&gt;&lt;/a&gt;《京华烟云》是我第二喜欢的小说（第一位毫无悬念是《红楼梦》），自我在高中第一遍读时就一直位居第二，以至于五六年之后已经忘记了当初为什么将其排在这么前面，而只记得确实是本很好的书。而今再读之时，对道家思想有了更多了解，越发觉得是一本不可多得的好书，甚至在有些方面对它的喜爱都超过了《红楼梦》。&lt;/p&gt;
 
@@ -1100,29 +1179,6 @@
                 <pubDate>Sun, 09 Feb 2014 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2014/02/09/how-i-made-jcorner/</link>
                 <guid isPermaLink="true">http://zhangwenli.com/blog/2014/02/09/how-i-made-jcorner/</guid>
-            </item>
-        
-            <item>
-                <title>境界不够，格调不高</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/3646976/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;book-img&quot; src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://img5.douban.com/lpic/s4394256.jpg&quot; /&gt;&lt;/a&gt;前阵子理书房，翻出了四年前同学送我的影印版正体竖排《菜根谭》。以前草草翻过，最近准备多读点书所以从头细读了一下。&lt;/p&gt;
-
-&lt;p&gt;本书主要讲述了作者的人生观，以道家思想的有无相成为主，以儒家的君子之道为辅，添以佛教的看空人生，可谓是集儒释道于一身。但即便如此，还是显得境界不够，格调不高。&lt;/p&gt;
-
-&lt;p&gt;作者的主要观点是做人要留有余地，既要聪明又要装得愚笨；要时时刻刻提防不犯错；贫穷可能是福，富贵可能是祸等等。&lt;/p&gt;
-
-&lt;p&gt;对于作者时时要提防不犯错不得罪人的观点我不是很认同，圆滑藏愚固不可少，但时时如此难免失其本心，如此累人地瞒人又何尝不是枉费心机？其实作者的很多观点，诸如“士君子须是内精明而外浑厚”、“思入世而有为者，须先领得世外风光，否则无以脱垢浊之尘缘；思出世而无染者，须先谙尽世中滋味，否则无以持空寂之后苦趣”等我都是很赞同的，但是做人之道向来都是心照不宣就可以了，拿出来写书就难免惹人非议，显得作者伪装的浑厚太过精明了，未尝不是种锋芒太露。&lt;/p&gt;
-
-&lt;p&gt;从意境角度看，给我的感觉是终究还是没有看破名利。在作者有时矛盾的文字背后，可以看出一颗不够看空而矛盾的心。看似说轻富贵，却隐隐露出求而不得的自我安慰之状，因而非但较老庄之作则相去甚远，连陶渊明这等也是不及的。&lt;/p&gt;
-
-&lt;p&gt;从文字角度看，有少量佳句对仗意深，而大多数情况则文白相间，文字不够凝练畅达。而且就这么几个观点还反反复复地说，实在太过拖沓。&lt;/p&gt;
-
-&lt;p&gt;这本书的本意是教人为人处世之道，但其实懂得此间道理的人自然不消言明，本来就是深谙其道的。而不懂或是不屑为之的人，你跟他说这些也是枉然。这点深有所感。&lt;/p&gt;
-
-&lt;p&gt;基于以上原因，勉强给个三星吧！&lt;/p&gt;
-</description>
-                <pubDate>Thu, 09 Jan 2014 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2014/01/09/reviewing-cai-gen-tan/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/01/09/reviewing-cai-gen-tan/</guid>
             </item>
         
     </channel>

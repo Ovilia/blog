@@ -127,6 +127,10 @@ li {
     line-height: 150%;
 }
 
+li p {
+	text-indent: 0;
+}
+
 p {
     font-family: Lato, Arial, 'Microsoft YaHei', sans-serif;
     font-size: 1.1em;
@@ -321,7 +325,7 @@ p>a>img:hover {
     margin: 5px 0 -5px 0;
 }
 
-.tagPanel a {
+.tagPanel a, .tagPanelAll a {
 	background-color: transparent;
 	border: none;
 }

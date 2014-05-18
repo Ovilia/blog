@@ -42,6 +42,13 @@ layout: default
 </div>
 {% endfor %}
 
+<h1>All Tags</h1>
+<div class="tagPanel">
+{% for tag in sortedtags %}
+    <a href="{{ site.url }}/tags?tag={{ tag }}"><div class="tag">{{ tag }}</div></a>
+{% endfor %}
+</div>
+
 <script type="text/javascript">
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
