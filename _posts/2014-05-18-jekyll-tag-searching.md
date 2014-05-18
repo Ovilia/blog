@@ -65,7 +65,7 @@ window.onload = function() {
 
 ### 7. Add links to tags.
 
-Now, you can search tags like <a href="http://localhost/blog/_site/tags?tag=Jekyll" target="_blank">{{ site.url }}/tags?tag=Jekyll</a> in my site.
+Now, you can search tags like <a href="{{ site.url }}/tags?tag=Jekyll" target="_blank">{{ site.url }}/tags?tag=Jekyll</a> in my site.
 
 #Conclusion
 
