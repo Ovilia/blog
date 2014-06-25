@@ -6,7 +6,7 @@
 body {
     background-color: #b0cb2c;
     overflow-x: hidden;
-    font-family: Lato, Arial, 'Microsoft YaHei', sarif;
+    font-family: Arial, 'Microsoft YaHei', sarif;
     font-weight: 400;
 }
 
@@ -132,7 +132,7 @@ li p {
 }
 
 p {
-    font-family: Lato, Arial, 'Microsoft YaHei', sans-serif;
+    font-family: Arial, 'Microsoft YaHei', sans-serif;
     font-size: 1.1em;
     line-height: 1.6em;
     text-shadow: 1px 1px 0px #fff;
@@ -415,6 +415,12 @@ p>a>img:hover {
 
 .book-img {
     width: 200px;
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.post-img {
+    width: 300px;
     float: right;
     margin: 0 0 1em 1em;
 }

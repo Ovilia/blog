@@ -19,9 +19,6 @@
         <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/syntax.css" />
         <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/default.css" />
         
-        
-        <link href='http://fonts.googleapis.com/css?family=Lobster|Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-            
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -114,7 +111,8 @@
     <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
     <span class="k">top</span><span class="o">:</span> <span class="m">-400px</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <blockquote><p>If you're wondering why we don't just Photoshop the image merged by these two image, that's because only in this way can we change the <code>opacity</code> of the second image, which will be explained later.</p></blockquote>
@@ -134,7 +132,8 @@
     <span class="k">top</span><span class="o">:</span> <span class="m">-767px</span><span class="p">;</span>
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">100px</span> <span class="m">100px</span> <span class="m">100px</span> <span class="m">#333</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <h4>What's wrong?</h4>
@@ -170,7 +169,8 @@
     <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">-</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientY</span> <span class="o">/</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">height</span><span class="p">())</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
     <span class="c1">// ...</span>
 <span class="p">});</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>Then, calculate <code>r</code> to represent distance from center to mouse position. We use <code>var r = Math.sqrt((x * x + y * y) / 2);</code> instead of <code>var r = Math.sqrt((x * x + y * y));</code> so that <code>r</code> is also unified (between <code>0</code> and <code>1</code>).</p>
@@ -193,7 +193,8 @@
         <span class="s1">&#39;opacity&#39;</span><span class="o">:</span> <span class="nx">op</span>
     <span class="p">});</span>
 <span class="p">});</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <blockquote><p><code>$('#titleCircle')</code> is the circle used as shadow and <code>$('#titleWords')</code> is the image with words on it.</p></blockquote>
@@ -212,7 +213,8 @@
     <span class="k">background</span><span class="o">:</span> <span class="sx">url(../image/sketch.jpg)</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>3) Add some shadow if you wish.</p>
@@ -222,7 +224,8 @@
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">#666</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <h4>Key step: Add another two sheets with rotation.</h4>
@@ -239,7 +242,8 @@
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">#666</span><span class="p">;</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">backface</span><span class="o">-</span><span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <blockquote><p><code>-webkit-backface-visibility: hidden;</code> is used to eliminate the jaggies caused by rotation which works only on webkit platform.</p></blockquote>
@@ -261,7 +265,8 @@
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-5</span><span class="n">deg</span><span class="p">);</span>
     <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-5</span><span class="n">deg</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>Now, with HTML</p>
@@ -273,7 +278,8 @@
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotLeft rotBottom pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotRight rotBottom pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>we can get:</p>
@@ -289,7 +295,8 @@
 <span class="nc">.rotTop.rotRight</span> <span class="p">{</span>
     <span class="k">left</span><span class="o">:</span> <span class="m">-10px</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>Now, we can get an elegant effect:</p>

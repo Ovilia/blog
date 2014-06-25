@@ -1,6 +1,6 @@
 window.onload = function() {
     // lazy load js and css
-    LazyLoad.js('http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', function () {
+    LazyLoad.js('http://localhost/blog/_site/js/jquery-1.11.1.min.js', function () {
         LazyLoad.js('/blog/js/unviel.min.js', function () {
             $("img").unveil();
         });
@@ -11,7 +11,7 @@ window.onload = function() {
             emojify.setConfig({
                 emoticons_enabled: true,
                 people_enabled: true,
-                
+                nature_enabled: true
             });
             emojify.run();
         });
