@@ -524,6 +524,9 @@ p>a>img:hover {
         margin-top: -8px;
         padding: 5px 10px;
     }
+    .book-img {
+        width: 120px;
+    }
 }
 
 @media screen and (max-width: 600px) {
