@@ -5,6 +5,7 @@ layout: post
 tags:
 - 中文
 - 书评
+- 阅读
 excerpt: 《菜根谭》读后感
 ---
 
