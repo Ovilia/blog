@@ -67,6 +67,7 @@ blockquote {
     border-color: #70840e;
     border-width: 0px 1px 0px 7px;
     color: #444;
+    font-size: 1em;
 }
 
 blockquote a {
@@ -185,6 +186,7 @@ h1>a {
     padding: 10px;
     border: 3px groove #b0cb2c;
     font-family: 'Times New Roman', Arial;
+    font-size: 1em;
 }
 
 .license > a > img {
@@ -242,11 +244,11 @@ h1>a {
 }
 
 .pageTitle {
-    font-family: 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
+    font-family: Arial, 'Microsoft YaHei', sarif;
     font-size: 4.5em;
     margin-bottom: 0.25em;
     
-    text-shadow: 0px 0px 10px #666;
+    text-shadow: 2px 2px 0px #fff;
     filter: dropshadow(color=#fff, offx=2, offy=2);
     border-bottom-style: solid;
     border-bottom-color: #70840e;
@@ -345,7 +347,7 @@ p>a>img:hover {
 }
 
 .olderNewer {
-    font-size: 120%;
+    font-size: 1.2em;
     margin-bottom: 100px;
 }
 
@@ -407,9 +409,8 @@ p>a>img:hover {
 }
 
 #footer {
-    width: 1000px;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 20px 0;
     color: #fff;
 }
 
@@ -462,6 +463,8 @@ p>a>img:hover {
 @media screen and (max-device-width: 600px) {
     body {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     
     #contentDiv {
@@ -469,14 +472,21 @@ p>a>img:hover {
         width: 100%;
         overflow-x: hidden;
     }
+    .container {
+        padding: 40px 20px;
+    }
     .pageBack {
         display: none;
     }
     p {
-        line-height: 120%;
+        line-height: 125%;
+    }
+    h1 {
+        margin-left: -20px;
+        margin-right: -20px;
     }
     * {
-        font-size: 120%;
+        font-size: 125%;
     }
     .more {
         font-size: 100%;
