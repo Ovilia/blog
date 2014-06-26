@@ -465,32 +465,9 @@ p>a>img:hover {
         width: 100%;
         margin: 0;
         padding: 0;
-        font-size: 1.5em;
-    }
-    h1 {
-        font-size: 3.5em;
-    }
-    h2 {
-        font-size: 3.2em;
-    }
-    h3 {
-        font-size: 2.5em;
-    }
-    h4 {
-        font-size: 2em;
-    }
-    h5 {
-        font-size: 1.8em;
-    }
-    h6 {
-        font-size: 1.6em;
     }
     p {
-        font-size: 1.5em;
         width: 100%;
-    }
-    .tag {
-        font-size: 1.5em;
     }
     
     #contentDiv {
@@ -511,9 +488,6 @@ p>a>img:hover {
     .page {
         margin-top: 0;
         margin-bottom: 40px;
-    }
-    p {
-        line-height: 1em;
     }
     blockquote {
         padding: 15px;
