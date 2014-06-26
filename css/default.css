@@ -468,6 +468,7 @@ p>a>img:hover {
     }
     p {
         width: 100%;
+        line-height: 1.4em;
     }
     
     #contentDiv {
@@ -484,6 +485,7 @@ p>a>img:hover {
     }
     .pageTitle {
         width: 100%;
+        font-size: 3em;
     }
     .page {
         margin-top: 0;
