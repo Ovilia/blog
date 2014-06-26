@@ -517,7 +517,8 @@ p>a>img:hover {
         margin-bottom: 20px;
     }
     .series-recent {
-        margin-right: -2%;
+        margin-right: -2.5%;
+        margin-top: -5px;
     }
 }
 
