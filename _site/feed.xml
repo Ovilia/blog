@@ -12,7 +12,7 @@
 
 &lt;h1&gt;统计数据&lt;/h1&gt;
 
-&lt;p&gt;虽然很多人似乎不屑类似“5各月读了89本书”这样的统计数据，但我相信数字也是一个侧面。凡事不可偏信，亦不可全不信。&lt;/p&gt;
+&lt;p&gt;虽然很多人似乎不屑类似“5个月读了89本书”这样的统计数据，但我相信数字也是一个侧面。凡事不可偏信，亦不可全不信。&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;时间&lt;/strong&gt;：2014年1月29日-2014年6月25日（148天）&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;h2&gt;为什么读书？&lt;/h2&gt;
 
-&lt;p&gt;似乎没什么人会人“为什么玩游戏”这样的问题，因为人们很自然地就觉得经常玩游戏是很正常的事，所以也不用问别人玩游戏的理由。所以问“为什么读书”这样问题的人，大抵是不觉得读书有什么乐趣在里面。:joy:&lt;/p&gt;
+&lt;p&gt;似乎没什么人会问“为什么玩游戏”这样的问题，因为人们很自然地就觉得经常玩游戏是很正常的事，所以也不用问别人玩游戏的理由。所以问“为什么读书”这样问题的人，大抵是不觉得读书有什么乐趣在里面。:joy:&lt;/p&gt;
 
 &lt;p&gt;我主要是出于对未知的好奇而读书的。我比较喜欢国学和纪实类的作品，虚构类也间杂着看，不过即使是虚构类的也喜欢贴合现实的，太过玄幻的就没什么兴趣了。这些类别的共同点是，能够帮助我了解别人是怎么思考的，别人是怎么行动的，别人是怎么认识自我的。强烈的想了解这些的想法，驱动着我每天都想看书。:muscle:&lt;/p&gt;
 
@@ -123,7 +123,7 @@
 
 &lt;p&gt;我以前觉得争论那种玄乎的哲学问题是很没意义的，是《苏菲的世界》开启了我对哲学的认知大门。&lt;/p&gt;
 
-&lt;p&gt;话说最近在读《维根特斯坦传》，觉得他太帅了好么！&lt;/p&gt;
+&lt;p&gt;话说最近在读《维特根斯坦传》，觉得他太帅了好么！&lt;/p&gt;
 
 &lt;h2&gt;瓦尔登湖&lt;/h2&gt;
 
@@ -170,7 +170,7 @@
 
 &lt;p&gt;You'd better use &lt;code&gt;-&lt;/code&gt; instead of space in your tag names. Otherwise, if you have a tag named &lt;code&gt;Hello World&lt;/code&gt;, then &lt;code&gt;site.tags&lt;/code&gt; contains &lt;code&gt;Hello&lt;/code&gt; and &lt;code&gt;World&lt;/code&gt;. To avoid this, use &lt;code&gt;Hello-World&lt;/code&gt; as tag name instead.&lt;/p&gt;
 
-&lt;h2&gt;3. For each tag, list all the posts with that tag name.&lt;/h2&gt;
+&lt;h3&gt;3. For each tag, list all the posts with that tag name.&lt;/h3&gt;
 
 &lt;p&gt;Here we create a &lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; for each tag with &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;class&lt;/code&gt; so that it can be manipulated more easily later.&lt;/p&gt;
 

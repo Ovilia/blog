@@ -469,6 +469,13 @@ p>a>img:hover {
     p {
         width: 100%;
         line-height: 1.4em;
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.75em;
     }
     
     #contentDiv {
@@ -485,7 +492,7 @@ p>a>img:hover {
     }
     .pageTitle {
         width: 100%;
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .page {
         margin-top: 0;
@@ -496,21 +503,21 @@ p>a>img:hover {
         border-width: 0px 1px 0px 3px;
     }
     h1 {
-        margin-left: -2%;
-        margin-right: -2%;
-        padding: 10px 2%;
+        margin-left: -2.5%;
+        margin-right: -2.5%;
+        padding: 10px 2.5%;
         box-shadow: none;
     }
     .more {
         font-size: 100%;
-        margin-top: 15px;
+        margin-top: 0px;
     }
     .simpleNav {
         margin-top: -20px;
         margin-bottom: 20px;
     }
     .series-recent {
-        margin-right: -4%;
+        margin-right: -2.5%;
     }
 }
 
@@ -527,8 +534,8 @@ p>a>img:hover {
         overflow: hidden;
     }
     .container {
-        padding: 40px 6%;
-        width: 88%;
+        padding: 40px 4%;
+        width: 92%;
     }
     .pageBack {
         display: none;
@@ -542,9 +549,9 @@ p>a>img:hover {
         border-width: 0px 1px 0px 3px;
     }
     h1 {
-        margin-left: -4%;
-        margin-right: -4%;
-        padding: 10px 4%;
+        margin-left: -4.5%;
+        margin-right: -4.5%;
+        padding: 10px 4.5%;
         box-shadow: none;
     }
     .more {
@@ -552,6 +559,6 @@ p>a>img:hover {
         margin-top: 15px;
     }
     .series-recent {
-        margin-right: -4%;
+        margin-right: -4.5%;
     }
 }
