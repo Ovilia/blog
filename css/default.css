@@ -461,11 +461,13 @@ p>a>img:hover {
 
 @media screen and (max-device-width: 600px) {
     body {
-        font-size: 1.75em;
+        width: 100%;
     }
+    
     #contentDiv {
         padding: 20px 0;
         width: 100%;
+        overflow-x: hidden;
     }
     .pageBack {
         display: none;
@@ -474,7 +476,7 @@ p>a>img:hover {
         line-height: 120%;
     }
     * {
-        font-size: 150%;
+        font-size: 120%;
     }
     .more {
         font-size: 100%;

@@ -1,6 +1,6 @@
 window.onload = function() {
     // lazy load js and css
-    LazyLoad.js('http://localhost/blog/_site/js/jquery-1.11.1.min.js', function () {
+    LazyLoad.js('http://zhangwenli.com/blog/js/jquery-1.11.1.min.js', function () {
         LazyLoad.js('/blog/js/unviel.min.js', function () {
             $("img").unveil();
         });
