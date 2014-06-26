@@ -310,7 +310,7 @@ p>a>img:hover {
     margin-bottom: 5px;
     display: inline-block;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 0.3em;
     box-shadow: 1px 1px 0 1px #333;
     font-family: Consolas, "Courier New", Courier;
     font-size: 1em;
@@ -468,7 +468,7 @@ p>a>img:hover {
         font-size: 1.5em;
     }
     h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     h2 {
         font-size: 3.2em;
@@ -493,7 +493,7 @@ p>a>img:hover {
     }
     
     #contentDiv {
-        padding: 20px 0;
+        padding: 0;
         width: 100%;
         overflow-x: hidden;
     }
@@ -506,15 +506,19 @@ p>a>img:hover {
     }
     .page {
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     p {
-        line-height: 125%;
+        line-height: 1em;
+    }
+    blockquote {
+        padding: 15px;
     }
     h1 {
         margin-left: -2%;
         margin-right: -2%;
         padding: 10px 2%;
+        box-shadow: none;
     }
     .more {
         font-size: 100%;
@@ -530,28 +534,29 @@ p>a>img:hover {
     }
     
     #contentDiv {
-        padding: 20px 0;
+        padding: 0;
         width: 100%;
         overflow-x: hidden;
     }
     .container {
-        padding: 40px 5%;
-        width: 90%;
+        padding: 40px 6%;
+        width: 88%;
     }
     .pageBack {
         display: none;
     }
     .page {
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
-    p {
-        line-height: 125%;
+    blockquote {
+        padding: 15px;
     }
     h1 {
-        margin-left: -2%;
-        margin-right: -2%;
-        padding: 10px 2%;
+        margin-left: -3%;
+        margin-right: -3%;
+        padding: 10px 3%;
+        box-shadow: none;
     }
     .more {
         font-size: 100%;

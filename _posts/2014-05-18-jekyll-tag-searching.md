@@ -28,7 +28,7 @@ Tags can be then searched like `http://.../tags/?tag=css`.
 
 You'd better use `-` instead of space in your tag names. Otherwise, if you have a tag named `Hello World`, then `site.tags` contains `Hello` and `World`. To avoid this, use `Hello-World` as tag name instead.
 
-## 3. For each tag, list all the posts with that tag name.
+### 3. For each tag, list all the posts with that tag name.
 
 Here we create a `<div></div>` for each tag with `id` and `class` so that it can be manipulated more easily later.
 
