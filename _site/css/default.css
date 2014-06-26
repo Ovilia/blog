@@ -495,7 +495,7 @@ p>a>img:hover {
     #contentDiv {
         padding: 0;
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .container {
         padding: 40px 2%;
@@ -536,7 +536,7 @@ p>a>img:hover {
     #contentDiv {
         padding: 0;
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .container {
         padding: 40px 6%;
