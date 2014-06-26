@@ -472,10 +472,13 @@ p>a>img:hover {
         font-size: 1em;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     h2 {
-        font-size: 1.75em;
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.3em;
     }
     
     #contentDiv {
@@ -492,7 +495,7 @@ p>a>img:hover {
     }
     .pageTitle {
         width: 100%;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
     .page {
         margin-top: 0;
@@ -517,8 +520,8 @@ p>a>img:hover {
         margin-bottom: 20px;
     }
     .series-recent {
-        margin-right: -2.5%;
-        margin-top: -5px;
+        margin-right: -2%;
+        margin-top: -8px;
     }
 }
 
