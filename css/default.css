@@ -493,6 +493,7 @@ p>a>img:hover {
     }
     blockquote {
         padding: 15px;
+        border-width: 0px 1px 0px 3px;
     }
     h1 {
         margin-left: -2%;
@@ -502,7 +503,14 @@ p>a>img:hover {
     }
     .more {
         font-size: 100%;
-        margin-top: -1em;
+        margin-top: 15px;
+    }
+    .simpleNav {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .series-recent {
+        margin-right: -4%;
     }
 }
 
@@ -531,15 +539,19 @@ p>a>img:hover {
     }
     blockquote {
         padding: 15px;
+        border-width: 0px 1px 0px 3px;
     }
     h1 {
-        margin-left: -3%;
-        margin-right: -3%;
-        padding: 10px 3%;
+        margin-left: -4%;
+        margin-right: -4%;
+        padding: 10px 4%;
         box-shadow: none;
     }
     .more {
         font-size: 100%;
-        margin-top: -1em;
+        margin-top: 15px;
+    }
+    .series-recent {
+        margin-right: -4%;
     }
 }
