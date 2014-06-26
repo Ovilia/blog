@@ -313,7 +313,7 @@ p>a>img:hover {
     border-radius: 0.3em;
     box-shadow: 1px 1px 0 1px #333;
     font-family: Consolas, "Courier New", Courier;
-    font-size: 1em;
+    font-size: 0.8em;
     text-shadow: none;
     filter: none;
 }
@@ -513,15 +513,16 @@ p>a>img:hover {
     }
     .more {
         font-size: 100%;
-        margin-top: 0px;
+        margin-top: -10px;
     }
     .simpleNav {
         margin-top: -20px;
         margin-bottom: 20px;
     }
     .series-recent {
-        margin-right: -2%;
+        margin-right: -3%;
         margin-top: -8px;
+        padding: 5px 10px;
     }
 }
 
