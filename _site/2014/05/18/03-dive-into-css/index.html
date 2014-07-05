@@ -175,13 +175,12 @@
 <span class="nt">p</span> <span class="p">{</span>
     <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <h1>Basic Properties</h1>
 
-<p>This post mainly focuses on CSS positioning. But before that, I'd like to introduce some frequently used CSS propertyies. To learn CSS, you don't have to know it property by property. Instead, you can totally get to know a new property once you meet with it.</p>
+<p>This post mainly focuses on CSS positioning. But before that, I'd like to introduce some frequently used CSS propertyies. To learn CSS, you don't have to know it property by property. Instead, you can totally get to know a new property once you meet with it. Although to be a good Web designer, you need to have a good command of coloring, in this post, we are just going to have a basic idea of it.</p>
 
 <h2>Color</h2>
 
@@ -198,8 +197,7 @@
 <p><code>color</code> is used to set the color of text, while <code>background-color</code> and <code>border-color</code> set the color of background and border respectively.</p>
 
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>Hello, world!<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 
@@ -211,8 +209,7 @@
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff6600</span><span class="p">;</span>
     <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-01.png" /></p>
@@ -222,8 +219,7 @@
 <p>If you don't set the width and height of a component, it depends on the content.</p>
 
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>xxxxx x xxxx xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxx.<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-02.png" /></p>
@@ -236,8 +232,7 @@
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff6600</span><span class="p">;</span>
     <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-03.png" /></p>
@@ -251,19 +246,183 @@
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff6600</span><span class="p">;</span>
     <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-04.png" /></p>
 
 <p>You can set the overflowed content to be hidden using <code>overflow: hidden;</code>, or display a scroll bar when overflow using <code>overflow: auto</code>. If you don't want a horizontal scroll bar, you can set <code>overflow-x: hidden; overflow-y: auto;</code>.</p>
 
+<p>Besides <code>px</code> unit, which stands for pixel, you can also use percentage to represent width and height. <code>width: 80%;</code> set the width to be 80% of its parent's. For <code>body</code>, the <code>width: 100%</code> and <code>height: 100%</code> are the width and height of the browser content, which is equal to <code>window.innerWidth</code> and <code>window.innerHeight</code> in JavaScript.</p>
+
+<h1>Margin and Padding</h1>
+
+<p>Margin is the outside distance from other elements, while padding is the inside distance from its child elements. Let's see the following example to have a general idea.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;padding: 50px; margin: 20px; width: 200px; background-color: red;&quot;</span><span class="nt">&gt;</span>I&#39;m red.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-09.png" /></p>
+
+<blockquote><p>DIY</p>
+
+<p>Use <em>Inspect Element</em> of Chrome or <em>Firebug</em> of Firefox to have a more deep understanding of this example.</p></blockquote>
+
 <h1>Position</h1>
 
 <p>CSS position can sometimes be confusing and in this post, I'm going to talk about it in detail.</p>
 
-<p>(To be continued...)</p>
+<h2><code>display</code></h2>
+
+<p><code>display</code> is one of the CSS properties that determines position, whose frequently used values are <code>block</code>, <code>inline</code>, <code>inline-block</code> and <code>none</code>.</p>
+
+<p>Different elements have different default values for <code>display</code>, even possibly different default values in different Web browsers. For example, <code>display</code> of <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code> is <code>block</code> by default, while that of <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code> is <code>inline</code> by default. We can overwrite <code>display</code> using CSS as we can always do with other CSS properties.</p>
+
+<p>Next, I'm going to explain what these values mean in detail.</p>
+
+<h3><code>display: block</code></h3>
+
+<p>Element with <code>display: block</code> takes the position of area of its own size and the right area of its parents. It's quite ambiguous to say so... Let's see it in an example.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-05.png" /></p>
+
+<p>Because the default value of <code>display</code> of <code>&lt;div&gt;</code> is <code>block</code>, here although the total width of the red block and the green one is less than that of the yellow block, the green block is shown below the red one, rather than at the right side of the red one.</p>
+
+<blockquote><h3>DIY</h3>
+
+<p>Use <em>Inspect Element</em> of Chrome or <em>Firebug</em> of Firefox to see the <code>width</code>, <code>margin</code> of these elements and the highlighted area when hovering an element in <em>Inspect Window</em>.</p></blockquote>
+
+<h3><code>display: inline-block</code></h3>
+
+<p>We set the <code>display</code> property to be <code>inline-block</code> to the previous example and now the green block is shown right to the red one, since their total width are less than their parent's width.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-06.png" /></p>
+
+<p>Please pay attention to how the green block is aligned with the red one.</p>
+
+<blockquote>
+<p>If you are wondering about the gap between the elements, see <a href="http://stackoverflow.com/questions/1833734/display-inline-block-extra-margin" target="_blank">StackOverflow: display: inline-block extra margin</a>.</p>
+
+<p>The gap can be easily removed by writing the red and green block in the same line with no space in-between.</p>
+
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+</blockquote>
+
+
+<h3><code>display: inline</code></h3>
+
+<p>If we set <code>display</code> property to be <code>inline</code> to the previous example, we'll see they are <em>not displayed</em> at all.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-07.png" /></p>
+
+<p>In fact, we can't say <em>they are not displayed</em>. Let's see another example.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;</span>I&#39;m red.<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;</span>I&#39;m green.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-08.png" /></p>
+
+<p>You see in this example that they are displayed when there's text in them. You can see now that when <code>display</code> is set to be <code>inline</code>, the element is rendered, but we can't control other properties like <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code> and etc. any more. You may find it a little confusing, but this is very useful in some cases. For example, we can use <code>&lt;span style="color: red"&gt;&lt;/span&gt;</code> to highlight some content without changing the text's position.</p>
+
+<h3><code>display: none</code></h3>
+
+<p>As we can guess from this code, elements with <code>display: none</code> will not be displayed. Why bother writing elements that are not displayed? You may find it extremely helpful when you want to toggle some elements to display and hide.</p>
+
+<h2><code>float</code></h2>
+
+<p>You may probably be familiar with setting an image to float to left or right in <em>Office Word</em>. In CSS, you can also float elements to left or right of its parent. But careful! It can be somehow surprising to you.</p>
+
+<p>Basically, you can set <code>float</code> of the element to be <code>left</code>, <code>right</code> or <code>none</code> if not to float.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: left; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: right; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-10.png" /></p>
+
+<p>Why isn't yellow displayed?</p>
+
+<p>This is because when an element is set to be <code>float: left</code> or <code>float: right</code>, it's height will be no longer counted when computing its parent's height. So you may need to do as following. See <a href="http://css-tricks.com/almanac/properties/c/clear/" target="_blank">CSS Tricks</a> for more information.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: left; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: right; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;clear: both&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-11.png" /></p>
+
+<h2><code>display: inline-block</code> vs. <code>float: left</code></h2>
+
+<p>You may find <code>display: inline-block</code> and <code>float: left</code> are quite similar in some ways. So how should we choose between them?</p>
+
+<p>The first thing you need to note is that <code>display: inline-block</code> align at top vertically, while <code>float: left</code> align at bottom.</p>
+
+<p><code>display: inline-block</code>:</p>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-06.png" /></p>
+
+<p><code>float: left</code>:</p>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-12.png" /></p>
+
+<p>There're posts explained this topic in detail. If you are interested, you can refer to <a href="http://www.ternstyle.us/blog/float-vs-inline-block" target="_blank">Float vs. Inline-Block</a> and <a href="http://www.onderhond.com/blog/inline-block-vs-float" target="_blank">INLINE-BLOCK VS FLOAT / thinking horizontal</a>.</p>
+
+<h1>Conclusion</h1>
+
+<p>We talked about some useful CSS properties in this post and most importantly, how to control the position of elements. By the end of this post, you should have leant how to implement Web designs into code. But practice is extremely important in learning HTML and CSS. You need to be patient and learn bit by bit.</p>
+
+<p>You are welcomed to tell me if you find this series helpful and about how you would like me to improve it to help you learn better.</p>
+
+<h1>Homework</h1>
+
+<p>The inspiring news is that you can make Web sites now!</p>
+
+<p>To build a Web site, you should first design what to show and how to display it. Since we haven't talked about how to design yet, in this homework, you are given a design image and your task is to implement the design (including all description in the image).</p>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-13.png" /></p>
+
+<p>I suggest you put your code on GitHub and share a link as comment to this post, so that we can discuss more about it.</p>
+
+<p>Suggest answer will be published in two weeks.</p>
 
 	
 	

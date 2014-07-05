@@ -221,8 +221,7 @@
         Hello, world!
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>Change the content of <code>hi.html</code> to be the above code and open it in a browser, you'll find the result is the same as the previous example. But this is a standard way to put it.</p>
@@ -258,8 +257,7 @@
         Hello, world!
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-01.jpg" /></p>
@@ -279,8 +277,7 @@
         <span class="nt">&lt;h1&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>We want to make <code>First</code> and <code>Second</code> be red and the background of them be yellow, which can be achieved with the following code:</p>
@@ -296,8 +293,7 @@
         <span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;color: red; background-color: yellow&quot;</span><span class="nt">&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-02.jpg" /></p>
@@ -330,8 +326,7 @@
         <span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;color: red; background-color: yellow&quot;</span><span class="nt">&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, <strong>never use inline style in real programming</strong>! :boom:</p>
@@ -357,8 +352,7 @@
         <span class="nt">&lt;h1&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>You may notice that it helps reuse the style and the content and style are decoupled in internal style.</p>
@@ -375,8 +369,7 @@
     <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>And a HTML file:</p>
@@ -393,8 +386,7 @@
         <span class="nt">&lt;h1&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>External style makes it possible to reuse CSS inter- and intra-HTML. Use this style whenever possible.</p>
@@ -422,8 +414,7 @@
         <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;alert(&#39;Hello, again!&#39;)&quot;</span><span class="nt">&gt;</span>Say hello!<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-03.jpg" /></p>
@@ -446,8 +437,7 @@
         <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;sayHello()&quot;</span><span class="nt">&gt;</span>Say hello!<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>External JavaScript <code>hello.js</code>:</p>
@@ -455,8 +445,7 @@
 <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, again!&#39;</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>External HTML:</p>
@@ -471,8 +460,7 @@
         <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;sayHello()&quot;</span><span class="nt">&gt;</span>Say hello!<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>External JavaScript is prefered in most cases. Before you know which cases are excluded, you should always use external style.</p>
@@ -489,8 +477,7 @@
 <span class="nt">h1</span><span class="nd">:hover</span> <span class="p">{</span>
     <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>But if you want to change the color when mouse has been clicked, only JavaScript can do it:</p>
@@ -509,8 +496,7 @@
         <span class="nt">&lt;h1</span> <span class="na">onclick=</span><span class="s">&quot;change(this)&quot;</span><span class="nt">&gt;</span>Change Color!<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <h1>Conclusion</h1>
