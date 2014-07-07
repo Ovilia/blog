@@ -245,7 +245,7 @@ h1>a {
 
 .pageTitle {
     font-family: Arial, 'Microsoft YaHei', sarif;
-    font-size: 4.2em;
+    font-size: 4em;
     margin-bottom: 0.25em;
     
     text-shadow: 2px 2px 0px #fff;
@@ -460,6 +460,19 @@ p>a>img:hover {
     margin-left: 10px;
 }
 
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #b0cb2c;
+    display: none;
+}
+
+#mobile-nav a {
+    padding: 0.4em 1em;
+    border-right: 1px dashed #70840e;
+}
+
 @media screen and (max-device-width: 600px) {
     body {
         width: 100%;
@@ -527,6 +540,14 @@ p>a>img:hover {
     .book-img {
         width: 120px;
     }
+    
+    #mobile-nav {
+        display: block;
+    }
+    
+    #mobile-nav a {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -568,5 +589,13 @@ p>a>img:hover {
     }
     .series-recent {
         margin-right: -4%;
+    }
+    
+    #mobile-nav {
+        display: block;
+    }
+    
+    #mobile-nav a {
+        display: inline-block;
     }
 }
