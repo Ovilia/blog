@@ -469,7 +469,7 @@ p>a>img:hover {
 }
 
 #mobile-nav a {
-    padding: 0.4em 1em;
+    padding: 0.5em 0.8em;
     border-right: 1px dashed #70840e;
 }
 
@@ -548,6 +548,10 @@ p>a>img:hover {
     #mobile-nav a {
         display: inline-block;
     }
+    
+    .simpleNav {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -597,5 +601,9 @@ p>a>img:hover {
     
     #mobile-nav a {
         display: inline-block;
+    }
+    
+    .simpleNav {
+        display: none;
     }
 }
