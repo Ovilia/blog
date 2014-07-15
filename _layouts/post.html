@@ -38,7 +38,8 @@
     {% endif %}
     
     <blockquote class="relatedPosts">
-        <h4>Related Posts</h4>
+        {% if site.related_posts.size > 0 %}
+        <h4>Similar Posts</h4>
         <ul>
         {% for post in site.related_posts limit:5 %}
             <li class="relatedPost">
@@ -50,6 +51,7 @@
             </li>
         {% endfor %}
         </ul>
+        {% endif %}
         
         <h4>Recent Posts</h4>
         <ul>
