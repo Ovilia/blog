@@ -38,19 +38,31 @@
     {% endif %}
     
     <blockquote class="relatedPosts">
-        {% if site.related_posts.size > 0 %}
-        <h4>Similar Posts</h4>
-        <ul>
+        {% assign hasSimilar = false %}
         {% for post in site.related_posts limit:5 %}
-            <li class="relatedPost">
-                <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
-                {% if post.series %}
-                    (Series: {{ post.series }})
-                {% endif %}
-                </a>
-            </li>
+            {% assign postHasSimilar = false %}
+            {% for tag in post.tags %}
+                {% for thisTag in page.tags %}
+                    {% if postHasSimilar == false and post != page and tag == thisTag %}
+                        {% if hasSimilar == false %}
+                        <h4>Similar Posts</h4>
+                        <ul>
+                        {% endif %}
+                        <li class="relatedPost">
+                            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                            {% if post.series %}
+                                (Series: {{ post.series }})
+                            {% endif %}
+                            </a>
+                        </li>
+                        {% assign hasSimilar = true %}
+                        {% assign postHasSimilar = true %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
         {% endfor %}
-        </ul>
+        {% if hasSimilar %}
+            </ul>
         {% endif %}
         
         <h4>Recent Posts</h4>
