@@ -26,6 +26,13 @@ module RelatedPosts
     end
 
     Jekyll::Post.sort_related_posts(related_scores)
+    
+    related_scores.each do |post, score|
+      if score < 0
+        related_scores.delete(post)
+      end
+    end
+    return related_scores.collect {|post,freq| post}
   end
 
   module ClassMethods
@@ -42,7 +49,6 @@ module RelatedPosts
     end
 
     # Sort the related posts in order of their score and date
-    # and return just the posts
     def sort_related_posts(related_scores)
       related_scores.sort do |a,b|
         if a[1] < b[1]
@@ -52,7 +58,7 @@ module RelatedPosts
         else
           b[0].date <=> a[0].date
         end
-      end.collect {|post,freq| post}
+      end
     end
   end
 
