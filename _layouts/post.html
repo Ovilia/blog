@@ -32,10 +32,38 @@
     </div>
     
     {{ content }}
-	
-	{% if page.series %}
-		{% include series.html %}
-	{% endif %}
+
+    {% if page.series %}
+            {% include series.html %}
+    {% endif %}
+    
+    <blockquote class="relatedPosts">
+        <h4>Related Posts</h4>
+        <ul>
+        {% for post in site.related_posts limit:5 %}
+            <li class="relatedPost">
+                <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                {% if post.series %}
+                    (Series: {{ post.series }})
+                {% endif %}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+        
+        <h4>Recent Posts</h4>
+        <ul>
+        {% for post in site.posts limit:5 %}
+            <li class="relatedPost">
+                <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                {% if post.series %}
+                    (Series: {{ post.series }})
+                {% endif %}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </blockquote>
     
     <div class="license">
         <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
@@ -43,22 +71,6 @@
         </a>
         <div><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Every blog post in this site</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://zhangwenli.com" property="cc:attributionName" rel="cc:attributionURL">Wenli Zhang</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>, based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/ovilia/blog" rel="dct:source">http://github.com/ovilia/blog</a>. </div>
         <div>You must reference <code>Author: &lt;a href=&quot;http://zhangwenli.com&quot;&gt;Wenli Zhang&lt;/a&gt;</code> explictly along with this license note if you want to re-post the content, either completely or partially.</div>
-    </div>
-    
-    <div class="olderNewer">
-        {% if page.previous %}
-            <div class="olderPost">
-                <a href="{{ site.url }}{{ page.previous.url }}">Older: {{ page.previous.title }}</a>
-            </div>
-        {% endif %}
-        {% if page.next %}
-            <div class="newerPost">
-                <a href="{{ site.url }}{{ page.next.url }}">Newer: {{ page.next.title }}</a>
-            </div>
-        {% endif %}
-        <div class="recentPost">
-            <a href="{{ site.url }}">Recent Posts</a>
-        </div>
     </div>
     
     {% include comment.html %}

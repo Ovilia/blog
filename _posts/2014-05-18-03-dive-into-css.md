@@ -146,7 +146,7 @@ Element with `display: block` takes the position of area of its own size and the
 
 Because the default value of `display` of `<div>` is `block`, here although the total width of the red block and the green one is less than that of the yellow block, the green block is shown below the red one, rather than at the right side of the red one.
 
-> ### DIY
+> #### DIY
 
 > Use *Inspect Element* of Chrome or *Firebug* of Firefox to see the `width`, `margin` of these elements and the highlighted area when hovering an element in *Inspect Window*.
 

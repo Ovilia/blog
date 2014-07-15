@@ -10,7 +10,7 @@ tags:
 excerpt: In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.
 ---
 
-> ### What You Will Learn In This Post
+> #### What You Will Learn In This Post
 
 > In this post, I'm going to explain how to set up syntax hightlighting for Jekyll in GitHub style. Although I would not say GitHub code syntax style is the prettiest one, it is a good choice if you don't want to write your own.
 

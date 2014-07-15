@@ -65,7 +65,7 @@ In the above code, when executing the second line, the previous value `"Hello, "
 
 *Professional JavaScript for Web Programmers* described the convertion rules in full but you may find it hard to remember all these rules. So, let's first have a look at them and then I'll explain about it.
 
-> ### `Number()`
+> #### `Number()`
 
 > The `Number()` function performs conversions based on these rules:
 
@@ -82,7 +82,7 @@ In the above code, when executing the second line, the previous value `"Hello, "
 into `NaN`.
 >- When applied to objects, the `valueOf()` method is called and the returned value is converted based on the previously described rules. If that conversion results in `NaN`, the `toString()` method is called and the rules for converting strings are applied.
 
-> ### `parseInt()`
+> #### `parseInt()`
 
 > The `parseInt()` function examines the string much more closely to see if it matches a number pattern.
 
@@ -92,7 +92,7 @@ empty string returns `NaN` (unlike with `Number()`, which returns `0`).
 >- If the first character is a number, plus, or minus, then the conversion goes on to the second character and continues on until either the end of the string is reached or a nonnumeric character is found. For instance, `"1234blue"` is converted to `1234` because `"blue"` is completely ignored. Similarly, `"22.5"` will be converted to `22` because the decimal is not a valid integer character.
 >- Assuming that the first character in the string is a number, the `parseInt()` function also recognizes the various integer formats (decimal, octal, and hexadecimal, as discussed previously). This means when the string begins with `"0x"`, it is interpreted as a hexadecimal integer; if it begins with `"0"` followed by a number, it is interpreted as an octal value.
 
-> ### `parseFloat()`
+> #### `parseFloat()`
 
 > The `parseFloat()` function works in a similar way to `parseInt()`, looking at each character starting in position `0`. It also continues to parse the string until it reaches either the end of the string or a character that is invalid in a floating-point number. This means that a decimal point is valid the first time it appears, but a second decimal point is invalid and the rest of the string is ignored, resulting in `"22.34.5"` being converted to `22.34`.
 

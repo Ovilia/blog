@@ -379,7 +379,7 @@
 
 &lt;p&gt;Because the default value of &lt;code&gt;display&lt;/code&gt; of &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; is &lt;code&gt;block&lt;/code&gt;, here although the total width of the red block and the green one is less than that of the yellow block, the green block is shown below the red one, rather than at the right side of the red one.&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;h3&gt;DIY&lt;/h3&gt;
+&lt;blockquote&gt;&lt;h4&gt;DIY&lt;/h4&gt;
 
 &lt;p&gt;Use &lt;em&gt;Inspect Element&lt;/em&gt; of Chrome or &lt;em&gt;Firebug&lt;/em&gt; of Firefox to see the &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;margin&lt;/code&gt; of these elements and the highlighted area when hovering an element in &lt;em&gt;Inspect Window&lt;/em&gt;.&lt;/p&gt;&lt;/blockquote&gt;
 
