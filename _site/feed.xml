@@ -7,6 +7,82 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Jekyll Related Posts without Plugin</title>
+                <description>&lt;blockquote&gt;&lt;h4&gt;What will you learn in this post?&lt;/h4&gt;
+
+&lt;p&gt;This post introduces how to implement &lt;em&gt;related posts&lt;/em&gt; function with Jekyll. Since GitHub diables plugin for security reasons, plugins like &lt;a href=&quot;https://github.com/LawrenceWoodman/related_posts-jekyll_plugin&quot; targe=&quot;_blank&quot;&gt;LawrenceWoodman / related_posts-jekyll_plugin&lt;/a&gt; cannot be used. Default &lt;code&gt;site.related_posts&lt;/code&gt; may return recent posts when there aren't enough posts sharing the same tags with current post.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h1&gt;Jekyll's Native Support&lt;/h1&gt;
+
+&lt;p&gt;Jekyll has native support for related posts function, which can be used with Liquid as &lt;code&gt;site.related_posts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, as we can see from its &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/df8458275de4dc3d0f9b92c5247ff20832d1cc8e/lib/jekyll/related_posts.rb&quot; target=&quot;_blank&quot;&gt;source code&lt;/a&gt;, it lists posts with mutual tags without ordering by how many mutual tags they share. In this way, if &lt;code&gt;A&lt;/code&gt; post is tagged with &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt; and &lt;code&gt;c&lt;/code&gt;, &lt;code&gt;B&lt;/code&gt; post is tagged with &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;C&lt;/code&gt; post is tagged with &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;c&lt;/code&gt;, &lt;code&gt;A&lt;/code&gt;'s related posts may contain only &lt;code&gt;B&lt;/code&gt; but not &lt;code&gt;C&lt;/code&gt; if you set the limit to be &lt;code&gt;1&lt;/code&gt;. Apparently, this doesn't make sense.&lt;/p&gt;
+
+&lt;h1&gt;Using Plugin&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/LawrenceWoodman/related_posts-jekyll_plugin&quot; targe=&quot;_blank&quot;&gt;LawrenceWoodman / related_posts-jekyll_plugin&lt;/a&gt; is an easy-to-use Jekyll plugin to implement &lt;em&gt;related posts&lt;/em&gt; feature.&lt;/p&gt;
+
+&lt;p&gt;It solves the above problem by calculating how many mutual tags they share and sort by it, as we can see from the &lt;a href=&quot;https://github.com/LawrenceWoodman/related_posts-jekyll_plugin/blob/master/_plugins/related_posts.rb&quot; target=&quot;_blank&quot;&gt;source code&lt;/a&gt; below.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;related_posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;highest_freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;include?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;cat_freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highest_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+    &lt;span class=&quot;ss&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_related_posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;But just as the default Jekyll behaves, it returns recent posts if there aren't enough posts sharing the same tags. I think this doesn't make sense. After all, why should a post called &lt;code&gt;How to become a good programmer&lt;/code&gt; be related to &lt;code&gt;I was bitten by a bug yesterday&lt;/code&gt; just because there are no other related posts?&lt;/p&gt;
+
+&lt;p&gt;So, I improved it with the following code and &lt;a href=&quot;https://github.com/Ovilia/related_posts-jekyll_plugin/commit/4562de1b048a5dbce5f533d343be30254427160e&quot; target=&quot;_blank&quot;&gt;pulled a request&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;I have almost no experience with Ruby, but this isn't too hard for me.&lt;/p&gt;
+
+&lt;h1&gt;Without Plugin&lt;/h1&gt;
+
+&lt;p&gt;After I've done with the previous improvement and pushed my blog code to GitHub with joy, I found it didn't word! :scream:&lt;/p&gt;
+
+&lt;p&gt;I thought it was the cache, but it still doesn't change when I tried to clear the cache and even visit it using a different browser and a different device.&lt;/p&gt;
+
+&lt;p&gt;Finally, I realized that this is caused by GitHub's disabling plugins for security concerns. I knew this before, but didn't know that this is the reason I was looking for.&lt;/p&gt;
+
+&lt;p&gt;Then, I improved the default one and return only those with mutual tags. It still cost me much time, since the syntax of Liquid is so strange! :weary:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Ovilia/ea95e762544d84f00281.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;You can't use &lt;code&gt;!abc&lt;/code&gt; to check if &lt;code&gt;abc&lt;/code&gt; is &lt;code&gt;false&lt;/code&gt;. Instead, you should use &lt;code&gt;abc == false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can't use &lt;code&gt;abc++&lt;/code&gt; or even &lt;code&gt;abc = abc + 1&lt;/code&gt; to increment a variable. Instead, you should use something as strange as  appending a character &lt;code&gt;*&lt;/code&gt; at a time, and then check &lt;code&gt;abc.size&lt;/code&gt; to get its length as a string and this is how you increment a variable! :joy: But, believe me, this is not the strangest syntax when you use Liquid.&lt;/p&gt;
+
+&lt;p&gt;Who can tell me why this syntax is so strange!&lt;/p&gt;
+</description>
+                <pubDate>Tue, 15 Jul 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/</guid>
+            </item>
+        
+            <item>
                 <title>好读书，不求甚解</title>
                 <description>&lt;p&gt;1月份生日的时候不知道怎么突然想起该趁现在图书馆资源丰富的时候多读些书，到现在差不多五个月了，读了将近90本书:yum:。因为期末考试刚刚结束，趁着这个机会就写个小结，以便日后对照读书进展。&lt;/p&gt;
 
@@ -152,7 +228,7 @@
         
             <item>
                 <title>Jekyll Tag Searching</title>
-                <description>&lt;blockquote&gt;&lt;h3&gt;What will you learn in this post?&lt;/h3&gt;
+                <description>&lt;blockquote&gt;&lt;h4&gt;What will you learn in this post?&lt;/h4&gt;
 
 &lt;p&gt;This post introduces how to achieve searching tags with Jekyll, without using a Jekyll Plugin.&lt;/p&gt;&lt;/blockquote&gt;
 
@@ -496,7 +572,7 @@
 
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 
-&lt;p&gt;We talked about some useful CSS properties in this post and most importantly, how to control the position of elements. By the end of this post, you should have leant how to implement Web designs into code. But practice is extremely important in learning HTML and CSS. You need to be patient and learn bit by bit.&lt;/p&gt;
+&lt;p&gt;We talked about some useful CSS properties in this post and most importantly, how to control the position of elements. By the end of this post, you should have learnt how to implement Web designs into code. But practice is extremely important in learning HTML and CSS. You need to be patient and learn bit by bit.&lt;/p&gt;
 
 &lt;p&gt;You are welcomed to tell me if you find this series helpful and about how you would like me to improve it to help you learn better.&lt;/p&gt;
 
@@ -653,7 +729,7 @@
         
             <item>
                 <title>02 - Dive into HTML</title>
-                <description>&lt;blockquote&gt;&lt;h3&gt;What will you learn in this post?&lt;/h3&gt;
+                <description>&lt;blockquote&gt;&lt;h4&gt;What will you learn in this post?&lt;/h4&gt;
 
 &lt;p&gt;I have introduced what HTML, CSS and JavaScript are and how they can work together in &lt;a href=&quot;http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/&quot;&gt;my previous post&lt;/a&gt;. In this post, we will have a deeper understanding of HTML and learn to make Web pages step by step.&lt;/p&gt;&lt;/blockquote&gt;
 
@@ -964,7 +1040,7 @@
 
 &lt;h1&gt;HTML&lt;/h1&gt;
 
-&lt;blockquote&gt;&lt;h3&gt;What is HTML?&lt;/h3&gt;
+&lt;blockquote&gt;&lt;h4&gt;What is HTML?&lt;/h4&gt;
 
 &lt;p&gt;&lt;em&gt;HTML&lt;/em&gt; or &lt;em&gt;HyperText Markup Language&lt;/em&gt; is the standard markup language used to create web pages.&lt;/p&gt;
 
@@ -1025,7 +1101,7 @@
 
 &lt;h1&gt;CSS&lt;/h1&gt;
 
-&lt;blockquote&gt;&lt;h3&gt;What is CSS?&lt;/h3&gt;
+&lt;blockquote&gt;&lt;h4&gt;What is CSS?&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;Cascading Style Sheets&lt;/strong&gt; (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language.&lt;/p&gt;
 
@@ -1395,31 +1471,6 @@
                 <pubDate>Sat, 22 Mar 2014 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2014/03/22/reviewing-my-country-and-my-people/</link>
                 <guid isPermaLink="true">http://zhangwenli.com/blog/2014/03/22/reviewing-my-country-and-my-people/</guid>
-            </item>
-        
-            <item>
-                <title>林麓薮泽，心之所往</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1044316/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;book-img&quot; src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://img3.douban.com/lpic/s1881721.jpg&quot; /&gt;&lt;/a&gt;很多时候，我们觉得一本书写得好，未必是它教了我们什么道理；相反，往往说的道理是我们本就知道的，因为只有那些我们认同的才会让我们敬佩和崇拜。&lt;/p&gt;
-
-&lt;p&gt;这本书对我来说也是如此。我一直很向往在深山里隐居的生活，然而这样的生活大概也只能在退休之后才可能有胆量说要去体验一下的，因为似乎人生还有很多责任和担负的呢。&lt;/p&gt;
-
-&lt;p&gt;最早听说这本书的时候，是高中时候语文老师吴老师推荐的。说是本好书，不过我们的年纪估计不会喜欢。当时节选的好像是描写湖的段落，印象不深了，大概就是觉得外国人真是无聊，写个湖还能写一本书。同学间经常学吴老师说话的语气，却也未曾把这些话当真。&lt;/p&gt;
-
-&lt;p&gt;前阵子在手机上下了这本书的电子书，也没看出什么趣味。后来不小心删了，也就不知道看到什么地方了。&lt;/p&gt;
-
-&lt;p&gt;后来在图书馆又看到了这本书，想想挺薄的适合携带就借了来。不得不说，这种书看实体书和电子书的感觉完全不一样。看电子书很容易盯着进度的百分比，想着快点看完，匆匆就翻过去了。而拿着实体书看的时候，突然发现写得确实好啊！&lt;/p&gt;
-
-&lt;p&gt;别人对我介绍这本书的时候，都是说这是作者在瓦尔登湖畔自己建造的小木屋里深居简出的生活。这样的描述自然不会让人有什么很想看的冲动，但我看完之后，如果让我介绍这本书，我似乎也只能这么说。然而如果这只是本教你怎么造木房子的房子，大概也不会有什么趣味了。因为这本书最出彩的地方就在于生活在这样的环境中的作者的想法。&lt;/p&gt;
-
-&lt;p&gt;都说要“听其言观其行”，但有时候，一个人说什么做什么并没有多大差别，更重要的是看他的思考方式。了解一个人对自己的认识，对环境的认识，对他人的认识是一件非常有意思的事情，在我看来这也是人与人最大的差别。“正是一个人怎么看待自己，决定了此人的命运，指向了他的归宿。”&lt;/p&gt;
-
-&lt;p&gt;不用看几页就能明显感受到作者是一位有大智慧的人。当然，我并不是说一个向往隐居生活的人就一定比功成名就者来得高明，正如书中说的，每种生活各有不同，并没有哪种生活优于另一种。“非到我们失去了世界之后，我们才开始发现我们自己，认识我们的处境，并且认识了我们的联系之无穷的界限。”&lt;/p&gt;
-
-&lt;p&gt;如果有一天，我也可以在一个人迹罕至而又风景优美的林间湖边驻足，我很希望能够在那里常住下来，看看书，想想人生，会是一件多么美好的事啊！&lt;/p&gt;
-</description>
-                <pubDate>Mon, 10 Mar 2014 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2014/03/10/reviewing-walden/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/03/10/reviewing-walden/</guid>
             </item>
         
     </channel>

@@ -10,7 +10,7 @@ tags:
 excerpt: This post introduces how to achieve searching tags with Jekyll, without using a Jekyll Plugin. The basic idea is to display all posts grouped by tags, and then use CSS to hide all except posts with the searching tag. We can get the searching tag in URL query string using JavaScript.
 ---
 
-> ###What will you learn in this post?
+> #### What will you learn in this post?
 
 > This post introduces how to achieve searching tags with Jekyll, without using a Jekyll Plugin.
 

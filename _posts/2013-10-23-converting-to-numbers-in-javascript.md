@@ -7,7 +7,7 @@ tags:
 excerpt: Sometimes we think someone or something is strange only because we expect differently. `Number()`, `parstInt()` and `parseFloat` are three ways to convert to `Number` type in JavaScript. However, they act differently and may suprise you in some cases. In this post, I would like to talk about what to expect from them and why they act differently.
 ---
 
-> ###What you will learn in this post
+> #### What you will learn in this post
 
 > `Number()`, `parstInt()` and `parseFloat` are three ways to convert to `Number` type in JavaScript. However, they act differently and may suprise you in some cases. In this post, I would like to talk about what to expect from they and why they act differently.
 

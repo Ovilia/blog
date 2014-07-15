@@ -254,7 +254,7 @@ There're posts explained this topic in detail. If you are interested, you can re
 
 # Conclusion
 
-We talked about some useful CSS properties in this post and most importantly, how to control the position of elements. By the end of this post, you should have leant how to implement Web designs into code. But practice is extremely important in learning HTML and CSS. You need to be patient and learn bit by bit.
+We talked about some useful CSS properties in this post and most importantly, how to control the position of elements. By the end of this post, you should have learnt how to implement Web designs into code. But practice is extremely important in learning HTML and CSS. You need to be patient and learn bit by bit.
 
 You are welcomed to tell me if you find this series helpful and about how you would like me to improve it to help you learn better.
 

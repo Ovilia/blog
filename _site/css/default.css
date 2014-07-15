@@ -460,6 +460,11 @@ p>a>img:hover {
     margin-left: 10px;
 }
 
+.gist .gist-file .gist-data {
+    background-color: #eef3f0 !important;
+    font-size: 14px !important;
+}
+
 #mobile-nav {
     position: fixed;
     top: 0;
