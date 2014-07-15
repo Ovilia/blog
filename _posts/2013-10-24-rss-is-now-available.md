@@ -11,8 +11,4 @@ excerpt: You can access RSS of this blog site at <a href="http://zhangwenli.com/
 
 RSS is now available and you can access RSS of this blog site at <a href="http://zhangwenli.com/blog/feed.xml" target="_blank">http://zhangwenli.com/blog/feed.xml</a>.
 
-# Email Subscription
-
-Since there's no ideal way to subscribe by email without a server, you may <a href="mailto:OviliaZhang@gmail.com?subject=Blog+Subscription&body=Please+send+me+an+email+when+you+have+new+posts." title="OviliaZhang@gmail.com" target="_blank">send me an email in one click</a> so that I'll email you as soon as I post a new blog. 
-
 ### Thanks for your support! :smiley:

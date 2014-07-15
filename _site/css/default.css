@@ -465,6 +465,19 @@ p>a>img:hover {
     font-size: 14px !important;
 }
 
+.gist-file {
+    border: dashed 2px #b0cb2c !important;
+    border-radius: 5px !important;
+}
+
+.line-numbers {
+    border-right: dashed 2px #b0cb2c !important;
+}
+
+.gist-data {
+    border-bottom: dashed 2px #b0cb2c !important;
+}
+
 #mobile-nav {
     position: fixed;
     top: 0;
