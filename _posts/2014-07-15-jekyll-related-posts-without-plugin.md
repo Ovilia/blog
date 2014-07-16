@@ -7,12 +7,12 @@ tags:
 - Liquid
 - GitHub
 - Ruby
-excerpt: This post introduces how to implement *related posts* function with Jekyll. Since GitHub diables plugin for security reasons, plugins like <a href="https://github.com/LawrenceWoodman/related_posts-jekyll_plugin" targe="_blank">LawrenceWoodman / related_posts-jekyll_plugin</a> cannot be used. Default `site.related_posts` may return recent posts when there aren't enough posts sharing the same tags with current post.
+excerpt: This post introduces how to implement *related posts* function with Jekyll. Since GitHub disables plugin for security reasons, plugins like <a href="https://github.com/LawrenceWoodman/related_posts-jekyll_plugin" targe="_blank">LawrenceWoodman / related_posts-jekyll_plugin</a> cannot be used. Default `site.related_posts` may return recent posts when there aren't enough posts sharing the same tags with current post.
 ---
 
 > #### What will you learn in this post?
 
-> This post introduces how to implement *related posts* function with Jekyll. Since GitHub diables plugin for security reasons, plugins like <a href="https://github.com/LawrenceWoodman/related_posts-jekyll_plugin" targe="_blank">LawrenceWoodman / related_posts-jekyll_plugin</a> cannot be used. Default `site.related_posts` may return recent posts when there aren't enough posts sharing the same tags with current post.
+> This post introduces how to implement *related posts* function with Jekyll. Since GitHub disables plugin for security reasons, plugins like <a href="https://github.com/LawrenceWoodman/related_posts-jekyll_plugin" targe="_blank">LawrenceWoodman / related_posts-jekyll_plugin</a> cannot be used. Default `site.related_posts` may return recent posts when there aren't enough posts sharing the same tags with current post.
 
 # Jekyll's Native Support
 

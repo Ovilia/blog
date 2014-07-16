@@ -10,7 +10,7 @@
                 <title>Jekyll Related Posts without Plugin</title>
                 <description>&lt;blockquote&gt;&lt;h4&gt;What will you learn in this post?&lt;/h4&gt;
 
-&lt;p&gt;This post introduces how to implement &lt;em&gt;related posts&lt;/em&gt; function with Jekyll. Since GitHub diables plugin for security reasons, plugins like &lt;a href=&quot;https://github.com/LawrenceWoodman/related_posts-jekyll_plugin&quot; targe=&quot;_blank&quot;&gt;LawrenceWoodman / related_posts-jekyll_plugin&lt;/a&gt; cannot be used. Default &lt;code&gt;site.related_posts&lt;/code&gt; may return recent posts when there aren't enough posts sharing the same tags with current post.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This post introduces how to implement &lt;em&gt;related posts&lt;/em&gt; function with Jekyll. Since GitHub disables plugin for security reasons, plugins like &lt;a href=&quot;https://github.com/LawrenceWoodman/related_posts-jekyll_plugin&quot; targe=&quot;_blank&quot;&gt;LawrenceWoodman / related_posts-jekyll_plugin&lt;/a&gt; cannot be used. Default &lt;code&gt;site.related_posts&lt;/code&gt; may return recent posts when there aren't enough posts sharing the same tags with current post.&lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;h1&gt;Jekyll's Native Support&lt;/h1&gt;
 
