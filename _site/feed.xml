@@ -7,6 +7,137 @@
         <atom:link href="http://zhangwenli.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>别做戴着设计师面具的美工</title>
+                <description>&lt;p&gt;在我看来，完美主义倾向之于程序员若还算不上是必要，那至少对设计师而言是决不可或缺的。诚然，谁没对手上的任务有过敷衍了事的想法，但至少对细节的把握、对完美的追求，不应被设计师弃若敝履。否则，你是否应该思考，你真的不是一个戴着设计师面具的美工吗？&lt;/p&gt;
+
+&lt;p&gt;今天有幸负责面试设计师，对于作为程序员出身自学设计的我，实在是惴惴不安啊！由于我没什么美术功底，对自己摸索出来的设计能力有几斤几两还颇有几分自知之明。然而交流之后，发觉我对所谓的设计专业科班出身也略有高估。虽然我的设计能力跟仰慕的Dibbble大神们差了十万八千里，至少我永远不会敷衍我的设计。当然，若只以这样小规模的抽样当然算不得数，但至少足以让我反思，设计真的可以随意对待吗？&lt;/p&gt;
+
+&lt;p&gt;从设计作品本身当然已经高下立判，但是让我觉得最难以接受的，还是某些人对设计的态度。&lt;/p&gt;
+
+&lt;h1&gt;对话实录&lt;/h1&gt;
+
+&lt;p&gt;观察他们做一个简单的图标的过程，不仅考验了对工具的熟练程度，还很大程度上看到了他们对待设计的态度。以下为典型对话内容：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我：你这样做怎样保证对齐？&lt;/p&gt;
+
+&lt;p&gt;答：需要对齐哦？&lt;/p&gt;
+
+&lt;p&gt;我：……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我：放大一点吧，太小了。&lt;/p&gt;
+
+&lt;p&gt;（因为是位图，变得超模糊……）&lt;/p&gt;
+
+&lt;p&gt;答：你没有说尺寸啊……&lt;/p&gt;
+
+&lt;p&gt;我：客户是不会告诉你尺寸的，作为设计师应该考虑到这点吧？&lt;/p&gt;
+
+&lt;p&gt;答：我现在就是给你演示一下，意思意思……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我：如果让你说一个你在设计网页的时候最重视的设计理念，会是什么？&lt;/p&gt;
+
+&lt;p&gt;（不假思索）答：简约。&lt;/p&gt;
+
+&lt;p&gt;我：我们看你的这个网页设计，你能举例说说哪里体现了这一点吗？&lt;/p&gt;
+
+&lt;p&gt;（找了好久！）答：不能……&lt;/p&gt;
+
+&lt;p&gt;（其实那个网页算不上丑，可要用“简约”形容确实非常牵强。）&lt;/p&gt;
+
+&lt;p&gt;我（笑了）：你不是说简约是你在设计网页的时候最重视的设计理念么，为什么不能体现？&lt;/p&gt;
+
+&lt;p&gt;答：……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我：如果让你说一个你在设计网页的时候最重视的设计理念，会是什么？&lt;/p&gt;
+
+&lt;p&gt;（兴奋地）答：图大！&lt;/p&gt;
+
+&lt;p&gt;我：啊？？为什么？&lt;/p&gt;
+
+&lt;p&gt;答：我喜欢很大的图，我觉得用户也比较喜欢看图。&lt;/p&gt;
+
+&lt;p&gt;我：（慢慢明白她说的是现在比较流行的大背景图那种设计风格）哦，这的确是现在比较流行的一种风格……但图多也是要设计的啊，不是说我放一堆图在那边，自然就变得很好看吧？&lt;/p&gt;
+
+&lt;p&gt;答：我就喜欢很大的图啊……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我：你这样做怎样保证几个弧线在同心圆上，并且保证间距相同？&lt;/p&gt;
+
+&lt;p&gt;答：你刚刚没说要是同心圆，还间距相同吧？&lt;/p&gt;
+
+&lt;p&gt;我：我是没说，客户也不会跟你说的，但你能容忍你的设计这样吗？&lt;/p&gt;
+
+&lt;p&gt;答：我觉得可以啊。&lt;/p&gt;
+
+&lt;p&gt;我（缓解气氛，宽慰道）：好吧，不用在意，可能只是我的完美主义倾向在作怪……&lt;/p&gt;
+
+&lt;p&gt;答：可能因为你是程序员吧……（一脸鄙视……）&lt;/p&gt;
+
+&lt;p&gt;我（在思考程序员和追求完美之间的必然性？）：难道设计师不需要追求完美的心态么？&lt;/p&gt;
+
+&lt;p&gt;答：我不觉得你所谓的这种完美是一种好的追求……&lt;/p&gt;
+
+&lt;p&gt;我：嗯，我知道你想表达的是，对于艺术而言，有时候数字上的完美不是最终追求的理想状态，而是应该用眼睛去感受真正的理想状态，这个意思吧？&lt;/p&gt;
+
+&lt;p&gt;答：是的。&lt;/p&gt;
+
+&lt;p&gt;我：我认同这种说法。那你看你做的这几个弧线，你觉得用你的眼睛看，达到理想状态了吗？&lt;/p&gt;
+
+&lt;p&gt;答（默默删掉已绘制的内容重来）：……&lt;/p&gt;
+
+&lt;p&gt;（不过这次他还是无视了网格，无视了比例，最后弄出了他自己也不满意的结果）&lt;/p&gt;
+
+&lt;p&gt;我：所以，你能接受这样的作品吗？&lt;/p&gt;
+
+&lt;p&gt;答：（迟疑）不能，如果有时间的话，我会重新做一遍的。&lt;/p&gt;
+
+&lt;p&gt;（不过我已经能预见，即使时间充足，如果以他这样的态度对待设计，即使做了很多遍，即使最后达到了肉眼看不出差别的程度，这依旧会是一个失败的作品……）&lt;/p&gt;
+
+&lt;h1&gt;追求完美？你在追求什么？&lt;/h1&gt;
+
+&lt;p&gt;从我高中起，好像就不兴说“追求完美”这样的词了，这词几乎可以和黑处女座画上等号。作为一个水瓶座，我庆幸我的追求完美综合症还不至于病入膏肓（疾在腠理啊！）。&lt;/p&gt;
+
+&lt;p&gt;像任何概念性的名词一样，说得越多，这词究竟指什么反而变得越来越模糊。它似乎既可以等于某种认真的态度，又可以同时表示某种不能容忍瑕疵的强迫症。但再仔细想想吧，这似乎说的是同一个东西，只是换了褒贬性就完全认不出模样了。这就好比一朝中举衣锦还乡，谁能记得你是当初弄堂里玩炮仗炸了裤子的小瘪三？（怎么感觉我看钱钟书的书看得比喻都怪怪的了……）&lt;/p&gt;
+
+&lt;p&gt;当你定义这个概念的时候，你已经在给它定性了。&lt;/p&gt;
+
+&lt;p&gt;说实话，即使是号称追求完美或鄙视追求完美的人，又有几个知道自己在追求的到底是个什么东西呢？这就好比某国总统动不动就说自己是Leader of the Free World，反正没人会要求他定义什么是Free，因而他也大可不必为不能提供Free的午餐而感到惭愧。&lt;/p&gt;
+
+&lt;p&gt;因此，我自然也狡猾地不去定义“追求完美”，我乐得它是一个模棱两可的存在，好留给读者一个辩驳的空间，才使得我的博客不致门庭冷落。&lt;/p&gt;
+
+&lt;p&gt;虽然在写程序和做设计的时候我好像追求完美的倾向特别严重，但是在生活中却很多得过且过的态度。我似乎很喜欢偷懒，也很会适合时宜地偷懒（没错，还会像你一样以“懒人推动了世界进步”为借口）。但于程序和设计这两样上，却总是不太忍心偷懒。大概就像美人一头乌黑亮发才容不下一根银丝，真到一头华发的时候，也就胡乱凑合了。人生已经如此艰难，还是随意一点度过，不可较真。那为什么又于设计上要较起真来呢？因为人生除了艰难，还有无聊的时候嘛……&lt;/p&gt;
+
+&lt;h1&gt;设计之为设计&lt;/h1&gt;
+
+&lt;p&gt;设计之为设计，正是多赖设计师持之以恒对细节的极致追求。如果这一点也做不到，那么，你不叫设计师，你叫美工。&lt;/p&gt;
+
+&lt;p&gt;什么是设计？当然，这是&lt;a href=&quot;http://www.webdesignviews.com/2009/05/do-you-know-what-is-design-41-answers-to-one-simple-question/&quot; target=&quot;_blank&quot; title=&quot;do-you-know-what-is-design-41-answers-to-one-simple-question&quot;&gt;一千人眼中的一千个哈姆雷特&lt;/a&gt;。但对我而言，最喜欢的答案是&lt;em&gt;Design is Persistent Trying&lt;/em&gt;。有人大概要辩驳，只有太弱的人才要不断尝试，大师应该信手拈来、行云流水啊！&lt;/p&gt;
+
+&lt;p&gt;千人之中难得一个大师，却有百人这么辩驳。&lt;/p&gt;
+
+&lt;p&gt;他们总会说：一个像素的差别有意义吗？&lt;/p&gt;
+
+&lt;p&gt;是的，甚至像素级的精准仍然是不够的，我追求的是数学上与艺术上的完美。&lt;/p&gt;
+
+&lt;p&gt;他们又会说：如果绝大部分人都看不出区别，又有谁会知道这区别呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;天知地知，你不知我知，何谓无知？&lt;/strong&gt;&lt;/p&gt;
+</description>
+                <pubDate>Fri, 25 Jul 2014 00:00:00 +0800</pubDate>
+                <link>http://zhangwenli.com/blog/2014/07/25/more-than-pixel-level/</link>
+                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/07/25/more-than-pixel-level/</guid>
+            </item>
+        
+            <item>
                 <title>Jekyll Related Posts without Plugin</title>
                 <description>&lt;blockquote&gt;&lt;h4&gt;What will you learn in this post?&lt;/h4&gt;
 
@@ -26,21 +157,20 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;related_posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;highest_freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;highest_freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;include?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;cat_freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;cat_freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highest_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat_freq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-    &lt;span class=&quot;ss&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_related_posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_related_posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;But just as the default Jekyll behaves, it returns recent posts if there aren't enough posts sharing the same tags. I think this doesn't make sense. After all, why should a post called &lt;code&gt;How to become a good programmer&lt;/code&gt; be related to &lt;code&gt;I was bitten by a bug yesterday&lt;/code&gt; just because there are no other related posts?&lt;/p&gt;
@@ -52,8 +182,7 @@
         &lt;span class=&quot;n&quot;&gt;related_scores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I have almost no experience with Ruby, but this isn't too hard for me.&lt;/p&gt;
@@ -265,8 +394,7 @@
         &lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;decodeURIComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/\+/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;6. Show posts with the searching tag.&lt;/h3&gt;
@@ -280,8 +408,7 @@
         &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tagTitle&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Illegal Tag Query&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;7. Add links to tags.&lt;/h3&gt;
@@ -324,8 +451,7 @@
 &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Basic Properties&lt;/h1&gt;
@@ -347,8 +473,7 @@
 &lt;p&gt;&lt;code&gt;color&lt;/code&gt; is used to set the color of text, while &lt;code&gt;background-color&lt;/code&gt; and &lt;code&gt;border-color&lt;/code&gt; set the color of background and border respectively.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 
@@ -360,8 +485,7 @@
     &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ff6600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-01.png&quot; /&gt;&lt;/p&gt;
@@ -371,8 +495,7 @@
 &lt;p&gt;If you don't set the width and height of a component, it depends on the content.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;xxxxx x xxxx xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxx.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-02.png&quot; /&gt;&lt;/p&gt;
@@ -385,8 +508,7 @@
     &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ff6600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-03.png&quot; /&gt;&lt;/p&gt;
@@ -400,8 +522,7 @@
     &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ff6600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-04.png&quot; /&gt;&lt;/p&gt;
@@ -417,8 +538,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width: 500px; background-color: yellow;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;padding: 50px; margin: 20px; width: 200px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I&amp;#39;m red.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-09.png&quot; /&gt;&lt;/p&gt;
@@ -447,8 +567,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width: 200px; height: 100px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-05.png&quot; /&gt;&lt;/p&gt;
@@ -467,8 +586,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline-block; width: 200px; height: 100px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline-block; width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-06.png&quot; /&gt;&lt;/p&gt;
@@ -484,9 +602,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width: 500px; background-color: yellow;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline-block; width: 200px; height: 100px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline-block; width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;/blockquote&gt;
 
@@ -499,8 +615,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline; width: 200px; height: 100px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline; width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-07.png&quot; /&gt;&lt;/p&gt;
@@ -511,8 +626,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline; width: 200px; height: 100px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I&amp;#39;m red.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;display: inline; width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I&amp;#39;m green.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-08.png&quot; /&gt;&lt;/p&gt;
@@ -533,8 +647,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;float: left; width: 200px; height: 100px; background-color: red;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;float: right; width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-10.png&quot; /&gt;&lt;/p&gt;
@@ -548,8 +661,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;float: right; width: 100px; height: 50px; background-color: green;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;clear: both&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-11.png&quot; /&gt;&lt;/p&gt;
@@ -759,8 +871,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-01.png&quot; /&gt;&lt;/p&gt;
@@ -804,8 +915,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-03.png&quot; /&gt;&lt;/p&gt;
@@ -825,8 +935,7 @@
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&amp;gt;&lt;/span&gt;This is h1.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;h6&amp;gt;&lt;/span&gt;This is h1.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h6&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is p.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-04.png&quot; /&gt;&lt;/p&gt;
@@ -848,8 +957,7 @@
 &lt;p&gt;Use the &lt;code&gt;href&lt;/code&gt; attribute to state the location of the link and it's useful to set the &lt;code&gt;target&lt;/code&gt; attribute to be &lt;code&gt;_blank&lt;/code&gt; when you want browsers open a new tab for the new link.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;Welcome to visit my &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;personal site&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-08.png&quot; /&gt;&lt;/p&gt;
@@ -859,8 +967,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://zhangwenli.com&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;abc.png&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;List&lt;/h2&gt;
@@ -881,8 +988,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Fourth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Fifth&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-05.png&quot; /&gt;&lt;/p&gt;
@@ -911,8 +1017,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;Fay&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-06.png&quot; /&gt;&lt;/p&gt;
@@ -929,8 +1034,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-02.png&quot; /&gt;&lt;/p&gt;
@@ -949,8 +1053,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;red&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; apple.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;red&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; apple.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-07.png&quot; /&gt;&lt;/p&gt;
@@ -978,8 +1081,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-05-02-dive-into-html-09.png&quot; /&gt;&lt;/p&gt;
@@ -989,8 +1091,7 @@
 &lt;p&gt;An &lt;em&gt;id&lt;/em&gt; is a universal name for later selection and operation in CSS and JavaScript.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;myName&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Wenli&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;HTML is case-insensitive, so if there is an element of &lt;code&gt;id=&quot;myName&quot;&lt;/code&gt;, there shouldn't be another element of &lt;code&gt;id=&quot;myname&quot;&lt;/code&gt;. Otherwise may cause confusion since CSS is case-insensitive while JavaScript is case-sensitive.&lt;/p&gt;
@@ -1005,8 +1106,7 @@
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;secondSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;thirdSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;6.2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fourthSeason&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.5&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;code&gt;id&lt;/code&gt; and &lt;code&gt;class&lt;/code&gt; are called &lt;em&gt;attributes&lt;/em&gt; of an element. Other attributes are written in the same style. The full list of attributes is available at &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes&quot; target=&quot;_blank&quot;&gt;HTML attribute reference - Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
@@ -1085,8 +1185,7 @@
         Hello, world!
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Change the content of &lt;code&gt;hi.html&lt;/code&gt; to be the above code and open it in a browser, you'll find the result is the same as the previous example. But this is a standard way to put it.&lt;/p&gt;
@@ -1122,8 +1221,7 @@
         Hello, world!
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-01.jpg&quot; /&gt;&lt;/p&gt;
@@ -1143,8 +1241,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;We want to make &lt;code&gt;First&lt;/code&gt; and &lt;code&gt;Second&lt;/code&gt; be red and the background of them be yellow, which can be achieved with the following code:&lt;/p&gt;
@@ -1160,8 +1257,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-02.jpg&quot; /&gt;&lt;/p&gt;
@@ -1194,8 +1290,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;color: red; background-color: yellow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, &lt;strong&gt;never use inline style in real programming&lt;/strong&gt;! :boom:&lt;/p&gt;
@@ -1221,8 +1316,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;You may notice that it helps reuse the style and the content and style are decoupled in internal style.&lt;/p&gt;
@@ -1239,8 +1333,7 @@
     &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;yellow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And a HTML file:&lt;/p&gt;
@@ -1257,8 +1350,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Second&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External style makes it possible to reuse CSS inter- and intra-HTML. Use this style whenever possible.&lt;/p&gt;
@@ -1286,8 +1378,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;alert(&amp;#39;Hello, again!&amp;#39;)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-03.jpg&quot; /&gt;&lt;/p&gt;
@@ -1310,8 +1401,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sayHello()&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External JavaScript &lt;code&gt;hello.js&lt;/code&gt;:&lt;/p&gt;
@@ -1319,8 +1409,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sayHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello, again!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External HTML:&lt;/p&gt;
@@ -1335,8 +1424,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sayHello()&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Say hello!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;External JavaScript is prefered in most cases. Before you know which cases are excluded, you should always use external style.&lt;/p&gt;
@@ -1353,8 +1441,7 @@
 &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;But if you want to change the color when mouse has been clicked, only JavaScript can do it:&lt;/p&gt;
@@ -1373,8 +1460,7 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;change(this)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Change Color!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Conclusion&lt;/h1&gt;
@@ -1454,23 +1540,6 @@
                 <pubDate>Fri, 28 Mar 2014 00:00:00 +0800</pubDate>
                 <link>http://zhangwenli.com/blog/2014/03/28/reviewing-1984/</link>
                 <guid isPermaLink="true">http://zhangwenli.com/blog/2014/03/28/reviewing-1984/</guid>
-            </item>
-        
-            <item>
-                <title>事出沉思，义归翰藻</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/3200831/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;book-img&quot; src=&quot;http://zhangwenli.com/blog/img/loading.gif&quot; data-src=&quot;http://img5.douban.com/lpic/s3259778.jpg&quot; /&gt;&lt;/a&gt;林语堂的英语文笔自然是极好的，他善用排比长句，一口气读下来真是酣畅淋漓，真是难为他想得来。如果说这于议论文上尚有限，那于小说上飞文染翰就是不可限量了。这也就是为什么我认为《京华烟云》比本书能够多一颗星的重要原因了。&lt;/p&gt;
-
-&lt;p&gt;这本书的翻译翻成半文言半白话的样子，可能是因为年代比较早，当时翻译文风就是如此。但是我就受不了这样的翻译，要白话就白话，要文言就文言，这样半生不熟的真没有美感。比如“友邦人士之来侨居于中国者，其势不能不感于中国”，不觉得很奇怪吗？这是减一颗星的另外一个原因了。&lt;/p&gt;
-
-&lt;p&gt;若要知晓（古代和近代）中国文化，也不是非读此类议论散文不可的，优秀的小说往往更自然更具象地能够感受出一个民族一个时代的文化——《红楼梦》、《京华烟云》即是如此（后者又很大程度上受到前者的影响）。议论文难免会给有强加于读者的主观性的论调，而于小说则往往让读者忘记这点，虽然本身也不可避免是主观的。小说的高明作者需世事洞然，而其中人物却不能个个是明白人，他们是出于自己的角度看待问题的，作者不应该用自己的论点强加于他们。要做到这点是非常困难的，而《红楼梦》在这方面就非常优秀，就连作者对薛宝钗是贬是褒都让人争论不休。而小说的高明之处就在于此，作者的目的在于搭建一个环境给读者，至于是贬是褒，就由读者自己判定吧。本来这就是一件很主观的事，又何必知道作者的观点而影响了读者自己的判断呢？（咦，扯远了……）&lt;/p&gt;
-
-&lt;p&gt;本书还是站在比较客观的立场上写的，但写一类人毕竟不容易。能抓住一类人的共性已实属不易，太过注重共同点往往会失去对个性的把握。在这方面，应该说林语堂还是做得不错的。&lt;/p&gt;
-
-&lt;p&gt;本书几乎介绍了中国文化的方方面面，这点从目录就能看出，我也就不再赘述。值得一提的是，如果考量作者所写与当下时代，会发现很多方面已经发生了质变。比如儒家道家思想，你很难在你的朋友中发现以这样的人生观生活着的人，即使号称喜欢道家思想的我，也更多的只是一种遥远的仰望，而不可能有那样的仙风道骨。这些古老的文化，虽然对当代人们的思想潜移默化地起到重要影响，但是作者所描绘的人们的心态和哲学观，我觉得看起来更像是对古代文人的描写，至少是在近代以来就慢慢消失了的。由此可见，五四运动以来，思想上生活状态上的变化是多么显著。任何一个朝代的更替都没有使文化发生如此大的断层，因为这些人从小受的教育就是先哲思想，他们又怎么会自己想出德先生赛先生呢？可见外来文化的冲击之大。徘徊在崇洋媚外和夜郎自大之间，最终竟是精华尽去，徒留糟粕。林语堂所在的那个时代，大概还能感受到这种文化的遗风，这本书便是对这些文化的一种总结。&lt;/p&gt;
-</description>
-                <pubDate>Sat, 22 Mar 2014 00:00:00 +0800</pubDate>
-                <link>http://zhangwenli.com/blog/2014/03/22/reviewing-my-country-and-my-people/</link>
-                <guid isPermaLink="true">http://zhangwenli.com/blog/2014/03/22/reviewing-my-country-and-my-people/</guid>
             </item>
         
     </channel>

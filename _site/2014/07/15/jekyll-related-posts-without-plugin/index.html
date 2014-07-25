@@ -86,21 +86,20 @@
 
 <div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">related_posts</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span>
     <span class="k">return</span> <span class="o">[]</span> <span class="k">unless</span> <span class="n">posts</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="mi">1</span>
-    <span class="n">highest_freq</span> <span class="o">=</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span>
+    <span class="n">highest_freq</span> <span class="o">=</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span>
     <span class="n">related_scores</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">posts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="o">|</span>
         <span class="n">post</span><span class="o">.</span><span class="n">tags</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">tag</span><span class="o">|</span>
             <span class="k">if</span> <span class="nb">self</span><span class="o">.</span><span class="n">tags</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">post</span> <span class="o">!=</span> <span class="nb">self</span>
-                <span class="n">cat_freq</span> <span class="o">=</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">[</span><span class="n">tag</span><span class="o">]</span>
+                <span class="n">cat_freq</span> <span class="o">=</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">[</span><span class="n">tag</span><span class="o">]</span>
                 <span class="n">related_scores</span><span class="o">[</span><span class="n">post</span><span class="o">]</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">highest_freq</span><span class="o">-</span><span class="n">cat_freq</span><span class="p">)</span>
             <span class="k">end</span>
         <span class="k">end</span>
     <span class="k">end</span>
 
-    <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">sort_related_posts</span><span class="p">(</span><span class="n">related_scores</span><span class="p">)</span>
+    <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">sort_related_posts</span><span class="p">(</span><span class="n">related_scores</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>But just as the default Jekyll behaves, it returns recent posts if there aren't enough posts sharing the same tags. I think this doesn't make sense. After all, why should a post called <code>How to become a good programmer</code> be related to <code>I was bitten by a bug yesterday</code> just because there are no other related posts?</p>
@@ -112,8 +111,7 @@
         <span class="n">related_scores</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
     <span class="k">end</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 
 <p>I have almost no experience with Ruby, but this isn't too hard for me.</p>
@@ -142,6 +140,39 @@
     
     <blockquote class="relatedPosts">
         
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
         
             
             
@@ -502,45 +533,18 @@
                 
             
         
-            
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-        
         
             </ul>
         
         
         <h4>Recent Posts</h4>
         <ul>
+        
+            <li class="relatedPost">
+                <a href="http://zhangwenli.com/blog/2014/07/25/more-than-pixel-level/">别做戴着设计师面具的美工
+                
+                </a>
+            </li>
         
             <li class="relatedPost">
                 <a href="http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/">Jekyll Related Posts without Plugin
@@ -564,12 +568,6 @@
                 <a href="http://zhangwenli.com/blog/2014/05/18/03-dive-into-css/">03 - Dive into CSS
                 
                     (Series: Dive into Web Front-End Programming)
-                
-                </a>
-            </li>
-        
-            <li class="relatedPost">
-                <a href="http://zhangwenli.com/blog/2014/05/11/reviewing-moment-in-peking/">道载万物，洋洋大哉
                 
                 </a>
             </li>
