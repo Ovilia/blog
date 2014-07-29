@@ -268,6 +268,175 @@ To build a Web site, you should first design what to show and how to display it.
 
 I suggest you put your code on GitHub and share a link as comment to this post, so that we can discuss more about it.
 
-Suggest answer will be published in two weeks.
+## Suggested Answer
 
+Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use <a href="jsFiddle" target="_blank">http://jsfiddle.net/</a> to share your code.
 
+A better way to check this is to <a href="{{ site.url }}/demo/2014-05-18-03-dive-into-css-01.html" target="_blank">run the demo</a> and use *Inspect Element* for information.
+
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            * {
+                /* Don't use default padding and margin.
+                 * Check: http://css-tricks.com/margin-0-padding-0-no-longer-cool/
+                 */
+                padding: 0;
+                margin: 0;
+                
+                box-sizing: border-box;
+            }
+            
+            html, body {
+                /* Usually used for one-screen page.
+                 * height: 100%; means to set the height to be 100% of its parent's.
+                 * Only then, can #left's height: 100% be equal to full window height.
+                 * Otherwise, #left's height: 100% will be 0.
+                 */
+                width: 100%;
+                height: 100%;
+                
+                font-family: Arial;
+            }
+            
+            p {
+                font-size: 20px;
+                margin: 5px 0; /* top and bottom are 5px while left and right are 0. */
+            }
+            
+            #left {
+                background-color: #f00;
+                width: 200px;
+                height: 100%;
+                float: left;
+                
+                padding: 10px;
+                
+                /* For #l-bottom to relative to #left, #left should be set to relative
+                 * and #l-bottom to absolute. Otherwise, #left will be relative to html.
+                 */
+                position: relative;
+            }
+            
+            #l-bottom {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                
+                text-align: right;
+            }
+            
+            #circle {
+                background-color: #fff;
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                float: right;
+            }
+            
+            #right {
+                background-color: #ff0;
+                height: 100%;
+                margin-left: 200px;
+                padding: 20px 50px 20px 20px; /* top right bottom left */
+                position: relative;
+            }
+            
+            #r-top {
+                background-color: #0f0;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            
+            #title {
+                font-size: 50px;
+                color: #f00;
+                text-align: center;
+            }
+            
+            .center {
+                background-color: #0ff;
+                width: 30%; /* width 30% each, width margins of 5%. */
+                margin-left: 0%;
+                height: 160px;
+                float: left;
+                padding: 10px;
+            }
+            
+            .center+.center {
+                /* + selects next element in the same level, which is the second
+                 * and the third elements in this case.
+                 */
+                margin-left: 5%;
+            }
+            
+            #r-bottom {
+                position: absolute;
+                bottom: 20px;
+                /* Note how we set position instead of setting a width */
+                left: 20px;
+                right: 50px;
+                
+            }
+            
+            .r-b {
+                padding: 5px;
+                margin: 5px 0;
+                color: #fff;
+                height: 30px;
+            }
+            
+            #r-b1 {
+                background-color: #0000ff;
+            }
+            
+            #r-b2 {
+                background-color: #ff00ff;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="left">
+            <p>#f00</p>
+            <p>width: 200px</p>
+            <div id="l-bottom">
+                <p>radius: 65px</p>
+                <p>margin: 20px</p>
+                <div id="circle"></div>
+            </div>
+        </div>
+        
+        <div id="right">
+            <div id="r-top">
+                <p>#0f0, margin: right: 50px, other: 20px</p>
+                <div id="title">Title</div>
+                <p>Title: center vertically and horizontally</p>
+            </div>
+            
+            <div id="r-center">
+                <div class="center">
+                    <p>color: #0ff</p>
+                    <p>height: 160px</p>
+                </div>
+                <div class="center"></div>
+                <div class="center"></div>
+            </div>
+            <p>#ff0, width: window width - 200px</p>
+            
+            <div id="r-bottom">
+                <p>The next two are aligned at bottom, height: 60px</p>
+                <div id="r-b1" class="r-b">
+                    #0000ff
+                </div>
+                <div id="r-b2" class="r-b">
+                    #0000ff
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{% endhighlight %}

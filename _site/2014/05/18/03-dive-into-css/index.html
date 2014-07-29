@@ -436,7 +436,181 @@
 
 <p>I suggest you put your code on GitHub and share a link as comment to this post, so that we can discuss more about it.</p>
 
-<p>Suggest answer will be published in two weeks.</p>
+<h2>Suggested Answer</h2>
+
+<p>Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use <a href="jsFiddle" target="_blank">http://jsfiddle.net/</a> to share your code.</p>
+
+<p>A better way to check this is to <a href="http://zhangwenli.com/blog/demo/2014-05-18-03-dive-into-css-01.html" target="_blank">run the demo</a> and use <em>Inspect Element</em> for information.</p>
+
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+            <span class="o">*</span> <span class="p">{</span>
+                <span class="c">/* Don&#39;t use default padding and margin.</span>
+<span class="c">                 * Check: http://css-tricks.com/margin-0-padding-0-no-longer-cool/</span>
+<span class="c">                 */</span>
+                <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+                <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+                
+                <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+                <span class="c">/* Usually used for one-screen page.</span>
+<span class="c">                 * height: 100%; means to set the height to be 100% of its parent&#39;s.</span>
+<span class="c">                 * Only then, can #left&#39;s height: 100% be equal to full window height.</span>
+<span class="c">                 * Otherwise, #left&#39;s height: 100% will be 0.</span>
+<span class="c">                 */</span>
+                <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                
+                <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nt">p</span> <span class="p">{</span>
+                <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* top and bottom are 5px while left and right are 0. */</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#left</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+                <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+                
+                <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+                
+                <span class="c">/* For #l-bottom to relative to #left, #left should be set to relative</span>
+<span class="c">                 * and #l-bottom to absolute. Otherwise, #left will be relative to html.</span>
+<span class="c">                 */</span>
+                <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#l-bottom</span> <span class="p">{</span>
+                <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+                <span class="k">bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="k">right</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+                
+                <span class="k">text-align</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#circle</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+                <span class="k">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+                <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+                <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#right</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff0</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">margin-left</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span> <span class="m">50px</span> <span class="m">20px</span> <span class="m">20px</span><span class="p">;</span> <span class="c">/* top right bottom left */</span>
+                <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-top</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#0f0</span><span class="p">;</span>
+                <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+                <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#title</span> <span class="p">{</span>
+                <span class="k">font-size</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+                <span class="k">color</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+                <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nc">.center</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#0ff</span><span class="p">;</span>
+                <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span> <span class="c">/* width 30% each, width margins of 5%. */</span>
+                <span class="k">margin-left</span><span class="o">:</span> <span class="m">0</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">160px</span><span class="p">;</span>
+                <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+                <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nc">.center</span><span class="o">+</span><span class="nc">.center</span> <span class="p">{</span>
+                <span class="c">/* + selects next element in the same level, which is the second</span>
+<span class="c">                 * and the third elements in this case.</span>
+<span class="c">                 */</span>
+                <span class="k">margin-left</span><span class="o">:</span> <span class="m">5</span><span class="o">%</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-bottom</span> <span class="p">{</span>
+                <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+                <span class="k">bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="c">/* Note how we set position instead of setting a width */</span>
+                <span class="k">left</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="k">right</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+                
+            <span class="p">}</span>
+            
+            <span class="nc">.r-b</span> <span class="p">{</span>
+                <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+                <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span>
+                <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-b1</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#0000ff</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-b2</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff00ff</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>#f00<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>width: 200px<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;l-bottom&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>radius: 65px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;</span>margin: 20px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;circle&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;r-top&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>#0f0, margin: right: 50px, other: 20px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;title&quot;</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Title: center vertically and horizontally<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;r-center&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>color: #0ff<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>height: 160px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;p&gt;</span>#ff0, width: window width - 200px<span class="nt">&lt;/p&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;r-bottom&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>The next two are aligned at bottom, height: 60px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;r-b1&quot;</span> <span class="na">class=</span><span class="s">&quot;r-b&quot;</span><span class="nt">&gt;</span>
+                    #0000ff
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;r-b2&quot;</span> <span class="na">class=</span><span class="s">&quot;r-b&quot;</span><span class="nt">&gt;</span>
+                    #0000ff
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+
+
 
 
     
