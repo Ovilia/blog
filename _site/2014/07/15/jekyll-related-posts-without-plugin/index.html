@@ -16,16 +16,8 @@
         <meta name="viewport" content="width=100%, initial-scale=1" />
         
         <link rel="shortcut icon" href="http://zhangwenli.com/blog/img/me.ico">
-            
-        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/syntax.css" />
-        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/default.css" />
         
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <script type="text/javascript" src="http://zhangwenli.com/blog/js/lazyLoad.js"></script>
-        <script type="text/javascript" src="http://zhangwenli.com/blog/js/common.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/default.css" />
     </head>
     
     <body>
@@ -86,20 +78,21 @@
 
 <div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">related_posts</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span>
     <span class="k">return</span> <span class="o">[]</span> <span class="k">unless</span> <span class="n">posts</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="mi">1</span>
-    <span class="n">highest_freq</span> <span class="o">=</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span>
+    <span class="n">highest_freq</span> <span class="o">=</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span>
     <span class="n">related_scores</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">posts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="o">|</span>
         <span class="n">post</span><span class="o">.</span><span class="n">tags</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">tag</span><span class="o">|</span>
             <span class="k">if</span> <span class="nb">self</span><span class="o">.</span><span class="n">tags</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">post</span> <span class="o">!=</span> <span class="nb">self</span>
-                <span class="n">cat_freq</span> <span class="o">=</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">[</span><span class="n">tag</span><span class="o">]</span>
+                <span class="n">cat_freq</span> <span class="o">=</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">[</span><span class="n">tag</span><span class="o">]</span>
                 <span class="n">related_scores</span><span class="o">[</span><span class="n">post</span><span class="o">]</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">highest_freq</span><span class="o">-</span><span class="n">cat_freq</span><span class="p">)</span>
             <span class="k">end</span>
         <span class="k">end</span>
     <span class="k">end</span>
 
-    <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">sort_related_posts</span><span class="p">(</span><span class="n">related_scores</span><span class="p">)</span>
+    <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">sort_related_posts</span><span class="p">(</span><span class="n">related_scores</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>But just as the default Jekyll behaves, it returns recent posts if there aren't enough posts sharing the same tags. I think this doesn't make sense. After all, why should a post called <code>How to become a good programmer</code> be related to <code>I was bitten by a bug yesterday</code> just because there are no other related posts?</p>
@@ -111,7 +104,8 @@
         <span class="n">related_scores</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
     <span class="k">end</span>
 <span class="k">end</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <p>I have almost no experience with Ruby, but this isn't too hard for me.</p>
@@ -612,6 +606,16 @@
                 </div>
             </div>
         </div>
+            
+        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/syntax.css" />
+        
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+            
+        <script type="text/javascript" src="http://zhangwenli.com/blog/js/lazyLoad.js"></script>
+        <script type="text/javascript" src="http://zhangwenli.com/blog/js/common.js"></script>
     </body>
 </html>
 

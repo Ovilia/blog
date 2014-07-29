@@ -16,16 +16,8 @@
         <meta name="viewport" content="width=100%, initial-scale=1" />
         
         <link rel="shortcut icon" href="http://zhangwenli.com/blog/img/me.ico">
-            
-        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/syntax.css" />
-        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/default.css" />
         
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <script type="text/javascript" src="http://zhangwenli.com/blog/js/lazyLoad.js"></script>
-        <script type="text/javascript" src="http://zhangwenli.com/blog/js/common.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/default.css" />
     </head>
     
     <body>
@@ -105,7 +97,8 @@
         <span class="nx">results</span> <span class="o">=</span> <span class="nx">regex</span><span class="p">.</span><span class="nx">exec</span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">search</span><span class="p">);</span>
     <span class="k">return</span> <span class="nx">results</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">?</span> <span class="s2">&quot;&quot;</span> <span class="o">:</span> <span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nx">results</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\+/g</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">));</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <h3>6. Show posts with the searching tag.</h3>
@@ -119,7 +112,8 @@
         <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;tagTitle&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;Illegal Tag Query&#39;</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">};</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 
 <h3>7. Add links to tags.</h3>
@@ -628,6 +622,16 @@
                 </div>
             </div>
         </div>
+            
+        <link rel="stylesheet" type="text/css" href="http://zhangwenli.com/blog/css/syntax.css" />
+        
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+            
+        <script type="text/javascript" src="http://zhangwenli.com/blog/js/lazyLoad.js"></script>
+        <script type="text/javascript" src="http://zhangwenli.com/blog/js/common.js"></script>
     </body>
 </html>
 
