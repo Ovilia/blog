@@ -719,7 +719,7 @@
 
 &lt;h2&gt;Suggested Answer&lt;/h2&gt;
 
-&lt;p&gt;Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use &lt;a href=&quot;jsFiddle&quot; target=&quot;_blank&quot;&gt;http://jsfiddle.net/&lt;/a&gt; to share your code.&lt;/p&gt;
+&lt;p&gt;Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use &lt;a href=&quot;http://jsfiddle.net/&quot; target=&quot;_blank&quot;&gt;jsFiddle&lt;/a&gt; to share your code.&lt;/p&gt;
 
 &lt;p&gt;A better way to check this is to &lt;a href=&quot;http://zhangwenli.com/blog/demo/2014-05-18-03-dive-into-css-01.html&quot; target=&quot;_blank&quot;&gt;run the demo&lt;/a&gt; and use &lt;em&gt;Inspect Element&lt;/em&gt; for information.&lt;/p&gt;
 

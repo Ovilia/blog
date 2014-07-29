@@ -270,7 +270,7 @@ I suggest you put your code on GitHub and share a link as comment to this post, 
 
 ## Suggested Answer
 
-Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use <a href="jsFiddle" target="_blank">http://jsfiddle.net/</a> to share your code.
+Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use <a href="http://jsfiddle.net/" target="_blank">jsFiddle</a> to share your code.
 
 A better way to check this is to <a href="{{ site.url }}/demo/2014-05-18-03-dive-into-css-01.html" target="_blank">run the demo</a> and use *Inspect Element* for information.
 

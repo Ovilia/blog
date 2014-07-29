@@ -447,6 +447,10 @@ p>a>img:hover {
     margin-bottom: 20px;
 }
 
+.seriesNote {
+    font-weight: bold;
+}
+
 .pagination {
     text-align: center;
     font-size: 1em;
