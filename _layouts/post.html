@@ -47,10 +47,10 @@
                         <ul>
                         {% endif %}
                         <li class="relatedPost">
-                            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                            <a href="{{ site.url }}{{ post.url }}">
                             {% if post.series %}
                                 (Series: {{ post.series }})
-                            {% endif %}
+                            {% endif %}{{ post.title }}
                             </a>
                         </li>
                         {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
