@@ -119,6 +119,10 @@ h1>code, h2>code, h3>code {
     font-style: italic;
 }
 
+strong {
+    font-weight: bold;
+}
+
 ul, ol {
     margin: 10px 2em;
     font-family: Arial, sarif;
@@ -140,6 +144,7 @@ p {
     filter: dropshadow(color=#fff, offx=1, offy=1);
     margin: 0.8em 0;
     text-indent: 2em;
+    color: #333;
 }
 
 em {
@@ -184,9 +189,17 @@ h1>a {
 .license {
     margin: 20px 0;
     padding: 10px;
-    border: 3px groove #b0cb2c;
-    font-family: 'Times New Roman', Arial;
+    font-family: Arial, 'Times New Roman';
     font-size: 1em;
+    
+    border: dashed 2px #b0cb2c;
+    color: #666;
+    border-radius: 5px;
+    background-color: #eef3f0;
+}
+
+.license div {
+    margin-bottom: 5px;
 }
 
 .license > a > img {
@@ -480,6 +493,15 @@ p>a>img:hover {
 
 .gist-data {
     border-bottom: dashed 2px #b0cb2c !important;
+}
+
+.demo-area {
+    border: dashed 2px #b0cb2c;
+    color: #70840e;
+    border-radius: 5px;
+    background-color: #eef3f0;
+    display: block;
+    position: relative;
 }
 
 #mobile-nav {

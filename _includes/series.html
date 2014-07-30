@@ -1,21 +1,21 @@
 <blockquote class="seriesNote">
-	<h4>Series: {{ page.series }}</h4>
-	
-	<ul>
-	{% for post in site.posts reversed %}
-		{% if post.series == page.series %}
-			<li>
-			{% if page.url != post.url %}
-				<a href="{{ site.url }}{{ post.url }}">
-			{% endif %}
-			
-			{{ post.title }}
-			
-			{% if page.url != post.url %}
-				</a>
-			{% endif %}
-			</li>
-		{% endif %}
-	{% endfor %}
-	</ul>
+    <h4>Series: {{ page.series }}</h4>
+    
+    <ul>
+    {% for post in site.posts reversed %}
+        {% if post.series == page.series %}
+            <li>
+            {% if page.url != post.url %}
+                    <a href="{{ site.url }}{{ post.url }}">
+            {% endif %}
+            
+            {{ post.title }}
+            
+            {% if page.url != post.url %}
+                    </a>
+            {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
 </blockquote>
