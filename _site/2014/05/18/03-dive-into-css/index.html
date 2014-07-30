@@ -165,7 +165,7 @@
 
 <p>Here is an example of typical CSS rules:</p>
 
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
     <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff0</span><span class="p">;</span>
     <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
@@ -173,9 +173,7 @@
 
 <span class="nt">p</span> <span class="p">{</span>
     <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <h1>Basic Properties</h1>
@@ -196,22 +194,18 @@
 
 <p><code>color</code> is used to set the color of text, while <code>background-color</code> and <code>border-color</code> set the color of background and border respectively.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>Hello, world!<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>Hello, world!<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 
 
-<div class="highlight"><pre><code class="css"><span class="nt">div</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
     <span class="k">color</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff6600</span><span class="p">;</span>
     <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-01.png" /></p>
@@ -220,38 +214,32 @@
 
 <p>If you don't set the width and height of a component, it depends on the content.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>xxxxx x xxxx xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxx.<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>xxxxx x xxxx xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxx.<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-02.png" /></p>
 
 <p>If the width is set, the height depends on the content.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nt">div</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
     <span class="k">color</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff6600</span><span class="p">;</span>
     <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-03.png" /></p>
 
 <p>If both width and height are set, the content may overflow.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nt">div</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
     <span class="k">color</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff6600</span><span class="p">;</span>
     <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-04.png" /></p>
@@ -264,11 +252,9 @@
 
 <p>Margin is the outside distance from other elements, while padding is the inside distance from its child elements. Let's see the following example to have a general idea.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;padding: 50px; margin: 20px; width: 200px; background-color: red;&quot;</span><span class="nt">&gt;</span>I&#39;m red.<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-09.png" /></p>
@@ -293,12 +279,10 @@
 
 <p>Element with <code>display: block</code> takes the position of area of its own size and the right area of its parents. It's quite ambiguous to say so... Let's see it in an example.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-05.png" /></p>
@@ -313,12 +297,10 @@
 
 <p>We set the <code>display</code> property to be <code>inline-block</code> to the previous example and now the green block is shown right to the red one, since their total width are less than their parent's width.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-06.png" /></p>
@@ -331,12 +313,9 @@
 <p>The gap can be easily removed by writing the red and green block in the same line with no space in-between.</p>
 
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 </blockquote>
 
@@ -345,24 +324,20 @@
 
 <p>If we set <code>display</code> property to be <code>inline</code> to the previous example, we'll see they are <em>not displayed</em> at all.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-07.png" /></p>
 
 <p>In fact, we can't say <em>they are not displayed</em>. Let's see another example.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;</span>I&#39;m red.<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;display: inline; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;</span>I&#39;m green.<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-08.png" /></p>
@@ -379,12 +354,10 @@
 
 <p>Basically, you can set <code>float</code> of the element to be <code>left</code>, <code>right</code> or <code>none</code> if not to float.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: left; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: right; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-10.png" /></p>
@@ -393,13 +366,11 @@
 
 <p>This is because when an element is set to be <code>float: left</code> or <code>float: right</code>, it's height will be no longer counted when computing its parent's height. So you may need to do as following. See <a href="http://css-tricks.com/almanac/properties/c/clear/" target="_blank">CSS Tricks</a> for more information.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width: 500px; background-color: yellow;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: left; width: 200px; height: 100px; background-color: red;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: right; width: 100px; height: 50px; background-color: green;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;clear: both&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-05-18-dive-into-css-11.png" /></p>
@@ -442,7 +413,7 @@
 
 <p>A better way to check this is to <a href="http://zhangwenli.com/blog/demo/2014-05-18-03-dive-into-css-01.html" target="_blank">run the demo</a> and use <em>Inspect Element</em> for information.</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
@@ -462,8 +433,8 @@
 <span class="c">                 * Only then, can #left&#39;s height: 100% be equal to full window height.</span>
 <span class="c">                 * Otherwise, #left&#39;s height: 100% will be 0.</span>
 <span class="c">                 */</span>
-                <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
-                <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
                 
                 <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="p">;</span>
             <span class="p">}</span>
@@ -476,7 +447,7 @@
             <span class="nf">#left</span> <span class="p">{</span>
                 <span class="k">background-color</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
                 <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
-                <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
                 <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
                 
                 <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
@@ -505,7 +476,7 @@
             
             <span class="nf">#right</span> <span class="p">{</span>
                 <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff0</span><span class="p">;</span>
-                <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
                 <span class="k">margin-left</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
                 <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span> <span class="m">50px</span> <span class="m">20px</span> <span class="m">20px</span><span class="p">;</span> <span class="c">/* top right bottom left */</span>
                 <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
@@ -525,8 +496,8 @@
             
             <span class="nc">.center</span> <span class="p">{</span>
                 <span class="k">background-color</span><span class="o">:</span> <span class="m">#0ff</span><span class="p">;</span>
-                <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span> <span class="c">/* width 30% each, width margins of 5%. */</span>
-                <span class="k">margin-left</span><span class="o">:</span> <span class="m">0</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">width</span><span class="o">:</span> <span class="m">30%</span><span class="p">;</span> <span class="c">/* width 30% each, width margins of 5%. */</span>
+                <span class="k">margin-left</span><span class="o">:</span> <span class="m">0%</span><span class="p">;</span>
                 <span class="k">height</span><span class="o">:</span> <span class="m">160px</span><span class="p">;</span>
                 <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
                 <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
@@ -536,7 +507,7 @@
                 <span class="c">/* + selects next element in the same level, which is the second</span>
 <span class="c">                 * and the third elements in this case.</span>
 <span class="c">                 */</span>
-                <span class="k">margin-left</span><span class="o">:</span> <span class="m">5</span><span class="o">%</span><span class="p">;</span>
+                <span class="k">margin-left</span><span class="o">:</span> <span class="m">5%</span><span class="p">;</span>
             <span class="p">}</span>
             
             <span class="nf">#r-bottom</span> <span class="p">{</span>
@@ -605,9 +576,7 @@
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 

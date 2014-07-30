@@ -76,36 +76,32 @@
 
 <p>It solves the above problem by calculating how many mutual tags they share and sort by it, as we can see from the <a href="https://github.com/LawrenceWoodman/related_posts-jekyll_plugin/blob/master/_plugins/related_posts.rb" target="_blank">source code</a> below.</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">related_posts</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">related_posts</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span>
     <span class="k">return</span> <span class="o">[]</span> <span class="k">unless</span> <span class="n">posts</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="mi">1</span>
-    <span class="n">highest_freq</span> <span class="o">=</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span>
+    <span class="n">highest_freq</span> <span class="o">=</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span>
     <span class="n">related_scores</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">posts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="o">|</span>
         <span class="n">post</span><span class="o">.</span><span class="n">tags</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">tag</span><span class="o">|</span>
             <span class="k">if</span> <span class="nb">self</span><span class="o">.</span><span class="n">tags</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">post</span> <span class="o">!=</span> <span class="nb">self</span>
-                <span class="n">cat_freq</span> <span class="o">=</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">[</span><span class="n">tag</span><span class="o">]</span>
+                <span class="n">cat_freq</span> <span class="o">=</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">tag_freq</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span><span class="o">[</span><span class="n">tag</span><span class="o">]</span>
                 <span class="n">related_scores</span><span class="o">[</span><span class="n">post</span><span class="o">]</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">highest_freq</span><span class="o">-</span><span class="n">cat_freq</span><span class="p">)</span>
             <span class="k">end</span>
         <span class="k">end</span>
     <span class="k">end</span>
 
-    <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Post</span><span class="o">.</span><span class="n">sort_related_posts</span><span class="p">(</span><span class="n">related_scores</span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre>
-</div>
+    <span class="no">Jekyll</span><span class="o">::</span><span class="no">Post</span><span class="o">.</span><span class="n">sort_related_posts</span><span class="p">(</span><span class="n">related_scores</span><span class="p">)</span>
+<span class="k">end</span></code></pre></div>
 
 
 <p>But just as the default Jekyll behaves, it returns recent posts if there aren't enough posts sharing the same tags. I think this doesn't make sense. After all, why should a post called <code>How to become a good programmer</code> be related to <code>I was bitten by a bug yesterday</code> just because there are no other related posts?</p>
 
 <p>So, I improved it with the following code and <a href="https://github.com/Ovilia/related_posts-jekyll_plugin/commit/4562de1b048a5dbce5f533d343be30254427160e" target="_blank">pulled a request</a>.</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="n">related_scores</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="p">,</span> <span class="n">score</span><span class="o">|</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">related_scores</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="p">,</span> <span class="n">score</span><span class="o">|</span>
     <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">0</span>
         <span class="n">related_scores</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
     <span class="k">end</span>
-<span class="k">end</span>
-</code></pre>
-</div>
+<span class="k">end</span></code></pre></div>
 
 
 <p>I have almost no experience with Ruby, but this isn't too hard for me.</p>

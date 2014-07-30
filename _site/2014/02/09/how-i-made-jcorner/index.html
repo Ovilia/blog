@@ -81,15 +81,13 @@
 
 
 
-<div class="highlight"><pre><code class="css"><span class="nc">.css-arrow-acute</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.css-arrow-acute</span> <span class="p">{</span>
     <span class="k">border-color</span><span class="o">:</span> <span class="nb">red</span> <span class="nb">green</span> <span class="nb">blue</span> <span class="nb">orange</span><span class="p">;</span>
     <span class="k">border-style</span><span class="o">:</span> <span class="k">solid</span><span class="p">;</span>
     <span class="k">border-width</span><span class="o">:</span> <span class="m">25px</span> <span class="m">10px</span> <span class="m">15px</span> <span class="m">30px</span><span class="p">;</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <h1>Divide-and-Conquer</h1>
@@ -113,26 +111,22 @@
 
 <p>In order to make it at the bottom-right part of its parent, we had to set <code>position</code> of its parent (the one with blue blackground) to be <code>relative</code>. And then set <code>position</code> of <code>.jCorner</code> to be <code>absolute</code>, and <code>bottom: 0; right: 0;</code>.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.jCorner</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.jCorner</span> <span class="p">{</span>
     <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
     <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">width</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span> 
     <span class="k">height</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p><code>.jCorner</code> has three children representing three triangles.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;jCorner&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;jCorner&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;jCorner_left&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;jCorner_right&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;jCorner_center&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 <p>That's all we need to do with <code>.jCorner</code>.</p>
@@ -141,7 +135,7 @@
 
 <p>We use the CSS Border tricks to create triangls, as talked before.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.jCorner_left</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.jCorner_left</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">border-color</span><span class="o">:</span> <span class="k">transparent</span> <span class="k">transparent</span> <span class="m">#999</span> <span class="k">transparent</span><span class="p">;</span> 
@@ -150,32 +144,28 @@
     <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
     <span class="k">z-index</span><span class="o">:</span> <span class="m">10</span><span class="p">;</span> 
     <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">6</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <h2><code>.jCorner_right</code></h2>
 
 <p>Watch carefully and you may find that <code>.jCorner_left</code> and <code>.jCorner_right</code> are of the same direction and only differ in color.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.jCorner_right</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.jCorner_right</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">border-color</span><span class="o">:</span> <span class="k">transparent</span> <span class="k">transparent</span> <span class="m">#eee</span> <span class="k">transparent</span><span class="p">;</span> 
     <span class="k">border-width</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">25px</span> <span class="m">25px</span><span class="p">;</span> 
     <span class="k">border-style</span><span class="o">:</span> <span class="k">solid</span><span class="p">;</span> 
     <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <h2><code>.jCorner_center</code></h2>
 
 <p><code>.jCorner_center</code> is a little bit different from the former two. Pay attention to the difference with border attributes.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.jCorner_center</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.jCorner_center</span> <span class="p">{</span>
     <span class="k">border-width</span><span class="o">:</span> <span class="m">25px</span> <span class="m">25px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> 
     <span class="k">left</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span> 
     <span class="k">top</span><span class="o">:</span> <span class="m">-25px</span><span class="p">;</span> 
@@ -187,9 +177,7 @@
     <span class="k">z-index</span><span class="o">:</span> <span class="m">10</span><span class="p">;</span> 
     <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">6</span><span class="p">;</span> 
     <span class="k">border-style</span><span class="o">:</span> <span class="k">solid</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>By now, we can create folding effect completely. Next, we need to make a jQuery plugin, which can set the size and more.</p>
@@ -202,7 +190,7 @@
 
 <p>For jCorner, it's quite simple to implement. The idea is to generate a string to append to the parent element. Don't forget to set <code>position</code> of the parent to be <code>relative</code>.</p>
 
-<div class="highlight"><pre><code class="js"><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">jCorner</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
             <span class="kd">var</span> <span class="nx">settings</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
@@ -236,9 +224,7 @@
             <span class="k">return</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;position&#39;</span><span class="p">,</span> <span class="s1">&#39;relative&#39;</span><span class="p">);</span>
         <span class="p">});</span>
     <span class="p">}</span>
-<span class="p">}(</span><span class="nx">jQuery</span><span class="p">));</span>
-</code></pre>
-</div>
+<span class="p">}(</span><span class="nx">jQuery</span><span class="p">));</span></code></pre></div>
 
 
 <p><a href="https://github.com/Ovilia/jCorner" target="_blank">View on GitHub</a></p>

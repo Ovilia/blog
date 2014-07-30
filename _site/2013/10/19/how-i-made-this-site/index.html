@@ -94,7 +94,7 @@
 
 <p>This can be easily achieved by using some simple CSS. Set the CSS of the second image to be <code>position: relative;</code> and <code>top: -400px;</code>, which means to move the second image <code>400px</code> (height of the images) up than its original position.</p>
 
-<div class="highlight"><pre><code class="css"><span class="c">/* The first image */</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* The first image */</span>
 <span class="nf">#titleTao</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
@@ -106,9 +106,7 @@
     <span class="k">height</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
     <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
     <span class="k">top</span><span class="o">:</span> <span class="m">-400px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <blockquote><p>If you're wondering why we don't just Photoshop the image merged by these two image, that's because only in this way can we change the <code>opacity</code> of the second image, which will be explained later.</p></blockquote>
@@ -119,7 +117,7 @@
 
 <p>We set the <code>box-shadow</code> to be <code>100px 100px 100px #333</code> now just to check if everything's going on well here.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nf">#titleCircle</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#titleCircle</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">333px</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">333px</span><span class="p">;</span>
     <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">176px</span><span class="p">;</span>
@@ -127,9 +125,7 @@
     <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
     <span class="k">top</span><span class="o">:</span> <span class="m">-767px</span><span class="p">;</span>
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">100px</span> <span class="m">100px</span> <span class="m">100px</span> <span class="m">#333</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <h4>What's wrong?</h4>
@@ -160,13 +156,11 @@
 
 <p>We first calculate mouse position in screen with unified <code>x</code> and <code>y</code>. So top-left corner of the screen is <code>(-1, -1)</code> and bottom-right is <code>(1, 1)</code>:</p>
 
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">mousemove</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">mousemove</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">-</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientX</span> <span class="o">/</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">width</span><span class="p">())</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">-</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientY</span> <span class="o">/</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">height</span><span class="p">())</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
     <span class="c1">// ...</span>
-<span class="p">});</span>
-</code></pre>
-</div>
+<span class="p">});</span></code></pre></div>
 
 
 <p>Then, calculate <code>r</code> to represent distance from center to mouse position. We use <code>var r = Math.sqrt((x * x + y * y) / 2);</code> instead of <code>var r = Math.sqrt((x * x + y * y));</code> so that <code>r</code> is also unified (between <code>0</code> and <code>1</code>).</p>
@@ -175,7 +169,7 @@
 
 <p>The complete code would be:</p>
 
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">mousemove</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">mousemove</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">-</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientX</span> <span class="o">/</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">width</span><span class="p">())</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">-</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientY</span> <span class="o">/</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">height</span><span class="p">())</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">((</span><span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">*</span> <span class="nx">y</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
@@ -188,9 +182,7 @@
     <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#titleWords&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span>
         <span class="s1">&#39;opacity&#39;</span><span class="o">:</span> <span class="nx">op</span>
     <span class="p">});</span>
-<span class="p">});</span>
-</code></pre>
-</div>
+<span class="p">});</span></code></pre></div>
 
 
 <blockquote><p><code>$('#titleCircle')</code> is the circle used as shadow and <code>$('#titleWords')</code> is the image with words on it.</p></blockquote>
@@ -205,31 +197,27 @@
 
 <p>2) Set the background of this post to be this image.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.page</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.page</span> <span class="p">{</span>
     <span class="k">background</span><span class="o">:</span> <span class="sx">url(../image/sketch.jpg)</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>3) Add some shadow if you wish.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.page</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.page</span> <span class="p">{</span>
     <span class="k">background</span><span class="o">:</span> <span class="sx">url(../image/sketch.jpg)</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">#666</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <h4>Key step: Add another two sheets with rotation.</h4>
 
 <p><code>.pageBack</code> is used for all sheets of paper in the background.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.pageBack</span> <span class="p">{</span>
-    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.pageBack</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
     <span class="k">background</span><span class="o">:</span> <span class="sx">url(../image/sketch.jpg)</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
@@ -237,16 +225,14 @@
     <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">#666</span><span class="p">;</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">backface</span><span class="o">-</span><span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <blockquote><p><code>-webkit-backface-visibility: hidden;</code> is used to eliminate the jaggies caused by rotation which works only on webkit platform.</p></blockquote>
 
 <p>We need another two classes to represent rotation of two sheets:</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.rotLeft</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.rotLeft</span> <span class="p">{</span>
     <span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">5</span><span class="n">deg</span><span class="p">);</span>
     <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">5</span><span class="n">deg</span><span class="p">);</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">5</span><span class="n">deg</span><span class="p">);</span>
@@ -260,22 +246,18 @@
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-5</span><span class="n">deg</span><span class="p">);</span>
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-5</span><span class="n">deg</span><span class="p">);</span>
     <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-5</span><span class="n">deg</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>Now, with HTML</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotLeft rotTop pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotLeft rotTop pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotRight rotTop pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- content here --&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotLeft rotBottom pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotRight rotBottom pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;rotRight rotBottom pageBack&quot;</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
 
 
 <p>we can get:</p>
@@ -284,15 +266,13 @@
 
 <p>To make it look better, we would like to move the sheets in the background a little.</p>
 
-<div class="highlight"><pre><code class="css"><span class="nc">.rotTop.rotLeft</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.rotTop.rotLeft</span> <span class="p">{</span>
     <span class="k">left</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nc">.rotTop.rotRight</span> <span class="p">{</span>
     <span class="k">left</span><span class="o">:</span> <span class="m">-10px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>Now, we can get an elegant effect:</p>

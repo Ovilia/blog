@@ -1,0 +1,6 @@
+*       text=auto
+*.md    eol=crlf
+*.html  eol=crlf
+*.css   eof=crlf
+*.js    eof=crlf
+

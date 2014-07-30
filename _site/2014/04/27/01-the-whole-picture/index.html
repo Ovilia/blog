@@ -211,7 +211,7 @@
 
 <p>A typical HTML file looks like:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -219,9 +219,7 @@
     <span class="nt">&lt;body&gt;</span>
         Hello, world!
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>Change the content of <code>hi.html</code> to be the above code and open it in a browser, you'll find the result is the same as the previous example. But this is a standard way to put it.</p>
@@ -248,7 +246,7 @@
 
 <p>If I would like to change the color of the <code>Hello, world!</code> to be red, CSS is the one that can help. Remember that CSS is responsible for how it appears to look. :sunglasses:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -256,9 +254,7 @@
     <span class="nt">&lt;body</span> <span class="na">style=</span><span class="s">&quot;color: red&quot;</span><span class="nt">&gt;</span>
         Hello, world!
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-01.jpg" /></p>
@@ -267,7 +263,7 @@
 
 <h2>A more complicated example</h2>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -277,14 +273,12 @@
         Hello, world!
         <span class="nt">&lt;h1&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>We want to make <code>First</code> and <code>Second</code> be red and the background of them be yellow, which can be achieved with the following code:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -294,9 +288,7 @@
         Hello, world!
         <span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;color: red; background-color: yellow&quot;</span><span class="nt">&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-02.jpg" /></p>
@@ -318,7 +310,7 @@
 
 <h3>Inline style</h3>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -328,9 +320,7 @@
         Hello, world!
         <span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;color: red; background-color: yellow&quot;</span><span class="nt">&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>Inline style is easy to write as a demo. But in real situation, it makes it impossible to reuse the style and the content and style will be coupled tighted, which is the last thing we want. So, <strong>never use inline style in real programming</strong>! :boom:</p>
@@ -339,7 +329,7 @@
 
 <p>An internal style looks like:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
@@ -355,9 +345,7 @@
         Hello, world!
         <span class="nt">&lt;h1&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>You may notice that it helps reuse the style and the content and style are decoupled in internal style.</p>
@@ -370,17 +358,15 @@
 
 <p>Now, we have a <code>mystyle.css</code> file:</p>
 
-<div class="highlight"><pre><code class="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
     <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>And a HTML file:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;mystyle.css&quot;</span> <span class="nt">/&gt;</span>
@@ -391,9 +377,7 @@
         Hello, world!
         <span class="nt">&lt;h1&gt;</span>Second<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>External style makes it possible to reuse CSS inter- and intra-HTML. Use this style whenever possible.</p>
@@ -412,7 +396,7 @@
 
 <p>We want to open a message box to say hello to the user when a button is clicked. Here's how you can do this:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -420,9 +404,7 @@
     <span class="nt">&lt;body&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;alert(&#39;Hello, again!&#39;)&quot;</span><span class="nt">&gt;</span>Say hello!<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://zhangwenli.com/blog/img/post/2014-04-27-02-the-whole-picture-03.jpg" /></p>
@@ -431,7 +413,7 @@
 
 <p>Internal:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
@@ -444,23 +426,19 @@
     <span class="nt">&lt;body&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;sayHello()&quot;</span><span class="nt">&gt;</span>Say hello!<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>External JavaScript <code>hello.js</code>:</p>
 
-<div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, again!&#39;</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>External HTML:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;hello.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
@@ -469,9 +447,7 @@
     <span class="nt">&lt;body&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;sayHello()&quot;</span><span class="nt">&gt;</span>Say hello!<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <p>External JavaScript is prefered in most cases. Before you know which cases are excluded, you should always use external style.</p>
@@ -482,19 +458,17 @@
 
 <p>For example, if you want to change the color when mouse is moved on an element, CSS is enough:</p>
 
-<div class="highlight"><pre><code class="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
     <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h1</span><span class="nd">:hover</span> <span class="p">{</span>
     <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<span class="p">}</span></code></pre></div>
 
 
 <p>But if you want to change the color when mouse has been clicked, only JavaScript can do it:</p>
 
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
@@ -507,9 +481,7 @@
     <span class="nt">&lt;body&gt;</span>
         <span class="nt">&lt;h1</span> <span class="na">onclick=</span><span class="s">&quot;change(this)&quot;</span><span class="nt">&gt;</span>Change Color!<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
 <h1>Conclusion</h1>
