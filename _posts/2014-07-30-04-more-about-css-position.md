@@ -1,13 +1,13 @@
 ---
-title: 04 - More about CSS
-time: 2014.07.30 17:53:00
+title: 04 - More about CSS Position
+time: 2014.07.30 20:09:27
 layout: post
 tags:
 - Web-Design
 - Tutorial
 - CSS
 series: Dive into Web Front-End Programming
-excerpt: relative, absolute, fixed are three most frequently used CSS `position` values. Even if you think you know them already, this post may surprise you.
+excerpt: <code>relative</code>, <code>absolute</code>, <code>fixed</code> are three most frequently used CSS `position` values. Even if you think you know them already, this post may surprise you.
 ---
 
 # CSS `position`
@@ -54,5 +54,100 @@ Next, set the `position` of the element to be `absolute` and set its `top`, `rig
 
 Now, the element is relative to its parent.
 
-If its parent's `position` is not set explicitly, then it's `static` by default. And an element of `position: absolute` with a parent of `position: static` will have a position relative to the screen. 
+<p class="no-indent"><a href="http://jsfiddle.net/pDdVA/" target="_blank">Run the following code</a></p>
 
+{% highlight html %}
+<div id="parent">
+    <div id="child">
+    </div>
+</div>
+{% endhighlight %}
+
+{% highlight css %}
+#parent {
+    background-color: yellow;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    
+    position: relative;
+}
+
+#child {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+{% endhighlight %}
+
+<div class="demo-area">
+    <div style="background-color: yellow; width: 300px; height: 200px; margin: 50px; position: relative" >
+        <div style="background-color: green; width: 50px; height: 50px; position: absolute; top: 20px; left: 30px;" >
+        </div>
+    </div>
+</div>
+
+If its parent's `position` is not set explicitly, then it's `static` by default. And an element of `position: absolute` with a parent of `position: static` will have a position relative to the parent's parent. If its parent's parent's `position` is `static`, then it will be relative to its parent's parent's parent, etc. In the end, it will be relative to the screen. 
+
+<p class="no-indent"><a href="http://jsfiddle.net/pDdVA/1/" target="_blank">Run the following code</a></p>
+
+{% highlight css %}
+#parent {
+    background-color: yellow;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+}
+
+#child {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+{% endhighlight %}
+
+<div class="demo-area">
+    <div style="background-color: yellow; width: 300px; height: 200px; margin: 50px;" >
+        <div style="background-color: green; width: 50px; height: 50px; position: absolute; top: 20px; left: 30px;" >
+        </div>
+    </div>
+</div>
+
+## Fixed Position
+
+You may already know that setting `position: fixed` can make an element stay the same position when user scrolls down.
+
+<p class="no-indent"><a href="http://jsfiddle.net/pDdVA/2/" target="_blank">Run the following code</a></p>
+
+{% highlight css %}
+#parent {
+    background-color: yellow;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+}
+
+#child {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    
+    position: fixed;
+    top: 20px;
+    left: 30px;
+}
+{% endhighlight %}
+
+If, however, you want to make an element fixed to its parent, you may refer to <a href="http://stackoverflow.com/questions/5209814/can-i-position-an-element-fixed-relative-to-parent#answer-7823145" target="_blank">this answer at StackOverflow</a>. A quick conclusion here is there's no elegant solution currently.
+
+# Homework
+
+Try with different combinations of `position` and raise questions if you may.
