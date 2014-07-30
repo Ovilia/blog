@@ -8,14 +8,15 @@
                 <div class="simpleNav">
                     <a href="http://zhangwenli.com">Home</a>
                 </div>
-                <div class="pageTitle">Blog of Wenli Zhang</div>
+                <div class="pageTitle">和光同尘<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang"><img src="img/rss-green.png" /></a></div>
                 
                 {% if paginator.page == 1 %}
+                <h3>Blog of Wenli Zhang</h3>
                 <p>I'm Wenli Zhang and this blog is concerned about Web Front-End and other interesting topics. Please feel free to <a href="#disqus_thread">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com">Home Page</a> to know more about me.</p>
                 <p><a href="http://zhangwenli.com/blog/feed.xml">RSS Subscription</a></p>
                 {% endif %}
                             
-                <h1>Technical Posts</h1>
+                <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts"><img src="img/rss-green.png" /></a></h1>
                 
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
@@ -62,7 +63,7 @@
                 <a href="{{ site.url }}/all/" class="allPostLink">All Posts</a>
                 </div>
             
-                <h1>中文博客</h1>
+                <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS"><img src="img/rss-green.png" /></a></h1>
                 
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}

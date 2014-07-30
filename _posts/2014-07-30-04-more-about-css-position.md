@@ -36,7 +36,7 @@ A typical mistake here is to think the element will be *relative* to its parent 
 
 ## `absolute`
 
-We usually use `position: absolute` to set the element's position accoring the screen. But it can do more.
+We usually use `position: absolute` to set the element's position according to the screen. But it can do more.
 
 ## `fixed`
 

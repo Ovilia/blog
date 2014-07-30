@@ -31,6 +31,15 @@ h1 {
     margin: 1.5em 0 0.5em 0;
 }
 
+.title-img {
+    float: right;
+    border-bottom: none;
+}
+
+a.title-img:hover {
+    background: none;
+}
+
 h2 {
     font-size: 2em;
 }
