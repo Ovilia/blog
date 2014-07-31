@@ -1,7 +1,7 @@
 // lazy load js and css
 LazyLoad.js('http://zhangwenli.com/blog/js/jquery-1.11.1.min.js', function () {
     LazyLoad.js('/blog/js/unviel.min.js', function () {
-            $("img").unveil();
+        $("img").unveil();
     });
 });
 setTimeout(function() {
@@ -16,5 +16,4 @@ setTimeout(function() {
             emojify.run();
         });
     });
-    console.log('lazy');
 }, 10000);
