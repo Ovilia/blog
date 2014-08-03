@@ -5,7 +5,7 @@ layout: post
 hide: true
 tags:
 - Thoughts
-- Web-Design
+- WebDesign
 excerpt: Front-end techniques that I plan to learn in 2014.
 ---
 

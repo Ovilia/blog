@@ -3,10 +3,11 @@ title: 03 - Dive into CSS
 time: 2014.05.18 14:28:00
 layout: post
 tags:
-- Web-Design
+- WebDesign
 - Tutorial
 - CSS
 series: Dive into Web Front-End Programming
+shortUrl: http://goo.gl/5pYBni
 excerpt: In this post, we introduce the CSS properties and most importantly, CSS position.
 ---
 

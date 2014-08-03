@@ -3,13 +3,14 @@ title: 01 - The Whole Picture
 time: 2014.04.27 19:38:20
 layout: post
 tags:
-- Web-Design
+- WebDesign
 - Tutorial
 - HTML
 - CSS
 - JavaScript
 - jQuery
 series: Dive into Web Front-End Programming
+shortUrl: http://goo.gl/zeVQhk
 excerpt: In this post, we introduced what HTML, CSS and JavaScript are and how they can work together. HTML files define the content of Web pages, CSS the style, and JavaScript the interaction. 
 ---
 

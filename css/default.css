@@ -526,6 +526,42 @@ p>a>img:hover {
     border-right: 1px dashed #70840e;
 }
 
+.social-share-element {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    background-image: url('../img/social.png');
+    transition: 1s;
+    display: inline-block;
+    margin-right: 2px;
+    border-bottom: none;
+}
+
+.social-share-element:hover {
+    background-color: #70840e;
+    border-radius: 5px;
+}
+
+#social-twitter {
+    background-position: 0 0;
+}
+
+#social-facebook {
+    background-position: -40px 0;
+}
+
+#social-google {
+    background-position: -80px 0;
+}
+
+#social-linkedin {
+    background-position: -120px 0;
+}
+
+#social-weibo {
+    background-position: -160px 0;
+}
+
 @media screen and (max-device-width: 600px) {
     body {
         width: 100%;

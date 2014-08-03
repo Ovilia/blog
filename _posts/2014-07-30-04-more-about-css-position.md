@@ -3,10 +3,11 @@ title: 04 - More about CSS Position
 time: 2014.07.30 20:09:27
 layout: post
 tags:
-- Web-Design
+- WebDesign
 - Tutorial
 - CSS
 series: Dive into Web Front-End Programming
+shortUrl: http://goo.gl/WtLs40
 excerpt: <code>relative</code>, <code>absolute</code>, <code>fixed</code> are three most frequently used CSS `position` values. Even if you think you know them already, this post may surprise you.
 ---
 
