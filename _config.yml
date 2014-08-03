@@ -3,6 +3,8 @@ description: "Web Front-End Blog by Wenli Zhang"
 
 url: "http://zhangwenli.com/blog"
 
+timezone: Asia/Shanghai
+
 paginate: 10
 
 pygments: true
