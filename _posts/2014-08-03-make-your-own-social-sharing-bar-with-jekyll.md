@@ -46,6 +46,8 @@ Since Twitter allows at most 140 characters in each tweet, we'd better shorten o
 
 We can use URL shorten services like <a href="https://goo.gl/" target="_blank">https://goo.gl/</a>.
 
+> For Google Plus, however, you may probably want to use original URL rather than shortened one, since it will fail to craw content if you use the shortened URL.
+
 After we get the shortened URL, we should add it to each post.
 
 {% highlight text %}
