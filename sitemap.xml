@@ -35,3 +35,4 @@ layout: none
   <priority>0.64</priority>
 </url>
 {% endfor %}
+</urlset>
