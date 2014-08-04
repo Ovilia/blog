@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Lato, 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
     font-weight: 900;
     margin: 0.5em 0;
-    text-shadow: 1px 1px #fff;
+    text-shadow: 1px 1px #d4e583;
 }
 
 h1 {
@@ -561,6 +561,20 @@ p>a>img:hover {
 
 #social-weibo {
     background-position: -160px 0;
+}
+
+.button {
+    padding: 8px 20px;
+    border-radius: 16px;
+    background-color: #b0cb2c;
+    display: inline-block;
+}
+
+.view-source {
+    float: right;
+    height: 32px;
+    font-size: 75%;
+    box-sizing: border-box;
 }
 
 @media screen and (max-device-width: 600px) {

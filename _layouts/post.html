@@ -23,6 +23,8 @@
         {% include series.html %}
     {% endif %}
     
+    <a class="button view-source" href="https://raw.githubusercontent.com/Ovilia/blog/gh-pages/_posts/{{ page.url | append: '@' | replace: '/', '-' | remove_first: '-' | remove: '-@' }}.md" target="_blank">View Source on GitHub</a>
+    
     <div class="time">{{ page.time }}</div>
             
     <div class="tagPanel">
@@ -93,6 +95,7 @@
             </li>
         {% endfor %}
         </ul>
+        <a class="button" href="{{ site.url }}/all">View All Posts</a></p>
     </blockquote>
     
     {% include comment.html %}
