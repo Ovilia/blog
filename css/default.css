@@ -102,6 +102,8 @@ code {
     font-family: Consolas, "Courier New", Courier;
     text-shadow: none;
     background-color: #eef3f0;
+    word-wrap: break-word;
+    white-space: pre;
 }
 
 h1>code, h2>code, h3>code {
