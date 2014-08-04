@@ -6,7 +6,7 @@
 body {
     background-color: #b0cb2c;
     overflow-x: hidden;
-    font-family: Arial, 'Microsoft YaHei', sarif;
+    font-family: 'Lato', Arial, 'Microsoft YaHei', sarif;
     font-weight: 400;
 }
 
@@ -18,9 +18,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
+    font-family: Lato, 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
     font-weight: 900;
     margin: 0.5em 0;
+    text-shadow: 1px 1px #fff;
 }
 
 h1 {
@@ -86,7 +87,7 @@ blockquote a {
 
 blockquote p {
     text-indent: 0;
-    font-family: 'Times New Roman', Arial, sarif, 'FangSong';
+    font-family: Lato, 'Times New Roman', Arial, sarif, 'FangSong';
     line-height: 1.5em;
     text-shadow: none;
 }
@@ -134,7 +135,7 @@ strong {
 
 ul, ol {
     margin: 10px 2em;
-    font-family: Arial, sarif;
+    font-family: Lato, Arial, sarif;
 }
 
 li {
@@ -146,7 +147,7 @@ li p {
 }
 
 p {
-    font-family: Arial, 'Microsoft YaHei', sans-serif;
+    font-family: Lato, Arial, 'Microsoft YaHei', sans-serif;
     font-size: 1.1em;
     line-height: 1.6em;
     text-shadow: 1px 1px 0px #fff;
@@ -198,7 +199,7 @@ h1>a {
 .license {
     margin: 20px 0;
     padding: 10px;
-    font-family: Arial, 'Times New Roman';
+    font-family: Lato, Arial, 'Times New Roman';
     font-size: 1em;
     
     border: dashed 2px #b0cb2c;
@@ -266,7 +267,7 @@ h1>a {
 }
 
 .pageTitle {
-    font-family: Arial, 'Microsoft YaHei', sarif;
+    font-family: Lato, Arial, 'Microsoft YaHei', sarif;
     font-size: 4em;
     margin-bottom: 0.25em;
     
@@ -455,13 +456,13 @@ p>a>img:hover {
     margin-right: -60px;
     margin-left: 20px;
     display: inline-block;
-    font-family: 'Times New Roman', Arial, sarif;
+    font-family: Lato, 'Times New Roman', Arial, sarif;
     font-size: 15px;
     max-width: 200px;
 }
 
 .series-post {
-    font-family: 'Times New Roman', Arial, sarif;
+    font-family: Lato, 'Times New Roman', Arial, sarif;
     font-size: 15px;
     display: block;
     background-color: #b0cb2c;
