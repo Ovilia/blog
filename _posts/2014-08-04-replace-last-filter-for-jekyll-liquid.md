@@ -17,7 +17,7 @@ excerpt: There are only <code>replace</code> and <code>replace-last</code> filte
 
 # Why did I need this filter?
 
-I was making a *View Source in GitHub* feature for my blog and need to replace `/` with `-` in `{{ "{{ page.url" }}}}`, which is `/2014/07/15/jekyll/related/posts/without/plugin/`, so as to generate a link like `https://raw.githubusercontent.com/Ovilia/blog/gh-pages/_posts/2014-07-15-jekyll-related-posts-without-plugin.md`.
+I was making a *View Source in GitHub* feature for my blog and needed to replace `/` with `-` in `{{ "{{ page.url" }}}}`, which is `/2014/07/15/jekyll/related/posts/without/plugin/`, so as to generate a link like `https://raw.githubusercontent.com/Ovilia/blog/gh-pages/_posts/2014-07-15-jekyll-related-posts-without-plugin.md`.
 
 As we can see, `https://raw.githubusercontent.com/Ovilia/blog/gh-pages/_posts/` and `.md` remains always the same. So we just need to get `2014-07-15-jekyll-related-posts-without-plugin` from `/2014/07/15/jekyll/related/posts/without/plugin/`, which seems to be a piece of cake, right?
 

@@ -22,4 +22,3 @@ WebFontConfig = {
     google: { families: [ 'Lato:400,900:latin' ] }
 };
 LazyLoad.js(url);
-

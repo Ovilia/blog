@@ -271,10 +271,11 @@ h1>a {
 .pageTitle {
     font-family: Lato, Arial, 'Microsoft YaHei', sarif;
     font-size: 4em;
+    font-weight: bold;
     margin-bottom: 0.25em;
     
-    text-shadow: 2px 2px 0px #fff;
-    filter: dropshadow(color=#fff, offx=2, offy=2);
+    text-shadow: 1px 1px 0px #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=1);
     border-bottom-style: solid;
     border-bottom-color: #70840e;
     border-bottom-width: 3px;
