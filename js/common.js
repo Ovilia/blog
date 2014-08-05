@@ -34,7 +34,7 @@ function updatePageView(cnt) {
         txt = 'You\'re the ' + (cnt + 1) + 'th visitor to this page. I guess I get popular recently. :satisfied:';
     }
     $('#page-view').text(txt);
-    if (emojify) {
+    if (typeof emojify !== 'undefined') {
         emojify.run();
     }
 }
@@ -50,7 +50,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
             $.ajax({
                 url: 'https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA',
                 dataType: 'jsonp',
-                timeout: 1000 * 60, // 1 minute
+                timeout: 1000 * 30, // 30 sec
                 success: function(data) {
                     processPageView(data.rows);
                 },

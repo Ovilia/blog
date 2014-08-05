@@ -65,8 +65,9 @@ pre>code {
     padding: 20px;
     margin: 2px 0;
     background-color: #eef3f0;
-    filter: dropshadow(color=#333, offx=1, offy=1);
     overflow-x: auto;
+    word-wrap: normal;
+    white-space: inherit;
 }
 
 blockquote {
@@ -93,7 +94,7 @@ blockquote p {
 }
 
 code {
-    border: dashed 2px #b0cb2c;
+    border: dashed 1px #b0cb2c;
     color: #70840e;
     padding: 2px 8px;
     margin: 5px 0;
