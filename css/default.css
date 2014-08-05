@@ -585,6 +585,10 @@ p>a>img:hover {
     box-sizing: border-box;
 }
 
+#page-view {
+    margin-top: 10px;
+}
+
 @media screen and (max-device-width: 600px) {
     body {
         width: 100%;
