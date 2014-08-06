@@ -1,6 +1,6 @@
 ---
 title: Pageview from Google Analytics for Your Blog
-time: 2014.08.04 21:54:08
+time: 2014.08.05 22:34:08
 layout: post
 tags:
 - GoogleAnalytics
@@ -8,7 +8,7 @@ tags:
 - JavaScript
 - GitHub
 - Jekyll
-shortUrl: http://goo.gl/tTyFjx
+shortUrl: http://goo.gl/CUJFuB
 excerpt: You can now display pageview information from your Google Analytics in your blog hosted anywhere! No server required. Pure JavaScript. This post introduces how to do it with <a href="https://github.com/googleanalytics/google-analytics-super-proxy" target="_blank">Google Analytics superProxy</a>.
 ---
 
