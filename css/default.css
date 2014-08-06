@@ -204,7 +204,7 @@ h1>a {
     text-shadow: 1px 1px #eee;
 }
 
-.license {
+.about-author {
     margin: 20px 0;
     padding: 10px;
     font-family: Lato, Arial, 'Times New Roman';
@@ -216,12 +216,25 @@ h1>a {
     background-color: #eef3f0;
 }
 
+.license {
+    float: left;
+}
+
 .license div {
     margin-bottom: 5px;
 }
 
 .license > a > img {
     float: left;
+    margin-right: 10px;
+}
+
+.follow-me {
+    float: right;
+}
+
+.follow-me-txt {
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -552,23 +565,23 @@ p>a>img:hover {
     border-radius: 5px;
 }
 
-#social-twitter {
+.social-twitter {
     background-position: 0 0;
 }
 
-#social-facebook {
+.social-facebook {
     background-position: -40px 0;
 }
 
-#social-google {
+.social-google {
     background-position: -80px 0;
 }
 
-#social-linkedin {
+.social-linkedin {
     background-position: -120px 0;
 }
 
-#social-weibo {
+.social-weibo {
     background-position: -160px 0;
 }
 
