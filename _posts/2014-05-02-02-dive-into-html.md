@@ -19,7 +19,7 @@ excerpt: We have introduced what HTML, CSS and JavaScript are and how they can w
 
 You can use your favourite text editor to write the examples as shown in this post. If you don't have a preference, I would recommend eithor <a href="http://notepad-plus-plus.org" target="_blank">Notepad++</a> or <a href="http://komodoide.com/komodo-edit/" target="_blank">Komodo Edit</a>.
 
-Install <a href="www.google.com/chrome/" target="_blank">Chrome</a> or <a href="http://www.firefox.com" target="_blank">Firefox</a> if you haven't. You will need <a href="http://getfirebug.com/" target="_blank">Firebug</a> for Firefox in later posts.
+Install <a href="http://www.google.com/chrome/" target="_blank">Chrome</a> or <a href="http://www.firefox.com" target="_blank">Firefox</a> if you haven't. You will need <a href="http://getfirebug.com/" target="_blank">Firebug</a> for Firefox in later posts.
 
 You can open the `*.html` files using your favourite browsers to see the results. No server in needed by the end of this post.
 
