@@ -8,7 +8,7 @@ tags:
 - HTML
 series: Dive into Web Front-End Programming
 shortUrl: http://goo.gl/MLy3Vz
-excerpt: We have introduced what HTML, CSS and JavaScript are and how they can work together in <a href="{{ site.url }}/2014/04/27/01-the-whole-picture/">my previous post</a>. In this post, we will have a deeper understanding of HTML and learn to make Web pages step by step.
+excerpt: We have introduced what HTML, CSS and JavaScript are and how they can work together in <a href="http://zhangwenli.com/blog/2014/04/27/01-the-whole-picture/">my previous post</a>. In this post, we will have a deeper understanding of HTML and learn to make Web pages step by step.
 ---
 
 > #### What will you learn in this post?
