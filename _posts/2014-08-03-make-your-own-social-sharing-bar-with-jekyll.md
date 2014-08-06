@@ -73,7 +73,7 @@ Then, in the post layout, we should check if `shortUrl` is `null`, so that we do
 
 As we said, we are making our own sharing bar since we want it looks well with our blog style, so you need to make SNS icons to fit with blog.
 
-Icons I used are modified based on the works by Daniel Bruce, Elegant Themes, Freepik, SimpleIcon from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, which is a great place to find licensed icons.
+Icons I used are modified based on the works by Daniel Bruce, Elegant Themes, Freepik, SimpleIcon, Icomoon from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, which is a great place to find licensed icons.
 
 # Final Results
 

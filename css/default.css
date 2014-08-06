@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Lato, 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
     font-weight: 900;
     margin: 0.5em 0;
-    text-shadow: 1px 1px #d4e583;
 }
 
 h1 {
@@ -30,6 +29,15 @@ h1 {
     box-shadow: 3px 3px #70840e;
     font-size: 2.25em;
     margin: 1.5em 0 0.5em 0;
+    text-shadow: 1px 1px #efefef;
+}
+
+h2, h3, h4, h5, h6 {
+    text-shadow: 1px 2px #efefef,2px 4px #b0cb2c;
+}
+
+blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
+    text-shadow: 1px 2px #d4e583,2px 4px #b0cb2c;
 }
 
 .title-img {
@@ -82,7 +90,7 @@ blockquote {
 }
 
 blockquote a {
-    text-shadow: none;
+    text-shadow: 1px 1px #d4e583, 2px 2px #b0cb2c;
     filter: none;
 }
 
@@ -161,9 +169,9 @@ p {
 }
 
 em {
-    font-family: Consolas, "Courier New", '仿宋', Courier;
+    font-family: Consolas, "Courier New", FangSong, Courier;
     font-style: normal;
-    text-shadow: 0px 0px 5px #b0cb2c;
+    text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
 }
 
 blockquote em {
@@ -174,14 +182,11 @@ a {
     color: #70840e;
     font-weight: bold;
     text-decoration: none;
-    border-bottom-style: dashed;
-    border-bottom-color: #70840e;
-    border-bottom-width: 1px;
+    text-shadow: 1px 1px #efefef, 2px 2px #ccc;
 }
 
 a:visited {
-    color: #444;
-    border-bottom-color: #444;
+    color: #666;
 }
 
 a:hover {
@@ -197,6 +202,10 @@ a:hover {
     -moz-transition: background-color 0.8s;
     -o-transition: background-color 0.8s;
     transition: background-color 0.8s;
+}
+
+a:visited:hover {
+    text-shadow: 1px 1px #70840e, 2px 2px #ccc;
 }
 
 h1>a {
@@ -293,11 +302,12 @@ h1>a {
     font-weight: bold;
     margin-bottom: 0.25em;
     
-    text-shadow: 1px 1px 0px #fff;
+    text-shadow: 2px 2px #efefef, 4px 4px #b0cb2c;
     filter: dropshadow(color=#fff, offx=1, offy=1);
     border-bottom-style: solid;
     border-bottom-color: #70840e;
     border-bottom-width: 3px;
+    padding-bottom: 0.2em;
 }
 
 .rotBottom.rotLeft {
@@ -322,7 +332,7 @@ h1>a {
 
 p>img, p>a>img {
     border: dashed;
-    border-width: 3px;
+    border-width: 2px;
     border-color: #70840e;
     max-width: 100%;
     text-decoration: none;
@@ -565,6 +575,11 @@ p>a>img:hover {
     border-radius: 5px;
 }
 
+.social-share-text {
+    font-weight: bold;
+    text-indent: 0;
+}
+
 .social-twitter {
     background-position: 0 0;
 }
@@ -585,11 +600,32 @@ p>a>img:hover {
     background-position: -160px 0;
 }
 
+.social-digg {
+    background-position: 0 40px;
+}
+
+.social-douban {
+    background-position: -40px 40px;
+}
+
+.social-reddit {
+    background-position: -80px 40px;
+}
+
+.social-stumble {
+    background-position: -120px 40px;
+}
+
+.social-github {
+    background-position: -160px 40px;
+}
+
 .button {
     padding: 8px 20px;
     border-radius: 16px;
     background-color: #b0cb2c;
     display: inline-block;
+    text-shadow: none;
 }
 
 .view-source {
