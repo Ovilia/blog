@@ -8,13 +8,13 @@
                 <div class="simpleNav">
                     <a href="http://zhangwenli.com">Home</a>
                 </div>
-                <div class="pageTitle">和光同尘<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank"><img src="img/rss-green.png" /></a></div>
+                <div class="pageTitle">和光同尘<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
                 
                 {% if paginator.page == 1 %}
                 <p>I'm <em>Wenli Zhang</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#disqus_thread">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com">Home Page</a> to know more about me.</p>
                 {% endif %}
                             
-                <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank"><img src="img/rss-green.png" /></a></h1>
+                <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
                 
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
@@ -61,7 +61,7 @@
                 <a href="{{ site.url }}/all/" class="allPostLink">All Posts</a>
                 </div>
             
-                <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank"><img src="img/rss-green.png" /></a></h1>
+                <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
                 
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
