@@ -137,6 +137,7 @@ h1>code, h2>code, h3>code {
     float: right;
     position: relative;
     top: -20px;
+    font-size: 0.9em;
 }
 
 .no-indent {

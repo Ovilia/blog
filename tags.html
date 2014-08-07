@@ -22,19 +22,19 @@ layout: default
             {% if tag == otag %}              
                 <blockquote>
                     {% if post.series %}
-                    <a href="{{ site.url }}{{ post.url }}" class="series-recent">Series: {{ post.series }}</a>
+                    <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', 'InTags', '{{ post.url }}']);">Series: {{ post.series }}</a>
                     {% endif %}
-                    <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                    <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InTags', '{{ post.url }}']);">{{ post.title }}</a></h3>
                     <div class="time">{{ post.time }}</div>
                     
                     <div class="tagPanel">
                     {% for t in post.tags %}
-                        <a href="{{ site.url }}/tags?tag={{ t }}"><div class="tag">{{ t }}</div></a>
+                        <a href="{{ site.url }}/tags?tag={{ t }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InTags', '{{ t }}']);"><div class="tag">{{ t }}</div></a>
                     {% endfor%}
                     </div>
                     
                     {{ post.excerpt | markdownify }}
-                    <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank">More...</a></h5>
+                    <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InTags', '{{ post.url }}']);">Read More</a></h5>
                 </blockquote>
             {% endif %}
         {% endfor %}
@@ -45,7 +45,7 @@ layout: default
 <h1>All Tags</h1>
 <div class="tagPanel">
 {% for tag in sortedtags %}
-    <a href="{{ site.url }}/tags?tag={{ tag }}"><div class="tag">{{ tag }}</div></a>
+    <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InTags', '{{ tag }}']);"><div class="tag">{{ tag }}</div></a>
 {% endfor %}
 </div>
 
