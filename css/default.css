@@ -81,7 +81,7 @@ pre>code {
 blockquote {
     background-color: #d4e583;
     margin: 20px 0;
-    padding: 20px 60px;
+    padding: 0.75em 1.5em;
     border-style: solid;
     border-color: #70840e;
     border-width: 0px 1px 0px 7px;
@@ -169,7 +169,7 @@ p {
 }
 
 em {
-    font-family: Consolas, "Courier New", FangSong, Courier;
+    font-family: Lato, Consolas, "Courier New", FangSong, Courier;
     font-style: normal;
     text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
 }
@@ -211,6 +211,49 @@ a:visited:hover {
 h1>a {
     border: 0;
     text-shadow: 1px 1px #eee;
+}
+
+#ovilia-home {
+    display: none;
+}
+
+#titleDiv {
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    float: left;
+}
+
+#titlePanel {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 0;
+}
+
+#titleTao {
+    width: 400px;
+    height: 400px;
+    display: block;
+}
+
+#titleWords {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: -400px;
+    opacity: 0;
+    display: block;
+}
+
+#titleCircle {
+    width: 333px;
+    height: 333px;
+    border-radius: 176px;
+    margin: 33px 0 0 33px;
+    position: relative;
+    top: -800px;
+    cursor: pointer;
 }
 
 .about-author {
@@ -337,7 +380,6 @@ p>img, p>a>img {
     max-width: 100%;
     text-decoration: none;
     transition: 0.5s;
-    margin-left: -2em;
 }
 
 p>a>img:hover {

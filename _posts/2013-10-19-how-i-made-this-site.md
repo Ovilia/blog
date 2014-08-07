@@ -13,11 +13,11 @@ I've re-designed [my personal site][1] recently since the old version had too mu
 
 > #### What You Will Learn In This Post
 
-> #### Shadow Effect
+> ##### Shadow Effect
 
 > There's a *Tao*-like image at [home page][1] (you should probably have a look at it if you haven't yet). With mouse moving around, its shadow would move correspondingly with mouse position, which makes your mouse seem like a light source! 
 
-> #### Paper-like Background
+> ##### Paper-like Background
 
 > Background of this post looks like 3 sheets of paper. If you found that interesting, you may learn how to implement it in the following introduction.
 
