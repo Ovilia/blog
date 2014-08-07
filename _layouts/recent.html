@@ -6,18 +6,19 @@
             <div class="rotRight rotTop pageBack"></div>
             <div class="container page">
                 <div class="simpleNav">
-                    <a href="http://zhangwenli.com">Home</a>
+                    <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecent', window.location.pathname]);">Home</a>
                 </div>
-                <div class="pageTitle">和光同尘<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
+                <div class="pageTitle">和光同尘<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'AllRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
                 
                 {% if paginator.page == 1 %}
-                <p>I'm <em>Wenli Zhang</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#disqus_thread">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com">Home Page</a> to know more about me.</p>
+                <p>I'm <em>Wenli Zhang</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#disqus_thread">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecentAboutMe', window.location.pathname]);">Home Page</a> to know more about me.</p>
                 {% endif %}
 
 {% include license.html %}
                             
-                <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
+                <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
                 
+                {% assign postCnt = '.' %}
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
                         {% assign isZn = false %}
@@ -28,21 +29,22 @@
                         {% endfor %}
                         
                         {% if isZn == false %}
+                        {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <blockquote>
                             {% if post.series %}
-                            <a href="{{ site.url }}{{ post.url }}" class="series-recent">Series: {{ post.series }}</a>
+                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
                             {% endif %}
-                            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                            <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{{ post.title }}</a></h3>
                             <div class="time">{{ post.time }}</div>
                             
                             <div class="tagPanel">
                             {% for tag in post.tags %}
-                                <a href="{{ site.url }}/tags?tag={{ tag }}"><div class="tag">{{ tag }}</div></a>
+                                <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', '{{ postCnt.size }}thPost']);"><div class="tag">{{ tag }}</div></a>
                             {% endfor%}
                             </div>
                             
                             {{ post.excerpt | markdownify }}
-                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank">More...</a></h5>
+                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank"<a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecentMore', '{{ postCnt.size }}thPost']);">Read More</a></h5>
                         </blockquote>
                         {% endif %}
                     {% endif %}
@@ -51,19 +53,19 @@
                 <div class="pagination">
                 {% if paginator.previous_page %}
                     {% if paginator.previous_page == 1 %}
-                        <a href="{{ site.url }}" class="previous">Previous</a>
+                        <a href="{{ site.url }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">Previous</a>
                     {% else %}
-                        <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="previous">Previous</a>
+                        <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '{{ paginator.previous_page }}thPage', window.location.pathname]);">Previous</a>
                     {% endif %}
                 {% endif %}
                 <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
                 {% if paginator.next_page %}
-                    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="next">Next</a>
+                    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="next" onclick="_gaq.push(['_trackEvent', 'ToNextPage', '{{ paginator.next_page }}thPage', window.location.pathname]);">Next</a>
                 {% endif %}
-                <a href="{{ site.url }}/all/" class="allPostLink">All Posts</a>
+                <a href="{{ site.url }}/all/" class="allPostLink" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InRecentNav', window.location.pathname]);">All Posts</a>
                 </div>
             
-                <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
+                <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
                 
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
@@ -75,18 +77,19 @@
                         {% endfor %}
                         
                         {% if isZn == true %}
+                        {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <blockquote>
-                            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                            <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{{ post.title }}</a></h3>
                             <div class="time">{{ post.time }}</div>
                             
                             <div class="tagPanel">
                             {% for tag in post.tags %}
-                                <a href="{{ site.url }}/tags?tag={{ tag }}"><div class="tag">{{ tag }}</div></a>
+                                <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', '{{ postCnt.size }}thPost']);"><div class="tag">{{ tag }}</div></a>
                             {% endfor%}
                             </div>
                             
                             {{ post.excerpt | markdownify }}
-                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank">阅读全文</a></h5>
+                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecentMore', '{{ postCnt.size }}thPost']);">阅读全文</a></h5>
                         </blockquote>
                         {% endif %}
                     {% endif %}
@@ -95,53 +98,53 @@
                 <div class="pagination">
                 {% if paginator.previous_page %}
                     {% if paginator.previous_page == 1 %}
-                        <a href="{{ site.url }}" class="previous">上一页</a>
+                        <a href="{{ site.url }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">上一页</a>
                     {% else %}
-                        <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="previous">上一页</a>
+                        <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="previous" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '{{ paginator.previous_page }}thPage', window.location.pathname]);">上一页</a>
                     {% endif %}
                 {% endif %}
                 <span class="page_number">第{{ paginator.page }}页，共{{ paginator.total_pages }}页</span>
                 {% if paginator.next_page %}
-                    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="next">下一页</a>
+                    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="next" onclick="_gaq.push(['_trackEvent', 'ToNextPage', '{{ paginator.next_page }}thPage', window.location.pathname]);">下一页</a>
                 {% endif %}
-                <a href="{{ site.url }}/all/" class="allPostLink">所有博文</a>
+                <a href="{{ site.url }}/all/" class="allPostLink" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InRecentNav', window.location.pathname]);">所有博文</a>
                 </div>
                 
                 {% include license.html %}
                 
                 {% if paginator.page == 1 %}
                 <h1>Sketches</h1>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_fb4846" target="_blank"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work3.jpg" /></a>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_d59f8a" target="_blank"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work4.jpg" /></a>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_cc9e7a" target="_blank"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work1.jpg" /></a>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_c8fcf9" target="_blank"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work2.jpg" /></a>
+                <a href="http://portfolio.zhangwenli.com/post/2e5739_fb4846" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_fb4846']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work3.jpg" /></a>
+                <a href="http://portfolio.zhangwenli.com/post/2e5739_d59f8a" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_d59f8a']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work4.jpg" /></a>
+                <a href="http://portfolio.zhangwenli.com/post/2e5739_cc9e7a" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_cc9e7a']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work1.jpg" /></a>
+                <a href="http://portfolio.zhangwenli.com/post/2e5739_c8fcf9" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_c8fcf9']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work2.jpg" /></a>
                 <p>Check <a href="http://portfolio.zhangwenli.com" target="_blank">http://portfolio.zhangwenli.com</a> for more information.</p>
                 
                 <h1 id="friendTitle">Friend List</h1>
                 <p>Now, let me introduce some of my friends who (also) write excellent blogs.</p>
                 <div id="friendDiv">
                     <div class="friend fri_liyao">
-                        <a href="http://liyaos.com" target="_blank" title="Yao Li">
+                        <a href="http://liyaos.com" target="_blank" title="Yao Li" onclick="_gaq.push(['_trackEvent', 'ToFriend', 'Liyao', window.location.pathname]);">
                             <img src="/blog/img/loading.gif" data-src="/blog/img/li-yao128.png" />
                         </a>
                     </div>
                     <div class="friend fri_chaobin">
-                        <a href="http://zhchbin.github.io/" target="_blank" title="Chaobin Zhang">
+                        <a href="http://zhchbin.github.io/" target="_blank" title="Chaobin Zhang" onclick="_gaq.push(['_trackEvent', 'ToFriend', 'Chaobin', window.location.pathname]);">
                             <img src="/blog/img/loading.gif" data-src="/blog/img/chao-bin128.png" />
                         </a>
                     </div>
                     <div class="friend fri_zhipeng">
-                        <a href="http://jesusjzp.github.io" target="_blank" title="Zhipeng Jiang">
+                        <a href="http://jesusjzp.github.io" target="_blank" title="Zhipeng Jiang" onclick="_gaq.push(['_trackEvent', 'ToFriend', 'Zhipeng', window.location.pathname]);">
                             <img src="/blog/img/loading.gif" data-src="/blog/img/zhi-peng128.png" />
                         </a>
                     </div>
                     <div class="friend fri_wujiang">
-                        <a href="http://blog.wujiang.name/" target="_blank" title="Wu Jiang">
+                        <a href="http://blog.wujiang.name/" target="_blank" title="Wu Jiang" onclick="_gaq.push(['_trackEvent', 'ToFriend', 'Wujiang', window.location.pathname]);">
                             <img src="/blog/img/loading.gif" data-src="/blog/img/wu-jiang128.png" />
                         </a>
                     </div>
                     <div class="friend fri_huiyi">
-                        <a href="http://blog.csdn.net/jokes000" target="_blank" title="Li Huiyi">
+                        <a href="http://blog.csdn.net/jokes000" target="_blank" title="Li Huiyi" onclick="_gaq.push(['_trackEvent', 'ToFriend', 'Huiyi', window.location.pathname]);">
                             <img src="/blog/img/loading.gif" data-src="/blog/img/hui-yi128.png" />
                         </a>
                     </div>

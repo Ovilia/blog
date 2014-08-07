@@ -6,13 +6,11 @@
         {% if post.series == page.series %}
             <li>
             {% if page.url != post.url %}
-                    <a href="{{ site.url }}{{ post.url }}">
+                <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
             {% endif %}
-            
             {{ post.title }}
-            
             {% if page.url != post.url %}
-                    </a>
+                </a>
             {% endif %}
             </li>
         {% endif %}

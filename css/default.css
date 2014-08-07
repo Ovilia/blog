@@ -32,12 +32,12 @@ h1 {
     text-shadow: 1px 1px #efefef;
 }
 
-h2, h3, h4, h5, h6 {
-    text-shadow: 1px 2px #efefef,2px 4px #b0cb2c;
+h2, h3, h4 {
+    text-shadow: 1px 2px #efefef, 2px 4px #b0cb2c;
 }
 
-blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
-    text-shadow: 1px 2px #d4e583,2px 4px #b0cb2c;
+blockquote h2, blockquote h3, blockquote h4 {
+    text-shadow: 1px 2px #d4e583, 2px 4px #b0cb2c;
 }
 
 .title-img {
@@ -61,6 +61,20 @@ h4 {
     font-size: 1.5em;
 }
 
+h5 {
+    font-size: 1.25em;
+    text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
+}
+
+h6 {
+    font-size: 1.1em;
+    text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
+}
+
+blockquote h5, blockquote h5 {
+    text-shadow: 1px 1px #d4e583, 1px 2px #b0cb2c;
+}
+
 hr {
     background-color: #70840e;
     height: 3px;
@@ -81,7 +95,7 @@ pre>code {
 blockquote {
     background-color: #d4e583;
     margin: 20px 0;
-    padding: 0.75em 1.5em;
+    padding: 1em 1.5em;
     border-style: solid;
     border-color: #70840e;
     border-width: 0px 1px 0px 7px;
@@ -527,11 +541,10 @@ p>a>img:hover {
     float: right;
     background-color: #b0cb2c;
     padding: 8px 20px;
-    margin-right: -60px;
-    margin-left: 20px;
+    margin-right: -1.5em;
+    margin-left: 1em;
     display: inline-block;
     font-family: Lato, 'Times New Roman', Arial, sarif;
-    font-size: 15px;
     max-width: 200px;
 }
 
