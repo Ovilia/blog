@@ -243,7 +243,12 @@ h1>a {
     width: 400px;
     height: 400px;
     margin: 0 auto;
+    display: block;
     border: 0;
+}
+
+#titlePanel:hover {
+    background-color: inherit;
 }
 
 #titleTao {
