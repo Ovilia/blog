@@ -14,7 +14,7 @@ body {
     background-color: #70840e;
     color: #fff;
     text-shadow: 1px 1px 0px #333;
-    filter: dropshadow(color=#333, offx=1, offy=1);
+    filter: dropshadow(color=#333, offx=1, offy=1);te
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -750,6 +750,9 @@ p>a>img:hover {
         margin-right: -2.5%;
         padding: 10px 2.5%;
         box-shadow: none;
+    }
+    h2, h3, h4 {
+        text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
     }
     .more {
         font-size: 100%;
