@@ -14,13 +14,14 @@ body {
     background-color: #70840e;
     color: #fff;
     text-shadow: 1px 1px 0px #333;
-    filter: dropshadow(color=#333, offx=1, offy=1);te
+    filter: dropshadow(color=#333, offx=1, offy=1);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Lato, 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
     font-weight: 900;
     margin: 0.5em 0;
+    text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
 }
 
 h1 {
@@ -30,10 +31,6 @@ h1 {
     font-size: 2.25em;
     margin: 1.5em 0 0.5em 0;
     text-shadow: 1px 1px #efefef;
-}
-
-h2, h3, h4 {
-    text-shadow: 1px 2px #efefef, 2px 4px #b0cb2c;
 }
 
 blockquote h2, blockquote h3, blockquote h4 {
@@ -47,6 +44,11 @@ blockquote h2, blockquote h3, blockquote h4 {
 
 a.title-img:hover {
     background: none;
+}
+
+.post-title-img {
+	display: block;
+	margin: 0.5em auto;
 }
 
 h2 {
@@ -63,12 +65,10 @@ h4 {
 
 h5 {
     font-size: 1.25em;
-    text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
 }
 
 h6 {
     font-size: 1.1em;
-    text-shadow: 1px 1px #efefef, 2px 2px #b0cb2c;
 }
 
 blockquote h5, blockquote h5 {
@@ -366,11 +366,14 @@ h1>a {
     margin-bottom: 0.25em;
     
     text-shadow: 2px 2px #efefef, 4px 4px #b0cb2c;
-    filter: dropshadow(color=#fff, offx=1, offy=1);
     border-bottom-style: solid;
     border-bottom-color: #70840e;
     border-bottom-width: 3px;
     padding-bottom: 0.2em;
+}
+
+.subtitle {
+	text-shadow: none;
 }
 
 .rotBottom.rotLeft {
@@ -679,6 +682,70 @@ p>a>img:hover {
 
 .social-github {
     background-position: -160px 40px;
+}
+
+.inline-img {
+	float: right;
+	margin: 0.8em 0 0.8em 0.8em;
+}
+
+#footer-follow {
+	margin: 0 auto;
+	width: 220px;
+}
+
+.footer-follow-element {
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/social-small.png');
+    transition: 1s;
+    display: inline-block;
+    border-bottom: none;
+}
+
+.footer-follow-element:hover {
+    background-color: #d4e583;
+    border-radius: 16px;
+}
+
+.footer-follow-twitter {
+    background-position: 0 0;
+}
+
+.footer-follow-facebook {
+    background-position: -32px 0;
+}
+
+.footer-follow-google {
+    background-position: -64px 0;
+}
+
+.footer-follow-linkedin {
+    background-position: -96px 0;
+}
+
+.footer-follow-weibo {
+    background-position: -128px 0;
+}
+
+.footer-follow-digg {
+    background-position: 0 32px;
+}
+
+.footer-follow-douban {
+    background-position: -32px 32px;
+}
+
+.footer-follow-reddit {
+    background-position: -64px 32px;
+}
+
+.footer-follow-stumble {
+    background-position: -96px 32px;
+}
+
+.footer-follow-github {
+    background-position: -128px 32px;
 }
 
 .button {
