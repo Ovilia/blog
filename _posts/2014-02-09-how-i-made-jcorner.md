@@ -6,6 +6,7 @@ tags:
 - CSS
 - jQuery
 - JavaScript
+- Project
 excerpt: In this post, I'm going to explain how to make <a href="http://zhangwenli.com/jCorner" target="_blank">jCorner</a>, a jQuery plugin to create paper folding effect at the bottom-right corner.
 ---
 
