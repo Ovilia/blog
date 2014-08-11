@@ -17,6 +17,10 @@ body {
     filter: dropshadow(color=#333, offx=1, offy=1);
 }
 
+img {
+	max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Lato, 'Times New Roman', Arial, 'Microsoft YaHei', sarif;
     font-weight: 900;
