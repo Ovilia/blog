@@ -1,7 +1,7 @@
 ---
-title: 10 San-Serif Fonts for Your Headline
-subtitle: Want your Website to stay mordern?
-titleImg: /img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-12.png
+title: 10 Sans-serif Fonts for Your Headline
+subtitle: Want your Website to stay modern?
+titleImg: /img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-12.png
 time: 2014.08.09 11:23:00
 layout: post
 tags:
@@ -12,32 +12,32 @@ tags:
 - Serif
 - SanSerif
 shortUrl: http://goo.gl/MnWwt1
-excerpt: Ever wondering which font to choose for your headline? Here's the list of 10 san-serif Google Fonts you must have a look at.
+excerpt: Ever wondering which font to choose for your headline? Here's the list of 10 sans-serif Google Fonts you must have a look at.
 ---
 
-><img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-01.png" />
+><img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-01.png" />
 
 >#### Serif
 
 > In typography, a *serif* is a small line attached to the end of a stroke in a letter or symbol, such as when handwriting is separated into distinct units for a typewriter or typesetter. A typeface with serifs is called a serif typeface (or serifed typeface).
 
->#### San-Serif
+>#### Sans-serif
 
 > A typeface without serifs is called *sans serif* or *sans-serif*, from the French sans, meaning "without". Some typography sources refer to sans-serif typefaces as "Grotesque" (in German "grotesk") or "Gothic", and serif typefaces as "Roman".
 
 > From *<a href="http://en.wikipedia.org/wiki/Serif" target="_blank">Wikipedia</a>*
 
-## Why you should use san-serif for you headline today
+## Why you should use sans-serif for you headline today
 
-<a href="http://www.webdesignerdepot.com/2013/03/serif-vs-sans-the-final-battle/" target="_blank">The battle between serif and san-serif</a> has never stopped. Generally speaking, serif is considered to be more readable in printed works while san-serif on screen.
+<a href="http://www.webdesignerdepot.com/2013/03/serif-vs-sans-the-final-battle/" target="_blank">The battle between serif and sans-serif</a> has never stopped. Generally speaking, serif is considered to be more readable in printed works while sans-serif on screen.
 
-Despite the fact that serif's stroke act as an elegant decoretion to a letter, san-serif is more recognizable even when font size is very small, and more importantly, as the trend of *Flat Design* goes, san-serif regained its popularity with it neat and clean design. It seems that if you want your Website to stay modern, you should use san-serif for both headline and content.
+Despite the fact that serif's stroke act as an elegant decoretion to a letter, sans-serif is more recognizable even when font size is very small, and more importantly, as the trend of *Flat Design* goes, sans-serif regained its popularity with it neat and clean design. It seems that if you want your Website to stay modern, you should use sans-serif for both headline and content.
 
 In this post, we introduce 10 fonts from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> that is suitable for your headline.
 
 # Questrial
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-02.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-02.png" />
 
 <a href="http://www.google.com/fonts/specimen/Questrial" target="_blank">Questrial</a> by <a href="https://plus.google.com/115540960342941034012/about" target="_blank">Joe Prince</a> is the perfect font for body text and headlines on a website. It's modern style, suited with past characteristics of great typefaces, make it highly readable in any context. The full-circle curves on many characters make Questrial a great font to blend seamlessly with other fonts while still maintaining it's uniqueness.
 
@@ -47,7 +47,7 @@ Whether to be used for body text or headlines on a web page, Questrial is the ri
 
 # Fjalla One
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-03.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-03.png" />
 
 <a href="http://www.google.com/fonts/specimen/Fjalla+One" target="_blank">Fjalla One</a> by <a href="https://plus.google.com/106288796449831139244/about" target="_blank">Sorkin Type</a> is a medium contrast display sans serif. Fjalla One has been carefully adjusted to the restrictions of the screen. Despite having display characteristics Fjalla One can be used in a wide range of sizes.
 
@@ -55,13 +55,13 @@ Source files are available from <a href="http://code.google.com/p/googlefontdire
 
 # Anton
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-04.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-04.png" />
 
 <a href="http://www.google.com/fonts/specimen/Anton" target="_blank">Anton</a> by <a href="https://plus.google.com/107807505287232434305/about" target="_blank">Vernon Adams</a> is a reworking of a traditional advertising sans serif typeface. The letter forms have been digitised and then reshaped for use as a webfont, the counters have been opened up a little and the stems optimised for use as bold display font in modern web browsers.
 
 # Oswald
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-05.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-05.png" />
 
 <a href="http://www.google.com/fonts/specimen/Oswald" target="_blank">Oswald</a> by <a href="https://plus.google.com/107807505287232434305/about" target="_blank">Vernon Adams</a> is a reworking of the classic style historically represented by the 'Alternate Gothic' sans serif typefaces. The characters of Oswald have been re-drawn and reformed to better fit the pixel grid of standard digital screens. Oswald is designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices.
 
@@ -73,7 +73,7 @@ As one of the earliest families published in Google Web Fonts, Oswald lacked pro
 
 # Roboto
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-06.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-06.png" />
 
 <a href="http://www.google.com/fonts/specimen/Roboto" target="_blank">Roboto</a> by <a href="https://plus.google.com/110879635926653430880/about">Christian Robertson</a> has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
 
@@ -81,7 +81,7 @@ This is the normal family, which can be used alongside the <a href="http://www.g
 
 # Lato
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-07.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-07.png" />
 
 <a href="http://www.google.com/fonts/specimen/Lato" target="_blank">Lato</a> by <a href="https://plus.google.com/106163021290874968147/about">Lukasz Dziedzic</a> is a sanserif typeface family designed in the Summer 2010 by Warsaw-based designer Lukasz Dziedzic ("Lato" means "Summer" in Polish). In December 2010 the Lato family was published under the open-source Open Font License by his foundry tyPoland, with support from Google.
 
@@ -97,7 +97,7 @@ Learn more at <a href="http://www.latofonts.com/" target="_blank">www.latofonts.
 
 # Montserrat
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-10.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-10.png" />
 
 <a href="http://www.google.com/fonts/specimen/Montserrat" target="_blank">Montserrat</a> is made by Julieta Ulanovsky. The old posters and signs in the traditional neighborhood of Buenos Aires called Montserrat inspired Julieta Ulanovsky to design a typeface that rescues the beauty of urban typography from the first half of the twentieth century. The goal is to rescue what is in Montserrat and set it free, under a free, libre and open source license, the SIL Open Font License.
 
@@ -108,7 +108,7 @@ There are other revivals, but those do not stay close to the originals. The lett
 This is the Alternates family, a sister to the <a href="http://www.google.com/webfonts/specimen/Montserrat+Alternates" target="_blank">Alternates</a> and <a href="http://www.google.com/webfonts/specimen/Montserrat+Subrayada" target="_blank">Subrayada</a> families. Many of the letterforms are special in this family, and 'Subrayada' means 'Underlined' in Spanish.
 
 # Montserrat Alternates
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-08.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-08.png" />
 
 <a href="http://www.google.com/fonts/specimen/Montserrat+Alternates" target="_blank">Montserrat Alternates</a> is made by Julieta Ulanovsky. The old posters and signs in the traditional neighborhood of Buenos Aires called Montserrat inspired Julieta Ulanovsky to design a typeface that rescues the beauty of urban typography from the first half of the twentieth century. The goal is to rescue what is in Montserrat and set it free, under a free, libre and open source license, the SIL Open Font License.
 
@@ -120,13 +120,13 @@ This is the Alternates family, a sister to the <a href="http://www.google.com/we
 
 # Open Sans
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-09.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-09.png" />
 
 <a href="http://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> by <a href="https://profiles.google.com/107777320916704234605/about" target="_blank">Steve Matteson</a> is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp. This version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE, Greek and Cyrillic character sets. Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
 
 # Raleway
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-11.png" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-11.png" />
 
 <a href="http://www.google.com/fonts/specimen/Raleway" target="_blank">Raleway</a> by Multiple Designers is an elegant sans-serif typeface family. Initially designed by Matt McInerney as a single thin weight, it was expanded into a 9 weight family by Pablo Impallari and Rodrigo Fuenzalida in 2012 and iKerned by Igino Marini.
 
