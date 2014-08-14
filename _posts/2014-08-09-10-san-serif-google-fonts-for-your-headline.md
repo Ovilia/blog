@@ -1,7 +1,7 @@
 ---
 title: 10 Sans-serif Fonts for Your Headline
 subtitle: Want your Website to stay modern?
-titleImg: /img/post/2014-08-09-10-sans-serif-google-fonts-for-your-headline-12.png
+titleImg: /img/post/2014-08-09-10-san-serif-google-fonts-for-your-headline-12.png
 time: 2014.08.09 11:23:00
 layout: post
 tags:
