@@ -416,6 +416,10 @@ p>img, p>a>img {
     transition: 0.5s;
 }
 
+p img.single-img {
+	margin-left: -2em;
+}
+
 p>a>img:hover {
     border-color: #d4e583;
 }
