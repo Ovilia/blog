@@ -30,11 +30,11 @@
                         
                         {% if isZn == false %}
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
-                        <blockquote>
+                        <div class="post-block">
                             {% if post.series %}
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
                             {% endif %}
-                            <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h3>
+                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
                             <div class="time">{{ post.time }}</div>
                             
                             <div class="tagPanel">
@@ -44,8 +44,7 @@
                             </div>
                             
                             {{ post.excerpt | markdownify }}
-                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank"<a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecentMore', '{{ postCnt.size }}thPost']);">Read More</a></h5>
-                        </blockquote>
+                        </div>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
@@ -78,7 +77,7 @@
                         
                         {% if isZn == true %}
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
-                        <blockquote>
+                        <div class="post-block">
                             <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h3>
                             <div class="time">{{ post.time }}</div>
                             
@@ -89,8 +88,7 @@
                             </div>
                             
                             {{ post.excerpt | markdownify }}
-                            <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecentMore', '{{ postCnt.size }}thPost']);">阅读全文</a></h5>
-                        </blockquote>
+                        </div>
                         {% endif %}
                     {% endif %}
                 {% endfor %}

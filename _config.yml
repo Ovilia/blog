@@ -5,7 +5,7 @@ url: "http://zhangwenli.com/blog"
 
 timezone: Asia/Shanghai
 
-paginate: 10
+paginate: 20
 
 pygments: true
 
