@@ -45,29 +45,31 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         $("img").unveil();
 
         // google pageview
-        if ($('#page-view').length > 0) {
-            // load pageview if this page has #page-view div
-            $.ajax({
-                url: 'https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA',
-                dataType: 'jsonp',
-                timeout: 1000 * 30, // 30 sec
-                success: function(data) {
-                    processPageView(data.rows);
-                },
-                error: function() {
-                    // if fail to get up-to-date data from GAE, get cached local version
-                    console.log('Failed to get page view from GAE!');
-                    $.ajax({
-                        url: '/blog/pageview.json',
-                        dataType: 'json',
-                        success: function(data) {
-                            console.log('Local page view used.');
-                            processPageView(data.rows);
-                        }
-                    })
-                }
-            }); 
-        }
+        setInterval(function() {
+            if ($('#page-view').length > 0) {
+                // load pageview if this page has #page-view div
+                $.ajax({
+                    url: 'https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA',
+                    dataType: 'jsonp',
+                    timeout: 1000 * 30, // 30 sec
+                    success: function(data) {
+                        processPageView(data.rows);
+                    },
+                    error: function() {
+                        // if fail to get up-to-date data from GAE, get cached local version
+                        console.log('Failed to get page view from GAE!');
+                        $.ajax({
+                            url: '/blog/pageview.json',
+                            dataType: 'json',
+                            success: function(data) {
+                                console.log('Local page view used.');
+                                processPageView(data.rows);
+                            }
+                        })
+                    }
+                }); 
+            }
+        }, 5000);
     });
 });
 // emoji
