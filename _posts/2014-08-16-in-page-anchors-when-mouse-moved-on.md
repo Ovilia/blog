@@ -35,11 +35,9 @@ Now, let's explain this in more detail.
 
 # JavaScript Part
 
-## Step 1. Mouse Hover Event Handling
+## Step 1. Append To Headline
 
-Of course, you can generate such links for all headline in the page when loaded, instead of when the mouse hovers on it. But we suppose you slightly perfer to the latter method since we don't have to generate it if it will never be used.
-
-With jQuery, we can use `$('h1').hover(function() {});` to catch the event and the following steps are all declared inside this function. If you're not using jQuery, you can also use `onmouseover` for the similar usage.
+With jQuery, we can use `$('h1').each(function() {});` to detail with each headline and the following steps are all declared inside this function.
 
 ## Step 2. Generate `id`
 
@@ -92,7 +90,7 @@ Here we append an anchor with class `h1-link`. So, next time when `hover` is cal
 ## Complete JavaScript Code
 
 {% highlight js %}
-$('h1').hover(function() {
+$('h1').each(function() {
     if ($(this).children('.h1-link').length === 0) {
         var id = $(this).text().replace(/\ /g, '-').replace(/\W^\-/g, '').toLowerCase();
         if (id !== '') {
