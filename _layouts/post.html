@@ -49,7 +49,7 @@
         {% endfor %}
     {% endif %}
     <hr />
-    <p class="social-share-text">You should always share it with your friends!</p>
+    <p class="social-share-text">You should always share the good things with your friends!</p>
     <div class="social-share">
         <a class="social-share-element social-twitter" href="https://twitter.com/intent/tweet?text={% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}&url={{ url }}&via=OviliaZhang&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter" onclick="_gaq.push(['_trackEvent', 'Share', 'Twitter', window.location.pathname]);"></a>
         <a class="social-share-element social-facebook" href="https://www.facebook.com/sharer/sharer.php?t={% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}&u={{ url }}" target="_blank" title="Share this post on Facebook" onclick="_gaq.push(['_trackEvent', 'Share', 'Facebook', window.location.pathname]);"></a>

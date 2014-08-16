@@ -140,7 +140,7 @@ blockquote p {
 
 code {
     border: dashed 1px #22C3AA;
-    color: #22C3AA;
+    color: #157A6B;
     padding: 2px 8px;
     margin: 5px 0;
     font-size: 90%;
@@ -154,10 +154,6 @@ code {
 
 h1>code, h2>code, h3>code {
     color: #000;
-}
-
-.more {
-    font-size: 0.9em;
 }
 
 .no-indent {
@@ -205,7 +201,7 @@ p {
 
 em {
     font-style: normal;
-	color: #22C3AA;
+	color: #157A6B;
 }
 
 blockquote em {
@@ -408,7 +404,7 @@ h1>a {
 }
 
 #contentDiv {
-    padding: 20px 12% 0 12%;
+    padding: 20px 12%;
     margin: 0 auto;
 }
 
@@ -656,11 +652,12 @@ p>a>img:hover {
     width: 100%;
     background-color: #AEE2D9;
     display: none;
+	z-index: 100;
 }
 
 #mobile-nav a {
     padding: 0.5em 0.8em;
-    border-right: 1px dashed #70840e;
+    border-right: 1px dashed #22C3AA;
 }
 
 .social-share-element {
@@ -864,18 +861,14 @@ p>a>img:hover {
     h2, h3, h4 {
         text-shadow: 1px 1px #efefef, 2px 2px #AEE2D9;
     }
-    .more {
-        font-size: 100%;
-        margin-top: -10px;
-    }
     .simpleNav {
         margin-top: -20px;
         margin-bottom: 20px;
     }
-    .series-recent {
-        margin-right: -3%;
-        margin-top: -8px;
-        padding: 5px 10px;
+    .series-recent, .series-recent:visited {
+		max-width: 100%;
+		float: none;
+		display: block;
     }
     .book-img {
         width: 120px;
@@ -927,12 +920,10 @@ p>a>img:hover {
         padding: 10px 4.5%;
         box-shadow: none;
     }
-    .more {
-        font-size: 100%;
-        margin-top: 15px;
-    }
-    .series-recent {
-        margin-right: -4%;
+    .series-recent, .series-recent:hover {
+		max-width: 100%;
+		float: none;
+		display: block;
     }
     
     #mobile-nav {

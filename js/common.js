@@ -56,7 +56,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         $("img").unveil();
 
         // google pageview
-        setInterval(function() {
+        setTimeout(function() {
             if ($('#page-view').length > 0) {
                 // load pageview if this page has #page-view div
                 $.ajax({
