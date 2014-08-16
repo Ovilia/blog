@@ -41,6 +41,17 @@ function updatePageView(cnt) {
 
 // lazy load js and css
 LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
+    $('h1').hover(function() {
+        if ($(this).children('.h1-link').length === 0) {
+            var id = $(this).text().replace(/\ /g, '-').replace(/\W^\-/g, '')
+                    .toLowerCase();
+            if (id !== '') {
+                $(this).attr('id', id)
+                        .append(' <a class="h1-link" href="#' + id + '">#</a>');
+            }
+        }
+    });
+    
     LazyLoad.js('/blog/js/unviel.min.js', function () {
         $("img").unveil();
 

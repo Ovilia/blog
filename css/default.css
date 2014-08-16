@@ -50,6 +50,15 @@ h1:before {
 	width: 32px;
 }
 
+.h1-link {
+	display: none;
+	transition: 0.5s;
+}
+
+h1:hover .h1-link {
+	display: inline;
+}
+
 blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
     text-shadow: 1px 1px #AEE2D9, 2px 2px #22C3AA;
 }
@@ -399,7 +408,7 @@ h1>a {
 }
 
 #contentDiv {
-    padding: 50px 12%;
+    padding: 20px 12% 0 12%;
     margin: 0 auto;
 }
 

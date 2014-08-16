@@ -1,6 +1,6 @@
 ---
 title: New Color Scheme for my Blog
-time: 2014.08.11 18:32:00
+time: 2014.08.15 22:39:00
 layout: post
 tags:
 - Color
