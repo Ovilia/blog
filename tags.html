@@ -8,6 +8,8 @@ layout: default
 </div>
 <div class="pageTitle" id="tagTitle">Querying...</div>
 
+{% include license.html %}
+
 {% capture tags %}
     {% for tag in site.tags %}
         {{ tag[0] }}
@@ -20,7 +22,7 @@ layout: default
     {% for post in site.posts %}
         {% for otag in post.tags %}
             {% if tag == otag %}              
-                <blockquote>
+                <div class="post-block">
                     {% if post.series %}
                     <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', 'InTags', '{{ post.url }}']);">Series: {{ post.series }}</a>
                     {% endif %}
@@ -34,8 +36,7 @@ layout: default
                     </div>
                     
                     {{ post.excerpt | markdownify }}
-                    <h5 class="more"><a href="{{ site.url }}{{ post.url }}" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InTags', '{{ post.url }}']);">Read More</a></h5>
-                </blockquote>
+                </div>
             {% endif %}
         {% endfor %}
     {% endfor %}
