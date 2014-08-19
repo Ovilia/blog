@@ -17,7 +17,7 @@ body {
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,31 +32,31 @@ h1 {
     font-size: 3em;
     margin: 1.5em -80px 0.5em -80px;
     text-shadow: 2px 2px #efefef, 4px 4px #ccc;
-	box-sizing: border-box;
-	border-top: 3px dashed #22C3AA;
-	color: #22C3AA;
-	position: relative;
-	overflow: visible;
+    box-sizing: border-box;
+    border-top: 3px dashed #22C3AA;
+    color: #22C3AA;
+    position: relative;
+    overflow: visible;
 }
 
 h1:before {
-	background-image: url('../img/scissors.png');
-	background-repeat: no-repeat;
-	display: block;
-	content: attr(data-title);
-	position: absolute;
-	top: -16px;
-	height: 32px;
-	width: 32px;
+    background-image: url('../img/scissors.png');
+    background-repeat: no-repeat;
+    display: block;
+    content: attr(data-title);
+    position: absolute;
+    top: -16px;
+    height: 32px;
+    width: 32px;
 }
 
 .h1-link {
-	display: none;
-	transition: 0.5s;
+    display: none;
+    transition: 0.5s;
 }
 
 h1:hover .h1-link {
-	display: inline;
+    display: inline;
 }
 
 blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
@@ -73,8 +73,8 @@ a.title-img:hover {
 }
 
 .post-title-img {
-	display: block;
-	margin: 0.5em auto;
+    display: block;
+    margin: 0.5em auto;
 }
 
 h2 {
@@ -126,7 +126,7 @@ blockquote {
 }
 
 blockquote a, blockquote a:hover {
-	text-shadow: none;
+    text-shadow: none;
     filter: none;
 }
 
@@ -135,7 +135,7 @@ blockquote p {
     font-family: Lato, 'Times New Roman', Arial, sarif, 'FangSong';
     line-height: 1.5em;
     text-shadow: none;
-	color: #555;
+    color: #555;
 }
 
 code {
@@ -201,11 +201,11 @@ p {
 
 em {
     font-style: normal;
-	color: #157A6B;
+    color: #157A6B;
 }
 
 blockquote em {
-	color: #000;
+    color: #000;
 }
 
 a {
@@ -213,10 +213,10 @@ a {
     font-weight: bold;
     text-decoration: none;
     text-shadow: 1px 1px #efefef, 2px 2px #ccc;
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 a:visited {
@@ -378,18 +378,18 @@ h1>a {
     border-bottom-color: #22C3AA;
     border-bottom-width: 8px;
     padding-bottom: 0.2em;
-	color: #666;
+    color: #666;
 }
 
 .subtitle {
-	color: #22C3AA;
-	text-shadow: 1px 1px #fff;
+    color: #22C3AA;
+    text-shadow: 1px 1px #fff;
 }
 
 .post-block {
-	margin: 1.5em 0;
-	border-top: 1px dashed #DB6968;
-	box-sizing: border-box;
+    margin: 1.5em 0;
+    border-top: 1px dashed #DB6968;
+    box-sizing: border-box;
 }
 
 .rotBottom.rotLeft {
@@ -422,7 +422,7 @@ p>img, p>a>img {
 }
 
 p img.single-img {
-	margin-left: -2em;
+    margin-left: -2em;
 }
 
 p>a>img:hover {
@@ -430,7 +430,7 @@ p>a>img:hover {
 }
 
 .pageDiv {
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 120%;
 }
 
@@ -460,7 +460,7 @@ p>a>img:hover {
 }
 
 .tag:hover {
-	background-color: #DB6968;
+    background-color: #DB6968;
 }
 
 .tagPanel {
@@ -567,13 +567,13 @@ p>a>img:hover {
     padding: 8px 20px;
     display: inline-block;
     max-width: 250px;
-	color: #efefef;
-	text-shadow: 1px 1px #666;
-	float: right;
+    color: #efefef;
+    text-shadow: 1px 1px #666;
+    float: right;
 }
 
 .series-recent:hover {
-	background-color: #22C3AA;
+    background-color: #22C3AA;
 }
 
 .series-post {
@@ -599,16 +599,16 @@ p>a>img:hover {
 }
 
 .pagination a {
-	background-color: #DB6968;
+    background-color: #DB6968;
     padding: 3px 8px;
     color: #efefef;
     border-radius: 0.3em;
     text-shadow: 1px 1px #666;
-	box-shadow: 1px 1px 0 1px #ccc;
+    box-shadow: 1px 1px 0 1px #ccc;
 }
 
 .pagination a:hover {
-	background-color: #22C3AA;
+    background-color: #22C3AA;
 }
 
 .allPostLink {
@@ -648,7 +648,7 @@ p>a>img:hover {
     width: 100%;
     background-color: #AEE2D9;
     display: none;
-	z-index: 100;
+    z-index: 100;
 }
 
 #mobile-nav a {
@@ -665,7 +665,7 @@ p>a>img:hover {
     display: inline-block;
     margin-right: 2px;
     border-bottom: none;
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 .social-share-element:hover {
@@ -719,20 +719,20 @@ p>a>img:hover {
 }
 
 .inline-img {
-	float: right;
-	margin: 0 0 0.8em 0.8em;
+    float: right;
+    margin: 0 0 0.8em 0.8em;
 }
 
 #footer-follow {
-	margin: 0 auto;
-	width: 220px;
+    margin: 0 auto;
+    width: 220px;
 }
 
 .footer-follow-element {
     width: 32px;
     height: 32px;
     background-image: url('../img/social.png');
-	background-size: 160px 60px;
+    background-size: 160px 60px;
     transition: 1s;
     display: inline-block;
     border-bottom: none;
@@ -787,9 +787,14 @@ p>a>img:hover {
     padding: 8px 20px;
     border-radius: 16px;
     background-color: #22C3AA;
-	color: #efefef;
-    display: inline-block;
+    color: #efefef;
     text-shadow: none;
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+.button:visited {
+    color: #efefef;
 }
 
 .view-source {
@@ -801,6 +806,27 @@ p>a>img:hover {
 
 #page-view {
     margin-top: 10px;
+}
+
+.home-img {
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #22C3AA;
+    padding: 28px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin: 1.6em 0 0.8em 0.8em;
+}
+
+.home-img:hover {
+    background-color: #DB6968;
+}
+
+.clearfix {
+    clear: both;
 }
 
 @media screen and (max-device-width: 600px) {
@@ -862,9 +888,9 @@ p>a>img:hover {
         margin-bottom: 20px;
     }
     .series-recent, .series-recent:visited {
-		max-width: 100%;
-		float: none;
-		display: block;
+        max-width: 100%;
+        float: none;
+        display: block;
     }
     .book-img {
         width: 120px;
@@ -917,9 +943,9 @@ p>a>img:hover {
         box-shadow: none;
     }
     .series-recent, .series-recent:hover {
-		max-width: 100%;
-		float: none;
-		display: block;
+        max-width: 100%;
+        float: none;
+        display: block;
     }
     
     #mobile-nav {
