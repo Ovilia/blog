@@ -31,11 +31,11 @@
                         {% if isZn == false %}
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
+                            <div class="timeago" title="{{ post.time | replace: '.', '-' | replace: ' ', 'T' }}+8:00">{{ post.time }}</div>
                             {% if post.series %}
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
                             {% endif %}
                             <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
-                            <div class="time">{{ post.time }}</div>
                             
                             <div class="tagPanel">
                             {% for tag in post.tags %}
@@ -78,8 +78,8 @@
                         {% if isZn == true %}
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
+                            <div class="timeago cn" title="{{ post.time | replace: '.', '-' | replace: ' ', 'T' }}+8:00">{{ post.time }}</div>
                             <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h3>
-                            <div class="time">{{ post.time }}</div>
                             
                             <div class="tagPanel">
                             {% for tag in post.tags %}

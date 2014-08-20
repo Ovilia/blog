@@ -430,7 +430,7 @@ p>a>img:hover {
 }
 
 .pageDiv {
-    margin-right: 20px;
+    margin-right: 15px;
     font-size: 120%;
 }
 
@@ -829,6 +829,44 @@ p>a>img:hover {
     clear: both;
 }
 
+@media screen and (min-width: 600px) {
+    .timeago {
+        text-align: center;
+        color: #efefef;
+        float: left;
+        margin-left: -120px;
+        margin-top: 16px;
+        width: 80px;
+        height: 80px;
+        background-color: #555;
+        box-sizing: border-box;
+        border-radius: 50%;
+        vertical-align: middle;
+        font-size: 16px;
+        transition: 1s;
+        display: none;
+        cursor: default;
+    }
+    
+    .timeago:hover {
+        background-color: #DB6968;
+        -webkit-transform: rotate3d(0, 1, 0, -360deg);
+        -ms-transform: rotate3d(0, 1, 0, -360deg);
+        transform: rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    
+    .timeago-words {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    
+    .timeago-figure {
+        font-size: 35px;
+    }
+}
+
 @media screen and (max-device-width: 600px) {
     body {
         width: 100%;
@@ -907,6 +945,15 @@ p>a>img:hover {
     .simpleNav {
         display: none;
     }
+    
+    .timeago-words {
+        display: inline-block;
+    }
+    
+    .timeago {
+        margin-top: 1em;
+        margin-bottom: -1em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -958,5 +1005,14 @@ p>a>img:hover {
     
     .simpleNav {
         display: none;
+    }
+    
+    .timeago-words {
+        display: inline-block;
+    }
+    
+    .timeago {
+        margin-top: 1em;
+        margin-bottom: -1em;
     }
 }

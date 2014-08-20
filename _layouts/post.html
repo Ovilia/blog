@@ -15,14 +15,14 @@
         <a href="http://zhangwenli.com/#hire-me" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Hire Me</a>
     </div>
     
+    <div class="timeago" title="{{ page.time | replace: '.', '-' | replace: ' ', 'T' }}+8:00">{{ page.time }}</div>
+    
     {% if page.subtitle != null %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <div class="pageTitle">{{ page.title }}</div>
     
     {% if page.series %}
         {% include series.html %}
     {% endif %}
-    
-    <div class="time">{{ page.time }}</div>
     
     <div class="tagPanel">
     {% for tag in page.tags %}
