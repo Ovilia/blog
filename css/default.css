@@ -952,7 +952,10 @@ p>a>img:hover {
     
     .timeago {
         margin-top: 1em;
-        margin-bottom: -1em;
+    }
+    
+    .timeago+.series-recent {
+        margin-top: 1em;
     }
 }
 
@@ -1013,6 +1016,5 @@ p>a>img:hover {
     
     .timeago {
         margin-top: 1em;
-        margin-bottom: -1em;
     }
 }
