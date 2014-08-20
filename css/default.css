@@ -235,7 +235,7 @@ a:visited:hover {
 
 h1>a {
     border: 0;
-    text-shadow: 1px 1px #eee;
+    text-shadow: 2px 2px #efefef, 4px 4px #ccc;
 }
 
 #ovilia-home {

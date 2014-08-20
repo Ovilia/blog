@@ -15,7 +15,13 @@
         <a href="http://zhangwenli.com/#hire-me" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Hire Me</a>
     </div>
     
-    <div class="timeago" title="{{ page.time | replace: '.', '-' | replace: ' ', 'T' }}+8:00">{{ page.time }}</div>
+    {% assign isZn = false %}
+    {% for tag in page.tags %}
+        {% if tag == '中文'%}
+            {% assign isZn = true %}
+        {% endif %}
+    {% endfor %}
+    <div class="timeago{% if isZn == true %} cn{% endif %}" title="{{ page.time | replace: '.', '-' | replace: ' ', 'T' }}+8:00">{{ page.time }}</div>
     
     {% if page.subtitle != null %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <div class="pageTitle">{{ page.title }}</div>
