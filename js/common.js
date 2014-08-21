@@ -53,7 +53,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     });
     
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
-        LazyLoad.js('/blog/js/jquery.timeago.js', function () {
+        LazyLoad.js('/blog/js/jquery.timeago.min.js', function () {
             $('.timeago').timeago().show();
         });
     }
