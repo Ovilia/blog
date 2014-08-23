@@ -1,6 +1,6 @@
 ---
 title: 变卦
-subtitle: CSS / JavaScript 《易经》64卦酷炫实现：
+subtitle: CSS / JavaScript 《易经》64卦酷炫实现
 titleImg: /img/post/2014-08-11-how-i-made-biangua-02.png
 time: 2014.08.11 18:32:00
 layout: post

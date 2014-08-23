@@ -79,7 +79,10 @@
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
                             <div class="timeago cn" title="{{ post.time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ post.time }}</div>
-                            <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h3>
+                            {% if post.series %}
+                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：{{ post.series }}</a>
+                            {% endif %}
+                            <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a></h3>
                             
                             <div class="tagPanel">
                             {% for tag in post.tags %}
@@ -111,13 +114,6 @@
                 {% include license.html %}
                 
                 {% if paginator.page == 1 %}
-                <h1>Sketches</h1>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_fb4846" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_fb4846']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work3.jpg" /></a>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_d59f8a" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_d59f8a']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work4.jpg" /></a>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_cc9e7a" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_cc9e7a']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work1.jpg" /></a>
-                <a href="http://portfolio.zhangwenli.com/post/2e5739_c8fcf9" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSketch', 'InRecent', 'http://portfolio.zhangwenli.com/post/2e5739_c8fcf9']);"><img src="/blog/img/loading.gif" data-src="/blog/img/art/work2.jpg" /></a>
-                <p>Check <a href="http://portfolio.zhangwenli.com" target="_blank">http://portfolio.zhangwenli.com</a> for more information.</p>
-                
                 <h1 id="friendTitle">Friend List</h1>
                 <p>Now, let me introduce some of my friends who (also) write excellent blogs.</p>
                 <div id="friendDiv">

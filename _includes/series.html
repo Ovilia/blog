@@ -1,14 +1,25 @@
 <blockquote class="seriesNote">
+{% if isZn %}
+    <h4>系列博文：{{ page.series }}</h4>
+{% else %}
     <h4>Series: {{ page.series }}</h4>
+{% endif %}
     
     <ul>
     {% for post in site.posts reversed %}
         {% if post.series == page.series %}
-            <li>
             {% if page.url != post.url %}
-                <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+                <li class="series-not-self"><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            {% else %}
+                <li class="series-self">
             {% endif %}
-            {{ post.title }}
+            
+            {% if isZn %}
+                {{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}
+            {% else %}
+                {% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}
+            {% endif %}
+            
             {% if page.url != post.url %}
                 </a>
             {% endif %}

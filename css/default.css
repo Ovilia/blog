@@ -1,4 +1,4 @@
-/* green: #22C3AA, light green: #AEE2D9, red: DB6968 */
+/* green: #22C3AA, light green: #AEE2D9, lightest green: EEF3F0, red: DB6968 */
 
 * {
     padding: 0px;
@@ -502,18 +502,19 @@ p>a>img:hover {
 .friend {
     width: 128px;
     height: 128px;
-    background-color: #d4e583;
+    background-color: #AEE2D9;
     border-radius: 64px;
     float: left;
     margin-right: -25px;
     margin-bottom: 20px;
+	position: relative;
+    transition-duration: 0.5s;
 }
 
 .friend:hover {
-    background-color: #fdff99;
-    transition-duration: 0.5s;
+    background-color: #EEF3F0;
     z-index: 10;
-    box-shadow: 0 0 10px 1px #70840e;
+    box-shadow: 0 0 10px 1px #AEE2D9;
 }
 
 .friend>a {
@@ -587,6 +588,14 @@ p>a>img:hover {
 
 .seriesNote {
     font-weight: bold;
+}
+
+.series-self {
+	list-style-type: circle;
+}
+
+.series-not-self {
+	list-style-type: disc;
 }
 
 .pagination {
@@ -866,8 +875,6 @@ blockquote.poem .from {
         -webkit-transform: rotate3d(0, 1, 0, -360deg);
         -ms-transform: rotate3d(0, 1, 0, -360deg);
         transform: rotate3d(0, 1, 0, -360deg);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
     }
     
     .timeago-words {

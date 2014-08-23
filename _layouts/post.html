@@ -11,8 +11,7 @@
 <div class="container page">
     <div class="simpleNav">
         <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">About</a>
-        <a href="http://zhangwenli.com/blog" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Blog</a>
-        <a href="http://zhangwenli.com/#hire-me" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Hire Me</a>
+        <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Blog</a>
     </div>
     
     {% assign isZn = false %}
@@ -43,6 +42,10 @@
     {% include license.html %}
     
     {{ content }}
+    
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
     
     {% assign tagStr = '' %}
     {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
@@ -82,9 +85,17 @@
                         {% endif %}
                         <li class="relatedPost">
                             <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRelated', window.location.pathname]);">
-                            {% if post.series %}
-                                (Series: {{ post.series }})
-                            {% endif %}{{ post.title }}
+                            {% assign isZn = false %}
+                            {% for pt in post.tags %}
+                                {% if pt == '中文' %}
+                                    {% assign isZn = true %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if isZn %}
+                                {{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}
+                            {% else %}
+                                {% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}
+                            {% endif %}
                             </a>
                         </li>
                         {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
@@ -102,9 +113,17 @@
         {% for post in site.posts limit:5 %}
             <li class="relatedPost">
                 <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', window.location.pathname]);">
-                {% if post.series %}
-                    (Series: {{ post.series }})
-                {% endif %}{{ post.title }}
+                {% assign isZn = false %}
+                {% for pt in post.tags %}
+                    {% if pt == '中文' %}
+                        {% assign isZn = true %}
+                    {% endif %}
+                {% endfor %}
+                {% if isZn %}
+                    {{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}
+                {% else %}
+                    {% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}
+                {% endif %}
                 </a>
             </li>
         {% endfor %}
