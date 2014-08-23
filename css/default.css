@@ -448,7 +448,7 @@ p>a>img:hover {
     padding: 3px 8px;
     margin-right: 5px;
     margin-bottom: 5px;
-    display: inline-block;
+    display: inline;
     color: #efefef;
     border-radius: 0.3em;
     box-shadow: 1px 1px 0 1px #ccc;
@@ -847,7 +847,7 @@ p>a>img:hover {
 }
 
 blockquote.poem {
-	margin: 0 0 0 2em;
+	margin: 0.5em 0 0.5em 2em;
 	padding: 1em 2.5em;
 	float: right;
 	line-height: 2em;
@@ -967,6 +967,8 @@ blockquote.poem .from {
     
     #mobile-nav {
         display: block;
+        margin-bottom: 1px solid #22C3AA;
+        opacity: 0.8;
     }
     
     #mobile-nav a {
@@ -1031,6 +1033,8 @@ blockquote.poem .from {
     
     #mobile-nav {
         display: block;
+        margin-bottom: 1px solid #22C3AA;
+        opacity: 0.8;
     }
     
     #mobile-nav a {
