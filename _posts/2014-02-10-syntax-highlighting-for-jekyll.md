@@ -3,7 +3,7 @@ title: Syntax Highlighting for Jekyll
 time: 2014.02.10 01:27:57
 layout: post
 tags:
-- Syntax-Highlighting
+- SyntaxHighlighting
 - GitHub
 - Setup
 - Jekyll

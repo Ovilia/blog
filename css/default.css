@@ -838,10 +838,17 @@ p>a>img:hover {
     clear: both;
 }
 
+.poem {
+	text-align: center;
+}
+
+.poem p {
+	text-indent: 0;
+}
+
 blockquote.poem {
 	margin: 0 0 0 2em;
 	padding: 1em 2.5em;
-	text-align: center;
 	float: right;
 	line-height: 2em;
 }
@@ -849,6 +856,10 @@ blockquote.poem {
 blockquote.poem .from {
 	font-size: 0.9em;
 	margin-top: 1em;
+}
+
+.post-no-indent p {
+	text-indent: 0;
 }
 
 @media screen and (min-width: 600px) {
