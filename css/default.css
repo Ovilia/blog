@@ -132,10 +132,10 @@ blockquote a, blockquote a:hover {
 
 blockquote p {
     text-indent: 0;
-    font-family: Lato, 'Times New Roman', Arial, sarif, 'FangSong';
     line-height: 1.5em;
     text-shadow: none;
-    color: #555;
+    color: #666;
+	font-size: 1em;
 }
 
 code {
@@ -827,6 +827,19 @@ p>a>img:hover {
 
 .clearfix {
     clear: both;
+}
+
+blockquote.poem {
+	margin: 0 0 0 2em;
+	padding: 1em 2.5em;
+	text-align: center;
+	float: right;
+	line-height: 2em;
+}
+
+blockquote.poem .from {
+	font-size: 0.9em;
+	margin-top: 1em;
 }
 
 @media screen and (min-width: 600px) {
