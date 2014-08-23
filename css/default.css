@@ -448,7 +448,7 @@ p>a>img:hover {
     padding: 3px 8px;
     margin-right: 5px;
     margin-bottom: 5px;
-    display: inline;
+    display: inline-block;
     color: #efefef;
     border-radius: 0.3em;
     box-shadow: 1px 1px 0 1px #ccc;
