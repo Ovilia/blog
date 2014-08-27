@@ -135,7 +135,7 @@ blockquote p {
     line-height: 1.5em;
     text-shadow: none;
     color: #666;
-	font-size: 1em;
+    font-size: 1em;
 }
 
 code {
@@ -507,7 +507,7 @@ p>a>img:hover {
     float: left;
     margin-right: -25px;
     margin-bottom: 20px;
-	position: relative;
+    position: relative;
     transition-duration: 0.5s;
 }
 
@@ -591,11 +591,11 @@ p>a>img:hover {
 }
 
 .series-self {
-	list-style-type: circle;
+    list-style-type: circle;
 }
 
 .series-not-self {
-	list-style-type: disc;
+    list-style-type: disc;
 }
 
 .pagination {
@@ -839,27 +839,47 @@ p>a>img:hover {
 }
 
 .poem {
-	text-align: center;
+    text-align: center;
 }
 
 .poem p {
-	text-indent: 0;
+    text-indent: 0;
 }
 
 blockquote.poem {
-	margin: 0.5em 0 0.5em 2em;
-	padding: 1em 2.5em;
-	float: right;
-	line-height: 2em;
+    margin: 0.5em 0 0.5em 2em;
+    padding: 1em 2.5em;
+    float: right;
+    line-height: 2em;
 }
 
 blockquote.poem .from {
-	font-size: 0.9em;
-	margin-top: 1em;
+    font-size: 0.9em;
+    margin-top: 1em;
 }
 
 .post-no-indent p {
-	text-indent: 0;
+    text-indent: 0;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    text-shadow: none;
+    color: #22C3AA;
+    background-color: #AEE2D9;
+    height: 1em;
+    text-align: center;
+    padding: 0.5em 0.75em;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+}
+
+#toTop:hover {
+    color: #efefef;
+    background-color: #DB6968;
 }
 
 @media screen and (min-width: 600px) {

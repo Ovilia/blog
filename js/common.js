@@ -39,7 +39,17 @@ function updatePageView(cnt) {
     }
 }
 
+// google fonts
+var url = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+WebFontConfig = {
+    google: { families: [ 'Lato:400,900:latin' ] }
+};
+LazyLoad.js(url);
+
 // lazy load js and css
+LazyLoad.css('/blog/css/animation.css');
+
 LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     $('h1').each(function() {
         if ($(this).children('.h1-link').length === 0) {
@@ -49,6 +59,32 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
                 $(this).attr('id', id)
                         .append(' <a class="h1-link" href="#' + id + '">#</a>');
             }
+        }
+    });
+    
+    function addAnimation(name, callback) {
+        $('#toTop').removeClass().one(
+            'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function(){
+                $('#toTop').removeClass();
+                if (callback) {
+                    callback();
+                }
+        }).addClass('animated ' + name);
+    }
+    $(window).scroll(function() {
+        var top = $(window).scrollTop();
+        if (top > 1000 && $('#toTop').data('display') !== true) {
+            console.log('show');
+            $('#toTop').data('display', true).show();
+            addAnimation('bounceIn');
+        
+        } else if (top <= 800 && $('#toTop').data('display') === true) {
+            console.log('hide');
+            $('#toTop').data('display', false);
+            addAnimation('bounceOut', function() {
+                $('#toTop').hide();
+            });
         }
     });
     
@@ -89,6 +125,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         }, 5000);
     });
 });
+
 // emoji
 LazyLoad.css('/blog/css/emojify.min.css', function () {
     LazyLoad.js('/blog/js/emojify.min.js', function () {
@@ -100,10 +137,3 @@ LazyLoad.css('/blog/css/emojify.min.css', function () {
         emojify.run();
     });
 });
-// google fonts
-var url = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-WebFontConfig = {
-    google: { families: [ 'Lato:400,900:latin' ] }
-};
-LazyLoad.js(url);
