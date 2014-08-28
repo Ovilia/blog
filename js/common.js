@@ -39,14 +39,6 @@ function updatePageView(cnt) {
     }
 }
 
-// google fonts
-var url = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-WebFontConfig = {
-    google: { families: [ 'Lato:400,900:latin' ] }
-};
-LazyLoad.js(url);
-
 LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     $('h1').each(function() {
         if ($(this).children('.h1-link').length === 0) {
@@ -96,6 +88,16 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         }, 5000);
     });
 });
+
+// google fonts
+setTimeout(function() {
+    var url = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    WebFontConfig = {
+        google: { families: [ 'Lato:300,900:latin' ] }
+    };
+    LazyLoad.js(url);
+}, 5000);
 
 // emoji
 setTimeout(function() {
