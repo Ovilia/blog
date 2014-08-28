@@ -43,4 +43,9 @@ h1>a {
   &:visited {
     color: $clr-def-lighter;
   }
+  
+  &:hover {
+    color: $clr-def-lighter;
+    background-color: $clr-contrast;
+  }
 }
