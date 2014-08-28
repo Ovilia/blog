@@ -130,3 +130,22 @@ blockquote.poem {
   float: right;
   border-bottom: none;
 }
+
+
+
+// home image
+a.home-img {
+  display: inline-block;
+  float: right;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: $clr-primary;
+  padding: 28px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  margin: 1.6em 0 0.8em 0.8em;
+  &:hover {
+    background-color: $clr-contrast;
+  }
+}

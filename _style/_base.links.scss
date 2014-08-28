@@ -48,4 +48,8 @@ h1>a {
     color: $clr-def-lighter;
     background-color: $clr-contrast;
   }
+  
+  &:visited:hover {
+    color: $clr-def-lighter;
+  }
 }
