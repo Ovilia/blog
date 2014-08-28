@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    #LICENSE
+\*------------------------------------*/
+
+.about-author {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: $ft-sz-sm;
+  border: dashed 2px $clr-light;
+  color: $clr-def;
+  border-radius: 5px;
+  background-color: $clr-license-back;
+}
+
+.license {
+  float: left;
+  div {
+    margin-bottom: 5px;
+  }
+  > a > img {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.follow-me {
+  float: right;
+  
+  .follow-me-txt {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+
+@media screen and (max-device-width: 600px) {
+  .follow-me {
+    float: none;
+  
+    .follow-me-txt {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+/*------------------------------------*\
+    #QUOTES
+\*------------------------------------*/
+
+blockquote {
+  background-color: $clr-qt-back;
+  margin: 20px 0;
+  padding: 1em 1.5em;
+  border-style: solid;
+  border-color: $clr-primary;
+  border-width: 0px 1px 0px 7px;
+  color: $clr-qt;
+  font-size: $ft-sz-qt;
+  
+  p {
+    text-indent: 0;
+    line-height: 1.5em;
+    text-shadow: none;
+    color: $clr-def;
+    font-size: $ft-sz-qt;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    text-shadow: $sd-qt-h2-6;
+  }
+  
+  em {
+    color: $clr-def-darkest;
+  }
+  
+  a {
+    text-shadow: none;
+  }
+  
+  &.relatedPosts {
+    font-size: 90%;
+  }
+}
+
+pre > code {
+  display: block;
+  padding: 20px;
+  margin: 2px 0;
+  background-color: $clr-code-back;
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: inherit;
+}
+
+code {
+  border: dashed 1px $clr-primary;
+  color: $clr-dark;
+  padding: 2px 8px;
+  margin: 5px 0;
+  font-size: 90%;
+  border-radius: 5px;
+  font-family: $ft-fm-code;
+  text-shadow: none;
+  background-color: $clr-code-back;
+  word-wrap: break-word;
+  white-space: pre;
+}
+
+h1>code {
+  color: $clr-h1;
+}
+
+h2>code, h3>code, h4>code, h5>code, h6>code {
+  color: $clr-h2-6;
+}

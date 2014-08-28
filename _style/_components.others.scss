@@ -1,0 +1,132 @@
+/*------------------------------------*\
+    #OTHERS
+\*------------------------------------*/
+
+// post
+.post-block {
+  margin: 1.5em 0;
+  border-top: 1px dashed $clr-contrast;
+}
+
+.recentPost {
+  float: right;
+}
+
+
+
+// friends
+#friendDiv {
+  margin-bottom: 200px;
+  
+  .friend {
+    width: 128px;
+    height: 128px;
+    background-color: $clr-light;
+    border-radius: 64px;
+    float: left;
+    margin-right: -25px;
+    margin-bottom: 20px;
+    position: relative;
+    transition-duration: 0.5s;
+    
+    &:hover {
+      background-color: $clr-lighter;
+      z-index: 10;
+      box-shadow: 0 0 10px 1px $clr-light;
+    }
+    
+    > a {
+      border: none;
+      &:hover {
+          background: transparent;
+      }
+    }
+  }
+}
+
+
+
+// comments
+#disqus_thread {
+  margin-top: 50px;
+}
+
+
+
+// gist
+.gist .gist-file .gist-data {
+  background-color: $clr-lighter !important;
+  font-size: 14px !important;
+}
+
+.gist-file {
+  border: dashed 2px $clr-light !important;
+  border-radius: 5px !important;
+}
+
+.line-numbers {
+  border-right: dashed 2px $clr-lighter !important;
+}
+
+.gist-data {
+  border-bottom: dashed 2px $clr-contrast !important;
+}
+
+
+
+// demo
+.demo-area {
+  border: dashed 2px #AEE2D9;
+  color: #70840e;
+  border-radius: 5px;
+  background-color: #eef3f0;
+  display: block;
+  position: relative;
+}
+
+
+
+// page view
+#page-view {
+  margin-top: 10px;
+}
+
+
+
+// fix float height
+.clearfix {
+  clear: both;
+}
+
+
+
+// poem post style
+.poem {
+  text-align: center;
+  p {
+    text-indent: 0;
+  }
+}
+
+blockquote.poem {
+  margin: 0.5em 0 0.5em 2em;
+  padding: 1em 2.5em;
+  float: right;
+  line-height: 2em;
+  .from {
+    font-size: 0.9em;
+    margin-top: 1em;
+  }
+}
+
+.post-no-indent p {
+  text-indent: 0;
+}
+
+
+
+// rss related
+.title-img {
+  float: right;
+  border-bottom: none;
+}

@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    #TAG
+\*------------------------------------*/
+
+.tagPanel {
+  margin: 5px 0 -5px 0;
+  
+  a {
+    background-color: transparent;
+    border: none;
+    
+    .tag {
+      background-color: $clr-primary;
+      padding: 3px 8px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      color: $clr-def-lighter;
+      border-radius: 0.3em;
+      box-shadow: 1px 1px 0 1px $clr-def-light;
+      font-family: $ft-fm-code;
+      font-size: $ft-sz-smer;
+      text-shadow: none;
+      @include transition-duration(0.5s);
+      
+      &:hover {
+        background-color: $clr-contrast;
+      }
+    }
+  }
+}
+
+.tag-posts {
+  display: none;
+}
+
+.olderNewer {
+  font-size: 1.2em;
+  margin-bottom: 100px;
+  > div {
+    margin: 10px 0;
+  }
+}
+
+.pagination {
+  text-align: center;
+  font-size: 1em;
+}
+
+.page_number {
+  margin: 0 10px;
+}
+
+.pagination a {
+  background-color: $clr-link;
+  padding: 3px 8px;
+  color: $clr-def-lighter;
+  border-radius: 0.3em;
+  text-shadow: 1px 1px $clr-def;
+  box-shadow: 1px 1px 0 1px $clr-def-light;
+  
+  &:hover {
+    background-color: $clr-link--hover;
+  }
+}
+
+.allPostLink {
+  margin-left: 10px;
+}

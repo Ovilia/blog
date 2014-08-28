@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $clr-primary;
+  color: $clr-def-darker;
+  overflow-x: hidden;
+  font-family: $ft-fm-def;
+  font-weight: $ft-wt-def;
+  font-size: $ft-sz-def;
+}
+
+::selection {
+  background-color: $clr-lighter;
+}
+
+#contentDiv {
+  padding: 20px 12%;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 50px 80px;
+}
+

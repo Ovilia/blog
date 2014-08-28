@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    #HEAD
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $ft-fm-def;
+  font-weight: $ft-wt-bold;
+  margin: 0.5em 0;
+  text-shadow: $sd-h2-6;
+}
+
+h1 {
+  padding: 1em 80px 0 80px;
+  font-size: $ft-sz-h1;
+  margin: 1.5em -80px 0.5em -80px;
+  text-shadow: $sd-h1;
+  border-top: 3px dashed $clr-primary;
+  color: $clr-primary;
+  position: relative;
+  overflow: visible;
+  
+  &:before {
+    background-image: url('../img/scissors.png');
+    background-repeat: no-repeat;
+    display: block;
+    content: attr(data-title);
+    position: absolute;
+    top: -16px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .h1-link {
+    display: none;
+    transition: 0.5s;
+  }
+  
+  &:hover .h1-link {
+    display: inline;
+  }
+}
+
+h2 {
+  font-size: $ft-sz-h2;
+}
+
+h3 {
+  font-size: $ft-sz-h3;
+}
+
+h4 {
+  font-size: $ft-sz-h4;
+}
+
+h5 {
+  font-size: $ft-sz-h5;
+}
+
+h6 {
+  font-size: $ft-sz-h6;
+}
+
+.pageTitle {
+  font-family: $ft-fm-def;
+  font-size: $ft-sz-page-title;
+  font-weight: $ft-wt-bold;
+  margin-bottom: 0.25em;
+  text-shadow: $sd-page-title;
+  border-bottom-style: double;
+  border-bottom-color: #22C3AA;
+  border-bottom-width: 8px;
+  padding-bottom: 0.2em;
+  color: #666;
+}
+
+.subtitle {
+  color: $clr-primary;
+}

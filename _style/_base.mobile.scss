@@ -1,0 +1,222 @@
+/*------------------------------------*\
+    #MOBILE
+\*------------------------------------*/
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $clr-light;
+  display: none;
+  z-index: 100;
+  
+  a {
+    padding: 0.5em 0.8em;
+    border-right: 1px dashed $clr-primary;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .timeago {
+    text-align: center;
+    color: #efefef;
+    float: left;
+    margin-left: -120px;
+    margin-top: 16px;
+    width: 80px;
+    height: 80px;
+    background-color: $clr-def;
+    box-sizing: border-box;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 16px;
+    @include transition-duration(1s);
+    display: none;
+    cursor: default;
+    
+    &:hover {
+      background-color: $clr-link;
+      @include rotateY(-360deg);
+    }
+    
+    .timeago-words {
+      margin-top: 8px;
+      font-size: 14px;
+      
+      .timeago-figure {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    width: 100%;
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  
+  #contentDiv {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    padding: 40px 2%;
+    width: 96%;
+  }
+  .pageBack {
+    display: none;
+  }
+  .pageTitle {
+    width: 100%;
+    font-size: 2.2em;
+  }
+  .page {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  blockquote {
+    padding: 15px;
+    border-width: 0px 1px 0px 3px;
+  }
+  
+  h1 {
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+    padding: 10px 2.5%;
+    box-shadow: none;
+  }
+  h2, h3, h4 {
+    text-shadow: 1px 1px $clr-def-lighter, 2px 2px $clr-light;
+  }
+  
+  .simpleNav {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  .series-recent {
+    max-width: 100%;
+    float: none;
+    display: block;
+    
+    &:visited {
+      max-width: 100%;
+      float: none;
+      display: block;
+    }
+  }
+  
+  .book-img {
+    width: 120px;
+  }
+  
+  #mobile-nav {
+    display: block;
+    margin-bottom: 1px solid $clr-primary;
+    opacity: 0.8;
+    a {
+      display: inline-block;
+    }
+  }
+  .simpleNav {
+    display: none;
+  }
+  
+  .timeago-words {
+    display: inline-block;
+  }
+  .timeago {
+    margin-top: 1em;
+    
+    + .series-recent {
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #contentDiv {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    padding: 40px 4%;
+    width: 92%;
+  }
+  .pageBack {
+    display: none;
+  }
+  .page {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  blockquote {
+    padding: 15px;
+    border-width: 0px 1px 0px 3px;
+  }
+  h1 {
+    margin-left: -4.5%;
+    margin-right: -4.5%;
+    padding: 10px 4.5%;
+    box-shadow: none;
+  }
+  
+  .series-recent {
+    max-width: 100%;
+    float: none;
+    display: block;
+    
+    &:hover {
+      max-width: 100%;
+      float: none;
+      display: block;
+    }
+  }
+  
+  #mobile-nav {
+    display: block;
+    margin-bottom: 1px solid $clr-primary;
+    opacity: 0.8;
+    
+    a {
+      display: inline-block;
+    }
+  }
+  .simpleNav {
+    display: none;
+  }
+  
+  .timeago-words {
+    display: inline-block;
+  }
+  .timeago {
+    margin-top: 1em;
+  }
+}

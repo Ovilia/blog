@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    #TEXT
+\*------------------------------------*/
+
+hr {
+  background-color: $clr-primary;
+  height: 3px;
+  border: 0;
+  margin: 10px 0;
+}
+
+.no-indent {
+  text-indent: 0;
+}
+
+.deleted {
+  text-decoration: line-through;
+  color: $clr-def;
+  font-style: italic;
+}
+
+.updated {
+  color: $clr-contrast-dark;
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul, ol {
+  margin: 10px 2em;
+  font-family: $ft-fm-def;
+}
+
+li {
+  line-height: 150%;
+  p {
+    text-indent: 0;
+  }
+}
+
+em {
+  font-style: normal;
+  color: #157A6B;
+}

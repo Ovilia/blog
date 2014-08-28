@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    #IMAGES
+\*------------------------------------*/
+
+img {
+  max-width: 100%;
+  
+  &.post-title-img {
+    display: block;
+    margin: 0.5em auto;
+  }
+  
+  &.book-img {
+    width: 200px;
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  &.post-img {
+    width: 300px;
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  
+  &.inline-img {
+    float: right;
+    margin: 0 0 0.8em 0.8em;
+  }
+  
+  &.home-img {
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $clr-primary;
+    padding: 28px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin: 1.6em 0 0.8em 0.8em;
+    &:hover {
+      background-color: $clr-contrast;
+    }
+  }
+}
+
+p {
+  > {
+    img, a > img {
+      border: dashed;
+      border-width: 2px;
+      border-color: $clr-lighter;
+      max-width: 100%;
+      text-decoration: none;
+      @include transition-duration(0.5s);
+    }
+  }
+  
+  img.single-img {
+    margin-left: -2em;
+  }
+  
+  > a > img:hover {
+    border-color: $clr-light;
+  }
+}
