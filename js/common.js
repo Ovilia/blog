@@ -89,16 +89,6 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     });
 });
 
-// google fonts
-setTimeout(function() {
-    var url = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    WebFontConfig = {
-        google: { families: [ 'Lato:300,900:latin' ] }
-    };
-    LazyLoad.js(url);
-}, 5000);
-
 // emoji
 setTimeout(function() {
     LazyLoad.css('/blog/css/emojify.min.css', function () {
