@@ -39,6 +39,8 @@ function updatePageView(cnt) {
     }
 }
 
+LazyLoad.css('/blog/css/font.css');
+
 LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     $('h1').each(function() {
         if ($(this).children('.h1-link').length === 0) {
