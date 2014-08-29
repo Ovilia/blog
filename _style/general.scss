@@ -20,7 +20,6 @@
  * Quotes...............Blockquotes and code styles.
  * Paragraph............Paragraph styles.
  * Text.................Links, lists and other styles.
- * Mobile...............Styles on mobile devices.
  *
  * COMPONENTS
  * Tao..................Tao element styles in Home page.
@@ -32,6 +31,9 @@
  * Series...............Series styles.
  * Footer...............The main page footer.
  * Others...............Specific id and class styles.
+ *
+ * DEVICE
+ * Mobile...............Styles on mobile devices.
  */
 
 
@@ -71,7 +73,6 @@
 @import "base.quotes";
 @import "base.paragraph";
 @import "base.text";
-@import "base.mobile";
 
 
 
@@ -90,3 +91,12 @@
 @import "components.series";
 @import "components.footer";
 @import "components.others";
+
+
+
+
+
+/*------------------------------------*\
+    #DEVICE
+\*------------------------------------*/
+@import "device.mobile";
