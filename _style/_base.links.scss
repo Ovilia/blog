@@ -2,6 +2,8 @@
     #LINKS
 \*------------------------------------*/
 
+$btn-h: 2.2em;
+
 a {
   color: $clr-link;
   font-weight: bold;
@@ -32,12 +34,14 @@ h1>a {
 }
 
 .button {
-  padding: 8px 20px;
-  border-radius: 16px;
+  padding: 0.4em 1em;
+  height: $btn-h;
+  border-radius: $btn-h / 2;
   background-color: $clr-primary;
   color: $clr-def-lighter;
   text-shadow: none;
   margin-right: 0.5em;
+  margin-bottom: 0.5em;
   display: inline-block;
   
   &:visited {

@@ -30,9 +30,7 @@
     {% endif %}
     
     <div class="tagPanel">
-    {% for tag in page.tags %}
-        <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>
-    {% endfor %}
+    {% for tag in page.tags %}<a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>{% endfor %}
     </div>
     
     <div id="page-view"></div>

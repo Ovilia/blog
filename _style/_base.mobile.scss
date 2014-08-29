@@ -20,7 +20,7 @@
 @media screen and (min-width: 600px) {
   .timeago {
     text-align: center;
-    color: #efefef;
+    color: $clr-def-lighter;
     float: left;
     margin-left: -120px;
     margin-top: 16px;
@@ -46,6 +46,7 @@
       
       .timeago-figure {
         font-size: 35px;
+        font-weight: $ft-wt-bold;
       }
     }
   }
@@ -82,9 +83,6 @@
     padding: 40px 2%;
     width: 96%;
   }
-  .pageBack {
-    display: none;
-  }
   .pageTitle {
     width: 100%;
     font-size: 2.2em;
@@ -92,6 +90,9 @@
   .page {
     margin-top: 0;
     margin-bottom: 40px;
+  }
+  .pageBack {
+    display: none !important;
   }
   
   blockquote {
@@ -170,7 +171,7 @@
     width: 92%;
   }
   .pageBack {
-    display: none;
+    display: none !important;
   }
   .page {
     margin-top: 0;
