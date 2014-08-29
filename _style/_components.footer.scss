@@ -2,6 +2,36 @@
     #FOOTER
 \*------------------------------------*/
 
+// footer nav
+#footer-nav {
+  text-align: center;
+  color: $clr-def-lightest;
+  margin: 1em 0;
+  
+  a {
+    text-shadow: none;
+    color: $clr-def-lightest;
+    margin: 0 0.8em;
+    
+    &:visited {
+      color: $clr-def-lightest;
+    }
+    
+    &:hover {
+      color: $clr-link;
+    }
+    
+    &:hover:visited {
+      color: $clr-link;
+    }
+    
+    &:active {
+      color: $clr-link--active;
+    }
+  }
+}
+
+// footer black decoration area
 #footerDiv {
   width: 100%;
   
@@ -18,7 +48,7 @@
     
     #footer {
       margin: 0 auto;
-      padding: 20px 0;
+      padding: 40px 0;
     }
   }
 }

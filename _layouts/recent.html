@@ -6,9 +6,14 @@
             <div class="rotRight rotTop pageBack"></div>
             <div class="container page">
                 <div class="simpleNav">
-                    <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecent', window.location.pathname]);">Home</a>
+                    <a href="http://zhangwenli.com/#ovilia-home" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecent', window.location.pathname]);">Home</a>
                 </div>
-                <div class="pageTitle">和光同尘<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'AllRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
+                <h2 class="subtitle">Blog of Wenli Zhang</h2>
+                <div class="pageTitle">Ovilia 允执厥中<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'AllRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
+                <a class="button" href="http://zhangwenli.com/#ovilia-home">About Me</a>
+                <a class="button" href="http://zhangwenli.com/#projects">Projects</a>
+                <a class="button" href="http://zhangwenli.com/#hire-me">Hire Me</a>
+                <a class="button" href="mailto:me@zhangwenli.com" target="_blank">Email Me</a>
                 
                 {% if paginator.page == 1 %}
                 <p>I'm <em>Wenli Zhang</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#comments">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecentAboutMe', window.location.pathname]);">Home Page</a> to know more about me.</p>
