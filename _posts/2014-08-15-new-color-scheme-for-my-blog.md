@@ -1,5 +1,5 @@
 ---
-title: New Color Scheme for my Blog
+title: New Color Scheme for My Blog
 time: 2014.08.15 22:39:00
 layout: post
 tags:

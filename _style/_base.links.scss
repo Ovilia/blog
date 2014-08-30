@@ -2,8 +2,6 @@
     #LINKS
 \*------------------------------------*/
 
-$btn-h: 2.2em;
-
 a {
   color: $clr-link;
   font-weight: bold;
@@ -35,13 +33,13 @@ h1>a {
 
 .button {
   padding: 0.4em 1em;
-  height: $btn-h;
-  border-radius: $btn-h / 2;
+  border-radius: 1.2em;
   background-color: $clr-primary;
   color: $clr-def-lighter;
   text-shadow: none;
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
+  text-indent: 0;
+  font-size: $ft-sz-sm;
+  margin: 0 0.2em 0.5em 0.2em;
   display: inline-block;
   
   &:visited {
@@ -55,5 +53,14 @@ h1>a {
   
   &:visited:hover {
     color: $clr-def-lighter;
+  }
+  
+  &.def {
+    background-color: $clr-def;
+    
+    &:hover {
+      color: $clr-def-lighter;
+      background-color: $clr-contrast;
+    }
   }
 }

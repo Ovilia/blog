@@ -1,0 +1,21 @@
+{% include header.html %}
+
+<title>{% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }} - Wenli Zhang</title>
+
+<div class="rotLeft rotTop pageBack"></div>
+<div class="rotRight rotTop pageBack"></div>
+<div class="container page">
+    {% if page.subtitle != null %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+    <div class="pageTitle">{{ page.title }}</div>
+    
+    {% if page.postClass != null %}<div class="{{ page.postClass }}">{% endif %}
+    {{ content }}
+    {% if page.postClass != null %}</div>{% endif %}
+
+    {% include comment.html %}
+
+</div>
+<div class="rotLeft rotBottom pageBack"></div>
+<div class="rotRight rotBottom pageBack"></div>
+
+{% include footer.html %}

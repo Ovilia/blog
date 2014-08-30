@@ -5,16 +5,16 @@
 // footer nav
 #footer-nav {
   text-align: center;
-  color: $clr-def-lightest;
+  color: $clr-def-lighter;
   margin: 1em 0;
   
   a {
     text-shadow: none;
-    color: $clr-def-lightest;
+    color: $clr-def-lighter;
     margin: 0 0.8em;
     
     &:visited {
-      color: $clr-def-lightest;
+      color: $clr-def-lighter;
     }
     
     &:hover {
