@@ -102,4 +102,4 @@ Google Fonts hosted locally. <a href="https://github.com/Ovilia/blog/tree/26ad91
 
 ### 2014-08-30
 
-Meta and change log enabled. <a href="" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InLog', 'blog']);">(View History)</a>
+Meta and change log enabled. <a href="https://github.com/Ovilia/blog/tree/7c98820153e3c9a4a0bed2167da902c1a3d6ea44" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InLog', 'blog']);">(View History)</a>
