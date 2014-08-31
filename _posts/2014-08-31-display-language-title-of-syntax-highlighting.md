@@ -1,6 +1,6 @@
 ---
 title: Display Language Title of Syntax Highlighting
-time: 2014.08.31 15:54:00
+time: 2014.08.31 17:36:00
 layout: post
 tags:
 - SyntaxHighlighting
@@ -125,3 +125,5 @@ pre > code:before {
 {% endhighlight %}
 
 You may need to change some CSS style to make it looks prettier, but hopefully, that shouldn't be too difficult for you. :yum:
+
+Check my related <a href="https://github.com/Ovilia/blog/commit/dce98cf6ed5d089998f86feadebbad8ba2e825d9" target="_blank">commit on GitHub</a> to see the style changes.
