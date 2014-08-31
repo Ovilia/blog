@@ -2,6 +2,8 @@
     #QUOTES
 \*------------------------------------*/
 
+$code-pd: 16px;
+
 blockquote {
   background-color: $clr-qt-back;
   margin: 20px 0;
@@ -39,12 +41,25 @@ blockquote {
 
 pre > code {
   display: block;
-  padding: 20px;
+  padding: 0 $code-pd $code-pd $code-pd;
   margin: 2px 0;
   background-color: $clr-code-back;
   overflow-x: auto;
   word-wrap: normal;
   white-space: inherit;
+  
+  &:before {
+    content: attr(class);
+    display: block;
+    background-color: $clr-primary;
+    margin: 0 (-$code-pd) $code-pd (-$code-pd);
+    padding: ($code-pd / 2) $code-pd;
+    color: $clr-def-lighter;
+    font-family: $ft-fm-def;
+    font-size: $ft-sz-def;
+    text-shadow: none;
+    border-bottom: dashed 1px $clr-primary;
+  }
 }
 
 code {

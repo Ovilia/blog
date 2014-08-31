@@ -76,10 +76,9 @@
 
 // demo
 .demo-area {
-  border: dashed 2px #AEE2D9;
-  color: #70840e;
+  border: dashed 1px $clr-primary;
   border-radius: 5px;
-  background-color: #eef3f0;
+  background-color: $clr-lighter;
   display: block;
   position: relative;
 }
