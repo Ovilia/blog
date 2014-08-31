@@ -49,7 +49,7 @@ pre > code {
   white-space: inherit;
   
   &:before {
-    content: attr(class);
+    content: attr(data-lang) "code";
     display: block;
     background-color: $clr-primary;
     margin: 0 (-$code-pd) $code-pd (-$code-pd);
