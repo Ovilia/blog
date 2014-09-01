@@ -10,7 +10,7 @@ tags:
 excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！
 ---
 
-Extension汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！
+汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！
 
 <p class="no-indent"><a class="button" href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank">到Chrome Web Store下载</a></p>
 
