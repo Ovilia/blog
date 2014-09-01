@@ -11,7 +11,7 @@ tags:
 excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好用的电子书分享平台，在这里能找到很多适合在 Kindle 上阅读的 *mobi* 等格式的电子书。至于*豆瓣读书*就更不用介绍啦~ 本插件能够让你在豆瓣读书页面点击一个按钮，直接传送到 ReadFree 页面。
 ---
 
-<a class="no-indent button" href="https://chrome.google.com/webstore/detail/%E8%B1%86%E7%93%A3readfree%E4%BC%A0%E9%80%81%E9%97%A8/nnijmebffagpcclklhofdkjeimnmckjp?hl=en&gl=CN" target="_blank">到Chrome Web Store下载</a>
+<p class="no-indent"><a class="button" href="https://chrome.google.com/webstore/detail/%E8%B1%86%E7%93%A3readfree%E4%BC%A0%E9%80%81%E9%97%A8/nnijmebffagpcclklhofdkjeimnmckjp?hl=en&gl=CN" target="_blank">到Chrome Web Store下载</a></p>
 
 # 功能简介
 
@@ -21,7 +21,7 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 
 # 截图
 
-![](https://github.com/Ovilia/readfree-chrome-extension/raw/master/res/screenshot.png)
+![](https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot.png)
 
 # 下载地址
 
