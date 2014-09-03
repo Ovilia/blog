@@ -90,7 +90,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         }, 5000);
     });
 
-    if (jQueryCallBack) {
+    if (typeof jQueryCallBack === 'function') {
         jQueryCallBack();
     }
 });
