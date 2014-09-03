@@ -8,12 +8,12 @@ tags:
 - ChromeExtension
 - 汉典
 - ReleaseNote
-excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！
+excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！<a href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到Chrome Web Store下载</a>
 ---
 
 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！
 
-<p class="no-indent"><a class="button" href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank">到Chrome Web Store下载</a></p>
+<p class="no-indent"><a class="button" href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到Chrome Web Store下载</a></p>
 
 # 核心功能
 
@@ -26,7 +26,7 @@ excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询�
 
 # 下载地址
 
-## <a href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank">到Chrome Web Store下载</a>
+## <a href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到Chrome Web Store下载</a>
 
 ## 如果你不能访问Chrome Web Store
 
