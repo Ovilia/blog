@@ -4,6 +4,7 @@ subtitle: Chrome 插件之
 time: 2014.09.01 21:16:49
 layout: post
 tags:
+- 中文
 - ChromeExtension
 - 汉典
 - ReleaseNote

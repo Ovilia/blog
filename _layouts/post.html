@@ -13,7 +13,7 @@
         <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">About</a>
         <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Blog</a>
     </div>
-    
+
     {% assign isZn = false %}
     {% for tag in page.tags %}
         {% if tag == '中文'%}
@@ -21,32 +21,32 @@
         {% endif %}
     {% endfor %}
     <div class="timeago{% if isZn == true %} cn{% endif %}" title="{{ page.time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ page.time }}</div>
-    
+
     {% if page.subtitle != null %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <div class="pageTitle">{{ page.title }}</div>
-    
+
     {% if page.series %}
         {% include series.html %}
     {% endif %}
-    
+
     <div class="tagPanel">
-    {% for tag in page.tags %}<a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>{% endfor %}
+    {% for tag in page.tags %}<a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>{% endfor %}
     </div>
-    
+
     <div id="page-view"></div>
-    
+
     {% if page.titleImg != null %}<img class="post-title-img" src="{{ site.url }}{{ page.titleImg }}" />{% endif %}
-    
+
     {% include license.html %}
-    
+
     {% if page.postClass != null %}<div class="{{ page.postClass }}">{% endif %}
     {{ content }}
     {% if page.postClass != null %}</div>{% endif %}
-    
+
     {% if page.series %}
         {% include series.html %}
     {% endif %}
-    
+
     {% assign tagStr = '' %}
     {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
     {% if page.shortUrl != null %}
@@ -71,7 +71,7 @@
         <a class="social-share-element social-weibo" href="http://v.t.sina.com.cn/share/share.php?title=来看看+%40Ovilia允执厥中+的博文吧：{% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}&url={{ url }}{% if page.titleImg != null %}&pic={{ page.titleImg }}{% endif %}" target="_blank" title="Share this post on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Share', 'Weibo', window.location.pathname]);"></a>
         <a class="social-share-element social-douban" href="http://shuo.douban.com/!service/share?href={{ site.url }}{{ page.url }}&name={% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}{% if page.titleImg != null %}&image={{ page.titleImg }}{% endif %}" target="_blank" title="Share this post on Dounban" onclick="_gaq.push(['_trackEvent', 'Share', 'Douban', window.location.pathname]);"></a>
     </div>
-   
+
     <blockquote class="relatedPosts">
         {% assign hasSimilar = '' %}
         {% for post in site.posts %}
@@ -109,7 +109,7 @@
         {% if hasSimilar.size > 0 %}
             </ul>
         {% endif %}
-        
+
         <h4>Recent Posts</h4>
         <ul>
         {% for post in site.posts limit:5 %}
@@ -132,7 +132,7 @@
         </ul>
         <a class="button" href="{{ site.url }}/all" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InPost', window.location.pathname]);">View All Posts</a></p>
     </blockquote>
-    
+
     {% include comment.html %}
 </div>
 <div class="rotLeft rotBottom pageBack"></div>

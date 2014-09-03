@@ -15,15 +15,15 @@
                 <a class="button" href="http://zhangwenli.com/#hire-me">Hire Me</a>
                 <a class="button" href="mailto:me@zhangwenli.com" target="_blank">Email Me</a>
                 <a class="button" href="{{ site.url }}/meta" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSiteMap', 'InRecent', 'recentBtn']);">Site Map</a>
-                
+
                 {% if paginator.page == 1 %}
                 <p>I'm <em>Wenli Zhang</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#comments">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecentAboutMe', window.location.pathname]);">Home Page</a> to know more about me.</p>
                 {% endif %}
 
 {% include license.html %}
-                            
+
                 <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
-                
+
                 {% assign postCnt = '.' %}
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
@@ -33,7 +33,7 @@
                                 {% assign isZn = true %}
                             {% endif %}
                         {% endfor %}
-                        
+
                         {% if isZn == false %}
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
@@ -42,19 +42,19 @@
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
                             {% endif %}
                             <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
-                            
+
                             <div class="tagPanel">
                             {% for tag in post.tags %}
-                                <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', '{{ postCnt.size }}thPost']);"><div class="tag">{{ tag }}</div></a>
+                                <a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', '{{ postCnt.size }}thPost']);"><div class="tag">{{ tag }}</div></a>
                             {% endfor%}
                             </div>
-                            
+
                             {{ post.excerpt | markdownify }}
                         </div>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
-                
+
                 <div class="pagination">
                 {% if paginator.previous_page %}
                     {% if paginator.previous_page == 1 %}
@@ -69,9 +69,9 @@
                 {% endif %}
                 <a href="{{ site.url }}/all/" class="allPostLink" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InRecentNav', window.location.pathname]);">All Posts</a>
                 </div>
-            
+
                 <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
-                
+
                 {% for post in paginator.posts %}
                     {% if post.hide != true %}
                         {% assign isZn = false %}
@@ -80,7 +80,7 @@
                                 {% assign isZn = true %}
                             {% endif %}
                         {% endfor %}
-                        
+
                         {% if isZn == true %}
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
@@ -89,19 +89,19 @@
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：{{ post.series }}</a>
                             {% endif %}
                             <h3><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a></h3>
-                            
+
                             <div class="tagPanel">
                             {% for tag in post.tags %}
-                                <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', '{{ postCnt.size }}thPost']);"><div class="tag">{{ tag }}</div></a>
+                                <a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', '{{ postCnt.size }}thPost']);"><div class="tag">{{ tag }}</div></a>
                             {% endfor%}
                             </div>
-                            
+
                             {{ post.excerpt | markdownify }}
                         </div>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
-                
+
                 <div class="pagination">
                 {% if paginator.previous_page %}
                     {% if paginator.previous_page == 1 %}
@@ -116,9 +116,9 @@
                 {% endif %}
                 <a href="{{ site.url }}/all/" class="allPostLink" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InRecentNav', window.location.pathname]);">所有博文</a>
                 </div>
-                
+
                 {% include license.html %}
-                
+
                 {% if paginator.page == 1 %}
                 <h1 id="friendTitle">Friend List</h1>
                 <p>Now, let me introduce some of my friends who (also) write excellent blogs.</p>
@@ -151,7 +151,7 @@
                 </div>
 
                 {% include comment.html %}
-                
+
                 {% endif %}
             </div>
             <div class="rotLeft rotBottom pageBack"></div>

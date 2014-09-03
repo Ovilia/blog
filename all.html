@@ -23,7 +23,8 @@ layout: default
             {% assign isZn = true %}
         {% endif %}
     {% endfor %}
-<div class="post-block">
+<div class="post-block{% for tag in post.tags %} tag-{{ tag }}{% endfor%}">
+    <div class="timeago" title="{{ post.time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ post.time }}</div>
     {% if post.series %}
     <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">
     {% if isZn %}
@@ -40,11 +41,60 @@ layout: default
         {% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}
     {% endif %}
     </a></h2>
-    <span class="timeAll">{{ post.time }}</span>
     <div class="tagPanel">
     {% for tag in post.tags %}
-        <a href="{{ site.url }}/tags?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InAll', '{{ tag }}']);"><div class="tag">{{ tag }}</div></a>
+        <a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InAll', '{{ tag }}']);"><div class="tag">{{ tag }}</div></a>
     {% endfor%}
     </div>
+    {{ post.excerpt | markdownify }}
 </div>
 {% endfor %}
+
+<script type="text/javascript">
+    // function queryString is copied from
+    // http://stackoverflow.com/questions/979975/how-to-get-the-value-from-url-parameter#answer-979995
+    function queryString() {
+      // This function is anonymous, is executed immediately and
+      // the return value is assigned to QueryString!
+      var query_string = {};
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        	// If first entry with this name
+        if (typeof query_string[pair[0]] === "undefined") {
+          query_string[pair[0]] = pair[1];
+        	// If second entry with this name
+        } else if (typeof query_string[pair[0]] === "string") {
+          var arr = [ query_string[pair[0]], pair[1] ];
+          query_string[pair[0]] = arr;
+        	// If third or later entry with this name
+        } else {
+          query_string[pair[0]].push(pair[1]);
+        }
+      }
+        return query_string;
+    }
+
+    /*window.onload = function() {
+        var tag = getParameterByName('tag');
+        if (tag) {
+            if (document.getElementById('tag-' + tag)) {
+                document.getElementById('tag-' + tag).style.display = 'block';
+                document.getElementById('tagTitle').innerHTML = tag;
+            } else {
+                document.getElementById('tagTitle').innerHTML = 'Illegal Tag Query';
+            }
+        }
+    };*/
+    window.jQueryCallBack = function() {
+        var query = queryString();
+        console.log(query);
+
+        if (query.tag !== undefined) {
+            $('.pageTitle').text('Posts tagged with ' + query.tag);
+            $('h1').hide();
+            $('.post-block').not('.tag-' + query.tag).hide();
+        }
+    };
+</script>

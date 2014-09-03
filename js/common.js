@@ -52,13 +52,13 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
             }
         }
     });
-    
+
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
         LazyLoad.js('/blog/js/jquery.timeago.min.js', function () {
             $('.timeago').timeago().show();
         });
     }
-    
+
     LazyLoad.js('/blog/js/unviel.min.js', function () {
         $("img").unveil();
 
@@ -85,10 +85,14 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
                             }
                         })
                     }
-                }); 
+                });
             }
         }, 5000);
     });
+
+    if (jQueryCallBack) {
+        jQueryCallBack();
+    }
 });
 
 // emoji

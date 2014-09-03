@@ -65,11 +65,11 @@ window.onload = function() {
 
 ### 7. Add links to tags.
 
-Now, you can search tags like <a href="{{ site.url }}/tags?tag=Jekyll" target="_blank">{{ site.url }}/tags?tag=Jekyll</a> in my site.
+Now, you can search tags like `/tags?tag=Jekyll`.
 
 #Conclusion
 
-Full code is available at <a href="https://github.com/Ovilia/blog/blob/gh-pages/tags.html" target="_blank">https://github.com/Ovilia/blog/blob/gh-pages/tags.html</a>.
+Full code is available at <a href="https://github.com/Ovilia/blog/blob/63b3ea5aaf5475670930b54207d694479dd46a60/tags.html" target="_blank">GitHub</a>.
 
 This is an easy way to achieve searching tag for static Jekyll. One disadvantage is that a full list of all posts grouped by tags needs to be loaded whenever a tag is searched. This is not so good when blog posts become large enough. However, this is by far the simplest implementation I can think of.
 
