@@ -16,7 +16,9 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 
 # 功能简介
 
-<a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好用的电子书分享平台，在这里能找到很多适合在 Kindle 上阅读的 *mobi* 等格式的电子书。至于*豆瓣读书*就更不用介绍啦~
+<a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好用的电子书分享平台，在这里能找到很多适合在 Kindle 上阅读的 *mobi* 等格式的电子书。它的作者是<a href="http://guoqiao.me/" target="_blank">Guo Qiao</a>，一位非常优秀的Python大神~
+
+至于*豆瓣读书*就更不用介绍啦~
 
 本插件能够让你在豆瓣读书页面点击一个按钮，直接传送到 ReadFree 页面。
 
