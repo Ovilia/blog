@@ -1,6 +1,6 @@
 ---
 title: 豆瓣 ReadFree 传送门
-subtitle: Chrome 插件之
+subtitle: Chrome 插件
 time: 2014.09.01 20:06:49
 layout: post
 tags:
@@ -24,7 +24,7 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 
 # 截图
 
-![](https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot.png)
+<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot.png" />
 
 # 下载地址
 

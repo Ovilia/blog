@@ -1,6 +1,6 @@
 ---
 title: 汉典划词查询
-subtitle: Chrome 插件之
+subtitle: Chrome 插件
 time: 2014.09.01 21:16:49
 layout: post
 tags:
@@ -22,7 +22,7 @@ excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询�
 
 # 截图
 
-![](https://raw.githubusercontent.com/Ovilia/handian-chrome-extension/master/res/screenshoot.png)
+<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/handian-chrome-extension/master/res/screenshoot.png" />
 
 # 下载地址
 
@@ -40,7 +40,7 @@ excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询�
 
 安装后请刷新或打开新的链接使用。注意按钮为绿色的“典”字时，插件为开启状态，否则为关闭状态。
 
-![](https://raw.githubusercontent.com/Ovilia/handian-chrome-extension/master/res/screenshoot-1.png)
+<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/handian-chrome-extension/master/res/screenshoot-1.png" />
 
 # 关于作者
 
