@@ -80,9 +80,10 @@ layout: default
         var query = queryString();
 
         if (query.tag !== undefined) {
-            $('.pageTitle').text('Posts tagged with ' + decodeURI(query.tag));
+            var tag = decodeURI(query.tag);
+            $('.pageTitle').text('Posts tagged with ' + tag);
             $('h1').hide();
-            $('.post-block').not('.tag-' + query.tag).hide();
+            $('.post-block').not('.tag-' + tag).hide();
         }
     };
 </script>

@@ -5,7 +5,7 @@ function processPageView(rows) {
     $('.post-block').each(function() {
         var myPath = $(this).children('h2').children('a').attr('href');
         if (myPath) {
-            myPath = myPath.slice('http://zhangwenli.com/blog'.length);
+            myPath = myPath.slice('http://zhangwenli.com'.length);
             console.log(myPath);
             var len = rows.length;
             var cnt = 0;
