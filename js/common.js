@@ -52,7 +52,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
             $.ajax({
                 url: 'https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA',
                 dataType: 'jsonp',
-                timeout: 1000 * 5, // 5 sec
+                timeout: 1000 * 3, // 5 sec
                 success: function(data) {
                     processPageView(data.rows);
                 },
@@ -69,7 +69,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
                     })
                 }
             });
-        }, 2000);
+        }, 1000);
     });
 
     if (typeof jQueryCallBack === 'function') {
