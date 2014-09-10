@@ -8,12 +8,12 @@ tags:
 - ChromeExtension
 - 汉典
 - ReleaseNote
-excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！<a href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到Chrome Web Store下载</a>
+excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！<a href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到 Chrome Web Store 下载</a>
 ---
 
 汉典划词查询插件是能够在任何页面用汉典划词查询的工具，是文学爱好者不可或缺的利器！
 
-<p class="no-indent"><a class="button" href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到Chrome Web Store下载</a></p>
+<p class="no-indent"><a class="button" href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到 Chrome Web Store 下载</a></p>
 
 # 核心功能
 
@@ -28,13 +28,13 @@ excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询�
 
 ## <a href="https://chrome.google.com/webstore/detail/%E6%B1%89%E5%85%B8%E5%88%92%E8%AF%8D%E6%9F%A5%E8%AF%A2/pjcmbkecgompjciiingblpjhabmjonkb" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'handian', window.location.pathname]);">到Chrome Web Store下载</a>
 
-## 如果你不能访问Chrome Web Store
+## 如果你不能访问 Chrome Web Store
 
-（以下方法是仅适用于Chrome Web Store无法访问时的临时解决方法，每次打开浏览器可能都会被Chrome询问是否需要移除。）
+（以下方法是仅适用于 Chrome Web Store 无法访问时的临时解决方法，每次打开浏览器可能都会被Chrome询问是否需要移除。）
 
 1. 在<a href="https://github.com/Ovilia/handian-chrome-extension/tree/master/download">download文件夹</a>选择版本号最大的文件下载
-2. 打开Chrome，菜单->工具->扩展程序
-3. 将已下载的crx文件拖入Chrome窗口
+2. 打开 Chrome ，菜单->工具->扩展程序
+3. 将已下载的 crx 文件拖入 Chrome 窗口
 
 # 使用方法
 
@@ -50,4 +50,4 @@ excerpt: 汉典划词查询插件是能够在任何页面用汉典划词查询�
 
 # 问题反馈
 
-有问题的话，<a href="https://github.com/Ovilia/handian-chrome-extension/issues/new">报个issue</a>吧！
+有问题的话，<a href="https://github.com/Ovilia/handian-chrome-extension/issues/new">报个 issue</a> 吧！
