@@ -9,19 +9,10 @@
                     <a href="http://zhangwenli.com/#ovilia-home" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecent', window.location.pathname]);">Home</a>
                 </div>
                 <h2 class="subtitle">Blog of Wenli Zhang</h2>
-                <div class="pageTitle">Ovilia 允执厥中<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'AllRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
-                <a class="button" href="http://zhangwenli.com/#ovilia-home">About Me</a>
-                <a class="button" href="http://zhangwenli.com/#projects">Projects</a>
-                <a class="button" href="http://zhangwenli.com/#hire-me">Hire Me</a>
-                <a class="button" href="mailto:me@zhangwenli.com" target="_blank">Email Me</a>
-                <a class="button" href="{{ site.url }}/meta" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSiteMap', 'InRecent', 'recentBtn']);">Site Map</a>
-
-                {% if paginator.page == 1 %}
-                <p>I'm <em>Wenli Zhang</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#comments">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question. Check <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecentAboutMe', window.location.pathname]);">Home Page</a> to know more about me.</p>
-                {% endif %}
-
-{% include license.html %}
-
+                <div class="pageTitle">惟精惟一，允执厥中<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'AllRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></div>
+                
+                {% include aboutMe.html %}
+                
                 <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
 
                 {% assign postCnt = '.' %}

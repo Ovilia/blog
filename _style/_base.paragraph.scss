@@ -6,7 +6,10 @@ p {
   font-family: $ft-fm-def;
   font-size: $ft-sz-def;
   line-height: 1.6em;
-  margin: 0.8em 0;
-  text-indent: 2em;
+  margin: 1em 0;
   color: $clr-def-darker;
+}
+
+.cn p {
+  text-indent: 2em;
 }

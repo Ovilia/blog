@@ -6,20 +6,20 @@
     {% endif %}
 </title>
 
+
+{% assign isZn = false %}
+{% for tag in page.tags %}
+    {% if tag == '中文'%}
+        {% assign isZn = true %}
+    {% endif %}
+{% endfor %}
 <div class="rotLeft rotTop pageBack"></div>
 <div class="rotRight rotTop pageBack"></div>
-<div class="container page">
+<div class="container page{% if isZn %} cn{% endif %}">
     <div class="simpleNav">
         <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">About</a>
         <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Blog</a>
     </div>
-
-    {% assign isZn = false %}
-    {% for tag in page.tags %}
-        {% if tag == '中文'%}
-            {% assign isZn = true %}
-        {% endif %}
-    {% endfor %}
     {% assign time = page.time %}
     {% if page.update_time %}
         {% assign time = page.update_time %}
