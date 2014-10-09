@@ -20,7 +20,11 @@
             {% assign isZn = true %}
         {% endif %}
     {% endfor %}
-    <div class="timeago{% if isZn == true %} cn{% endif %}" title="{{ page.time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ page.time }}</div>
+    {% assign time = page.time %}
+    {% if page.update_time %}
+        {% assign time = page.update_time %}
+    {% endif %}
+    <div class="timeago{% if isZn == true %} cn{% endif %}" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
 
     {% if page.subtitle != null %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <div class="pageTitle">{{ page.title }}</div>
