@@ -40,11 +40,15 @@ p {
     }
   }
   
-  img.single-img {
-    margin-left: -2em;
-  }
+
   
   > a > img:hover {
     border-color: $clr-light;
+  }
+}
+
+.cn p {
+  img.single-img {
+    margin-left: -2em;
   }
 }
