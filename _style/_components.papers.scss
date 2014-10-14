@@ -4,9 +4,9 @@
 
 .page {
   background: url(../img/sketch.png);
-  background-color: #eee;
+  background-color: $clr-page-back;
   margin-top: 5em;
-  box-shadow: 0px 0px 10px 2px #666;
+  box-shadow: 0px 0px 10px 2px $clr-def;
   min-height: 200px;
 }
 
