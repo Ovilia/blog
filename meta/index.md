@@ -15,7 +15,7 @@ Hope you enjoy the journey here!
 
 Hi, there!
 
-I'm Wenli Zhang, a Web Front-end designer and developer with experience of more than 3 years. I write <a href="{{ site.url }}" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InSiteMap', 'btn']);">blog</a> and <a href="https://twitter.com/OviliaZhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToLink', 'InSiteMap', 'Twitter']);">tweet (@OviliaZhang)</a> about Web Front-end topics. I'm also an active committer at <a href="https://github.com/Ovilia" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGihHub', 'InSiteMap', 'aboutMe']);">GitHub (@Ovilia)</a> .
+I'm Wenli Zhang, a Web Front-end designer and developer with experience of more than 3 years. I write <a href="{{ site.url }}" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InSiteMap', 'btn']);">blog</a> and <a href="https://twitter.com/OviliaZhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToLink', 'InSiteMap', 'Twitter']);">tweet (@OviliaZhang)</a> about Web Front-end topics. I'm also an active committer at <a href="https://github.com/Ovilia" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InSiteMap', 'aboutMe']);">GitHub (@Ovilia)</a> .
 
 Find more information about me at:
 
