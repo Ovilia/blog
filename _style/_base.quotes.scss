@@ -39,6 +39,10 @@ blockquote {
   }
 }
 
+.cn blockquote p {
+  text-indent: 0;
+}
+
 pre > code {
   display: block;
   padding: 0 $code-pd $code-pd $code-pd;
