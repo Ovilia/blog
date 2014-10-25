@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="wen-hao.svg"
+   inkscape:export-filename="D:\cloud\Resource\vector\wu-jiang.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.51580307"
+     inkscape:cx="686.49905"
+     inkscape:cy="430.00214"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-442.40777,850.01942"
+       id="guide3003" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-316.8932,149.12621"
+       id="guide3005" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-28.362183)">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m 772.18852,903.23597 c -6.006,-20.50328 -42.94907,-66.78749 -93.27317,-124.22245 l -12.0463,-80.15647 -23.9868,-10.51446 -0.998,-36.99507 c 0,0 113.28,-148.56144 116.83177,-228.74584 3.7368,-84.3607 -20.41827,-128.26537 -94.23497,-184.19338 -70.9317,-53.74215 -215.9039,-45.87218 -296.9168,7.06986 -17.6108,11.50866 -28.8442,43.86108 -28.8442,43.86108 l 34.2873,7.73432 c 1.3271,-2.23817 -52.396,50.0377 -68.7652,111.16292 -3.4531,12.89456 10.081,31.89328 10.081,31.89328 -11.939,-2.05141 -11.8936,-1.17654 -17.7607,-0.79914 -1.2664,20.75669 2.8294,29.00138 5.1625,41.35901 0,0 -19.0771,15.48589 -24.7051,31.89327 -9.0692,26.43936 16.3371,23.37769 20.8332,32.38067 4.4173,8.84481 -7.3936,11.33438 -3.7518,20.52567 3.6087,9.10796 15.2434,8.60262 15.2434,8.60262 l 0.7991,24.64116 c 0,0 -7.1251,2.54193 -8.9742,9.21797 -2.6956,9.73191 5.4101,18.37602 5.4101,18.37602 0,0 -20.2599,37.04984 3.9916,52.78247 34.9812,22.69333 26.8547,-4.47398 98.0773,51.00446 14.7082,19.2568 14.2564,71.28236 14.2564,71.28236 l -18.2125,33.85913 7.1281,67.98054 z"
+       id="path2996"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccsssccscccsssccscsccccc" />
+  </g>
+</svg>
