@@ -21,7 +21,11 @@ I wanted to buy this kind of paper or notebooks, but none of them is very ideal.
 
 # Download
 
-For those just want to download it, you may skip the following steps and just download it here. (The link will be added within a day.)
+<a href="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-9.png" target="_blank">
+    <img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-8.png" />
+</a>
+
+For those just want to download it, you may skip the following steps and just download it <a href="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-9.png" target="_blank">here</a>. 
 
 # Step-by-Step Tutorial
 
