@@ -11,7 +11,8 @@ function processPageView(rows) {
             var cnt = 0;
             for (var i = 0; i < len; ++i) {
                 var thatPath = rows[i][0];
-                var mainPath = thatPath.match(/\/(\w*)\/?/)[0];
+                var queryId = thatPath.indexOf('?');
+                var mainPath = queryId >= 0 ? thatPath.slice(0, queryId) : thatPath;
                 if (thatPath === myPath || mainPath === myPath 
                         || mainPath === myPath + 'index.html' 
                         || myPath === mainPath + 'index.html') {
