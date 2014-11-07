@@ -11,7 +11,10 @@ function processPageView(rows) {
             var cnt = 0;
             for (var i = 0; i < len; ++i) {
                 var thatPath = rows[i][0];
-                if (thatPath === myPath || thatPath.slice(0, thatPath.indexOf('?')) === myPath) {
+                var mainPath = thatPath.slice(0, thatPath.indexOf('?'));
+                if (thatPath === myPath || mainPath === myPath 
+                        || mainPath === myPath + 'index.html' 
+                        || myPath === mainPath + 'index.html') {
                     cnt += parseInt(rows[i][1]);
                 }
             }
