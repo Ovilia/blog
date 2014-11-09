@@ -107,3 +107,7 @@ Meta and change log enabled. <a href="https://github.com/Ovilia/blog/tree/7c9882
 ### 2014-10-09
 
 Notes enabled. <a href="https://github.com/Ovilia/blog/tree/36c6ac0f7e680d567039915f4d274f5e1058db5b" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InLog', 'blog']);">(View History)</a>
+
+### 2014-10-26
+
+<a href="http://zhangwenli.com/cv" target="_blank">CV</a> went public! <a href="https://github.com/Ovilia/cv/tree/feb71ee5ec0213365cb6f4e006eded00e46fbe12" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InLog', 'cv']);">(View History)</a>

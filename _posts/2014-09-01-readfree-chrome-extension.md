@@ -27,6 +27,12 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 
 <img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot.png" />
 
+<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-1.png" />
+
+<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-2.png" />
+
+<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-3.png" />
+
 # 下载地址
 
 ## <a href="https://chrome.google.com/webstore/detail/%E8%B1%86%E7%93%A3readfree%E4%BC%A0%E9%80%81%E9%97%A8/nnijmebffagpcclklhofdkjeimnmckjp?hl=en&gl=CN" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToChromeStore', 'readfree', window.location.pathname]);">到 Chrome Web Store 下载</a>
