@@ -2,6 +2,7 @@
 title: 豆瓣 ReadFree 传送门
 subtitle: Chrome 插件
 time: 2014.09.01 20:06:49
+update_time: 2014.11.09 13:12:00
 layout: post
 tags:
 - 中文
@@ -51,6 +52,12 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 本插件的作者是一个前端设计师（其实真实身份是程旭媛），可以在以下地方找到她：
 
 {% include follow.html %}
+
+# 更新日志
+
+## v1.3.1 2014.11.09
+
+- 重大更新！只要 ReadFree 上存在，豆瓣阅读的所有页面都能看到啦！
 
 # 问题反馈
 
