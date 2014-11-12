@@ -111,3 +111,7 @@ Notes enabled. <a href="https://github.com/Ovilia/blog/tree/36c6ac0f7e680d567039
 ### 2014-10-26
 
 <a href="http://zhangwenli.com/cv" target="_blank">CV</a> went public! <a href="https://github.com/Ovilia/cv/tree/feb71ee5ec0213365cb6f4e006eded00e46fbe12" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InLog', 'cv']);">(View History)</a>
+
+### 2014-11-12
+
+You may <a href="{{ site.url }}/tip" target=_blank">tip me</a> now!
