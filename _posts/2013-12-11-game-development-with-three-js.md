@@ -4,7 +4,7 @@ time: 2013.12.11 20:24:00
 layout: post
 hide: true
 tags:
-- Three.js
+- ThreeJs
 - JavaScript
 - Packt
 excerpt: Game Development with Three.js is a book I reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.
