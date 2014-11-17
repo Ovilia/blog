@@ -21,7 +21,9 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 我主要是负责前端设计和开发，不过 ssxx 在设计方面也给了很多不错的建议~
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-10.jpg" />
+<img id="yooyo-base-img" class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-10.jpg" />
+
+<img id="yooyo-qr-img" class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-11.jpg" style="display: none" />
 
 从左到右分别是：ssxx、wj、佳佳、我。
 
@@ -84,3 +86,18 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 所以，除了运气之外，没能获奖的主要原因可能就是 idea 本身听上去并不算非常酷炫。不过，这一点并不会打击到我们，因为大部分火了的应用也没有多让人惊奇的 idea，关键的第一步还是把产品的每一环做到极致。
 
 所以，我们会继续做好这个项目，也感谢上海纽约大学举办的这次编程马拉松给了我们一个起步的动力和展示的平台。毕竟，真正的马拉松，现在才真正开始！
+
+<script type="text/javascript">
+function jQueryCallBack() {
+    $('#yooyo-base-img').hover(function() {
+        $(this).hide();
+        $('#yooyo-qr-img').show();
+        console.log('in');
+    });
+    $('#yooyo-qr-img').hover(null, function() {
+        $(this).hide();
+        $('#yooyo-base-img').show();
+        console.log('out');
+    })
+}
+</script>
