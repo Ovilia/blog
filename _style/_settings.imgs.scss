@@ -2,7 +2,7 @@
     #IMAGES
 \*------------------------------------*/
 
-img {
+img, video {
   max-width: 100%;
   
   &.post-title-img {
@@ -39,16 +39,16 @@ p {
       @include transition-duration(0.5s);
     }
   }
-  
 
-  
+
+
   > a > img:hover {
     border-color: $clr-light;
   }
 }
 
 .cn p {
-  img.single-img {
+  .single-img {
     margin-left: -2em;
   }
 }
