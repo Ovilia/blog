@@ -11,13 +11,13 @@ img, video {
   }
   
   &.book-img {
-    width: 200px;
+    max-width: 200px;
     float: right;
     margin: 0 0 1em 1em;
   }
 
   &.post-img {
-    width: 300px;
+    max-width: 300px;
     float: right;
     margin: 0 0 1em 1em;
   }
