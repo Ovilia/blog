@@ -13,7 +13,7 @@ excerpt: 这个周末参加了在上海纽约大学举办的<a href="http://www.
 
 # 团队成员
 
-我们的组长是<a href="http://jiajunw.com/" target="_blank">佳佳</a>，也是本次活动的发起人，擅长 Python 等后台开发。
+我们的组长是<a href="http://jiajunw.com/" target="_blank">王佳骏</a>，也是本次活动的发起人，擅长 Python 等后台开发。
 
 ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团队带来 90% 的贡献——超级宇宙无敌 PPT！ :scream:
 
@@ -25,7 +25,7 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 <img id="yooyo-qr-img" class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-11.jpg" style="display: none" />
 
-从左到右分别是：ssxx、wj、佳佳、我。<a href="javascript:;" class="button" onclick="showQr()" id="show-qr-btn">查看微信二维码</a>
+从左到右分别是：ssxx、wj、王佳骏、我。<a href="javascript:;" class="button" onclick="showQr()" id="show-qr-btn">查看微信二维码</a>
 
 # 作品展示
 
@@ -63,13 +63,13 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 周六早上六点我醒了，然后就睡不着了，大概是太紧张了！ :joy:
 
-九点半的时候，我们组的佳佳和 wj 都失联了，其实 wj 的失联还在意料之中，佳佳给我的印象可是很靠谱的啊……于是，我们组当时的阵容就是一个做 PPT 的和一个做前端的！ :stuck_out_tongue:
+九点半的时候，我们组的王佳骏和 wj 都失联了，其实 wj 的失联还在意料之中，王佳骏给我的印象可是很靠谱的啊……于是，我们组当时的阵容就是一个做 PPT 的和一个做前端的！ :stuck_out_tongue:
 
-后来实在联系不上 wj，我们就放弃了。找了个同学去敲佳佳的门，终于联系上他，原来手机没电睡过头了！ :sleeping:
+后来实在联系不上 wj，我们就放弃了。找了个同学去敲王佳骏的门，终于联系上他，原来手机没电睡过头了！ :sleeping:
 
 ## 赛时
 
-每个小组有一个桌子，但是摆上四台电脑后，空间就所剩无几了。ssxx 还非常霸气地带上了 24 寸显示屏（展示的时候派上大用场啦！震惊全场~~~ :dizzy_face: ），以至于我们的照片都上了 HackShanghai 的 Facebook。可惜当时 ssxx 走开了一会儿……图为我和佳佳。
+每个小组有一个桌子，但是摆上四台电脑后，空间就所剩无几了。ssxx 还非常霸气地带上了 24 寸显示屏（展示的时候派上大用场啦！震惊全场~~~ :dizzy_face: ），以至于我们的照片都上了 HackShanghai 的 Facebook。可惜当时 ssxx 走开了一会儿……图为我和王佳骏。
 
 <img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-02.png" />
 
