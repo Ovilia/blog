@@ -21,6 +21,10 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 我主要是负责前端设计和开发，不过 ssxx 在设计方面也给了很多不错的建议~
 
+<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-10.jpg" />
+
+从左到右分别是：ssxx、wj、佳佳、我。
+
 # 作品展示
 
 <img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-09.png" />
