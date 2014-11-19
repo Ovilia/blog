@@ -2,7 +2,7 @@
 title: 豆瓣 ReadFree 传送门
 subtitle: Chrome 插件
 time: 2014.09.01 20:06:49
-update_time: 2014.11.09 13:12:00
+update_time: 2014.11.19 22:10:29
 layout: post
 tags:
 - 中文
@@ -18,6 +18,8 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 # 功能简介
 
 <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好用的电子书分享平台，在这里能找到很多适合在 Kindle 上阅读的 *mobi* 等格式的电子书。它的作者是<a href="http://guoqiao.me/" target="_blank">Guo Qiao</a>，一位非常优秀的 Python 大神~
+
+ReadFree 需要用豆瓣账号登录，普通账号可以每天免费下载 6 本书。
 
 至于*豆瓣读书*就更不用介绍啦~
 
@@ -61,9 +63,17 @@ excerpt: <a href="http://readfree.me/" target="_blank">*ReadFree*</a> 是超好�
 
 # 更新日志
 
-## v1.3.1 2014.11.09
+## v1.3.1
+
+2014.11.09
 
 - 重大更新！只要 ReadFree 上存在，豆瓣阅读的所有页面都能看到啦！
+
+## v1.3.2
+
+2014.11.19
+
+- 豆瓣读书豆瓣猜在删除某本书后仍可以重新查看 ReadFree 链接
 
 # 问题反馈
 
