@@ -26,6 +26,11 @@ img, video {
     float: right;
     margin: 0 0 0.8em 0.8em;
   }
+  
+  &.tip-book {
+    width: 80px;
+    height: 110px;
+  }
 }
 
 p {
