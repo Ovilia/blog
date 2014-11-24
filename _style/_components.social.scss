@@ -78,7 +78,7 @@
   display: inline-block;
   border-bottom: none;
   &:hover {
-    background-color: #DB6968;
+    background-color: $clr-contrast;
     border-radius: 50%;
   }
 }
