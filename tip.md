@@ -31,7 +31,6 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 
 <p class="no-indent">
 <a href="http://book.douban.com/subject/4151117/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/4151117/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s4386238.jpg" /></a>
-<a href="http://book.douban.com/subject/25878880/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25878880/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27273610.jpg" /></a>
 <a href="http://book.douban.com/subject/25878913/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25878913/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27300113.jpg" /></a>
 <a href="http://book.douban.com/subject/5431185/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5431185/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s6266644.jpg" /></a>
 <a href="http://book.douban.com/subject/25872094/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25872094/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27265741.jpg" /></a>
@@ -45,6 +44,7 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 <a href="{{ site.url }}/2014/11/24/html-and-css-design-and-build-websites/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InTip', '{{ site.url }}/2014/11/24/html-and-css-design-and-build-websites/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s4663406.jpg" /></a>
 <a href="http://book.douban.com/subject/1147347/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1147347/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s1112394.jpg" /></a>
 <a href="http://book.douban.com/subject/21338365/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/21338365/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s24951890.jpg" /></a>
+<a href="http://book.douban.com/subject/25878880/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25878880/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27273610.jpg" /></a>
 </p>
 
-感谢 CSF、CY、LSY 的慷慨解囊，我会写出更棒的作品！
+感谢 CSF、CY、LSY、ZYX 的慷慨解囊，我会写出更棒的作品！
