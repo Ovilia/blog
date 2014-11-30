@@ -35,6 +35,8 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 <a href="http://book.douban.com/subject/5431185/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5431185/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s6266644.jpg" /></a>
 <a href="http://book.douban.com/subject/25872094/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25872094/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27265741.jpg" /></a>
 <a href="http://book.douban.com/subject/1950154/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1950154/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s3369499.jpg" /></a>
+<a href="http://book.douban.com/subject/25755879/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25755879/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27110230.jpg" /></a>
+<a href="http://book.douban.com/subject/1045119/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1045119/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s6861782.jpg" /></a>
 </p>
 
 ## 已打赏的书
