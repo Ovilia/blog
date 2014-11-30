@@ -7,7 +7,7 @@ tags:
 - 中文
 - 书评
 - 阅读
-series: 送 Wenli 一本书，让她写出更棒的作品！
+series: 送 Wenli 一本书，让她写出更棒的作品
 excerpt: 很意外在公布了<a href="http://zhangwenli.com/blog/tip/" target="_blank">送 Wenli 一本书，让她写出更棒的作品</a>之后不到五分钟就有人送了我这本<a href="http://book.douban.com/subject/21338365/" target="_blank">《HTML & CSS设计与构建网站》</a>。感谢这位我不认识的 CSF 童鞋~
 ---
 
