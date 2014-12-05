@@ -30,7 +30,7 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 在<a href="http://book.douban.com/doulist/17651217/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'DouList']);">豆瓣读书</a>页面查看。
 
 <p class="no-indent">
-<a href="http://book.douban.com/subject/4151117/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/4151117/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s4386238.jpg" /></a>
+<a href="http://book.douban.com/subject/3227478/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/3227478/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s3281386.jpg" /></a>
 <a href="http://book.douban.com/subject/25878913/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25878913/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27300113.jpg" /></a>
 <a href="http://book.douban.com/subject/5431185/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5431185/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s6266644.jpg" /></a>
 <a href="http://book.douban.com/subject/25872094/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25872094/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27265741.jpg" /></a>
