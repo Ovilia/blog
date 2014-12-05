@@ -2,7 +2,7 @@
     #IMAGES
 \*------------------------------------*/
 
-img {
+img, video {
   max-width: 100%;
   
   &.post-title-img {
@@ -11,13 +11,13 @@ img {
   }
   
   &.book-img {
-    width: 200px;
+    max-width: 200px;
     float: right;
     margin: 0 0 1em 1em;
   }
 
   &.post-img {
-    width: 300px;
+    max-width: 300px;
     float: right;
     margin: 0 0 1em 1em;
   }
@@ -25,6 +25,11 @@ img {
   &.inline-img {
     float: right;
     margin: 0 0 0.8em 0.8em;
+  }
+  
+  &.tip-book {
+    width: 80px;
+    height: 110px;
   }
 }
 
@@ -39,16 +44,16 @@ p {
       @include transition-duration(0.5s);
     }
   }
-  
 
-  
+
+
   > a > img:hover {
     border-color: $clr-light;
   }
 }
 
 .cn p {
-  img.single-img {
+  .single-img {
     margin-left: -2em;
   }
 }

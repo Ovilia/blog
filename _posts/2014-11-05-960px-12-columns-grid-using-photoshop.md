@@ -7,6 +7,7 @@ tags:
 - Design
 - Grid
 excerpt: In this post, we are going to introduce how to make a Grid with 12 columns on an A4 paper, which can be later printed and for sketching Website prototype.
+series: How I made ...
 ---
 
 > #### What You Will Learn In This Post

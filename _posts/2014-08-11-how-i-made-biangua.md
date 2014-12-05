@@ -11,6 +11,7 @@ tags:
 - Project
 shortUrl: http://goo.gl/8p81lL
 excerpt: 本文是对<a href="http://zhangwenli.com/biangua" target="_blank">“变卦”网页</a>的详细说明。《易经》64卦，每卦由6爻组成，2的6次方就是64。仅一爻的由阳变阴，由阴变阳，就可以让整个卦象发生根本的改变。“<a href="http://zhangwenli.com/biangua" target="_blank">变卦</a>”，让每一爻的变化尽收眼底。
+series: How I made ...
 ---
 
 > #### 关于本文

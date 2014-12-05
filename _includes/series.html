@@ -6,6 +6,9 @@
 {% endif %}
     
     <ul>
+    {% if page.series == '送 Wenli 一本书，让她写出更棒的作品' %}
+        <li class="series-not-self"><a href="{{ site.url }}/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InSeries', window.location.pathname]);">送 Wenli 一本书，让她写出更棒的作品！</a></li>
+    {% endif %}
     {% for post in site.posts reversed %}
         {% if post.series == page.series %}
             {% if page.url != post.url %}
