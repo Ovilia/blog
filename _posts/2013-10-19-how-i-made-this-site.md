@@ -149,13 +149,13 @@ $(window).mousemove(function(e) {
 
 1) PhotoShop a paper-like image.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/sketch.jpg" />
+<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/sketch.png" />
 
 2) Set the background of this post to be this image.
 
 {% highlight css %}
 .page {
-    background: url(../image/sketch.jpg);
+    background: url(../image/sketch.png);
     background-color: #eee;
 }
 {% endhighlight %}
@@ -164,7 +164,7 @@ $(window).mousemove(function(e) {
 
 {% highlight css %}
 .page {
-    background: url(../image/sketch.jpg);
+    background: url(../image/sketch.png);
     background-color: #eee;
     box-shadow: 0px 0px 10px 5px #666;
 }
@@ -178,7 +178,7 @@ $(window).mousemove(function(e) {
 .pageBack {
     width: 100%;
     height: 200px;
-    background: url(../image/sketch.jpg);
+    background: url(../image/sketch.png);
     background-color: #eee;
     z-index: -10;
     position: relative;
