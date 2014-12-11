@@ -6,7 +6,6 @@ function processPageView(rows) {
         var myPath = $(this).children('h2').children('a').attr('href');
         if (myPath) {
             myPath = myPath.slice('http://zhangwenli.com'.length);
-            console.log(myPath);
             var len = rows.length;
             var cnt = 0;
             for (var i = 0; i < len; ++i) {
