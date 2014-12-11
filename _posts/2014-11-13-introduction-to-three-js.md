@@ -23,7 +23,7 @@ excerpt: <a href="http://www.ituring.com.cn/book/1272" target="_blank">《Three.
 
 ## 豆瓣阅读
 
-从 2014 年 12 月起，在豆瓣阅读也能看到本书啦！传送门：<a href="http://read.douban.com/ebook/7412854/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToLink', 'ThreeJsDouban', 'introduction-to-three-js']);">http://read.douban.com/ebook/7412854/</a>
+从 2014 年 12 月起，在豆瓣阅读也能看到本书啦！传送门： <a href="http://read.douban.com/ebook/7412854/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToLink', 'ThreeJsDouban', 'introduction-to-three-js']);">http://read.douban.com/ebook/7412854/</a>
 
 ## 图灵社区
 
