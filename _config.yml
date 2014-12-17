@@ -7,7 +7,7 @@ timezone: Asia/Shanghai
 
 paginate: 20
 
-pygments: true
+highlighter: pygments
 
 markdown: rdiscount
 permalink: pretty
