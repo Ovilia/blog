@@ -19,4 +19,4 @@ excerpt: 今年还是会给大家寄自己画的圣诞贺卡~ 点进来看看去
 
 下图为去年画的最高水平，完全是业余水平，见谅见谅哈哈~
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="http://imglf1.ph.126.net/JKfkMtDNGCAX5LTtOwSNzg==/6599280884539974715.jpg" />
+<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="http://ww3.sinaimg.cn/bmiddle/6048cbcejw1ebron8k9rrj20hs0c5whl.jpg" />
