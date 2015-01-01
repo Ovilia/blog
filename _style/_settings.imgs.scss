@@ -31,6 +31,11 @@ img, video {
     width: 80px;
     height: 110px;
   }
+
+  &.single-img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 p {
@@ -49,11 +54,5 @@ p {
 
   > a > img:hover {
     border-color: $clr-light;
-  }
-}
-
-.cn p {
-  .single-img {
-    margin-left: -2em;
   }
 }

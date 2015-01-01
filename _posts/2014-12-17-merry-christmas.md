@@ -3,6 +3,7 @@ title: 自制圣诞明信片
 subtitle: 想要的赶紧来！
 time: 2014.12.17 15:57:00
 layout: post
+hide: true
 tags:
 - 中文
 - 手绘
