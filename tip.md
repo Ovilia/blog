@@ -31,10 +31,8 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 
 <p class="no-indent">
 <a href="http://book.douban.com/subject/3227478/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/3227478/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s3281386.jpg" /></a>
-<a href="http://book.douban.com/subject/5431185/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5431185/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s6266644.jpg" /></a>
 <a href="http://book.douban.com/subject/1950154/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1950154/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s3369499.jpg" /></a>
-<a href="http://book.douban.com/subject/25755879/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25755879/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27110230.jpg" /></a>
-<a href="http://book.douban.com/subject/1045119/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1045119/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s6861782.jpg" /></a>
+<a href="http://book.douban.com/subject/10518014/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/10518014/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s8866458.jpg" /></a>
 </p>
 
 ## 已打赏的书
@@ -45,6 +43,8 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 <a href="{{ site.url }}/2014/11/24/html-and-css-design-and-build-websites/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InTip', '{{ site.url }}/2014/11/24/html-and-css-design-and-build-websites/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s4663406.jpg" /></a>
 <a href="http://book.douban.com/subject/25878880/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25878880/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s27273610.jpg" /></a>
 <a href="http://book.douban.com/subject/20471302/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/20471302/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/spic/s24522948.jpg" /></a>
+<a href="http://book.douban.com/subject/5431185/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5431185/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s6266644.jpg" /></a>
+<a href="http://book.douban.com/subject/25755879/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25755879/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27110230.jpg" /></a>
 </p>
 
-感谢 CSF、CY、LSY、ZYX、ZJJ 的慷慨解囊，我会写出更棒的作品！
+感谢 CSF、CY、LSY、ZYX、ZJJ、Cain 的慷慨解囊，我会写出更棒的作品！
