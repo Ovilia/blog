@@ -23,6 +23,9 @@
     </head>
     
     <body>
+
+        {% include music.html %}
+
         <div id="mobile-nav">
             <a href="{{ site.url }}" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InNavMobile', window.location.pathname]);">Blog</a><a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InNavMobile', window.location.pathname]);">About Me</a>
         </div>

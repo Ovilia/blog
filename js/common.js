@@ -1,3 +1,7 @@
+function toggleMusicPanel() {
+    $('#music-control').toggleClass('on');
+}
+
 function processPageView(rows) {
     if (rows === undefined) {
         return;
