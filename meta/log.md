@@ -115,3 +115,9 @@ Notes enabled. <a href="https://github.com/Ovilia/blog/tree/36c6ac0f7e680d567039
 ### 2014-11-12
 
 You may <a href="{{ site.url }}/tip" target=_blank">tip me</a> now!
+
+# 2015
+
+### 2015-01-29
+
+Listen to my favorite music here! <a href="https://github.com/Ovilia/blog/tree/f81e72a82e97a339d12f889e069d170b83687418" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToGitHub', 'InLog', 'blog']);">(View History)</a>
