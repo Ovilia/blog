@@ -6,6 +6,7 @@ hide: true
 tags:
 - Thoughts
 - WebDesign
+- 计划
 excerpt: Front-end techniques that I plan to learn in 2014.
 ---
 
