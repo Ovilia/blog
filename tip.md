@@ -31,9 +31,12 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 
 在<a href="http://book.douban.com/doulist/17651217/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'DouList']);">豆瓣读书</a>页面查看。
 
+## 待打赏的书
+
 <p class="no-indent">
-<a href="http://book.douban.com/subject/1025989/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1025989/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s10048618.jpg" title="中国佛学源流略讲" alt="中国佛学源流略讲" /></a>
-<a href="http://book.douban.com/subject/19977091/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/19977091/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s24410295.jpg" title="国学知识大全" alt="国学知识大全" /></a>
+<a href="http://book.douban.com/subject/4124716/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/4124716/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/lpic/s4062475.jpg" title="汉字书法之美" alt="汉字书法之美" /></a>
+<a href="http://book.douban.com/subject/5500884/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5500884/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/lpic/s24425053.jpg" title="哲学百科" alt="哲学百科" /></a>
+<a href="http://book.douban.com/subject/11532776/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/11532776/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/lpic/s11182448.jpg" title="《明儒学案》选讲" alt="《明儒学案》选讲" /></a>
 </p>
 
 ## 已打赏的书
@@ -47,6 +50,8 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 <a href="http://book.douban.com/subject/5431185/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5431185/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/spic/s6266644.jpg" /></a>
 <a href="http://book.douban.com/subject/25755879/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/25755879/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27110230.jpg" /></a>
 <a href="http://book.douban.com/subject/10518014/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/10518014/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s8866458.jpg" /></a>
+<a href="http://book.douban.com/subject/1025989/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/1025989/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s10048618.jpg" title="中国佛学源流略讲" alt="中国佛学源流略讲" /></a>
+<a href="http://book.douban.com/subject/19977091/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/19977091/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s24410295.jpg" title="国学知识大全" alt="国学知识大全" /></a>
 </p>
 
-感谢 CSF、CY、LSY、ZYX、ZJJ、Cain、柳亓安 的慷慨解囊，我会写出更棒的作品！
+感谢 CSF、CY、LSY、ZYX、ZJJ、Cain、柳亓安、HJY、WHJ 的慷慨解囊，我会写出更棒的作品！
