@@ -1,4 +1,5 @@
-<h1>Comments</h1>
+{% if page.no_comment == null %}
+<h1>Comments{{page.no_comment}}</h1>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     setTimeout(function() {
@@ -12,3 +13,4 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endif %}
