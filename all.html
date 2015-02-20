@@ -13,6 +13,7 @@ layout: default
 
 {% assign lastMonth = '' %}
 {% for post in site.posts %}
+{% if post.hide != true %}
     {% capture month %}{{ post.time | date: "%Y-%m "}}{% endcapture %}
     {% if lastMonth != month %}
     <h1>{{ month }}</h1>
@@ -50,6 +51,7 @@ layout: default
     </div>
     {{ post.excerpt | markdownify }}
 </div>
+{% endif %}
 {% endfor %}
 
 <script type="text/javascript">
