@@ -4,6 +4,7 @@ time: 2013.11.02 14:39:00
 layout: post
 tags:
 - JavaScript
+series: JavaScript Language Feature
 excerpt: How JavaScript <code>Array.prototype.sort</code> behaviors and what you should be careful with when you use it.
 ---
 

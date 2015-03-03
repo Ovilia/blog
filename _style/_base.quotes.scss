@@ -27,7 +27,11 @@ blockquote {
   }
   
   em {
-    color: $clr-def-darkest;
+    color: $clr-def-darker;
+  }
+
+  a em {
+    @extend a;
   }
   
   a {
