@@ -1,5 +1,5 @@
 ---
-title: Delete as in JavaScript
+title: Delete As In JavaScript
 time: 2015.03.03 20:16:04
 layout: post
 tags:
