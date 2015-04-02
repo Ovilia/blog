@@ -27,7 +27,7 @@ excerpt: 2015 年 3 月参加并通过了阿里巴巴和百度的前端面试，
 
 半年前<a href="{{ site.url }}/2014/11/17/hack-shanghai/" target="_blank">参加黑客马拉松</a>，觉得好玩就做了个<a href="http://zhangwenli.com/cv/cn.html" target="_blank">在线版的简历</a>，<a href="http://www.zhihu.com/question/23150301/answer/32496711" target="_blank">在知乎上安利了一下</a>后，竟然小火了一把，至今已获得了超过 16000 次浏览。这次准备简历的时候，简单更新了一下在线版的简历，然后用 PhotoShop 做了一页打印版的简历。之前也有考虑用 Word 做好再导出成 PDF，但是 Mac 下的 Word 实在用起来太捉急了，对齐微调什么的搞得我抓狂了，最终还是折中一下用了 PhotoShop 做，缺点就是导出的 PDF 没有超链接了，实在有点遗憾。效果如下：
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="2015-04-01-2015-front-end-engineer-interview-1.png" />
+<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-04-01-2015-front-end-engineer-interview-1.png" />
 
 这里就不教大家怎么做这样的简历了，因为对基本没什么 PhotoShop 经验的同学来说，做这样的一份简历实在是太费工夫了，不如找个简单大气的模板，把时间花在擅长的地方吧！
 
@@ -177,11 +177,11 @@ GitHub 和 RSS
 
 （问题来源：简历中之前的实习经历）
 
-略
+（略）
 
 ### 对 `jWebAudio` 进一步的问题
 
-略
+（略）
 
 ### `Three.js` 的书是自己写的还是翻译的？
 
@@ -269,6 +269,7 @@ for(var j = 0; j < 4; j++) {
 > <a href="http://hsj69106.blog.51cto.com/1017401/325922">http://hsj69106.blog.51cto.com/1017401/325922</a>
 
 ### 如何加快页面加载速度？
+
 减少 HTTP 访问次数、CDN、minify、服务器增加缓存、CSS 放前面 JS 放后面、图片压缩、CSS Sprite（我之前一直以为是 Spirit :joy: ）等。
 
 ### 为什么要减少 HTTP 访问次数？
