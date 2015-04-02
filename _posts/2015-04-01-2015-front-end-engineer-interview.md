@@ -2,6 +2,7 @@
 title: 2015 暑期实习生面试经历
 subtitle: 阿里巴巴、百度前端工程师
 time: 2015.04.01 19:44:04
+update_time: 2015.04.03 02:14:21
 layout: post
 tags:
 - 中文
@@ -11,7 +12,7 @@ tags:
 excerpt: 2015 年 3 月参加并通过了阿里巴巴和百度的前端面试，前后历时三周，最后选择了阿里无线事业部作为暑假实习，但是也很向往 EFE 的 echarts 哦！有机会一定去体验下~ 这篇博客一来为自己作记录，二来希望给需要的人一些经验。
 ---
 
-2015 年 3 月参加并通过了阿里巴巴和百度的前端面试，前后历时三周，最后选择了阿里无线事业部作为暑假实习，但是也很向往 EFE 的 echarts 哦！有机会一定去体验下~ 这篇博客一来为自己作记录，二来希望给需要的人一些经验。
+2015 年 3 月参加并通过了阿里巴巴和百度的前端面试，前后历时三周，最后选择了阿里无线事业部作为暑假实习，但是也很向往 EFE 的 echarts 哦！有机会一定去体验下~ 这篇博客一来为自己作记录，二来希望给需要的人一些经验。如果有觉得我又说着说着吹捧起自己来了，千万别觉得我很骄傲~ 其实是因为我一直都会给自己积极的心理暗示哦！
 
 # 准备工作
 
@@ -320,4 +321,290 @@ HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过�
 
 # 百度
 
-（百度 EFE 面试经历还没整理出来，今天太晚了，回头再补咯~）
+大概是从一个月前发布了在线简历开始吧，百度 EFE 前端团队经理 <a href="http://weibo.com/forain">祖明</a> 在微博上邀请我过去“聊聊”。我想多准备准备再过去就一直拖着，天地良心真不是暗渡阿里仓的缓兵之计啊~ 然后祖明特别逗，经常在我完全不相关的微博下面留言“来我们这实习吧来我们这实习吧”~ :astonished:
+
+拖着拖着阿里那边都差不多了，我想再不去就有把百度当备胎的嫌疑了，那这误会就实在解释不清了……之所以选择暑假去阿里，主要是因为这是最后一个有长段完整时间可以去外地的，开学之后要想去杭州实在是不大现实。最后想想反正再准备也没法一秒钟变大神了，还是赶紧去吧！
+
+祖明说要给我安排最厉害的大神给我面试，本来只当恭维之词，结果真的把我虐惨了……
+
+## 第一轮
+
+> 时间：2015.3.20
+
+> 电话技术面试
+
+### 描述最具有代表性的项目
+
+<a href="http://zhangwenli.com/biangua" target="_blank">变卦</a>（技术、艺术、创意的结合）
+
+### “变卦”实现代码方面的提问
+
+（略）
+
+### jWebAudio 实现方面的提问
+
+（略）
+
+### 除了简历中的项目，还有什么项目经验？
+
+本科研究课题是景深模糊渲染，使用 WebGL Three.js 着色器实现。
+
+### 是不是对可视化比较感兴趣？
+
+（表达了对 <a href="http://echarts.baidu.com" target="_blank">echarts</a> 的兴趣~）
+
+### 从浏览器输入 URL 到页面渲染发生了什么事？
+
+1. 浏览器接收用户输入
+2. 解析域名对应 IP，发送到服务器（被打断：谁解析 IP？答：DNS。）
+3. 向服务器请求网页
+4. 服务器返回网页请求
+5. 浏览器把得到的网页数据从字节流变成一个个 token
+6. 生成 DOM tree
+7. 渲染页面
+8. 同时异步加载网页中 CSS、JavaScript 等外部资源
+
+> 这部分我是照记忆中<a href="http://book.douban.com/subject/25910556/" target="_blank">《WebKit技术内幕》</a>的回答的，不过可能记不太清楚了，书在家里，回头再核查一下。另外，网上看到<a href="http://fex.baidu.com/blog/2014/05/what-happen/" target="_blank">颗粒度非常细的回答</a>，表示不明觉厉！
+
+### 如何验证上述 CSS、JavaScript 是异步加载的？
+
+打开 console 看 network？
+
+> 我现在想想，面试官大概是想说，我前面说的“同时异步加载网页中 CSS、JavaScript 等外部资源”是错的。
+
+### 在 network 中看到很多 JavaScript 是并行发的，但是这就叫异步加载吗？
+
+不能，在默认情况下 JavaScript 的加载是阻塞的，前面的 JavaScript 请求没有处理、执行完，是会阻塞 DOM tree 的解析等的，需要 JavaScript 代码完全获取到并执行完毕才继续。
+
+> 一个更漂亮的回答应该再扯一点 `defer`、`async` 呀！
+
+### CSS 的加载是异步的吗？表现在什么地方？
+
+是的，表现在不阻塞 DOM tree 的解析，并且可以同时加载多个 CSS 文件。
+
+> 这个答案应该是错误的。
+
+> By default CSS is treated as a render blocking resource, which means that the browser will hold rendering of any processed content until the CSSOM is constructed. Make sure to keep your CSS lean, deliver it as quickly as possible, and use media types and queries to unblock rendering.
+
+> In the previous section we saw that the critical rendering path requires that we have both the DOM and the CSSOM to construct the render tree, which creates an important performance implication: both HTML and CSS are render blocking resources.
+
+> Finally, note that “render blocking” only refers to whether the browser will have to hold the initial rendering of the page on that resource. In either case, the CSS asset is still downloaded by the browser, albeit with a lower priority for non-blocking resources.
+
+> 摘自 <a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css?hl=en" target="_blank">Render Blocking CSS</a>
+
+### JavaScript 的多个模块怎么组织？
+
+放在多个文件、文件夹中。
+
+### 如何管理多个文件？
+
+RequireJS。
+
+> 这里我应该说一句其实对 RequireJS 了解不多的，只知道个大概……否则就会像下面一样被问惨了，猜猜好像挺有把握的，但又不想给面试官留下不懂装懂的印象……纠结~
+
+### RequireJS 里 a 文件依赖于 b 文件，b 文件依赖于 c文件，加载顺序如何？
+
+先加载 c，再 b，再 a。
+
+### JavaScript 哪部分掌握得不好？
+
+闭包、作用域。
+
+> 问这个问题好机智啊~ 我诚实地暴露了自己的弱点，方便面试官可以一针见血地问啊……也是醉了…… :joy:
+
+### 函数的 `this` 各种指向
+
+在不使用 `call()`、`apply()` 的情况下，`this` 指向当前作用域，比如函数中的 `this` 指向函数，全局的 `this` 指向 `window`。
+
+<blockquote>
+<p>这个回答大错特错好么！其实面试前两天刚在<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a>里面看到相关内容，总结得非常清楚，当时只道是寻常地看了过去……<p>
+
+<h4>Invocation as a function</h4>
+
+{% highlight js %}
+function ninja(){};
+ninja();
+{% endhighlight %}
+
+<p>When invoked in this manner, the function context is the global context—the `window` object.</p>
+
+<h4>Invocation as a method</h4>
+
+{% highlight js %}
+var o = {};
+o.whatever = function(){};
+o.whatever();
+{% endhighlight %}
+
+<p>When we invoke the function as the *method* of an object, that object becomes the function context and is available within the function
+via the `this` parameter.</p>
+
+<h4>Invocation as a constructor</h4>
+
+{% highlight js %}
+function creep(){ return this; }
+new creep();
+{% endhighlight %}
+
+<p>Invoking a function as a constructor is a powerful feature of JavaScript, because when a constructor is invoked, the following special actions take place:</p>
+
+- A new empty object is created.
+- This object is passed to the constructor as the `this` parameter, and thus becomes the constructor’s function context.
+- In the absence of any explicit return value, the new object is returned as the constructor’s value.
+
+<h4>Invocation with the <code>apply()</code> and <code>call()</code> methods</h4>
+
+{% highlight js %}
+function juggle() {
+    var result = 0;
+    for (var n = 0; n < arguments.length; n++) {
+        result += arguments[n];
+    }
+    this.result = result;
+}
+
+var ninja1 = {};
+var ninja2 = {};
+juggle.apply(ninja1,[1,2,3,4]);
+juggle.call(ninja2,5,6,7,8);
+
+assert(ninja1.result === 10,"juggled via apply");
+assert(ninja2.result === 26,"juggled via call"); 
+{% endhighlight %}
+
+<p>To invoke a function using its `apply()` method, we pass two parameters to `apply()`: the object to be used as the function context, and an array of values to be used as the invocation arguments. The `call()` method is used in a similar manner, except that the arguments are passed directly in the argument list rather than as an array.</p>
+
+<p>摘自<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a></p>
+</blockquote>
+
+### 下面代码的 `this` 是什么？
+
+{% highlight js %}
+function a() {
+    function b() {
+        console.log(this);
+    }
+    b();
+}
+a();
+{% endhighlight %}
+
+`b`。
+
+> 如果仔细读了上一题的解释，很容易理解这里的答案应该是 `window`。
+
+### 简历中看到对 jQuery 比较了解，有看它的源码吗？
+
+最近有在看<a href="http://book.douban.com/subject/25823709/" target="_blank">《jQuery 技术内幕》</a>，觉得挺有帮助的，如果让我直接去读源码的话，自己没法理解这么多门道。
+
+### 以下代码两次 `alert` 的结果分别是什么？为什么？
+
+{% highlight js %}
+var a = "Hello";
+function b() {
+    alert(a);
+    var a = "World";
+    alert(a);
+}
+b();
+{% endhighlight %}
+
+`"Hello"` 和 `"World"`。因为函数内部的 `a` 不是函数，所以不会 hoist 到函数顶部，因此在第一次执行的时候没有覆盖全局的变量。如果这里是 `function a(){}`，则两次都是内部 `a` 的值。
+
+> 这里我也是有误解的，<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a>里有提到这一问题，但是我当时只是一知半解以为自己懂了。我记忆中的“变量声明形式不会 hoist”，其实是针对函数说的，是说用函数表达式形式定义的函数不会 hoist 到顶部，区别于函数语句定义会 hoist。函数内的变量都会被 hoist 到顶部，在第一次 `alert` 之前，`a` 已经是 `undefined` 了，只是这时候还没被赋值为 `"World"`。所以，两次输出的结果分别是 `undefined` 和 `"World"`。
+
+### 你理解的 Web 前端未来的发展
+
+我认为随着 HTML、CSS 等的发展，网页上能做的事情越来越丰富了，包括更酷炫的前端呈现方式、音视频的处理，更趋向于能够做 Native 应用能做的事情了，可能以后 Web 和 Native 的边界会越来越模糊。
+
+### 除了 Web Audio 还对 HTML5 哪部分比较熟？
+
+在 Intel 实习期间有接触过 WebRTC。
+
+### WebRTC 相比 Web Socket 有什么好处？
+
+WebRTC 是专为网页上的音视频沟通定制的解决方案；Web Socket 更通用一些，当然也能实现 WebRTC 的功能，但是通用的灵活度往往意味着需要写更多的代码来实现，所以如果是音视频交流的话，当然使用 WebRTC 更合适。
+
+> 我觉得我说得太泛泛了，愧对 Intel 的各位前辈了……
+
+### 盒模型
+
+（类似阿里）
+
+### CSS selector 优先级
+
+分为 `id > class > 标签 > 伪类` 四类，计算每个类别中的选择器个数，然后先比较 `id` 个数，越多越优先，在 `id` 个数相同的情况下，再比较 `class` 个数，以此类推。
+
+带有 `!important` 的优先级最高，都带 `!important` 的再以之前的顺序计算优先级。
+
+`inline > internal > external`
+
+> 面试前正好跟室友讨论过这个问题，她还写了<a href="http://bigtinabang.com/jekyll/update/2015/02/14/css-specificity.html" target="_blank">博客</a>，快戳快戳~
+
+### 一面小结
+
+这次面试是暴露我最多问题的一次！当然啦，在不被淘汰的情况下，暴露问题多也是件好事，可以发现自己的问题也是一件很有价值的事。面试官果然是大神呢~
+
+特别让我感动的一点是，面试官会在问完问题之后，给我解释所有答错的题，这也是我第一次碰到的情况呢！想到祖明最近牵头 <a href="https://github.com/baidu-ife/ife" target="_blank">IFE</a> 的事，觉得他们已经从挖掘人才走到了培养人才的一步，钦佩的同时也十分感激~
+
+## 第二轮
+
+> 时间：2015.3.26
+
+> 现场面试
+
+从学校到百度要两个多小时呢，可惜祖明不在上海啊，给我面试的是 <a href="http://weibo.com/pissang" target="_blank">pissang</a>。
+
+面试官一上来先自我介绍，让我觉得很新鲜~ 给我看了酷炫的 <a href="http://ecomfe.github.io/echarts-x/doc/example.html" target="_blank">Echarts-X</a>。
+
+然后介绍做个的各种项目同上，不再赘述。
+
+### 单输出有向无环图的顺序遍历
+
+（问到这题是因为简历中项目 jWebAudio 涉及 Web Audio 各种 node 的连接的数据结构）
+
+主要就是用栈，我懒得具体画了。
+
+### jWebAudio 的接口设计
+
+按 jQuery 插件的标准接口设计来的。
+
+### WebGL 世界坐标系、物理坐标系、窗口坐标系
+
+（我就画了画，我也不知道这应该说什么……）
+
+### 写过 shader 代码吗？
+
+有，本科的研究课题是景深模糊渲染，用到 WebGL 的 shader。（略）
+
+### 研究生阶段的研究课题
+
+自动化的“脸萌”：人脸卡通画自动生成。（略）
+
+### 现在流行的低模效果，对人脸怎么实现？
+
+先用 Active Shape Models 算法定位到人脸轮廓和关键人脸部件边缘，然后沿着轮廓找到三角形的一条边，再用一定的随机算法随机到另外一个点，依次类推。三角形的颜色用三角形区域内出现频率最多的颜色填充（当时我在想 Matlab 里有个对应的词印象很深刻的啊，怎么想都想不起来了：mode）。
+
+### 矢量处理有接触过吗？
+
+如果是指矢量编辑软件的话，我对 InkScape 掌握得非常熟（我对前端都不好意思说掌握得非常熟~）。如果是指编程方面的话，对 SVG 有一定了解。
+
+### 如何判断圆和直线相交？
+
+`(Ax + By + C) / sqrt(A * A + B * B)` 计算圆心到直线距离，然后与半径比较。
+
+### 碰撞检测的 AABB
+
+投影到两个互相垂直的直线上，如果有交点需要进一步判断是否相交，如果没有交点可以确定一定不相交。
+
+### 二面小结
+
+这个也不是典型的前端面试会问的题目，因为我之前对 echarts 表现出兴趣，面试官又是专门搞这个的，所以问了这类的题目。应该说不管是这次面试还是 echarts 需要的技术栈，我自己觉得还是挺吻合的吧~ 而且确实做这种酷炫的东西挺有意思的！只是我都没体验过正规的前端工程师干的活，所以一定得先去阿里无线体验下！
+
+# 总结
+
+经过了三个星期的面试，心理上也是挺累的。那段期间，快递电话、垃圾电话又特别多，每次接电话总是心惊胆战的。
+
+前端方面真的还有很多要学的。吾生而有涯，而知也无涯。我并没有那些听着让人肃然起敬的高大理想，有的，只是把值得做的事做到一丝不苟的态度。
+
+毕业只剩一年了，我也不知道自己会去向何方，缘分何在。但无论在哪里，希望爱思考、爱设计、爱编程、爱人生的态度永远相随。 :yum:
