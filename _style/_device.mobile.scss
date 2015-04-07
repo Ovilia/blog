@@ -188,6 +188,7 @@
     padding: 15px;
     border-width: 0px 1px 0px 3px;
   }
+
   h1 {
     margin-left: -4.5%;
     margin-right: -4.5%;
@@ -195,16 +196,14 @@
     box-shadow: none;
   }
   
-  .series-recent {
-    max-width: 100%;
+  a.series-recent {
+    text-align: center;
     float: none;
     display: block;
-    
-    &:hover {
-      max-width: 100%;
-      float: none;
-      display: block;
-    }
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
   }
   
   #mobile-nav {

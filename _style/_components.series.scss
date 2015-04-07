@@ -7,23 +7,21 @@ a.series-recent {
   background-color: $clr-link;
   padding: 8px 20px;
   display: inline-block;
-  max-width: 250px;
+  width: 200px;
   color: $clr-def-lighter;
   text-shadow: $sd-def;
   float: right;
+  text-align: right;
+  font-weight: $ft-wt-def;
   
   &:visited {
     background-color: $clr-link--visited;
-    padding: 8px 20px;
-    display: inline-block;
-    max-width: 250px;
     color: $clr-def-lighter;
-    text-shadow: $sd-def;
-    float: right;
   }
   
   &:hover {
     background-color: $clr-link--hover;
+    color: $clr-def-lighter;
   }
   
   &:active {
