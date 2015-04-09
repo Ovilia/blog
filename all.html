@@ -31,9 +31,9 @@ layout: default
     {% if post.series %}
     <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">
     {% if isZn %}
-        系列博文：{{ post.series }}
+        系列博文：<br />{{ post.series }}
     {% else %}
-        Series: {{ post.series }}
+        In Series:<br />{{ post.series }}
     {% endif %}
     </a>
     {% endif %}

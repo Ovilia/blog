@@ -57,7 +57,7 @@
 
 
 // gist
-.gist .gist-file .gist-data {
+.gist .gist-file .gist-data, .line-data {
   background-color: $clr-lighter !important;
   font-size: 14px !important;
 }
