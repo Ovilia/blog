@@ -111,6 +111,16 @@
   h2, h3, h4 {
     text-shadow: 1px 1px $clr-def-lighter, 2px 2px $clr-light;
   }
+
+  img, video {
+    &.post-img {
+      max-width: 100%;
+    }
+  
+    .book-img {
+      width: 120px;
+    }
+  }
   
   .simpleNav {
     margin-top: -20px;
@@ -126,10 +136,6 @@
       float: none;
       display: block;
     }
-  }
-  
-  .book-img {
-    width: 120px;
   }
   
   #mobile-nav {
@@ -188,23 +194,28 @@
     padding: 15px;
     border-width: 0px 1px 0px 3px;
   }
+
   h1 {
     margin-left: -4.5%;
     margin-right: -4.5%;
     padding: 30px 4.5% 0 4.5%;
     box-shadow: none;
   }
+
+  img, video {
+    &.post-img {
+      max-width: 100%;
+    }
+  }
   
-  .series-recent {
-    max-width: 100%;
+  a.series-recent {
+    text-align: center;
     float: none;
     display: block;
-    
-    &:hover {
-      max-width: 100%;
-      float: none;
-      display: block;
-    }
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
   }
   
   #mobile-nav {
@@ -216,6 +227,7 @@
       display: inline-block;
     }
   }
+  
   .simpleNav {
     display: none;
   }

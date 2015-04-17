@@ -16,7 +16,7 @@ excerpt: You can now display pageview information from your Google Analytics in 
 
 > You can now display pageview information from your Google Analytics in your blog hosted anywhere! No server required. Pure JavaScript. This post introduces how to do it with <a href="https://github.com/googleanalytics/google-analytics-super-proxy" target="_blank">Google Analytics superProxy</a>.
 
-Yeap! Another post about <a href="{{ site.url }}/tags?tag=Jekyll" target="_blank">Jekyll</a>! :smirk:
+Yeap! Another post about <a href="{{ site.url }}/all?tag=Jekyll" target="_blank">Jekyll</a>! :smirk:
 
 # How did I get there?
 

@@ -364,7 +364,20 @@ HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过�
 7. 渲染页面
 8. 同时异步加载网页中 CSS、JavaScript 等外部资源
 
-> 这部分我是照记忆中<a href="http://book.douban.com/subject/25910556/" target="_blank">《WebKit技术内幕》</a>的回答的，不过可能记不太清楚了，书在家里，回头再核查一下。另外，网上看到<a href="http://fex.baidu.com/blog/2014/05/what-happen/" target="_blank">颗粒度非常细的回答</a>，表示不明觉厉！
+> 这部分我是照记忆中<a href="http://book.douban.com/subject/25910556/" target="_blank">《WebKit技术内幕》</a>的回答的，摘录如下。
+
+> 1. 当用户输入网页 URL 的时候，WebKit 调用其资源加载器加载该 URL 对应的网页。
+> 2. 加载器依赖网络模块建立连接，发送请求并接收答复。
+> 3. WebKit 接收到各种网页或者资源的数据，其中某些资源可能是同步或异步获取的。
+> 4. 网页被交给 HTML 解释器转变成一系列的词语（Token）。
+> 5. 解释器根据词语构建节点（Node），形成 DOM 树。
+> 6. 如果节点是 JavaScript 代码的话，调用 JavaScript 引擎解释并执行。
+> 7. JavaScript 代码可能会修改 DOM 树的结构
+> 8. 如果节点需要依赖其他资源，例如图片、CSS、视频等，调用资源加载器来加载它们，但是它们是异步的，不会阻碍当前 DOM 树的创建，直到 JavaScript 的资源加载并被 JavaScript 引擎执行后才继续 DOM 树的创建。
+
+> 摘自<a href="http://book.douban.com/subject/25910556/" target="_blank">《WebKit技术内幕》</a>
+
+>另外，网上看到<a href="http://fex.baidu.com/blog/2014/05/what-happen/" target="_blank">颗粒度非常细的回答</a>，表示不明觉厉！
 
 ### 如何验证上述 CSS、JavaScript 是异步加载的？
 
@@ -426,7 +439,7 @@ function ninja(){};
 ninja();
 {% endhighlight %}
 
-<p>When invoked in this manner, the function context is the global context—the `window` object.</p>
+<p>When invoked in this manner, the function context is the global context—the <code>window</code> object.</p>
 
 <h4>Invocation as a method</h4>
 
@@ -436,8 +449,8 @@ o.whatever = function(){};
 o.whatever();
 {% endhighlight %}
 
-<p>When we invoke the function as the *method* of an object, that object becomes the function context and is available within the function
-via the `this` parameter.</p>
+<p>When we invoke the function as the <strong>method</strong> of an object, that object becomes the function context and is available within the function
+via the <code>this</code> parameter.</p>
 
 <h4>Invocation as a constructor</h4>
 
@@ -448,9 +461,11 @@ new creep();
 
 <p>Invoking a function as a constructor is a powerful feature of JavaScript, because when a constructor is invoked, the following special actions take place:</p>
 
-- A new empty object is created.
-- This object is passed to the constructor as the `this` parameter, and thus becomes the constructor’s function context.
-- In the absence of any explicit return value, the new object is returned as the constructor’s value.
+<ul>
+<li>A new empty object is created.</li>
+<li>This object is passed to the constructor as the <code>this</code> parameter, and thus becomes the constructor’s function context.</li>
+<li>In the absence of any explicit return value, the new object is returned as the constructor's value.</li>
+</ul>
 
 <h4>Invocation with the <code>apply()</code> and <code>call()</code> methods</h4>
 
@@ -472,7 +487,7 @@ assert(ninja1.result === 10,"juggled via apply");
 assert(ninja2.result === 26,"juggled via call"); 
 {% endhighlight %}
 
-<p>To invoke a function using its `apply()` method, we pass two parameters to `apply()`: the object to be used as the function context, and an array of values to be used as the invocation arguments. The `call()` method is used in a similar manner, except that the arguments are passed directly in the argument list rather than as an array.</p>
+<p>To invoke a function using its <code>apply()</code> method, we pass two parameters to <code>apply()</code>: the object to be used as the function context, and an array of values to be used as the invocation arguments. The <code>call()</code> method is used in a similar manner, except that the arguments are passed directly in the argument list rather than as an array.</p>
 
 <p>摘自<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a></p>
 </blockquote>

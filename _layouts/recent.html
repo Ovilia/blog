@@ -34,7 +34,7 @@
                             {% endif %}
                             <div class="timeago" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
                             {% if post.series %}
-                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
+                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">In Series:<br />{{ post.series }}</a>
                             {% endif %}
                             <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
 
@@ -88,7 +88,7 @@
                             {% endif %}
                             <div class="timeago cn" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
                             {% if post.series %}
-                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：{{ post.series }}</a>
+                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：<br />{{ post.series }}</a>
                             {% endif %}
                             <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a></h2>
 

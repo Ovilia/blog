@@ -36,7 +36,7 @@ subtitle: 送 Wenli 一本书，让她写出更棒的作品！
 <p class="no-indent">
 <a href="http://book.douban.com/subject/4124716/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/4124716/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/lpic/s4062475.jpg" title="汉字书法之美" alt="汉字书法之美" /></a>
 <a href="http://book.douban.com/subject/5500884/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/5500884/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/lpic/s24425053.jpg" title="哲学百科" alt="哲学百科" /></a>
-<a href="http://book.douban.com/subject/11532776/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/11532776/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/lpic/s11182448.jpg" title="《明儒学案》选讲" alt="《明儒学案》选讲" /></a>
+<a href="http://book.douban.com/subject/2377211/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'http://book.douban.com/subject/2377211/']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/mpic/s2976586.jpg" title="《明儒学案》" alt="《明儒学案》" /></a>
 </p>
 
 ## 已打赏的书
