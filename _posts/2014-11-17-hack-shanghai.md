@@ -6,6 +6,7 @@ titleImg: /img/post/2014-11-17-hack-shanghai-01.png
 tags:
 - 中文
 - 游记
+- 感想
 excerpt: 这个周末参加了在上海纽约大学举办的<a href="http://www.hackshanghai.com/" target="_blank">黑客马拉松</a>活动，虽然最后没有获奖，但是至少我对我们的作品、我们的团队都没留遗憾，这样就已经棒棒的啦~
 ---
 
