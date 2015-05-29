@@ -1,6 +1,6 @@
 {% include header.html %}
 
-        <title>{{ site.name }}</title>
+        <title>{{ site.name }} - 羡辙杂俎</title>
 
             <div class="rotLeft rotTop pageBack"></div>
             <div class="rotRight rotTop pageBack"></div>
@@ -9,7 +9,7 @@
                     <a href="http://zhangwenli.com/#ovilia-home" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecent', window.location.pathname]);">Home</a>
                 </div>
                 <h2 class="subtitle">Blog of Wenli Zhang<a class="title-img" href="{{ site.url }}/feed.xml" title="RSS of Wenli Zhang" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'AllRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h2>
-                <div class="pageTitle center">素位而行，不愿其外</div>
+                <div class="pageTitle center">羡辙杂俎</div>
                 
                 {% include aboutMe.html %}
                 
@@ -36,7 +36,7 @@
                             {% if post.series %}
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">In Series:<br />{{ post.series }}</a>
                             {% endif %}
-                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
+                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
 
                             <div class="tagPanel">
                             {% for tag in post.tags %}
@@ -90,7 +90,7 @@
                             {% if post.series %}
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：<br />{{ post.series }}</a>
                             {% endif %}
-                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ postCnt.size }}thPost']);">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a></h2>
+                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a></h2>
 
                             <div class="tagPanel">
                             {% for tag in post.tags %}
