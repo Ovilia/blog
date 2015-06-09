@@ -16,7 +16,8 @@
                 <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
 
                 {% assign postCnt = '.' %}
-                {% for post in paginator.posts %}
+                {% assign sortedPost = paginator.posts | sort: 'time' %}
+                {% for post in sortedPost reversed %}
                     {% if post.hide != true %}
                         {% assign isZn = false %}
                         {% for tag in post.tags %}
@@ -29,9 +30,6 @@
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
                             {% assign time = post.time %}
-                            {% if post.update_time %}
-                                {% assign time = post.update_time %}
-                            {% endif %}
                             <div class="timeago" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
                             {% if post.series %}
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">In Series:<br />{{ post.series }}</a>
@@ -70,7 +68,7 @@
 
                 <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
 
-                {% for post in paginator.posts %}
+                {% for post in sortedPost reversed %}
                     {% if post.hide != true %}
                         {% assign isZn = false %}
                         {% for tag in post.tags %}
@@ -83,9 +81,6 @@
                         {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block cn">
                             {% assign time = post.time %}
-                            {% if post.update_time %}
-                                {% assign time = post.update_time %}
-                            {% endif %}
                             <div class="timeago cn" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
                             {% if post.series %}
                             <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：<br />{{ post.series }}</a>

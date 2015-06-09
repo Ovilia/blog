@@ -1,8 +1,8 @@
 ---
 title: 免费啦
 subtitle: 《Three.js 入门指南》
-time: 2014.11.13 20:05:00
-update_time: 2014.12.11 21:21:17
+first_time: 2014.11.13 20:05:00
+time: 2014.12.11 21:21:17
 layout: post
 titleImg: /img/post/2014-11-13-introduction-to-three-js-1.jpg
 tags:

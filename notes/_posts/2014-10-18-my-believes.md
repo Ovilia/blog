@@ -3,8 +3,8 @@ layout: post
 category: note
 title: 书里的人生信条
 excerpt: 我所赞同、欣赏、践行的那些哲言摘录。
-time: 2014.10.18 12:48:00
-update_time: 2014.10.30 23:21:58
+first_time: 2014.10.18 12:48:00
+time: 2014.10.30 23:21:58
 tags:
 - 中文
 - 阅读
