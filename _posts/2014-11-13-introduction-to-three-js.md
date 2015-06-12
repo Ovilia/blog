@@ -19,7 +19,7 @@ excerpt: <a href="http://www.ituring.com.cn/book/1272" target="_blank">《Three.
 
 # 阅读方式
 
-书籍对应的源代码和运行结果可以在 GitHub <a href="https://github.com/Ovilia/ThreeExample.js target="_blank">Ovilia/ThreeExample.js</a> 完整找到，有帮助的话帮我随手点个赞哟！
+书籍对应的源代码和运行结果可以在 GitHub <a href="https://github.com/Ovilia/ThreeExample.js" target="_blank">Ovilia/ThreeExample.js</a> 完整找到，有帮助的话帮我随手点个赞哟！
 
 ## 豆瓣阅读
 
