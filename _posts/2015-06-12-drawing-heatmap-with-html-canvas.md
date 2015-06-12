@@ -148,6 +148,23 @@ while(len--) {
 ctx.putImageData(imageData, 0, 0);
 {% endhighlight %}
 
+To make the result nicer, we modify our random data generating method.
+
+{% highlight js %}
+var data = [];
+for (var i = 0; i < 1000; ++i) {
+    data.push([Math.random() * 400, Math.random() * 300, Math.random()]);
+}
+for (var i = 0; i < 100; ++i) {
+    data.push([Math.random() * 20 + i / 2 + 100, 
+        Math.random() * 20 + 200, Math.random()]);
+}
+for (var i = 0; i < 100; ++i) {
+    data.push([Math.random() * 20 + i / 2 + 300, 
+        Math.random() * 20 - i / 3 + 200, Math.random()]);
+}
+{% endhighlight %}
+
 And now, the heat map is drawn to your Canvas!
 
 <img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-1.png" />
