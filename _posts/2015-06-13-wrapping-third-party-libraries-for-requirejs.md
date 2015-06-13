@@ -6,7 +6,7 @@ tags:
 - JavaScript
 - RequireJS
 series: Polyvia
-excerpt: Third-Party libraries sometimes come without <a href="http://requirejs.org/docs/whyamd.html" target="_blank">AMD</a>.
+excerpt: Third-Party libraries sometimes come without <a href="http://requirejs.org/docs/whyamd.html" target="_blank">AMD</a> version. This post introduces a method to wrap them using *<a href="http://www.requirejs.org/docs/api.html#config-shim" target="_blank">shim</a>*. I'm going to take <a href="https://github.com/mrdoob/three.js" target="_blank">Three.js</a> as example.
 ---
 
 > RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.
