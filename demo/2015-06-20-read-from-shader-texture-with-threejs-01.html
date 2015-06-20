@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./libs/three.js"></script>
+        
+        <script type="text/javascript">
+            function init() {
+                var canvas = document.getElementById('mainCanvas');
+                var renderer = new THREE.WebGLRenderer({
+                    canvas: canvas
+                });
+                renderer.setClearColor(0x000000);
+                var tmpScene = new THREE.Scene();
+                
+                // camera
+                // canvas size is 400x300
+                var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
+                camera.position.set(0, 0, 5);
+                tmpScene.add(camera);
+            }
+        </script>
+    </head>
+    
+    <body onload="init()">
+        <canvas id="mainCanvas" width="400px" height="300px" ></canvas>
+        <p>Black canvas is expected here.</p>
+    </body>
+</html>

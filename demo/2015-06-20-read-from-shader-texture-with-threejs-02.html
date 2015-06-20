@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="../libs/three.js"></script>
+        
+        <script type="text/javascript">
+            function init() {
+                var canvas = document.getElementById('mainCanvas');
+                var renderer = new THREE.WebGLRenderer({
+                    canvas: canvas
+                });
+                renderer.setClearColor(0x000000);
+                var tmpScene = new THREE.Scene();
+                
+                // camera
+                // canvas size is 400x300
+                var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
+                camera.position.set(0, 0, 5);
+                tmpScene.add(camera);
+
+
+
+                // local video
+                var video = document.createElement('video');
+                navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+                    navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+                if (navigator.getUserMedia) {
+                    navigator.getUserMedia({
+                        video: true
+                    }, function (stream) {
+                        video.src = window.URL.createObjectURL(stream);
+                        video.onloadedmetadata = function(e) {
+                            video.play();
+                        };
+                        video.width = canvas.width;
+                        video.height = canvas.height;
+                    }, function (err) {
+                        alert('Request camera failed');
+                    });
+                } else {
+                    alert('getUserMedia not supported');
+                }
+            }
+        </script>
+    </head>
+    
+    <body onload="init()">
+        <canvas id="mainCanvas" width="400px" height="300px" ></canvas>
+        <p>Black canvas is expected here.</p>
+    </body>
+</html>

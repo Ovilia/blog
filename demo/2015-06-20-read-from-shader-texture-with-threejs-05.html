@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./libs/three.js"></script>
+        <script type="text/javascript" src="./libs/three.CopyShader.js"></script>
+        <script type="text/javascript" src="./libs/three.EdgeShader.js"></script>
+        <script type="text/javascript" src="./libs/three.EffectComposer.js"></script>
+        <script type="text/javascript" src="./libs/three.MaskPass.js"></script>
+        <script type="text/javascript" src="./libs/three.RenderPass.js"></script>
+        <script type="text/javascript" src="./libs/three.ShaderPass.js"></script>
+        
+        <script type="text/javascript">
+            function init() {
+                var canvas = document.getElementById('mainCanvas');
+                var renderer = new THREE.WebGLRenderer({
+                    canvas: canvas
+                });
+                renderer.setClearColor(0x000000);
+                var tmpScene = new THREE.Scene();
+                
+                // camera
+                // canvas size is 400x300
+                var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
+                camera.position.set(0, 0, 5);
+                tmpScene.add(camera);
+
+
+
+                var renderPass = new THREE.RenderPass(tmpScene, camera);
+
+                var edgeShader = new THREE.ShaderPass(THREE.EdgeShader);
+
+                var effectCopy = new THREE.ShaderPass(THREE.CopyShader);
+                effectCopy.renderToScreen = true;
+
+                var composer = new THREE.EffectComposer(renderer);
+                composer.addPass(renderPass);
+                composer.addPass(edgeShader);
+                composer.addPass(effectCopy);
+
+
+
+                // video texture
+                var videoImage = document.createElement('canvas');
+                videoImage.width = canvas.width;
+                videoImage.height = canvas.height;
+
+                var videoImageContext = videoImage.getContext('2d');
+                // background color if no video present
+                videoImageContext.fillStyle = '#ff0000';
+                videoImageContext.fillRect(0, 0, videoImage.width, videoImage.height);
+
+                videoTexture = new THREE.Texture(videoImage);
+                videoTexture.minFilter = THREE.LinearFilter;
+                videoTexture.magFilter = THREE.LinearFilter;
+                
+                var videoMaterial = new THREE.MeshBasicMaterial({
+                    map: videoTexture,
+                    overdraw: true
+                });
+                var videoGeometry = new THREE.PlaneGeometry(4, 3);
+                var videoMesh = new THREE.Mesh(videoGeometry, videoMaterial);
+                videoMesh.position.set(0, 0, 0);
+                tmpScene.add(videoMesh);
+
+
+
+                // output non-zero cnt to dom
+                var nonZeroDom = document.getElementById('cnt');
+
+                // local video
+                var video = document.createElement('video');
+                navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+                    navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+                if (navigator.getUserMedia) {
+                    navigator.getUserMedia({
+                        video: true
+                    }, function (stream) {
+                        video.src = window.URL.createObjectURL(stream);
+                        video.onloadedmetadata = function(e) {
+                            videoImage.width = this.videoWidth;
+                            videoImage.height = this.videoHeight;
+                            video.play();
+
+                            renderFrame();
+                        };
+                        video.width = canvas.width;
+                        video.height = canvas.height;
+                    }, function (err) {
+                        alert('Request camera failed');
+                    });
+                } else {
+                    alert('getUserMedia not supported');
+                }
+
+                function renderFrame() {
+                    videoImageContext.drawImage(video, 0, 0);
+                    if (videoTexture) {
+                        videoTexture.needsUpdate = true;
+                    }
+                    composer.render();
+
+                    var pixels = new Uint8Array(canvas.width * canvas.height * 4);
+                    var gl = renderer.getContext();
+                    gl.readPixels(0, 0, canvas.width, canvas.height, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
+                    nonZeroDom.innerHTML = getNonZeroCnt(pixels);
+
+                    requestAnimationFrame(renderFrame);
+                }
+
+                function getNonZeroCnt(arr) {
+                    var cnt = 0;
+                    for (var i = 0, len = arr.length; i < len; i += 4) {
+                        if (arr[i] > 0) {
+                            ++cnt;
+                        }
+                    }
+                    return cnt;
+                }
+            }
+        </script>
+    </head>
+    
+    <body onload="init()">
+        <canvas id="mainCanvas" width="400px" height="300px" ></canvas>
+        <p><span id="cnt">0</span> pixels are non-zero.</p>
+    </body>
+</html>
