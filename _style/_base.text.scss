@@ -35,8 +35,21 @@ ul, ol {
 
 li {
   line-height: 1.8em;
+  border-left: 2px solid $clr-light;
+  padding-left: 0.5rem;
+  transition: 0.5s;
+
+  &:hover {
+    border-left-color: $clr-primary;
+  }
+
   p {
-    text-indent: 0;
+    margin: 0;
+
+    &:last-of-type {
+      text-indent: 0;
+      margin-bottom: 1rem;
+    }
   }
 }
 
