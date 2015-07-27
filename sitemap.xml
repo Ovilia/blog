@@ -28,11 +28,13 @@ layout: none
   <priority>0.80</priority>
 </url>
 {% for post in site.posts %}
+{% if post.category != 'note' %}
 <url>
   <loc>{{ site.url }}{{ post.url }}</loc>
   <lastmod>{{ post.time | date: "%Y-%m-%dT%H:%M:%S" }}+08:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
+{% endif %}
 {% endfor %}
 </urlset>
