@@ -15,9 +15,11 @@
                 
                 <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
 
-                {% assign postCnt = '.' %}
-                {% assign sortedPost = paginator.posts | sort: 'time' %}
+                {% assign start = paginator.page | minus: 1 | times: 20 %}
+                {% assign end = start | plus: 20 %}
+                {% assign sortedPost = site.posts | sort: 'time' | slice: start, 10 %}
                 {% for post in sortedPost reversed %}
+                    {% if forloop.index > start and forloop.index < end %}
                     {% if post.hide != true %}
                         {% assign isZn = false %}
                         {% for tag in post.tags %}
@@ -27,7 +29,6 @@
                         {% endfor %}
 
                         {% if isZn == false %}
-                        {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block">
                             {% assign time = post.time %}
                             <div class="timeago" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
@@ -49,6 +50,7 @@
                         </div>
                         {% endif %}
                     {% endif %}
+                    {% endif %}
                 {% endfor %}
 
                 <div class="pagination">
@@ -69,6 +71,7 @@
                 <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
 
                 {% for post in sortedPost reversed %}
+                    {% if forloop.index > start and forloop.index < end %}
                     {% if post.hide != true %}
                         {% assign isZn = false %}
                         {% for tag in post.tags %}
@@ -78,7 +81,6 @@
                         {% endfor %}
 
                         {% if isZn == true %}
-                        {% capture postCnt %}{{ postCnt }}.{% endcapture %}
                         <div class="post-block cn">
                             {% assign time = post.time %}
                             <div class="timeago cn" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
@@ -99,6 +101,7 @@
                             {{ post.excerpt | markdownify }}
                         </div>
                         {% endif %}
+                    {% endif %}
                     {% endif %}
                 {% endfor %}
 
