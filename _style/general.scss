@@ -1,0 +1,103 @@
+/**
+ * Ovilia is trying in this project to follow Harry Roberts's CSS Guidelines at
+ * http://cssguidelin.es/
+ *
+ * CONTENTS
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * SETTINGS
+ * Colors...............Manage our color palette in isolation.
+ * Fonts................Font families and styles.
+ * Images...............Image styles.
+ * Shadows..............Text shadows and box shadows.
+ *
+ * BASE
+ * Links................Link settings.
+ * Page.................HTML, * settings.
+ * Head.................H1-6, page title, and subtitle styles.
+ * Quotes...............Blockquotes and code styles.
+ * Paragraph............Paragraph styles.
+ * Text.................Links, lists and other styles.
+ *
+ * COMPONENTS
+ * Tao..................Tao element styles in Home page.
+ * Papers...............Paper effect styles.
+ * Nav..................Navigator styles.
+ * Tag..................Tag and paging stlyes.
+ * License..............License and about author styles.
+ * Social...............Follow and share styles.
+ * Series...............Series styles.
+ * Footer...............The main page footer.
+ * Others...............Specific id and class styles.
+ *
+ * DEVICE
+ * Mobile...............Styles on mobile devices.
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TOOLS
+\*------------------------------------*/
+
+@import "tools.mixins";
+
+
+
+
+
+/*------------------------------------*\
+    #SETTINGS
+\*------------------------------------*/
+
+@import "settings.colors";
+@import "settings.fonts";
+@import "settings.imgs";
+@import "settings.shadows";
+@import "settings.syntax";
+
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+
+@import "base.links";
+@import "base.page";
+@import "base.head";
+@import "base.quotes";
+@import "base.paragraph";
+@import "base.text";
+
+
+
+
+
+/*------------------------------------*\
+    #COMPONENTS
+\*------------------------------------*/
+
+@import "components.papers";
+@import "components.nav";
+@import "components.tag";
+@import "components.license";
+@import "components.social";
+@import "components.series";
+@import "components.music";
+@import "components.footer";
+@import "components.others";
+
+
+
+
+
+/*------------------------------------*\
+    #DEVICE
+\*------------------------------------*/
+@import "device.mobile";
