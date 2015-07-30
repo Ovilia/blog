@@ -32,10 +32,15 @@
                         <div class="post-block">
                             {% assign time = post.time %}
                             <div class="timeago" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
-                            {% if post.series %}
-                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">In Series:<br />{{ post.series }}</a>
-                            {% endif %}
-                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a></h2>
+                            
+                            <h2>
+                                <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a>
+                            </h2>
+                            <h5>
+                                {% if post.series %}
+                                <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
+                                {% endif %}
+                            </h5>
 
                             <div class="tagPanel">
                             {% for tag in post.tags %}
@@ -84,10 +89,14 @@
                         <div class="post-block cn">
                             {% assign time = post.time %}
                             <div class="timeago cn" title="{{ time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ time }}</div>
-                            {% if post.series %}
-                            <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：<br />{{ post.series }}</a>
-                            {% endif %}
-                            <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a></h2>
+                            <h2>
+                                <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a>
+                            </h2>
+                            <h5>
+                                {% if post.series %}
+                                <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：{{ post.series }}</a>
+                                {% endif %}
+                            </h5>
 
                             <div class="tagPanel">
                             {% for tag in post.tags %}

@@ -126,17 +126,6 @@
     margin-top: -20px;
     margin-bottom: 20px;
   }
-  .series-recent {
-    max-width: 100%;
-    float: none;
-    display: block;
-    
-    &:visited {
-      max-width: 100%;
-      float: none;
-      display: block;
-    }
-  }
   
   #mobile-nav {
     display: block;
@@ -155,10 +144,6 @@
   }
   .timeago {
     margin-top: 1em;
-    
-    + .series-recent {
-      margin-top: 1em;
-    }
   }
 
   #music-panel {
@@ -206,16 +191,6 @@
     &.post-img {
       max-width: 100%;
     }
-  }
-  
-  a.series-recent {
-    text-align: center;
-    float: none;
-    display: block;
-    border-radius: 5px;
-    margin: 0 auto;
-    margin-top: 0.5rem;
-    margin-bottom: -0.5rem;
   }
   
   #mobile-nav {

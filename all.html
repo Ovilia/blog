@@ -28,15 +28,7 @@ layout: default
     {% endfor %}
 <div class="post-block{% if isZn %} cn{% endif %}{% for tag in post.tags %} tag-{{ tag }}{% endfor%}">
     <div class="timeago" title="{{ post.time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ post.time }}</div>
-    {% if post.series %}
-    <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">
-    {% if isZn %}
-        系列博文：<br />{{ post.series }}
-    {% else %}
-        In Series:<br />{{ post.series }}
-    {% endif %}
-    </a>
-    {% endif %}
+    
     <h2><a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InAll', '{{ post.url }}']);">
     {% if isZn %}
         {{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}
@@ -44,6 +36,17 @@ layout: default
         {% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}
     {% endif %}
     </a></h2>
+    <h6>
+        {% if post.series %}
+        <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">
+        {% if isZn %}
+            系列博文：{{ post.series }}
+        {% else %}
+            In Series: {{ post.series }}
+        {% endif %}
+        </a>
+        {% endif %}
+    </h6>
     <div class="tagPanel">
     {% for tag in post.tags %}
         <a href="{{ site.url }}/all/?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InAll', '{{ tag }}']);"><div class="tag">{{ tag }}</div></a>

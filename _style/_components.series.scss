@@ -5,14 +5,11 @@
 
 a.series-recent {
   background-color: $clr-link;
-  padding: 8px 20px;
-  display: inline-block;
-  width: 200px;
   color: $clr-def-lighter;
   text-shadow: $sd-def;
-  float: right;
-  text-align: right;
   font-weight: $ft-wt-def;
+  display: inline-block;
+  padding: 3px 8px;
   
   &:visited {
     background-color: $clr-link--visited;
