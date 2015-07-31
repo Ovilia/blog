@@ -13,9 +13,9 @@ hr {
   text-indent: 0;
 }
 
-.deleted {
+.deleted, del {
   text-decoration: line-through;
-  color: $clr-def;
+  opacity: 0.5;
   font-style: italic;
 }
 
