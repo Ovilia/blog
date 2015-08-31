@@ -34,6 +34,7 @@ subtitle: 送羡辙一本书，让她写出更棒的作品！
 ## 待打赏的书
 
 <p class="no-indent">
+<a href="http://book.douban.com/subject/25863515/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '图解HTTP']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27283822.jpg" title="图解HTTP" alt="图解HTTP" /></a>
 <a href="http://book.douban.com/subject/1428307/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '西方文明中的音乐']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s2620043.jpg" title="西方文明中的音乐" alt="西方文明中的音乐" /></a>
 </p>
 
