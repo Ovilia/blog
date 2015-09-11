@@ -1,5 +1,10 @@
+{% if page.tags[0] == '中文' %}
+<h1>评论</h1>
+{% else %}
+<h1>Comments</h1>
+{% endif %}
+
 {% if page.no_comment == null %}
-<h1>Comments{{page.no_comment}}</h1>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     setTimeout(function() {
@@ -13,4 +18,10 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% else %}
+{% if page.tags[0] == '中文' %}
+<p>本页不允许评论，如需讨论，可以<a href="mailto:me@zhangwenli.com?subject=comments on {{ page.title }}">给我发邮件</a>。</p>
+{% else %}
+<p>Comments are disabled in this page. You may <a href="mailto:me@zhangwenli.com?subject=comments on {{ page.title }}">email me</a> for private discussion.</p>
+{% endif %}
 {% endif %}
