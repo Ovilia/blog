@@ -5,9 +5,11 @@
 // Families
 $ft-fm--en: Lato;
 $ft-fm--cn: "Microsoft YaHei";
+$ft-fm--cn-quote: FangSong, SimSun, STSong;
 $ft-fm--local: sans-serif;
 
 $ft-fm-def: $ft-fm--en, $ft-fm--cn, $ft-fm--local;
+$ft-fm-quote: $ft-fm--en, $ft-fm--cn-quote, $ft-fm--local;
 
 $ft-fm-code: Consolas, "Courier New", Courier;
 

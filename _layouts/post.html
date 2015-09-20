@@ -17,8 +17,8 @@
 <div class="rotRight rotTop pageBack"></div>
 <div class="container page{% if isZn %} cn{% endif %}">
     <div class="simpleNav">
-        <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">About</a>
-        <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Blog</a>
+        <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">{% if isZn %}首页{% else %}Home{% endif %}</a>
+        <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">{% if isZn %}博客{% else %}Blog{% endif %}</a>
     </div>
     {% assign time = page.time %}
     {% if page.update_time %}
@@ -87,7 +87,7 @@
                 {% for thisTag in page.tags %}
                     {% if postHasSimilar == false and hasSimilar.size < 5 and tag == thisTag %}
                         {% if hasSimilar.size == 0 %}
-                        <h4>Similar Posts</h4>
+                        <h4>{% if isZn %}相似博文{% else %}Similar Posts{% endif %}</h4>
                         <ul>
                         {% endif %}
                         <li class="relatedPost">
@@ -116,7 +116,7 @@
             </ul>
         {% endif %}
 
-        <h4>Recent Posts</h4>
+        <h4>{% if isZn %}最近发表{% else %}Recent Posts{% endif %}</h4>
         <ul>
         {% for post in site.posts limit:5 %}
             <li class="relatedPost">

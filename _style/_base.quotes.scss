@@ -16,9 +16,10 @@ blockquote {
   
   p {
     text-indent: 0;
-    line-height: 1.5em;
+    line-height: 1.75em;
     text-shadow: none;
     color: $clr-def;
+    font-family: $ft-fm-quote;
     font-size: $ft-sz-qt;
   }
   
