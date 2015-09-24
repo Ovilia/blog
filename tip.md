@@ -34,8 +34,7 @@ subtitle: 送羡辙一本书，让她写出更棒的作品！
 ## 待打赏的书
 
 <p class="no-indent">
-<a href="http://book.douban.com/subject/25863515/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '图解HTTP']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27283822.jpg" title="图解HTTP" alt="图解HTTP" /></a>
-<a href="http://book.douban.com/subject/1428307/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '西方文明中的音乐']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s2620043.jpg" title="西方文明中的音乐" alt="西方文明中的音乐" /></a>
+暂时没有啦，你可以自己推荐书给我，或者过阵子再来看看~
 </p>
 
 ## 已打赏的书
@@ -58,6 +57,8 @@ subtitle: 送羡辙一本书，让她写出更棒的作品！
 <a href="http://book.douban.com/subject/1291204/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '哥德尔、艾舍尔、巴赫']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img4.douban.com/mpic/s1789059.jpg" title="哥德尔、艾舍尔、巴赫" alt="哥德尔、艾舍尔、巴赫" /></a>
 <a href="http://book.douban.com/subject/26236437/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '八卦艺术史']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img4.douban.com/mpic/s28014789.jpg" title="八卦艺术史" alt="八卦艺术史" /></a>
 <a href="http://book.douban.com/subject/25909351/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', 'WebGL 编程指南']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27306770.jpg" title="WebGL 编程指南" alt="WebGL 编程指南" /></a>
+<a href="http://book.douban.com/subject/25863515/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '图解HTTP']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27283822.jpg" title="图解HTTP" alt="图解HTTP" /></a>
+<a href="http://book.douban.com/subject/1428307/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '西方文明中的音乐']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s2620043.jpg" title="西方文明中的音乐" alt="西方文明中的音乐" /></a>
 </p>
 
 ## 打赏者提名的书
@@ -67,4 +68,4 @@ subtitle: 送羡辙一本书，让她写出更棒的作品！
 <a href="http://book.douban.com/subject/1017238/" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToTipBook', 'InTip', '美学散步']);"><img class="tip-book" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s4404111.jpg" title="美学散步" alt="美学散步" /></a>
 </p>
 
-感谢 CSF、CY、LSY、ZYX、ZJJ、Cain、柳亓安、HJY、WHJ、ZB、TTZ、FJQ、DPJ、CJJ、xiaoyi、LXX、早弦、小明、Simple 的慷慨解囊，我会写出更棒的作品！
+感谢 CSF、CY、LSY、ZYX、ZJJ、Cain、柳亓安、HJY、WHJ、ZB、TTZ、FJQ、DPJ、CJJ、xiaoyi、LXX、早弦、小明、Simple、畅、MST、WJH、Quillblue、KerryQin 的慷慨解囊，我会写出更棒的作品！
