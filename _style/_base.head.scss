@@ -60,6 +60,8 @@ h6 {
   font-size: $ft-sz-h6;
 }
 
+
+
 .pageTitle {
   font-family: $ft-fm-def;
   font-size: $ft-sz-page-title;
@@ -73,6 +75,13 @@ h6 {
   color: #666;
 }
 
+
+
 .subtitle {
   color: $clr-primary;
 }
+
+  .subtitle-logo {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
