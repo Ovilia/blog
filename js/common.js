@@ -102,3 +102,11 @@ setTimeout(function() {
         });
     });
 }, 5000);
+
+// other files for different pages, define loadJs arrary
+if (loadJs) {
+    for (var i = 0, len = loadJs.length; i < len; ++i) {
+        // load each js file and call callback
+        LazyLoad.js(loadJs[i][0], loadJs[i][1]);
+    }
+}

@@ -60,3 +60,15 @@ em {
 .center {
   text-align: center;
 }
+
+.text-xlarge {
+  font-size: 4rem;
+}
+
+.text-primary {
+  color: $clr-primary;
+}
+
+.text-secondary {
+  color: $clr-contrast;
+}
