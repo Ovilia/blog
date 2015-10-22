@@ -28,8 +28,8 @@ img, video {
   }
   
   &.tip-book {
-    width: 80px;
-    height: 110px;
+    max-width: 80px;
+    max-height: 110px;
   }
 
   &.single-img {
