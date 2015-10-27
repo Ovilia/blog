@@ -22,15 +22,15 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 我主要是负责前端设计和开发，不过 ssxx 在设计方面也给了很多不错的建议~
 
-<img id="yooyo-base-img" class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-10.jpg" />
+<img id="yooyo-base-img" class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-10.jpg" />
 
-<img id="yooyo-qr-img" class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-11.jpg" style="display: none" />
+<img id="yooyo-qr-img" class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-11.jpg" style="display: none" />
 
 从左到右分别是：ssxx、wj、王佳骏、我。<a href="javascript:;" class="button" onclick="showQr()" id="show-qr-btn">查看微信二维码</a>
 
 # 作品展示
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-09.png" />
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-09.png" />
 
 友约 YooYo 是一款鼓励大家和已经认识的朋友线下面对面交流的 de-SNS 应用，目前基于微信公众号实现。
 
@@ -40,17 +40,17 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 当然，现在开发只用了 24 小时，功能还不是很完善，我们团队会在此次马拉松之后继续磨剑，到时候成熟些一定告诉大家微信号~
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-03.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-03.png" />
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-04.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-04.png" />
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-05.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-05.png" />
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-06.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-06.png" />
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-07.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-07.png" />
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-08.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-08.png" />
 
 以下就是超级宇宙无敌 PPT 的一部分！大家都给 ssxx 跪啦~~~
 
@@ -72,7 +72,7 @@ ssxx 是我们的超级艺术支持，他没有写一行代码，却给我们团
 
 每个小组有一个桌子，但是摆上四台电脑后，空间就所剩无几了。ssxx 还非常霸气地带上了 24 寸显示屏（展示的时候派上大用场啦！震惊全场~~~ :dizzy_face: ），以至于我们的照片都上了 HackShanghai 的 Facebook。可惜当时 ssxx 走开了一会儿……图为我和王佳骏。
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-02.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-17-hack-shanghai-02.png" />
 
 （图片来源：<a href="https://www.facebook.com/hackshanghai" target="_blank">HackShanghai 的 Facebook</a>）
 

@@ -14,7 +14,7 @@ excerpt: 回忆是一个很神奇的东西。我们通常会觉得回忆很美�
 
 今夜雨下得很大，让我又想起《秋灯琐忆》，于是有了这篇书评。
 
-> <a href="http://book.douban.com/subject/1917994/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s2810842.jpg" /></a>秋芙所种芭蕉，已叶大成阴，荫蔽帘幕。秋来雨风滴沥，枕上闻之，心与俱碎。一日，余戏题断句叶上云：“是谁多事种芭蕉，早也潇潇，晚也潇潇。”明日见叶上续书数行云：“是君心绪太无聊，种了芭蕉，又怨芭蕉。”字画柔媚，此秋芙戏笔也，然余于此，悟入正复不浅。
+> <a href="http://book.douban.com/subject/1917994/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img3.douban.com/mpic/s2810842.jpg" /></a>秋芙所种芭蕉，已叶大成阴，荫蔽帘幕。秋来雨风滴沥，枕上闻之，心与俱碎。一日，余戏题断句叶上云：“是谁多事种芭蕉，早也潇潇，晚也潇潇。”明日见叶上续书数行云：“是君心绪太无聊，种了芭蕉，又怨芭蕉。”字画柔媚，此秋芙戏笔也，然余于此，悟入正复不浅。
 
 > 摘自《秋灯琐忆》，作者：[清]蒋坦
 

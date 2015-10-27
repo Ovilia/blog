@@ -22,7 +22,7 @@ series: How I made ...
 
 我们现在已经很少用到“八卦”的本意了，更多是与“娱乐”相关的含义了。那么，八卦究竟是什么意思呢？
 
-> <img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-01.png" />
+> <img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-01.png" />
 
 > 八卦是《易经》的基本概念，可代表一切自然现象的动静状态，由三个爻组成。“爻”是最基本的符号，意指交错，以奇画（“-”称阳爻）或偶画（“--”称阴爻）表示。爻有阴、阳两种仪态，若两两相重则形成四象（老阳、少阴、少阳、老阴）。四象再增加一爻，就形成八卦。
 
@@ -42,7 +42,7 @@ series: How I made ...
 
 八卦图已经如此复杂，六十四卦的话，对于初学者就很难记熟每一卦卦名了。
 
-> <img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-03.png" />
+> <img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-03.png" />
 
 > 摘自 *<a href="http://zh.wikipedia.org/wiki/%E6%98%93%E7%B6%93" target="_blank">维基百科</a>*
 

@@ -11,7 +11,7 @@ excerpt: This post introduces how to draw a heatmap chart using Canvas. By the e
 
 This post introduces how to draw a heatmap chart using Canvas. By the end of the post, you can get the result as shown in the following image.
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-1.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-1.png" />
 
 > A heat map is a graphical representation of data where the individual values contained in a matrix are represented as colors. Fractal maps and tree maps both often use a similar system of color-coding to represent the values taken by a variable in a hierarchy. The term is also used to mean its thematic application as a choropleth map.
 
@@ -43,7 +43,7 @@ brushCanvas.width = d;
 brushCanvas.height = d;
 {% endhighlight %}
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-2.png" />In order to render shadow without the distinct circle, we draw the distinct circle in an invisible place, which is to the left of the canvas in our case. And then, use `shadowOffset` to draw shadow in the center of the canvas. The circle is drawn in black, and is blended with other brushes using alpha value and shadow blur.
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-2.png" />In order to render shadow without the distinct circle, we draw the distinct circle in an invisible place, which is to the left of the canvas in our case. And then, use `shadowOffset` to draw shadow in the center of the canvas. The circle is drawn in black, and is blended with other brushes using alpha value and shadow blur.
 
 {% highlight js %}
 var ctx = brushCanvas.getContext('2d');
@@ -73,7 +73,7 @@ for (var i = 0; i < 1000; ++i) {
 
 And use `data` to draw `brushCanvas` to a new canvas, we can get the following gray image.
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-4.png" />{% highlight js %}
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-4.png" />{% highlight js %}
 var len = data.length;
 for (var i = 0; i < len; ++i) {
     var p = data[i];
@@ -97,7 +97,7 @@ In order to may different darkness into different color in our heatmap, we need 
 
 We create a Canvas of 1 x 256 size, in which 256 is the gradient level.
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-3.png" />{% highlight js %}
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-3.png" />{% highlight js %}
 var levels = 256;
 var canvas = document.createElement('canvas');
 canvas.width = 1;
@@ -167,7 +167,7 @@ for (var i = 0; i < 100; ++i) {
 
 And now, the heat map is drawn to your Canvas!
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-1.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-12-drawing-heatmap-with-html-canvas-1.png" />
 
 # Reference
 

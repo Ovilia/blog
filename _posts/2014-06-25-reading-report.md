@@ -70,7 +70,7 @@ excerpt: 2014年1月29日-2014年6月25日读书小结。1月份生日的时候�
 
 ## 读书怎么记笔记？
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-06-25-reading-report-01.jpg" />由于我记性特别差，读过的书过了半年就几乎没什么印象了，所以笔记是一定要做的。
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-06-25-reading-report-01.jpg" />由于我记性特别差，读过的书过了半年就几乎没什么印象了，所以笔记是一定要做的。
 
 我不用软件记笔记的一方面原因是小清新的怀旧情结:stuck_out_tongue:……另外一方面是因为如果看的不是电子书，电脑又不在身边的时候，用软件就比较麻烦。从心理学的角度来说，要想让你愿意做一件事，就得把做这件事的麻烦程度尽可能减低，所以如果用软件记的话，电脑不在身边就会给你很大的理由说服自己“这句话也没这么重要啦”，即使你明明可以用手机拍照的。所以，最简单的方式就是随时带着能记的本子。带本子还是太重，带活页纸就完美了！
 
@@ -88,7 +88,7 @@ excerpt: 2014年1月29日-2014年6月25日读书小结。1月份生日的时候�
 
 ## Kindle值得买吗？
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-06-25-reading-report-02.png" />单反穷三代，Kindle富一生啊！:bowtie:
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-06-25-reading-report-02.png" />单反穷三代，Kindle富一生啊！:bowtie:
 
 好吧，还是因人而异的，如果真是对读书无爱，有Kindle也是摆设。
 

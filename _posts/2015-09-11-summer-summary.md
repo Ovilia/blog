@@ -54,7 +54,7 @@ excerpt: 周三定今天阿里回上海的幸福大巴，差点顺手定了周�
 
 刚来的时候觉得阿里食堂好大好多种类，没到一个礼拜也就吃腻了，后面能接受的也就自助了。自助比较有意思，是称分量的，蔬菜和肉类统一都是 25 元每斤的价，不过也都没什么特别好吃的……随便上几张照吧，看着还不错，不过其实也就一般。
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-09-11-summer-summary-1.jpg" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-09-11-summer-summary-1.jpg" />
 
 不过呢，要是跟着大漠、子之、winter、勾股、岑安一堆壕出去吃，那就有意思多啦！关键是路上要走挺远，然后跟他们聊天非常开心~
 

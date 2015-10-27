@@ -15,7 +15,7 @@ series: How I made ...
 
 > In this post, I'm going to explain how to make <a href="http://zhangwenli.com/jCorner" target="_blank">jCorner</a>, a jQuery plugin to create paper folding effect at the bottom-right corner.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-02-09-how-i-made-jcorner-1.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-02-09-how-i-made-jcorner-1.png" />
 
 <a href="http://zhangwenli.com/jCorner" target="_blank">jCorner</a> is a jQuery plugin to create paper folding effect at the bottom-right corner, as shown above.
 

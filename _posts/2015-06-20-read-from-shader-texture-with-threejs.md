@@ -225,7 +225,7 @@ These passes work like a pipe. `RenderPass` passes the rendered texture in `tmpS
 
 And next, use `composer.render();` instead of `renderer.render(tmpScene, camera);`.
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-20-read-from-shader-texture-with-threejs.png" />The result of this step is available at <a href="{{ site.url }}/demo/2015-06-20-read-from-shader-texture-with-threejs-04.html" target="_blank">demo 2.2</a>. Now, you are supposed to get something like this... if you are as cute as me! :joy:
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-20-read-from-shader-texture-with-threejs.png" />The result of this step is available at <a href="{{ site.url }}/demo/2015-06-20-read-from-shader-texture-with-threejs-04.html" target="_blank">demo 2.2</a>. Now, you are supposed to get something like this... if you are as cute as me! :joy:
 
 
 

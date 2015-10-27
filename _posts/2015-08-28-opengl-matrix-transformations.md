@@ -11,7 +11,7 @@ excerpt: 沈大侠已经考过我两次矩阵转换的问题了，然而我每�
 
 <a href="https://github.com/pissang" target="_blank">沈大侠</a>已经考过我两次矩阵转换的问题了，然而我每次都答不上来……:joy: 虽然我每次事后都会去查资料，但是看过也就没进脑子，因为没什么感觉……模型变换，视图变换，投影变换，是啊，矩阵乘一乘嘛，咻咻咻就绘制好啦！这有什么好说的呢，简直不知道你要问什么嘛！
 
-大侠当时的内心一定是这样的…… <img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-08-28-opengl-matrix-transformations-01.jpg" />
+大侠当时的内心一定是这样的…… <img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-08-28-opengl-matrix-transformations-01.jpg" />
 
 如果不是我在阿里真的有需求做基于原生 WebGL 写的项目，可能第三次被问到这样的问题还是只能回答“矩阵乘一乘”了……真的写原生 WebGL 就知道了，我确实没搞透彻，所以觉得没什么好说的，而我当年写 OpenGL 的时候，好歹还有 glut 之类的第三方库，至少不用我自己写矩阵的。但是不理解清楚这个概念，自己写转换矩阵的时候分分钟就暴露了。
 
@@ -21,7 +21,7 @@ excerpt: 沈大侠已经考过我两次矩阵转换的问题了，然而我每�
 
 我花了两个小时画这个图，也是边画边理解，画完我自己都震惊了……
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-08-28-opengl-matrix-transformations-02.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-08-28-opengl-matrix-transformations-02.png" />
 
 下面一步步谈谈我的理解。
 
@@ -64,7 +64,7 @@ gl.viewport(0, 0, this._canvas.width, this._canvas.height);
 
 然后说到那个在阿里的 WebGL 需求，搞清楚这么多呢，终于能做出这样的效果了……只是这是什么东西呢，我是不会告诉你们的！机密！！
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-08-28-opengl-matrix-transformations-03.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-08-28-opengl-matrix-transformations-03.png" />
 
 ###### 参考资料
 

@@ -80,7 +80,7 @@ Test your query well on <a href="https://ga-dev-tools.appspot.com/explorer/" tar
 
 When it works, you should see something like this.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-05-page-view-from-google-analytics-for-your-blog-01.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-05-page-view-from-google-analytics-for-your-blog-01.png" />
 
 If you visit <a href="https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA" target="_blank">the link in the image</a>, you can get the JSON file of pageview information!
 

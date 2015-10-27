@@ -23,7 +23,7 @@ I wanted to buy this kind of paper or notebooks, but none of them is very ideal.
 # Download
 
 <a href="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-9.png" target="_blank">
-    <img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-8.png" />
+    <img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-8.png" />
 </a>
 
 For those just want to download it, you may skip the following steps and just download it <a href="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-9.png" target="_blank">here</a>. 
@@ -36,7 +36,7 @@ A **pattern** in Photoshop is something that can be used to fill an area, which 
 
 `File -> New` and set the width to be `80px` and height to be `50px`
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-1.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-1.png" />
 
 ## 2. Add guide lines
 
@@ -46,11 +46,11 @@ A **pattern** in Photoshop is something that can be used to fill an area, which 
 
 Set the color to be `#ccc` and draw lines with pencil while keeping the **shift** key down so that you can get this.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-2.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-2.png" />
 
 Then, set the color to be `#999` and draw lines similarly at borders. Note that we only draw the top-left part, since the bottome-right borders will be drawn by another's top-left border. Now, you can get this.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-3.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-3.png" />
 
 Paint the rest of it as white.
 
@@ -62,7 +62,7 @@ Paint the rest of it as white.
 
 This image file will then be used for printing.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-4.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-4.png" />
 
 ## 6. Add guide lines
 
@@ -70,7 +70,7 @@ This image file will then be used for printing.
 
 ## 7. Create a layer and paint the area bordered with guide lines
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-5.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-5.png" />
 
 You can paint it with any color.
 
@@ -78,13 +78,13 @@ You can paint it with any color.
 
 Double click the new layer and in `Pattern Overlay` tab, select the pattern you've just created, and then click `Snap to Origin`.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-6.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-6.png" />
 
 ## 9. Draw borders
 
 You can hide the guide lines with `ctrl + ;`. You can then see that the bottom-right border is not drawn so you need to draw it with pencil while keeping the `shift` key pressed as we did before.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-7.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-11-05-960px-12-columns-grid-using-photoshop-7.png" />
 
 ## 10. Print and adjust
 

@@ -61,7 +61,7 @@ div {
 }
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-01.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-01.png" />
 
 ## Width and Height
 
@@ -71,7 +71,7 @@ If you don't set the width and height of a component, it depends on the content.
 <div>xxxxx x xxxx xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxx.</div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-02.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-02.png" />
 
 If the width is set, the height depends on the content.
 
@@ -84,7 +84,7 @@ div {
 }
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-03.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-03.png" />
 
 If both width and height are set, the content may overflow.
 
@@ -98,7 +98,7 @@ div {
 }
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-04.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-04.png" />
 
 You can set the overflowed content to be hidden using `overflow: hidden;`, or display a scroll bar when overflow using `overflow: auto`. If you don't want a horizontal scroll bar, you can set `overflow-x: hidden; overflow-y: auto;`.
 
@@ -114,7 +114,7 @@ Margin is the outside distance from other elements, while padding is the inside 
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-09.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-09.png" />
 
 > DIY
 
@@ -143,7 +143,7 @@ Element with `display: block` takes the position of area of its own size and the
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-05.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-05.png" />
 
 Because the default value of `display` of `<div>` is `block`, here although the total width of the red block and the green one is less than that of the yellow block, the green block is shown below the red one, rather than at the right side of the red one.
 
@@ -162,7 +162,7 @@ We set the `display` property to be `inline-block` to the previous example and n
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-06.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-06.png" />
 
 Please pay attention to how the green block is aligned with the red one.
 
@@ -189,7 +189,7 @@ If we set `display` property to be `inline` to the previous example, we'll see t
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-07.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-07.png" />
 
 In fact, we can't say *they are not displayed*. Let's see another example.
 
@@ -200,7 +200,7 @@ In fact, we can't say *they are not displayed*. Let's see another example.
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-08.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-08.png" />
 
 You see in this example that they are displayed when there's text in them. You can see now that when `display` is set to be `inline`, the element is rendered, but we can't control other properties like `width`, `height`, `margin`, `padding` and etc. any more. You may find it a little confusing, but this is very useful in some cases. For example, we can use `<span style="color: red"></span>` to highlight some content without changing the text's position.
 
@@ -221,7 +221,7 @@ Basically, you can set `float` of the element to be `left`, `right` or `none` if
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-10.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-10.png" />
 
 Why isn't yellow displayed?
 
@@ -235,7 +235,7 @@ This is because when an element is set to be `float: left` or `float: right`, it
 </div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-11.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-11.png" />
 
 ## `display: inline-block` vs. `float: left`
 
@@ -245,11 +245,11 @@ The first thing you need to note is that `display: inline-block` align at top ve
 
 `display: inline-block`:
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-06.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-06.png" />
 
 `float: left`:
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-12.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-12.png" />
 
 There're posts explained this topic in detail. If you are interested, you can refer to <a href="http://www.ternstyle.us/blog/float-vs-inline-block" target="_blank">Float vs. Inline-Block</a> and <a href="http://www.onderhond.com/blog/inline-block-vs-float" target="_blank">INLINE-BLOCK VS FLOAT / thinking horizontal</a>.
 
@@ -265,7 +265,7 @@ The inspiring news is that you can make Web sites now!
 
 To build a Web site, you should first design what to show and how to display it. Since we haven't talked about how to design yet, in this homework, you are given a design image and your task is to implement the design (including all description in the image).
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-13.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-18-dive-into-css-13.png" />
 
 I suggest you put your code on GitHub and share a link as comment to this post, so that we can discuss more about it.
 

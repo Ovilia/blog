@@ -9,7 +9,7 @@ tags:
 excerpt: 我的睡眠一直不大好。每个月大约都要彻夜睡不着一次，躺下一个小时睡不着的更是常事，对我来说半小时就能睡着实在是难得。早上又容易惊醒，在寝室不戴耳塞眼罩的基本六七点就得醒了。如此以来已经有好多年了。每次跟一个新认识的朋友说起，对方第一反应总是告诉我一些容易安然入睡的偏方。本意自然是好的，只是让我想到这里其实有个梗……
 ---
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-05-10-what-i-think-about-when-i-think-about-insomnia-1.png" />论文写得烦躁了，于是来写点随笔。
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-05-10-what-i-think-about-when-i-think-about-insomnia-1.png" />论文写得烦躁了，于是来写点随笔。
 
 之所以选择失眠这个主题来写，主要也是因为最近睡得不太好，而这始作俑者，又恰是这篇论文。不过论文写得无聊逃避而来的我，自然不准备在这里讨论任何有关论文的细节了。
 

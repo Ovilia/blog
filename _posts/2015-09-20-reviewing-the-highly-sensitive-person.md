@@ -14,7 +14,7 @@ excerpt: 看到书里说，心理敏感的人往往容易得皮疹，我挠了�
 
 # 找不到的过敏源
 
-<a href="http://book.douban.com/subject/1085007/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img4.douban.com/mpic/s1237156.jpg" /></a>看到书里说，心理敏感的人往往容易得皮疹，我挠了挠手臂，会心一笑。
+<a href="http://book.douban.com/subject/1085007/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img4.douban.com/mpic/s1237156.jpg" /></a>看到书里说，心理敏感的人往往容易得皮疹，我挠了挠手臂，会心一笑。
 
 几乎每年春夏季节交替的时候手臂上都会发红红的东西，有时候医生说是皮疹，有时候说是皮炎，有时候又说是湿疹，配的药来来去去也就这么两三种。再后来，每年发的时候，我也就有经验地自己去药房买点药涂涂，虽然感觉也没什么用。有一年还发在脸上了，红红的一大块，着实把我和爸妈吓着了，索性后来退了也就完全没印子了。
 

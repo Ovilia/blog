@@ -12,7 +12,7 @@ subtitle: 《瓦尔登湖》读后感
 excerpt: 很多时候，我们觉得一本书写得好，未必是它教了我们什么道理；相反，往往说的道理是我们本就知道的，因为只有那些我们认同的才会让我们敬佩和崇拜。这本书对我来说也是如此。我一直很向往在深山里隐居的生活，然而这样的生活大概也只能在退休之后才可能有胆量说要去体验一下的，因为似乎人生还有很多责任和担负的呢。
 ---
 
-<a href="http://book.douban.com/subject/1044316/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/lpic/s1881721.jpg" /></a>很多时候，我们觉得一本书写得好，未必是它教了我们什么道理；相反，往往说的道理是我们本就知道的，因为只有那些我们认同的才会让我们敬佩和崇拜。 
+<a href="http://book.douban.com/subject/1044316/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img3.douban.com/lpic/s1881721.jpg" /></a>很多时候，我们觉得一本书写得好，未必是它教了我们什么道理；相反，往往说的道理是我们本就知道的，因为只有那些我们认同的才会让我们敬佩和崇拜。 
 
 这本书对我来说也是如此。我一直很向往在深山里隐居的生活，然而这样的生活大概也只能在退休之后才可能有胆量说要去体验一下的，因为似乎人生还有很多责任和担负的呢。
 

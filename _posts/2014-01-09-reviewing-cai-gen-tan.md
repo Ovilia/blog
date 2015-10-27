@@ -12,7 +12,7 @@ subtitle: 《菜根谭》读后感
 excerpt: 本书主要讲述了作者的人生观，以道家思想的有无相成为主，以儒家的君子之道为辅，添以佛教的看空人生，可谓是集儒释道于一身。但即便如此，还是显得境界不够，格调不高。 
 ---
 
-<a href="http://book.douban.com/subject/3646976/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img5.douban.com/lpic/s4394256.jpg" /></a>前阵子理书房，翻出了四年前同学送我的影印版正体竖排《菜根谭》。以前草草翻过，最近准备多读点书所以从头细读了一下。 
+<a href="http://book.douban.com/subject/3646976/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img5.douban.com/lpic/s4394256.jpg" /></a>前阵子理书房，翻出了四年前同学送我的影印版正体竖排《菜根谭》。以前草草翻过，最近准备多读点书所以从头细读了一下。 
 
 本书主要讲述了作者的人生观，以道家思想的有无相成为主，以儒家的君子之道为辅，添以佛教的看空人生，可谓是集儒释道于一身。但即便如此，还是显得境界不够，格调不高。 
 

@@ -18,7 +18,7 @@ excerpt: From time to time do we need a customerized social sharing bar for our 
 
 SNS usually provides sharing service that takes parameters in URL and then generates a sharing post. Take <a href="https://twitter.com" target="_blank">Twitter</a> for example, we can enter the following address in the address bar, <a href="https://twitter.com/intent/tweet?text=hello+world&url=http://google.com" target="_blank">https://twitter.com/intent/tweet?text=hello+world&url=http://google.com</a>. Since I'm logged in as <a href="https://twitter.com/OviliaZhang" target="_blank">@OviliaZhang</a>, I can see something like this.
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-03-make-your-own-social-sharing-bar-with-jekyll-01.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-03-make-your-own-social-sharing-bar-with-jekyll-01.png" />
 
 # Using Jekyll
 

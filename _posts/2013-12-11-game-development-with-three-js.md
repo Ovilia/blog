@@ -14,7 +14,7 @@ excerpt: Game Development with Three.js is a book I reviewed. It's a step-by-ste
 
 <a href="http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&utm_medium=Threejspackt.com&utm_campaign=Threejspackt.com" target="_blank">*Game Development with Three.js*</a> is a book I reviewed. It's a step-by-step, example-based guide to building immersive 3D games on the Web using the Three.js graphics library.
 
-<a href="http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&utm_medium=Threejspackt.com&utm_campaign=Threejspackt.com" target="_blank"><img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2013-10-19-game-development-with-three-js-1.jpg" /></a>
+<a href="http://www.packtpub.com/game-development-with-three-js/book?utm_source=Threejspackt.com&utm_medium=Threejspackt.com&utm_campaign=Threejspackt.com" target="_blank"><img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2013-10-19-game-development-with-three-js-1.jpg" /></a>
 
 > ## How to get it by free?!
 
@@ -77,4 +77,4 @@ Isaac Sukin has been building games since he was eight years old, when he discov
 
 I've written an e-book on <a href="http://www.ituring.com.cn/book/1272" target="_blank">Introduction to Three.js</a> in Chinese. Please check out if you are interested.
 
-<a href="http://www.ituring.com.cn/book/1272" target="_blank"><img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2013-10-19-game-development-with-three-js-2.jpg" /></a>
+<a href="http://www.ituring.com.cn/book/1272" target="_blank"><img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2013-10-19-game-development-with-three-js-2.jpg" /></a>

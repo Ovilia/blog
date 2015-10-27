@@ -30,13 +30,13 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 ## PCHMS
 
-<img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-03.png" />
+<img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-03.png" />
 
 这件事其实要从2010年暑假开始说起。我们学院和Intel合办了一个叫Intel试点班的组织，大致就是由Intel的工程师出题目让学生做项目，期间进行指导，最后进行评估之类的。试点班的选拔是大一升大二（2010年）的那个暑假，选拔条件就是用Java在暑假做一个类似数据可视化的东西。简单地说，最后我通过了答辩，并且是十来个通过的人中唯一一个女生。然后2011年的那个寒假就组队做一个叫PCHMS（PC Health Management System）的项目，大致意思就是通过监控鼠标键盘的事件，提醒用户什么时候要休息啦之类的。其中包括数据可视化部分（当然，当时似乎还没有这种叫法），和组员讨论决定这部分用网页实现，并由我来做这件事。
 
 作为女生，好像大家都达成共识，那些PS的活也是我来干的。虽然那时候我基本不怎么会PS，大概后来也就是这样的摸索才使我现在很熟悉的。可以看出来，早期的PS设计还是非常杂乱的，就是新手很容易犯的错误：把所有会的技能放上去表现。
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-01.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-01.png" />
 
 顺便说一句，“驿路梨花”这种中二的名字也是我起的，当时的广告词是……
 
@@ -50,7 +50,7 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 我只保留了图表部分的截图，不过其他部分是很简单的，所以看不到也不用觉得可惜。
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-02.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-02.png" />
 
 当时还需要用到PHP和MySQL，也是那个寒假一起学的。那时候我还没上过JBoss的课，数据库完全没概念，结果就乱用……正常的做法是在MySQL里面做好排序筛选什么的，但是我不知道有`ORDER BY`、`LIMIT`这种功能，更不知道这应该是数据库而非后台语言负责的事。所以我就把所有需要的数据`SELECT`出来，完全在PHP里自己写排序筛选之类的算法……还好数据量很小，只是自己玩玩的，所以完全没感觉到异常……直到后来上了数据库的课，才发现我是在乱玩啊啊啊~ :stuck_out_tongue:
 
@@ -58,13 +58,13 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 这个是2011年下学期一门选修课的大作业，有了寒假的经验，这个项目并不需要学习更多的技术，所以也就像玩一样水过去了。不过从保留的这个项目的截图可以清楚地看出我当时是多么的木有设计感……
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-05.jpg" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-05.jpg" />
 
 简直不能直视……
 
 ## Stolon
 
-<img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-06.png" />
+<img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-06.png" />
 
 这个项目和“时间胶囊”几乎是同时的，但合作的人是另外几个，首字母缩写组成最像英文单词的词是Stolon，所以我们就叫这个名字了……读起来有点像Stolen，不过这还不算什么，中文名是“生藤”，<a href="http://liyaos.com" target="_blank">三土</a>总是说：好疼……
 
@@ -74,11 +74,11 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 当时做网页设计的时候，因为这是个排课软件，所以我觉得用黑板表现背景是个很好的idea。但是现在看看的话，这个设计还是远远太复杂，而且不够精致。UI是初学<a href="http://dojotoolkit.org/" target="_blank">dojo</a>做的，当时还不知道<a href="http://jquery.com" target="_blank">jQuery</a>。现在jQuery的受欢迎程度已经远超dojo了。
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-07.png" /> <img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-08.png" /> <img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-09.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-07.png" /> <img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-08.png" /> <img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-09.png" />
 
 ## 伯牙
 
-<img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-10.png" />
+<img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-10.png" />
 
 这个项目是我自己一个人做的数据库大作业，第一次开始学习jQuery了。只留了首页截图一张，不过整体风格应该和“时间胶囊”差不多的……
 
@@ -96,7 +96,7 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 它之所以叫“燃豆萁”，是因为它是基于“豆瓣”评分的，所以是“煮豆燃豆萁”……
 
-<a href="http://ovilia.sinaapp.com/movie/index.php" target="_blank"><img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-11.png" /></a>
+<a href="http://ovilia.sinaapp.com/movie/index.php" target="_blank"><img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-11.png" /></a>
 
 这时候的网页已经稍微能看一点了，不过如果我没记错的话，这时候还没开始专门看设计类的书，也没把网页设计或编程作为我的职业考虑范围。
 
@@ -104,7 +104,7 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 ## jWebAudio
 
-<a href="http://01org.github.io/jWebAudio/" target="_blank"><img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-12.png" /></a>
+<a href="http://01org.github.io/jWebAudio/" target="_blank"><img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-12.png" /></a>
 
 2013年的年初，在Intel实习做了<a href="http://01org.github.io/jWebAudio/" target="_blank">jWebAudio</a>这一Web Audio的JavaScript库，所以也做了一个网页来展示它。这时候的设计已经进步很多了，这一年半以来可能看了很多国外设计很好的网站，以至于响应式设计刚刚推出来的时候，我就已经能通过一个网站是否有设计感来推断这网站是否做了响应式设计。
 
@@ -122,13 +122,13 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 ## jCorner
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-14.png" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-14.png" />
 
 <a href="http://zhangwenli.com/jCorner/" target="_blank">jCorner</a>是帮夏老师做网站的时候顺便做的一个jQuery插件，虽然那个网站最后没派上用场，但是这个插件倒是为我的网站带来了不少流量！`/jCorner/`到今天为止已经有3248次访问，是`http://zhangwenli.com`域名下仅次于根目录`/`和博客入口`/blog/`的第三大访问页面；就landing page而言，为我的域名带来了21.9%的访客。
 
 ## 有嘉
 
-<a href="http://www.argoeducation.com/" target="_blank"><img class="inline-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-13.png" /></a>
+<a href="http://www.argoeducation.com/" target="_blank"><img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-17-being-a-front-end-developer-all-these-years-13.png" /></a>
 
 <a href="http://www.argoeducation.com/" target="_blank">有嘉留学</a>是2014年寒假期间做的外包，由于甲方是一群高富帅，所以酬劳方面很爽气，合作也很愉快，要是客户都是这样的就好啦~那种要求多快好省样样齐全的甲方，实在是太捉急~ :dizzy_face:
 
@@ -142,7 +142,7 @@ excerpt: 接触网站前端编程以来的三年半，从当初还没听说过�
 
 ## 变卦
 
-<a href="http://zhangwenli.com/biangua" target="_blank"><img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-02.png" /></a>
+<a href="http://zhangwenli.com/biangua" target="_blank"><img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-02.png" /></a>
 
 <a href="http://zhangwenli.com/biangua" target="_blank">变卦</a>的idea在我脑海中放了好几个月，最终在8月份做出来。原本设想的效果更酷炫一点，是一种类似阻尼运动的撕裂效果！可惜最后没实现出来（或者说，实现了以后感觉效果很奇怪，就放弃这个动画方案了）…… :persevere:
 

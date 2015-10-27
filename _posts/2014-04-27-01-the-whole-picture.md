@@ -105,7 +105,7 @@ If I would like to change the color of the `Hello, world!` to be red, CSS is the
 </html>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-04-27-02-the-whole-picture-01.jpg" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-04-27-02-the-whole-picture-01.jpg" />
 
 Now, it's red.
 
@@ -141,7 +141,7 @@ We want to make `First` and `Second` be red and the background of them be yellow
 </html>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-04-27-02-the-whole-picture-02.jpg" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-04-27-02-the-whole-picture-02.jpg" />
 
 But what if there're much more `<h1>` elements need to be in this style? Do we have to write `style="color: red; background-color: yellow"` each time? If we want to change the style afterwards, do we have to change each of them?
 
@@ -259,7 +259,7 @@ We want to open a message box to say hello to the user when a button is clicked.
 </html>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-04-27-02-the-whole-picture-03.jpg" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-04-27-02-the-whole-picture-03.jpg" />
 
 You may notice this is like the inline style of CSS. Yes! JavaScript can also be written in the internal and external style.
 

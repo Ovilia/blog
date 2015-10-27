@@ -21,7 +21,7 @@ excerpt: 2015 年 1 月 1 日至 2015 年 5 月 31 日总共读了 40 本书，�
 
 # 《蒋勋说唐诗》
 
-<a href="http://book.douban.com/subject/10354427/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img4.douban.com/mpic/s7039789.jpg" /></a>好像是初二初三开始读的《红楼梦》，一读就喜欢得不得了。此后又读了五六遍，再之后就是随便跳着读，觉得也很有意思。
+<a href="http://book.douban.com/subject/10354427/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img4.douban.com/mpic/s7039789.jpg" /></a>好像是初二初三开始读的《红楼梦》，一读就喜欢得不得了。此后又读了五六遍，再之后就是随便跳着读，觉得也很有意思。
 
 前几个月开始在蜻蜓 FM 上听蒋勋的《细说红楼梦》，觉得他的解读比我自己看更有意思。蒋勋从青春期文学的角度剖析红楼梦，我觉得是一种很感人的解读。或许是因为他的台湾腔吧，反正越听越喜欢！虽然他有时候也会说错的，比如一个印象很深刻的错误是把琥珀说成是宝玉的丫头。但是八十多回，每回一个多小时的讲解，又怎能要求别人没有错误呢？
 
@@ -51,7 +51,7 @@ excerpt: 2015 年 1 月 1 日至 2015 年 5 月 31 日总共读了 40 本书，�
 
 # 《仿生人会梦见电子羊吗？》
 
-<a href="http://book.douban.com/subject/24715686/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s26858994.jpg" /></a>我完全是被书名吸引过去的。
+<a href="http://book.douban.com/subject/24715686/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img3.douban.com/mpic/s26858994.jpg" /></a>我完全是被书名吸引过去的。
 
 果然作者的脑洞就很大，说的是在科技发达的未来，仿生人（Android）已经和真人难辨真假，有的仿生人就伪装成了人逃到了地球上。所以就有专门追捕仿生人的赏金猎人，而这个赏金猎人想要靠赏金买一只真的羊，因为真的羊很贵很贵，而电子羊却很便宜，但是养电子样就会被邻居看不起之类的。总是真个故事设定还是挺神奇的，值得一读！
 
@@ -59,7 +59,7 @@ excerpt: 2015 年 1 月 1 日至 2015 年 5 月 31 日总共读了 40 本书，�
 
 # 《事林广记》
 
-<a href="http://book.douban.com/subject/6423973/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img4.douban.com/mpic/s6391678.jpg" /></a>《事林广记》也是一本很有趣的书，介绍了各种古代婚丧嫁娶礼俗，以及游戏烹饪方法。
+<a href="http://book.douban.com/subject/6423973/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img4.douban.com/mpic/s6391678.jpg" /></a>《事林广记》也是一本很有趣的书，介绍了各种古代婚丧嫁娶礼俗，以及游戏烹饪方法。
 
 比如你知道古人一直说的“射壶”是怎么玩的吗？比如你知道不同的亲疏关系，服丧穿什么服多久吗？比如你知道古人竟然用鸡和鹅做珍珠吗？
 
@@ -67,11 +67,11 @@ excerpt: 2015 年 1 月 1 日至 2015 年 5 月 31 日总共读了 40 本书，�
 
 # 《睡不着：Tango 一日一画》
 
-<a href="http://book.douban.com/subject/25775445/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s27146411.jpg" /></a>这是一个绘本，是一个艺术家在睡不着的时候画的一些很有意思的小图。作者的微博是 <a href="http://weibo.com/tangocartoon" target="_blank">tango2010</a>，不过我觉得近期微博上发的图都没有太有意思，可能因为书里的是精选出来的。
+<a href="http://book.douban.com/subject/25775445/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img3.douban.com/mpic/s27146411.jpg" /></a>这是一个绘本，是一个艺术家在睡不着的时候画的一些很有意思的小图。作者的微博是 <a href="http://weibo.com/tangocartoon" target="_blank">tango2010</a>，不过我觉得近期微博上发的图都没有太有意思，可能因为书里的是精选出来的。
 
 看了以后我也想画这样的画，可是一直没有很好的 idea，明明我也是个脑洞少女啊！以下即是证明：倒立蚊帐里，即是张雯莉。
 
-<img class="single-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-01-reading-report-1.jpg" />
+<img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-01-reading-report-1.jpg" />
 
 # 总结
 

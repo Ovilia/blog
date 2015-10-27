@@ -11,7 +11,7 @@ series: 送 Wenli 一本书，让她写出更棒的作品
 excerpt: 很意外在公布了<a href="http://zhangwenli.com/blog/tip/" target="_blank">送 Wenli 一本书，让她写出更棒的作品</a>之后不到五分钟就有人送了我这本<a href="http://book.douban.com/subject/21338365/" target="_blank">《HTML & CSS设计与构建网站》</a>。感谢这位我不认识的 CSF 童鞋~
 ---
 
-<a href="http://book.douban.com/subject/21338365/" target="_blank"><img class="book-img" src="{{ site.url }}/img/loading.gif" data-src="http://img3.douban.com/mpic/s24951890.jpg" /></a>很意外在公布了<a href="http://zhangwenli.com/blog/tip/" target="_blank">送 Wenli 一本书，让她写出更棒的作品</a>之后不到五分钟就有人送了我这本<a href="http://book.douban.com/subject/21338365/" target="_blank">《HTML & CSS设计与构建网站》</a>。感谢这位我不认识的 CSF 童鞋~
+<a href="http://book.douban.com/subject/21338365/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="http://img3.douban.com/mpic/s24951890.jpg" /></a>很意外在公布了<a href="http://zhangwenli.com/blog/tip/" target="_blank">送 Wenli 一本书，让她写出更棒的作品</a>之后不到五分钟就有人送了我这本<a href="http://book.douban.com/subject/21338365/" target="_blank">《HTML & CSS设计与构建网站》</a>。感谢这位我不认识的 CSF 童鞋~
 
 正如书名所示，这本书介绍了各种 HTML 和 CSS 技术，对于初学者也是没有难度的。只是我觉得初学者应该很难耐下心来一条条学这些东西，反而适合先随便做点练手的项目，对 HTML 和 CSS 有一定了解之后，再回过头来看这类逐条介绍 HTML 和 CSS 的书。这样，大部分内容就可以轻松愉快地跳过去，剩下 20% 左右不熟悉的正好补充一下知识。
 

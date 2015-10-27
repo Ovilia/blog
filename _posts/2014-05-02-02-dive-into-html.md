@@ -44,7 +44,7 @@ All the following tags should appear inside the `<body></body>` part.
 <p>This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.</p>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-01.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-01.png" />
 
 This is the *default style* a Web broswer may *probably* render it into. But you can always write your own CSS style to overwrite the default style. A `<p></p>` has *margin* above and below it. A *margin* is a distance outside current element to keep it from other ones, which will be discussed more in the next post.
 
@@ -88,7 +88,7 @@ From the definition, we can see that in HTML5 (the fifth edition of HTML) `<hr>`
 <p>This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.</p>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-03.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-03.png" />
 
 ##Heading Elements
 
@@ -108,7 +108,7 @@ Heading elements of different levels are used to state the section they belong, 
 <p>This is p.</p>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-04.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-04.png" />
 
 ##`<img>`
 
@@ -130,7 +130,7 @@ Use the `href` attribute to state the location of the link and it's useful to se
 Welcome to visit my <a href="http://zhangwenli.com" target="_blank">personal site</a>!
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-08.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-08.png" />
 
 If you want to put a link on an image, you can simply use this:
 
@@ -161,7 +161,7 @@ There are two types of lists in HTML, `<ol>` for ordered list and `<ul>` for uno
 </ul>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-05.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-05.png" />
 
 ##Form
 
@@ -190,7 +190,7 @@ A typical table looks like:
 </table>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-06.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-06.png" />
 
 `<tr>` is for a row of cells, and `<td>` is for a cell containing data.
 
@@ -207,7 +207,7 @@ Now are the last two (and yet the most frequently used two) tags I would like to
 <div>This is the second paragraph. This is the second paragraph. This is the first paragraph. This is the second paragraph. This is the second paragraph.</div>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-02.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-02.png" />
 
 Note that this looks quite like that of `<p></p>`, with the difference that this don't have a margin above and below the elements. Then, when should we use `<div></div>`? Should we use it when we don't want the margin?
 
@@ -226,7 +226,7 @@ Let's look at this example to see the difference between `<div>` and `<span>`.
 <p>This is a <span style="color: red">red</span> apple.</p>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-07.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-07.png" />
 
 `<span>` is an *inline* container, which means it won't put the element into a new line, while `<div>` on the other hand does.
 
@@ -254,7 +254,7 @@ I have all the ingredients and let's cook a fantastic meal! :v:
 </p>
 {% endhighlight %}
 
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-09.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-05-02-dive-into-html-09.png" />
 
 #Id
 

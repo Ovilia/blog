@@ -27,13 +27,13 @@ ReadFree 需要用豆瓣账号登录，普通账号可以每天免费下载 6 �
 
 # 截图
 
-<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot.png" />
+<img src="{{ site.loadingImg }}" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot.png" />
 
-<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-1.png" />
+<img src="{{ site.loadingImg }}" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-1.png" />
 
-<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-2.png" />
+<img src="{{ site.loadingImg }}" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-2.png" />
 
-<img src="{{ site.url }}/img/loading.gif" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-3.png" />
+<img src="{{ site.loadingImg }}" data-src="https://raw.githubusercontent.com/Ovilia/readfree-chrome-extension/master/res/screenshot-3.png" />
 
 # 下载地址
 

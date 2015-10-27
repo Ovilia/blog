@@ -34,5 +34,5 @@ excerpt: <a href="http://www.ituring.com.cn/book/1272" target="_blank">《Three.
 如果读完本书，你确实觉得收获不少，并且想要特别感谢一下作者，那么不妨来打赏一下作者吧——<a href="{{ site.url }}/tip">送 Wenli 一本书，让她写出更棒的作品！</a>
 
 <a href="{{ site.url }}/tip" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPostContent', 'introduction-to-three-js']);">
-<img src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/zhifu.png" />
+<img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/zhifu.png" />
 </a>

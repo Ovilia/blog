@@ -43,7 +43,7 @@ excerpt: 我记性很差，所以从初中背诗词起，就想出各种奇奇�
 
 下面一句句解释。
 
-<img class="post-img" src="{{ site.url }}/img/loading.gif" data-src="{{ site.url }}/img/post/2015-06-03-yeah-that-is-how-i-remember-a-poem-1.jpg" />“圣代无隐者”是个圣代哈哈哈……
+<img class="post-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2015-06-03-yeah-that-is-how-i-remember-a-poem-1.jpg" />“圣代无隐者”是个圣代哈哈哈……
 
 “英灵尽来归”是个鬼，因为“英灵”感觉像亡魂一样。这里就要把英灵和圣代编出一个故事，越离奇越不符合常理记忆会越深刻。这里我脑补的画面就是一个鬼吃了圣代。
 
