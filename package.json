@@ -10,7 +10,8 @@
     "gulp-sass": "~2.0.4",
     "gulp-autoprefixer": "~3.0.0",
     "gulp-uglify": "~1.4.1",
-    "gulp-rename": "~1.2.2"
+    "gulp-rename": "~1.2.2",
+    "gulp-jekyll": "~0.0.0"
   },
   "repository": {
     "type": "git",

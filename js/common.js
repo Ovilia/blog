@@ -1,3 +1,13 @@
+setTimeout(loadMusic, 20000);
+function loadMusic() {
+    if ($('#music-content')) {
+        $('#music-content').append('<iframe frameborder="no" border="0"'
+                + ' marginwidth="0" marginheight="0" width=330 height=450'
+                + ' src="http://music.163.com/outchain/player?type=0'
+                + '&id=49176408&auto=0&height=430"></iframe>');
+    }
+}
+
 var isFirstToggleMusic = true;
 function toggleMusicPanel() {
     $('#music-control').toggleClass('on');
@@ -36,9 +46,9 @@ function processPageView(rows) {
     });
 }
 
-LazyLoad.css('/blog/css/font.css');
+LazyLoad.css('http://7xl1oi.com1.z0.glb.clouddn.com/font.css');
 
-LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
+LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () {
     $('h1').each(function() {
         if ($(this).children('.h1-link').length === 0) {
             var id = $(this).text().replace(/\ /g, '-').replace(/\W^\-/g, '')
@@ -56,7 +66,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         });
     }
 
-    LazyLoad.js('/blog/js/unviel.min.js', function () {
+    LazyLoad.js('http://7xl1oi.com1.z0.glb.clouddn.com/unviel.min.js', function () {
         $("img").unveil();
 
         // google pageview
@@ -81,7 +91,7 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
                     })
                 }
             });
-        }, 1000);
+        }, 2000);
     });
 
     if (typeof jQueryCallBack === 'function') {
@@ -91,8 +101,8 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
 
 // emoji
 setTimeout(function() {
-    LazyLoad.css('/blog/css/emojify.min.css', function () {
-        LazyLoad.js('/blog/js/emojify.min.js', function () {
+    LazyLoad.css('http://7xl1oi.com1.z0.glb.clouddn.com/emojify.min.css', function () {
+        LazyLoad.js('http://7xl1oi.com1.z0.glb.clouddn.com/emojify.min.js', function () {
             emojify.setConfig({
                 emoticons_enabled: true,
                 people_enabled: true,
@@ -104,7 +114,7 @@ setTimeout(function() {
 }, 5000);
 
 // other files for different pages, define loadJs arrary
-if (loadJs) {
+if (typeof loadJs === 'object') {
     for (var i = 0, len = loadJs.length; i < len; ++i) {
         // load each js file and call callback
         LazyLoad.js(loadJs[i][0], loadJs[i][1]);

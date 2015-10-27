@@ -6,8 +6,6 @@ Topics: Web Front-End Developing and More.
 
 ## License
 
-I'd suggest you make an own theme for your blog. You will learn much during this experience. If you must use my blog theme, please send an email to `me # zhangwenli.com` to get approval. And be sure to change the Google Analytics ID `UA-38205696-1` in `_includes/header.html`, otherwise your analytics information will send to my account and mess up with mine.
-
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
     <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" />
 </a>
