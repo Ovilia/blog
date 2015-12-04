@@ -41,7 +41,11 @@
 
     {% if page.titleImg != null %}<img class="post-title-img" src="{{ site.url }}{{ page.titleImg }}" />{% endif %}
 
+
+
     {% include license.html %}
+
+
 
     {% if page.postClass != null %}<div class="{{ page.postClass }}">{% endif %}
     {{ content }}
@@ -138,6 +142,13 @@
         </ul>
         <a class="button" href="{{ site.url }}/all" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InPost', window.location.pathname]);">View All Posts</a></p>
     </blockquote>
+
+
+
+    <img class="post-img" src="{{ site.url }}/img/gongzhonghao.jpg" /><p>我的微信公众号 xianzheblog 将于 2016 年 1 月开始发文，通过有趣的故事介绍前端、设计、可视化相关话题。干货，可以用更湿润的方式介绍。</p>
+    <div style="clear: both"></div>
+
+
 
     {% include comment.html %}
 </div>
