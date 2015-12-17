@@ -66,7 +66,7 @@ LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () 
         });
     }
 
-    LazyLoad.js('/blog/font/unviel.min.js', function () {
+    LazyLoad.js('/blog/js/unviel.min.js', function () {
         $("img").unveil();
 
         // google pageview
