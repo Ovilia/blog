@@ -46,7 +46,7 @@ function processPageView(rows) {
     });
 }
 
-LazyLoad.css('http://zhangwenli.com/css/font.css');
+LazyLoad.css('/blog/css/font.css');
 
 LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () {
     $('h1').each(function() {
@@ -66,7 +66,7 @@ LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () 
         });
     }
 
-    LazyLoad.js('http://zhangwenli.com/font/unviel.min.js', function () {
+    LazyLoad.js('/blog/font/unviel.min.js', function () {
         $("img").unveil();
 
         // google pageview
@@ -101,8 +101,8 @@ LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () 
 
 // emoji
 setTimeout(function() {
-    LazyLoad.css('http://zhangwenli.com/css/emojify.min.css', function () {
-        LazyLoad.js('http://zhangwenli.com/js/emojify.min.js', function () {
+    LazyLoad.css('/blog/css/emojify.min.css', function () {
+        LazyLoad.js('/blog/js/emojify.min.js', function () {
             emojify.setConfig({
                 emoticons_enabled: true,
                 people_enabled: true,
