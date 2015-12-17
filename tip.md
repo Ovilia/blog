@@ -53,7 +53,7 @@ subtitle: 送羡辙一本书，让她写出更棒的作品！
 
 ## 方法一：支付宝扫一扫
 
-<img src="{{ site.loadingImg }}" data-src="http://7xl1oi.com1.z0.glb.clouddn.com/zhifu.png" />
+<img src="{{ site.loadingImg }}" data-src="http://zhangwenli.com/img/zhifu.png" />
 
 ## 方法二：转账到我的支付宝账号
 

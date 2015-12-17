@@ -2,26 +2,26 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Light'), local('Lato-Light'), url('http://7xl1oi.com1.z0.glb.clouddn.com/lato400.woff') format('woff');
+  src: local('Lato Light'), local('Lato-Light'), url('http://zhangwenli.com/font/lato400.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url('http://7xl1oi.com1.z0.glb.clouddn.com/lato900.woff') format('woff');
+  src: local('Lato Black'), local('Lato-Black'), url('http://zhangwenli.com/font/lato900.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url('http://7xl1oi.com1.z0.glb.clouddn.com/lato400i.woff') format('woff');
+  src: local('Lato Italic'), local('Lato-Italic'), url('http://zhangwenli.com/font/lato400i.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 900;
-  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('http://7xl1oi.com1.z0.glb.clouddn.com/lato900i.woff') format('woff');
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('http://zhangwenli.com/font/lato900i.woff') format('woff');
 }
