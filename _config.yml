@@ -2,8 +2,8 @@ name: "Blog of Wenli Zhang"
 description: "Web Front-End Blog by Wenli Zhang"
 
 url: "http://zhangwenli.com/blog"
-loadingImg: "http://7xl1oi.com1.z0.glb.clouddn.com/loading.gif"
-filePath: "http://7xl1oi.com1.z0.glb.clouddn.com/"
+loadingImg: "http://zhangwenli.com/blog/img/loading.gif"
+filePath: "http://zhangwenli.com/blog/img/"
 
 timezone: Asia/Shanghai
 
