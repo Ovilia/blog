@@ -3,13 +3,16 @@
 \*------------------------------------*/
 
 a {
-  color: $clr-link;
   font-weight: bold;
   text-decoration: none;
   text-shadow: $sd-link;
   word-wrap: break-word;
+}
+
+a, .post-block h2>a>code {
+  color: $clr-link;
   @include transition-duration(0.5s);
-  
+
   &:visited {
     color: $clr-link--visited;
   }
