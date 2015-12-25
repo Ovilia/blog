@@ -9,7 +9,7 @@ a.series-recent {
   text-shadow: $sd-def;
   font-weight: $ft-wt-def;
   display: inline-block;
-  padding: 3px 8px;
+  padding: 0.4rem 1rem;
   
   &:visited {
     background-color: $clr-link--visited;
@@ -33,6 +33,10 @@ a.series-recent {
   background-color: #AEE2D9;
   padding: 8px 20px;
   margin-bottom: 20px;
+}
+
+.post-series {
+  margin: 0 0 0.5rem 0;
 }
 
 .seriesNote {
