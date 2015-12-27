@@ -5,7 +5,7 @@ layout: post
 tags:
 - 中文
 - NodeJs
-- Baidu
+- BOS
 - JavaScript
 excerpt: <a href="http://bce.baidu.com/doc/BOS/GettingStarted-new.html#BOS.E5.9F.BA.E6.9C.AC.E5.8A.9F.E8.83.BD.E4.BB.8B.E7.BB.8D" target="_blank">百度 BOS</a> 是一种存储服务，然而坑爹的是居然不提供 Node.js 的接口。而更坑的是，明明 BCE 有提供该功能 <a href="https://www.npmjs.com/package/baidubce-sdk" target="_blank">Node.js 版本的 SDK</a>，而官网却给出了一个<a href="http://bce.baidu.com/doc/BAE/GUIGettingStarted.html#Node.js" target="_blank">非常复杂的解决方案</a>。
 ---

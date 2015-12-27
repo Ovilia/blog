@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $ft-fm-def;
   font-weight: $ft-wt-bold;
   margin: 0.5em 0;
-  text-shadow: $sd-h2-6;
+  color: $clr-def;
 }
 
 h1 {
@@ -42,6 +42,7 @@ h1 {
 
 h2 {
   font-size: $ft-sz-h2;
+  margin-top: 1.5em;
 }
 
 h3 {

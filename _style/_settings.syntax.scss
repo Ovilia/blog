@@ -52,7 +52,7 @@
 .sh { color: $clr-contrast } /* Literal.String.Heredoc */
 .si { color: $clr-contrast } /* Literal.String.Interpol */
 .sx { color: $clr-contrast } /* Literal.String.Other */
-.sr { color: #009926 } /* Literal.String.Regex */
+.sr { color: $clr-contrast-dark } /* Literal.String.Regex */
 .s1 { color: $clr-contrast } /* Literal.String.Single */
 .ss { color: #990073 } /* Literal.String.Symbol */
 .bp { color: #999999 } /* Name.Builtin.Pseudo */
