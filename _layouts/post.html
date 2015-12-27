@@ -15,7 +15,7 @@
 {% endfor %}
 <div class="rotLeft rotTop pageBack"></div>
 <div class="rotRight rotTop pageBack"></div>
-<div class="container page{% if isZn %} cn{% endif %}">
+<div class="container page{% if isZn %} cn{% endif %} page-post">
     <div class="simpleNav">
         <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">{% if isZn %}首页{% else %}Home{% endif %}</a>
         <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">{% if isZn %}博客{% else %}Blog{% endif %}</a>
