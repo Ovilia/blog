@@ -16,6 +16,7 @@ layout: none
                 {% endif %}
             {% endfor %}
             
+            {% if post.category != 'note' %}
             {% if isZn == false %}
             <item>
                 <title>{% if post.subtitle %}{{ post.subtitle | xml_escape }} {% endif %}{{ post.title | xml_escape }}</title>
@@ -24,6 +25,7 @@ layout: none
                 <link>{{ site.url }}{{ post.url }}</link>
                 <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
             </item>
+            {% endif %}
             {% endif %}
         {% endfor %}
     </channel>
