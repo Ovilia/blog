@@ -94,6 +94,11 @@ LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () 
         }, 2000);
     });
 
+    // add target="_blank" for external links
+    $(document.links).filter(function() {
+        return this.hostname !== window.location.hostname;
+    }).attr('target', '_blank');
+
     if (typeof jQueryCallBack === 'function') {
         jQueryCallBack();
     }
