@@ -56,3 +56,12 @@ p {
     border-color: $clr-light;
   }
 }
+
+figure {
+  text-align: center;
+}
+
+  figcaption {
+    color: $clr-def;
+    font-size: 0.8em;
+  }
