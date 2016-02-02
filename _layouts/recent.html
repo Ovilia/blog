@@ -25,7 +25,7 @@
     {% assign start = paginator.page | minus: 1 | times: 20 %}
     {% assign end = start | plus: 20 %}
     {% assign sortedPost = site.posts | sort: 'time' | slice: start, 10 %}
-    {% for post in sortedPost reversed %}
+    {% for post in sortedPost %}
         {% if forloop.index > start and forloop.index < end %}
         {% if post.hide != true %}
             {% assign isZn = false %}
