@@ -24,7 +24,7 @@
 
     {% assign start = paginator.page | minus: 1 | times: 20 %}
     {% assign end = start | plus: 20 %}
-    {% assign sortedPost = site.posts | sort: 'time' | slice: start, 10 %}
+    {% assign sortedPost = site.posts | sort: 'order' | slice: start, 10 %}
     {% for post in sortedPost %}
         {% if forloop.index > start and forloop.index < end %}
         {% if post.hide != true %}
@@ -84,7 +84,7 @@
 <section id="post-section-zn">
     <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
 
-    {% for post in sortedPost reversed %}
+    {% for post in sortedPost %}
         {% if forloop.index > start and forloop.index < end %}
         {% if post.hide != true %}
             {% assign isZn = false %}
