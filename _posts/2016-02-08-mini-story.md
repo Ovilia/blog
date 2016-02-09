@@ -15,13 +15,10 @@ excerpt: 昨天公众号（羡辙部落格，xianzheblog）的推文被好多人
 
 《宝子姑娘》选自日本科幻作家星新一的[《1分钟小说选》](http://book.douban.com/subject/2076847/)，如果大家觉得不错的话，我以后会读更多这个系列的故事。
 
-<iframe height="36" width="260" src="http://www.ximalaya.com/swf/sound/red.swf?id=12168499" frameborder=0 allowfullscreen></iframe>
-
-<iframe height="36" width="260" src="http://www.ximalaya.com/swf/sound/red.swf?id=12168716" frameborder=0 allowfullscreen></iframe>
-
-<iframe height="36" width="260" src="http://www.ximalaya.com/swf/sound/red.swf?id=12168719" frameborder=0 allowfullscreen></iframe>
+[传送我到喜马拉雅！](http://www.ximalaya.com/19038439/album/3679324)
 
 这篇是比较典型的星新一的微型小说，脑洞挺大的吧？
+
 但我就想问一句，关于宝子姑娘喝的酒都被回收起来重新卖出去，请问不同种类的酒是如何区分开的？
 好吧，认真我就输了。
 

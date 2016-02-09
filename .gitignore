@@ -3,3 +3,5 @@ _site/
 css/*.map
 .DS_Store
 node_modules/
+.jekyll-metadata
+

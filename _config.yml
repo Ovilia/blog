@@ -7,9 +7,16 @@ filePath: "http://zhangwenli.com/blog/img/"
 
 timezone: Asia/Shanghai
 
-paginate: 20
+paginate: 16
+paginate_path: "/page:num"
 
-highlighter: pygments
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
 
-markdown: rdiscount
 permalink: pretty
+
+gems:
+- jekyll-paginate
+- github-pages
