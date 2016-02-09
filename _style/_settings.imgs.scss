@@ -59,6 +59,10 @@ p {
 
 figure {
   text-align: center;
+
+  &.highlight {
+    text-align: left;
+  }
 }
 
   figcaption {
