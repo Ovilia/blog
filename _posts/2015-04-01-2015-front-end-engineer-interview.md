@@ -66,7 +66,6 @@ GitHub 是一个需要长期经营的地方，不是你面试前可以突击出�
 ## 第一轮
 
 > 时间：2015.3.13
-
 > 电话技术面试
 
 第一轮技术面试非常简单，就是问各种情况下应该用什么东西实现，比如“CSS 3 如何实现旋转图片”回答“`transform: rotate`”就不问下去了。
@@ -111,9 +110,7 @@ JSON 和 JavaScript 的 `Object` 关联更大，没有特殊需求就用 JSON。
 在程序语言范畴内的“闭包”指的是函数把其中的变量作用域都“包”在该函数的作用域内，形成一个“包”，外部函数无法访问内部变量。所以严格意义上来说，JavaScript 中的函数都是闭包。但我们常说的闭包，通常是指为了让外部函数访问到内部函数中变量，使内部函数返回一个函数，在其中操作内部变量。
 
 > Like most modern programming languages, JavaScript uses lexical scoping. This means that functions are executed using the variable scope that was in effect when they were defined, not the variable scope that is in effect when they are invoked. In order to implement lexical scoping, the internal state of a JavaScript function object must in- clude not only the code of the function but also a reference to the current scope chain. (Before reading the rest of this section, you may want to review the material on variable scope and the scope chain in §3.10 and §3.10.3.) This combination of a function object and a scope (a set of variable bindings) in which the function’s variables are resolved is called a closure in the computer science literature. (This is an old term that refers to the fact that the function’s variables have bindings in the scope chain and that therefore the function is “closed over” its variables.)
-
 > Technically, all JavaScript functions are closures: they are objects, and they have a scope chain associated with them. Most functions are invoked using the same scope chain that was in effect when the function was defined, and it doesn’t really matter that there is a closure involved. Closures become interesting when they are invoked under a different scope chain than the one that was in effect when they were defined. This happens most commonly when a nested function object is returned from the function within which it was defined. There are a number of powerful programming techniques that involve this kind of nested function closures, and their use has become relatively common in JavaScript programming. Closures may seem confusing when you first en- counter them, but it is important that you understand them well enough to use them comfortably.
-
 > 摘自 *JavaScript, The Definite Guide*
 
 ### RESTful 的操作名
@@ -127,7 +124,6 @@ JSON 和 JavaScript 的 `Object` 关联更大，没有特殊需求就用 JSON。
 404：文件找不到；302：不知道；500：服务器错误；403：权限错误。
 
 > 302 Found 是HTTP协议中的一个状态码（Status Code）。可以简单的理解为该资源原本确实存在，但已经被临时改变了位置；或者换个说法，就是临时的存在于某个临时 URL 下。通常会发送 Header 来暂时重定向到新的新位置。
-
 > 摘自 <a href="http://www.lingdublog.com/134.html" target="_blank">http://zh.wikipedia.org/wiki/HTTP_302</a>
 
 ### 一面小结
@@ -141,7 +137,6 @@ JSON 和 JavaScript 的 `Object` 关联更大，没有特殊需求就用 JSON。
 ## 第二轮
 
 > 时间：2015.3.15
-
 > 视频技术面试
 
 面试官先打电话来问现在有没有空视频面试，当时是晚上八九点了吧……当然我觉得提前告诉我一下会比较好些，但想想面试官应该每天要面试这么多人也很麻烦，所以也情有可原。
@@ -286,7 +281,6 @@ for(var j = 0; j < 4; j++) {
 ## 第三轮
 
 > 时间：2015.3.22
-
 > 电话技术面试
 
 三面说是技术面试，结果问的都不是具体的技术问题，应该算是考量诸如自主学习能力之类的软实力吧！
@@ -306,7 +300,6 @@ for(var j = 0; j < 4; j++) {
 ## 第四轮
 
 > 时间：2015.3.22
-
 > 电话 HR 面试
 
 HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过晚上十点，不知道分机号打不进去。后来等了几分钟又打来了，给她解释了一下为什么没接到，HR 也挺谅解的，应该没觉得我高冷……
@@ -321,7 +314,7 @@ HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过�
 
 # 百度
 
-大概是从一个月前发布了在线简历开始吧，百度 EFE 前端团队经理 <a href="http://weibo.com/forain">祖明</a> 在微博上邀请我过去“聊聊”。我想多准备准备再过去就一直拖着，天地良心真不是暗渡阿里仓的缓兵之计啊~ 然后祖明特别逗，经常在我完全不相关的微博下面留言“来我们这实习吧来我们这实习吧”~ :astonished:
+大概是从一个月前发布了在线简历开始吧，百度 EFE 前端团队经理<a href="http://weibo.com/forain">祖明</a>在微博上邀请我过去“聊聊”。我想多准备准备再过去就一直拖着，天地良心真不是暗渡阿里仓的缓兵之计啊~ 然后祖明特别逗，经常在我完全不相关的微博下面留言“来我们这实习吧来我们这实习吧”~ :astonished:
 
 拖着拖着阿里那边都差不多了，我想再不去就有把百度当备胎的嫌疑了，那这误会就实在解释不清了……之所以选择暑假去阿里，主要是因为这是最后一个有长段完整时间可以去外地的，开学之后要想去杭州实在是不大现实。最后想想反正再准备也没法一秒钟变大神了，还是赶紧去吧！
 
@@ -330,7 +323,6 @@ HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过�
 ## 第一轮
 
 > 时间：2015.3.20
-
 > 电话技术面试
 
 ### 描述最具有代表性的项目
@@ -374,9 +366,7 @@ HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过�
 > 6. 如果节点是 JavaScript 代码的话，调用 JavaScript 引擎解释并执行。
 > 7. JavaScript 代码可能会修改 DOM 树的结构
 > 8. 如果节点需要依赖其他资源，例如图片、CSS、视频等，调用资源加载器来加载它们，但是它们是异步的，不会阻碍当前 DOM 树的创建，直到 JavaScript 的资源加载并被 JavaScript 引擎执行后才继续 DOM 树的创建。
-
 > 摘自<a href="http://book.douban.com/subject/25910556/" target="_blank">《WebKit技术内幕》</a>
-
 >另外，网上看到<a href="http://fex.baidu.com/blog/2014/05/what-happen/" target="_blank">颗粒度非常细的回答</a>，表示不明觉厉！
 
 ### 如何验证上述 CSS、JavaScript 是异步加载的？
@@ -396,13 +386,9 @@ HR 给我打了两个电话没接到，当时在洗澡……回拨因为超过�
 是的，表现在不阻塞 DOM tree 的解析，并且可以同时加载多个 CSS 文件。
 
 > 这个答案应该是错误的。
-
 > By default CSS is treated as a render blocking resource, which means that the browser will hold rendering of any processed content until the CSSOM is constructed. Make sure to keep your CSS lean, deliver it as quickly as possible, and use media types and queries to unblock rendering.
-
 > In the previous section we saw that the critical rendering path requires that we have both the DOM and the CSSOM to construct the render tree, which creates an important performance implication: both HTML and CSS are render blocking resources.
-
 > Finally, note that “render blocking” only refers to whether the browser will have to hold the initial rendering of the page on that resource. In either case, the CSS asset is still downloaded by the browser, albeit with a lower priority for non-blocking resources.
-
 > 摘自 <a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css?hl=en" target="_blank">Render Blocking CSS</a>
 
 ### JavaScript 的多个模块怎么组织？
@@ -430,7 +416,7 @@ RequireJS。
 在不使用 `call()`、`apply()` 的情况下，`this` 指向当前作用域，比如函数中的 `this` 指向函数，全局的 `this` 指向 `window`。
 
 <blockquote>
-<p>这个回答大错特错好么！其实面试前两天刚在<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a>里面看到相关内容，总结得非常清楚，当时只道是寻常地看了过去……<p>
+<p>这个回答大错特错好么！其实面试前两天刚在<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a>里面看到相关内容，总结得非常清楚，当时只道是寻常地看了过去……</p>
 
 <h4>Invocation as a function</h4>
 
@@ -491,6 +477,8 @@ assert(ninja2.result === 26,"juggled via call");
 
 <p>摘自<a href="http://book.douban.com/subject/3176860/" target="_blank">《Secrets of the JavaScript Ninja》</a></p>
 </blockquote>
+
+
 
 ### 下面代码的 `this` 是什么？
 
@@ -565,7 +553,6 @@ WebRTC 是专为网页上的音视频沟通定制的解决方案；Web Socket �
 ## 第二轮
 
 > 时间：2015.3.26
-
 > 现场面试
 
 从学校到百度要两个多小时呢，可惜祖明不在上海啊，给我面试的是 <a href="http://weibo.com/pissang" target="_blank">pissang</a>。
