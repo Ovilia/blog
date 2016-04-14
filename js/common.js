@@ -48,7 +48,7 @@ function processPageView(rows) {
 
 LazyLoad.css('/blog/css/font.css');
 
-LazyLoad.js('https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js', function () {
+LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     $('h1').each(function() {
         if ($(this).children('.h1-link').length === 0) {
             var id = $(this).text().replace(/\ /g, '-').replace(/\W^\-/g, '')
