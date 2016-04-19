@@ -6,10 +6,10 @@ tags:
 - NodeBB
 - MongoDB
 - NodeJs
-excerpt: My attempt to use NodeBB could be largely attributed to the simplicity of its <a href="https://docs.nodebb.org/en/latest/installing/os/osx-mavericks.html" target="_blank">install instructions</a>. Yet I end up spending much more time fixing all kinds of install problems. So this post serves as a hint for someone who runs into a similar situation.
+excerpt: My attempt to use NodeBB could be largely attributed to the simplicity of its <a href="https://docs.nodebb.org/en/latest/installing/os/osx-mavericks.html" target="_blank">install instructions</a>. Yet I ended up spending much more time fixing all kinds of install problems. So this post serves as a hint for someone who runs into a similar situation.
 ---
 
-My attempt to use NodeBB could be largely attributed to the simplicity of its [install instructions](https://docs.nodebb.org/en/latest/installing/os/osx-mavericks.html). Yet I end up spending much more time fixing all kinds of install problems. :joy: So this post serves as a hint for someone who runs into a similar situation.
+My attempt to use NodeBB could be largely attributed to the simplicity of its [install instructions](https://docs.nodebb.org/en/latest/installing/os/osx-mavericks.html). Yet I ended up spending much more time fixing all kinds of install problems. :joy: So this post serves as a hint for someone who runs into a similar situation.
 
 
 
