@@ -137,9 +137,9 @@ This could be fixed by using the same username and password of your MongoDB user
 
 All these steps are described by NodeBB as:
 
-> Run interactive installation:
-> ./nodebb setup
-> You may leave all of the options as default.
+> Run interactive installation:  
+> ./nodebb setup  
+> You may leave all of the options as default.  
 
 You know what, this is how you teach someone to draw a horse:
 
