@@ -52,8 +52,8 @@ gulp.task('jekyll', function () {
 gulp.task('watch', function () {
     gulp.watch('_style/*.scss', ['sass']);
     gulp.watch('js/common.js', ['compress']);
-    gulp.watch(['js/*.js', 'css/*.css'], ['jekyll']);
-    gulp.watch(['*.html', '_posts/*', '_layouts/*', '_includes/*'], ['jekyll']);
+    // gulp.watch(['js/*.js', 'css/*.css'], ['jekyll']);
+    // gulp.watch(['*.html', '_posts/*', '_layouts/*', '_includes/*'], ['jekyll']);
 });
 
 /**

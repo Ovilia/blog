@@ -8,6 +8,7 @@ tags:
 - 回顾
 - 统计
 - 失眠
+- ECharts
 excerpt: 昨天写年度总结，突然想起来以前安卓手机上有两年多的 <a href="https://mysleepbot.com/" target="_blank">SleepBot</a> 睡眠数据，今天终于整理好，用 Node.js <a href="https://gist.github.com/Ovilia/0cfe77f3ea69bf6fb09c" target="_blank">预处理数据</a>，用 <a href="http://echarts.baidu.com" target="_blank">ECharts</a> 画成图表了。数据是从网页版 <a href="https://mysleepbot.com/" target="_blank">SleepBot</a> 导出的，我没想到它非常贴心地提供了 CSV 数据下载，实在非常感动！
 ---
 
@@ -131,10 +132,10 @@ SleepBot 数据的一个缺点就在于记录睡觉和起床时间是手动的�
                 text: '睡觉起床时间分布'
             },
             grid: {
-                x: 60,
-                x2: 30,
-                y: 40,
-                y2: 40
+                left: 60,
+                right: 30,
+                top: 40,
+                bottom: 40
             },
             tooltip: {
                 trigger: 'item',
@@ -163,7 +164,7 @@ SleepBot 数据的一个缺点就在于记录睡觉和起床时间是手动的�
             },
             legend: {
                 data: ['睡觉', '起床'],
-                x: 'right'
+                left: 'right'
             },
             calculable: true,
             yAxis: [yAxis],
@@ -266,14 +267,14 @@ SleepBot 数据的一个缺点就在于记录睡觉和起床时间是手动的�
                 text: '睡觉起床时间分布'
             },
             grid: {
-                x: 60,
-                x2: 60,
-                y: 40,
-                y2: 40
+                left: 60,
+                right: 60,
+                top: 40,
+                bottom: 40
             },
             legend: {
                 data:['睡觉', '起床', '睡眠时长'],
-                x: 'right'
+                left: 'right'
             },
             tooltip: {
                 trigger: 'axis',
@@ -405,10 +406,10 @@ SleepBot 数据的一个缺点就在于记录睡觉和起床时间是手动的�
                 }
             },
             grid: {
-                x: 30,
-                x2: 30,
-                y: 40,
-                y2: 40
+                left: 30,
+                right: 30,
+                top: 40,
+                bottom: 40
             },
             yAxis: [{
                 type: 'value',

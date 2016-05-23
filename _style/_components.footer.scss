@@ -2,6 +2,19 @@
     #FOOTER
 \*------------------------------------*/
 
+.footnotes:before {
+  @extend h2;
+
+  content: 'Reference';
+  display: block;
+}
+
+.footnotes li {
+  border-left: none;
+}
+
+
+
 // footer nav
 #footer-nav {
   text-align: center;
