@@ -10,7 +10,7 @@ excerpt: <a href="http://echarts.baidu.com">ECharts</a> is a powerful JavaScript
 
 > [ECharts](http://echarts.baidu.com) is a powerful JavaScript library to make amazing charts. This post introduces how to use ECharts in [*MVW*](http://stackoverflow.com/questions/13329485/mvw-what-does-it-stand-for) style.
 
-# EChars
+# ECharts
 
 <div id="intro-chart" class="demo"></div>
 
