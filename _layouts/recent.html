@@ -21,8 +21,11 @@
     
 <section id="post-section-en">
     <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
-
-    {% assign sorted_post = paginator.posts | sort:"time" %}
+    {% assign start = -1 | times: paginator.per_page | times: paginator.page %}
+    {% if paginator.page == paginator.total_pages %}
+        {% assign start = 0 %}
+    {% endif %}
+    {% assign sorted_post = site.posts | sort: "time" | slice: start, paginator.per_page %}
     {% for post in sorted_post reversed %}
         {% if post.hide != true %}
             {% assign isZn = false %}
@@ -62,6 +65,9 @@
     {% endfor %}
 
     <div class="pagination">
+    {% if paginator.page != 1 %}
+        <a href="{{ site.url }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">First Page</a>
+    {% endif %}
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
             <a href="{{ site.url }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">Previous</a>
@@ -69,9 +75,12 @@
             <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '{{ paginator.previous_page }}thPage', window.location.pathname]);">Previous</a>
         {% endif %}
     {% endif %}
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
         <a href="{{ site.url }}/page{{ paginator.next_page }}" class="next" onclick="_gaq.push(['_trackEvent', 'ToNextPage', '{{ paginator.next_page }}thPage', window.location.pathname]);">Next</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ site.url }}/page{{ paginator.total_pages }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">Last Page</a>
     {% endif %}
     <a href="{{ site.url }}/all/" class="allPostLink" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InRecentNav', window.location.pathname]);">All Posts</a>
     </div>
@@ -118,6 +127,9 @@
     {% endfor %}
 
     <div class="pagination">
+    {% if paginator.page != 1 %}
+        <a href="{{ site.url }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">首页</a>
+    {% endif %}
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
             <a href="{{ site.url }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">上一页</a>
@@ -125,9 +137,12 @@
             <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="previous" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '{{ paginator.previous_page }}thPage', window.location.pathname]);">上一页</a>
         {% endif %}
     {% endif %}
-    <span class="page_number">第{{ paginator.page }}页，共{{ paginator.total_pages }}页</span>
+    <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
         <a href="{{ site.url }}/page{{ paginator.next_page }}" class="next" onclick="_gaq.push(['_trackEvent', 'ToNextPage', '{{ paginator.next_page }}thPage', window.location.pathname]);">下一页</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ site.url }}/page{{ paginator.total_pages }}" class="previous" onclick="_gaq.push(['_trackEvent', 'ToPrevPage', '1thPage', window.location.pathname]);">末页</a>
     {% endif %}
     <a href="{{ site.url }}/all/" class="allPostLink" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InRecentNav', window.location.pathname]);">所有博文</a>
     </div>
