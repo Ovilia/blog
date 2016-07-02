@@ -42,11 +42,6 @@
     {% if page.titleImg != null %}<img class="post-title-img" src="{{ site.url }}{{ page.titleImg }}" />{% endif %}
 
 
-
-    {% include license.html %}
-
-
-
     {% if page.postClass != null %}<div class="{{ page.postClass }}">{% endif %}
     {{ content }}
     {% if page.postClass != null %}</div>{% endif %}
@@ -145,6 +140,8 @@
     </blockquote>
 
 
+
+    {% include license.html %}
 
     {% include comment.html %}
 </div>
