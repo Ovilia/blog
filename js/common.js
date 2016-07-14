@@ -130,9 +130,23 @@ setTimeout(function() {
 }, 5000);
 
 // other files for different pages, define loadJs arrary
+if (typeof loadCss === 'object') {
+    for (var i = 0, len = loadCss.length; i < len; ++i) {
+        if (typeof loadCss[i] === 'string') {
+            // no callback
+            LazyLoad.css(loadCss[i]);
+        } else {
+            LazyLoad.css(loadCss[i][0], loadCss[i][1]);
+        }
+    }
+}
 if (typeof loadJs === 'object') {
     for (var i = 0, len = loadJs.length; i < len; ++i) {
-        // load each js file and call callback
-        LazyLoad.js(loadJs[i][0], loadJs[i][1]);
+        if (typeof loadJs[i] === 'string') {
+            // no callback
+            LazyLoad.js(loadJs[i]);
+        } else {
+            LazyLoad.js(loadJs[i][0], loadJs[i][1]);
+        }
     }
 }
