@@ -73,3 +73,9 @@ em {
 .text-secondary {
   color: $clr-contrast;
 }
+
+.clear:after {
+  display: block;
+  content: ' ';
+  clear: both;
+}

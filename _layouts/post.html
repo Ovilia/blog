@@ -16,10 +16,18 @@
 <div class="rotLeft rotTop pageBack"></div>
 <div class="rotRight rotTop pageBack"></div>
 <div class="container page{% if isZn %} cn{% endif %} page-post">
+    {% if page.titleImg != null %}
+    <div class="post-title-img">
+        <img src="{{ site.url }}{{ page.titleImg }}" />
+        <div class="post-title-hover"></div>
+    </div>
+    {% endif %}
+
     <div class="simpleNav">
         <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">{% if isZn %}首页{% else %}Home{% endif %}</a>
         <a href="{{ site.url }}" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">{% if isZn %}博客{% else %}Blog{% endif %}</a>
     </div>
+
     {% assign time = page.time %}
     {% if page.update_time %}
         {% assign time = page.update_time %}
@@ -29,21 +37,24 @@
     {% if page.subtitle != null %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <div class="pageTitle">{{ page.title }}</div>
 
-    {% if page.series %}
-        {% include series.html %}
-    {% endif %}
-
     <div class="tagPanel">
     {% for tag in page.tags %}<a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>{% endfor %}
     </div>
 
-    <div id="page-view"></div>
+    
 
-    {% if page.titleImg != null %}<img class="post-title-img" src="{{ site.url }}{{ page.titleImg }}" />{% endif %}
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
+
+
+
+    <div id="page-view"></div>
 
 
     {% if page.postClass != null %}<div class="{{ page.postClass }}">{% endif %}
     {{ content }}
+    <div class="clear"></div>
     {% if page.postClass != null %}</div>{% endif %}
 
     {% if page.series %}
