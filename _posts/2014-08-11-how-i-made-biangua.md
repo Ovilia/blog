@@ -15,7 +15,6 @@ series: How I made ...
 ---
 
 > #### 关于本文
-
 > 本文是对<a href="http://zhangwenli.com/biangua" target="_blank">“变卦”网页</a>的详细说明。《易经》64卦，每卦由6爻组成，2的6次方就是64。仅一爻的由阳变阴，由阴变阳，就可以让整个卦象发生根本的改变。“<a href="http://zhangwenli.com/biangua" target="_blank">变卦</a>”，让每一爻的变化尽收眼底。
 
 # 八卦与六十四卦
@@ -23,11 +22,8 @@ series: How I made ...
 我们现在已经很少用到“八卦”的本意了，更多是与“娱乐”相关的含义了。那么，八卦究竟是什么意思呢？
 
 > <img class="inline-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-01.png" />
-
 > 八卦是《易经》的基本概念，可代表一切自然现象的动静状态，由三个爻组成。“爻”是最基本的符号，意指交错，以奇画（“-”称阳爻）或偶画（“--”称阴爻）表示。爻有阴、阳两种仪态，若两两相重则形成四象（老阳、少阴、少阳、老阴）。四象再增加一爻，就形成八卦。
-
 > 爻自下而上排列。“三个”爻的含义，象征着“天人地”（上有天、下为地、人在其中）。“卦”有悬挂的意思，也代表将各种现象的标示竖立起来以便于观察。
-
 > 摘自 *<a href="http://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%A6" target="_blank">维基百科</a>*
 
 ## 八卦
@@ -43,7 +39,6 @@ series: How I made ...
 八卦图已经如此复杂，六十四卦的话，对于初学者就很难记熟每一卦卦名了。
 
 > <img src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/post/2014-08-11-how-i-made-biangua-03.png" />
-
 > 摘自 *<a href="http://zh.wikipedia.org/wiki/%E6%98%93%E7%B6%93" target="_blank">维基百科</a>*
 
 ## 变卦
