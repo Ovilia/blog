@@ -102,9 +102,9 @@ img, video {
     float: left;
     margin: 0 1em 1em 0;
     transition: 1s;
-    border: 2px dotted $clr-contrast;
 
     @media screen and (min-device-width: 600px) {
+      border: 2px dotted $clr-contrast;
       &:hover {
         max-width: 100%;
       }
