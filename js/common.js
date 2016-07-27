@@ -110,6 +110,11 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
         return this.hostname !== window.location.hostname;
     }).attr('target', '_blank');
 
+    // lazy load iframe
+    $('iframe').each(function() {
+        $(this).attr('src', $(this).attr('data-src'));
+    });
+
     if (typeof jQueryCallBack === 'function') {
         jQueryCallBack();
     }
