@@ -89,3 +89,11 @@ h6 {
     width: 1.8rem;
     height: 1.8rem;
   }
+
+
+
+@media screen and (max-device-width: 600px) {
+  .subtitle, .page-post h2 {
+    margin: 0;
+  }
+}

@@ -31,8 +31,19 @@ body {
   padding: 50px 80px;
   display: inline-block;
   width: 100%;
+  position: relative;
 }
 
 iframe {
   border: 1px dashed $clr-light;
+}
+
+.music-panel {
+  width: 320px;
+  margin-right: 1em;
+  float: left;
+
+  @media screen and (max-device-width: 600px) {
+    width: 100%;
+  }
 }

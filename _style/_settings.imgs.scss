@@ -4,39 +4,118 @@
 
 img, video {
   max-width: 100%;
-  
-  &.post-title-img {
+}
+
+@media screen and (min-device-width: 600px) {
+  .post-title-img {
     display: block;
-    margin: 0.5em auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+
+    & ~ .subtitle, & ~ .pageTitle, & ~ .timeago, & ~ .tagPanel,
+    & ~ .seriesNote, & ~ .simpleNav {
+      position: relative;
+      z-index: 10;
+      text-shadow: none;
+      border-bottom: none;
+
+      a {
+        text-shadow: none;
+        color: #ccc;
+      }
+    }
+
+    & ~ .subtitle {
+      color: #ddd;
+    }
+
+    & ~ .pageTitle {
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    & ~ .tagPanel {
+      margin-bottom: 40px;
+      margin-top: 0;
+
+      .tag {
+        box-shadow: none;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
+
+    .post-title-hover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: #333;
+      opacity: 0.4;
+      transition: 0.5s;
+    }
+}
+
+@media screen and (max-device-width: 600px) {
+  .post-title-img {
+    display: none;
+  }
+}
   
-  &.book-img {
+  .book-img {
     max-width: 150px;
     float: right;
     margin: 0 0 1em 1em;
   }
 
-  &.post-img {
+  .post-img {
     max-width: 200px;
     float: right;
     margin: 0 0 1em 1em;
   }
   
-  &.inline-img {
+  .inline-img {
     float: right;
     margin: 0 0 0.8em 0.8em;
   }
   
-  &.tip-book {
+  .tip-book {
     max-width: 80px;
     max-height: 110px;
   }
 
-  &.single-img {
+  .single-img {
     display: block;
     margin: 0 auto;
   }
-}
+
+  .toggle-img {
+    max-width: 300px;
+    float: left;
+    margin: 0 1em 1em 0;
+    transition: 1s;
+
+    @media screen and (min-device-width: 600px) {
+      border: 2px dotted $clr-contrast;
+      &:hover {
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (max-device-width: 600px) {
+      & {
+        max-width: 100%;
+      }
+    }
+  }
 
 p {
   > {
