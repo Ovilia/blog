@@ -26,6 +26,13 @@ hr {
 
 strong {
   font-weight: bold;
+
+  .dot {
+    -webkit-text-emphasis: dot;
+    -webkit-text-emphasis-position: under;
+    text-emphasis: dot;
+    text-emphasis-position: under;
+  }
 }
 
 ul, ol {
