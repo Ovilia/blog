@@ -50,32 +50,32 @@ blockquote {
 
 pre > code {
   display: block;
-  padding: 0 $code-pd $code-pd $code-pd;
+  padding: $code-pd;
   margin: 10px 0;
   background-color: $clr-code-back;
   overflow-x: auto;
   word-wrap: normal;
   white-space: inherit;
   
-  &:before {
-    content: attr(data-lang) ' code';
-    text-transform: uppercase;
-    display: block;
-    background-color: $clr-primary;
-    margin: 0 (-$code-pd) $code-pd (-$code-pd);
-    padding: 5px $code-pd;
-    color: $clr-def-lighter;
-    font-family: $ft-fm-def;
-    text-shadow: none;
-    border-bottom: dashed 1px $clr-primary;
-    position: absolute;
-    border-radius: 0 0 5px 0;
-  }
+  // &:before {
+  //   content: attr(data-lang) ' code';
+  //   text-transform: uppercase;
+  //   display: block;
+  //   background-color: $clr-primary;
+  //   margin: 0 (-$code-pd) $code-pd (-$code-pd);
+  //   padding: 5px $code-pd;
+  //   color: $clr-def-lighter;
+  //   font-family: $ft-fm-def;
+  //   text-shadow: none;
+  //   border-bottom: dashed 1px $clr-primary;
+  //   position: absolute;
+  //   border-radius: 0 0 5px 0;
+  // }
 
-  & span:first-child {
-    display: inline-block;
-    margin-top: 40px;
-  }
+  // & span:first-child {
+  //   display: inline-block;
+  //   margin-top: 40px;
+  // }
 }
 
 code {
