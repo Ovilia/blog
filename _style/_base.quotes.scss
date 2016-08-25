@@ -2,8 +2,6 @@
     #QUOTES
 \*------------------------------------*/
 
-$code-pd: 16px;
-
 blockquote {
   background-color: $clr-qt-back;
   margin: 20px 0;
@@ -13,6 +11,22 @@ blockquote {
   border-width: 0px 1px 0px 7px;
   color: $clr-qt;
   font-size: $ft-sz-qt;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: '“';
+    width: 20px;
+    padding: 0 10px 10px;
+    height: 30px;
+    font-size: 60px;
+    position: absolute;
+    left: -127px;
+    top: 0;
+    background-color: $clr-light;
+    box-shadow: 0px 0px 5px 1px #999;
+    z-index: -10;
+  }
   
   p {
     text-indent: 0;
@@ -21,6 +35,7 @@ blockquote {
     color: $clr-def;
     font-family: $ft-fm-quote;
     font-size: $ft-sz-qt;
+    word-wrap: break-word;
   }
   
   h2, h3, h4, h5, h6 {
@@ -50,32 +65,12 @@ blockquote {
 
 pre > code {
   display: block;
-  padding: $code-pd;
+  padding: 10px 15px;
   margin: 10px 0;
   background-color: $clr-code-back;
   overflow-x: auto;
   word-wrap: normal;
   white-space: inherit;
-  
-  // &:before {
-  //   content: attr(data-lang) ' code';
-  //   text-transform: uppercase;
-  //   display: block;
-  //   background-color: $clr-primary;
-  //   margin: 0 (-$code-pd) $code-pd (-$code-pd);
-  //   padding: 5px $code-pd;
-  //   color: $clr-def-lighter;
-  //   font-family: $ft-fm-def;
-  //   text-shadow: none;
-  //   border-bottom: dashed 1px $clr-primary;
-  //   position: absolute;
-  //   border-radius: 0 0 5px 0;
-  // }
-
-  // & span:first-child {
-  //   display: inline-block;
-  //   margin-top: 40px;
-  // }
 }
 
 code {
