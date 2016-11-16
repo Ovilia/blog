@@ -2,10 +2,13 @@
 
 <title>{{ site.name }} - 羡辙杂俎</title>
 
-<div class="rotLeft rotTop pageBack"></div>
-<div class="rotRight rotTop pageBack"></div>
-<div class="container page">
-    <div class="simpleNav">
+<div class="rotLeft rotTop pageBack home-page"></div>
+<div class="rotRight rotTop pageBack home-page"></div>
+<div class="container page cut-top home-page">
+    <div class="pageSubHeadLine">羡辙杂俎</div>
+    <div class="pageHeadLine">TL;DR</div>
+    <div class="pageDescription">A blog that you won't read.</div>
+    <!-- <div class="simpleNav">
         <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InRecent', window.location.pathname]);">Home</a>
     </div>
     <h2 class="subtitle">
@@ -15,10 +18,18 @@
             <img src="{{ site.url }}/img/rss-green.png" />
         </a>
     </h2>
-    <div class="pageTitle center">羡辙杂俎</div>
-    
+    <div class="pageTitle center">羡辙杂俎</div> -->
+</div>
+</div>
+
+<div class="contentDiv">
+<div class="container page cut-bottom">
+
+<section>
+    <h1>About Me</h1>
     {% include aboutMe.html %}
-    
+</section>
+
 <section id="post-section-en">
     <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
     {% assign start = -1 | times: paginator.per_page | times: paginator.page %}

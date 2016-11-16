@@ -5,8 +5,13 @@
 .page {
   background-color: $clr-page-back;
   margin-top: 5em;
-  box-shadow: 0px 0px 10px 2px $clr-def;
+  box-shadow: 0px 0px 10px 2px #888;
   min-height: 200px;
+
+  &.home-page {
+    @include rotate(-8deg);
+    margin-bottom: 50px;
+  }
 }
 
 .pageBack {
@@ -25,6 +30,10 @@
   
   &.rotRight {
     @include rotate(-5deg);
+
+    &.home-page {
+      @include rotate(-1.5deg);
+    }
   }
   
   &.rotTop {
@@ -37,6 +46,10 @@
     &.rotRight {
       margin-bottom: -250px;
       left: -10px;
+
+      &.home-page {
+        margin-bottom: -280px;
+      }
     }
   }
   

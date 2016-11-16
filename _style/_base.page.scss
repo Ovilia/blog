@@ -21,7 +21,7 @@ body {
   background-color: $clr-light;
 }
 
-#contentDiv {
+.contentDiv {
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;
@@ -32,6 +32,19 @@ body {
   display: inline-block;
   width: 100%;
   position: relative;
+
+  &.cut-top {
+    padding-bottom: 0;
+    border-bottom: 3px dashed $clr-primary;
+  }
+
+  &.cut-bottom {
+    padding-top: 0;
+
+    section:first-child h1 {
+      margin-top: 0;
+    }
+  }
 }
 
 iframe {
