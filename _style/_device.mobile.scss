@@ -9,7 +9,7 @@
   background-color: $clr-light;
   display: none;
   z-index: 100;
-  
+
   a {
     padding: 0.5em 0.8em;
     border-right: 1px dashed $clr-primary;
@@ -34,17 +34,17 @@
     @include transition-duration(1s);
     display: none;
     cursor: default;
-    
+
     &:hover {
       background-color: $clr-link;
       @include rotateY(-360deg);
     }
-    
+
     .timeago-words {
       margin-top: 8px;
       margin-bottom: -4px;
       font-size: 14px;
-      
+
       .timeago-figure {
         font-size: 35px;
         font-weight: $ft-wt-bold;
@@ -60,7 +60,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   p {
     width: 100%;
     line-height: 1.75em;
@@ -75,7 +75,7 @@
   h3 {
     font-size: 1.2em;
   }
-  
+
   .contentDiv {
     padding: 0;
     margin: 0;
@@ -96,12 +96,12 @@
   .pageBack {
     display: none;
   }
-  
+
   blockquote {
     padding: 15px;
     border-width: 0px 1px 0px 3px;
   }
-  
+
   h1 {
     margin-left: -2.5%;
     margin-right: -2.5%;
@@ -116,17 +116,17 @@
     &.post-img {
       max-width: 100%;
     }
-  
+
     .book-img {
       width: 120px;
     }
   }
-  
+
   .simpleNav {
     margin-top: -20px;
     margin-bottom: 20px;
   }
-  
+
   #mobile-nav {
     display: block;
     margin-bottom: 1px solid $clr-primary;
@@ -138,7 +138,7 @@
   .simpleNav {
     display: none;
   }
-  
+
   .timeago-words {
     display: inline-block;
   }
@@ -149,6 +149,14 @@
   #music-panel {
     display: none;
   }
+
+  .page.home-page {
+    @include rotate(0);
+  }
+
+  .pageHeadLine {
+    font-size: 5rem;
+  }
 }
 
 // desktop narrow
@@ -158,7 +166,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .contentDiv {
     padding: 0;
     width: 100%;
@@ -174,7 +182,7 @@
     margin-top: 0;
     margin-bottom: 40px;
   }
-  
+
   blockquote {
     padding: 15px;
     border-width: 0px 1px 0px 3px;
@@ -192,21 +200,21 @@
       max-width: 100%;
     }
   }
-  
+
   #mobile-nav {
     display: block;
     margin-bottom: 1px solid $clr-primary;
     opacity: 0.8;
-    
+
     a {
       display: inline-block;
     }
   }
-  
+
   .simpleNav {
     display: none;
   }
-  
+
   .timeago-words {
     display: inline-block;
   }
