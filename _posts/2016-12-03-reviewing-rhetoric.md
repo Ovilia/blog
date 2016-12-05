@@ -1,6 +1,7 @@
 ---
 title: 言辞的边界
 time: 2016.12.03 17:28:00
+subtitle: 《修辞认识》读后感
 layout: post
 tags:
 - 中文
