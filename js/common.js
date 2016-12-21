@@ -80,29 +80,29 @@ LazyLoad.js('/blog/js/jquery-1.11.1.min.js', function () {
     LazyLoad.js('/blog/js/unviel.min.js', function () {
         $("img").unveil();
 
-        // google pageview
-        setTimeout(function() {
-            $.ajax({
-                url: 'https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA',
-                dataType: 'jsonp',
-                timeout: 1000 * 3, // 3 sec
-                success: function(data) {
-                    processPageView(data.rows);
-                },
-                error: function() {
-                    // if fail to get up-to-date data from GAE, get cached local version
-                    console.log('Failed to get page view from GAE!');
-                    $.ajax({
-                        url: '/blog/pageview.json',
-                        dataType: 'json',
-                        success: function(data) {
-                            console.log('Local page view used.');
-                            processPageView(data.rows);
-                        }
-                    })
-                }
-            });
-        }, 2000);
+        // // google pageview
+        // setTimeout(function() {
+        //     $.ajax({
+        //         url: 'https://ovilia-blog-1234.appspot.com/query?id=ahJzfm92aWxpYS1ibG9nLTEyMzRyFQsSCEFwaVF1ZXJ5GICAgIC6qI4KDA',
+        //         dataType: 'jsonp',
+        //         timeout: 1000 * 3, // 3 sec
+        //         success: function(data) {
+        //             processPageView(data.rows);
+        //         },
+        //         error: function() {
+        //             // if fail to get up-to-date data from GAE, get cached local version
+        //             console.log('Failed to get page view from GAE!');
+        //             $.ajax({
+        //                 url: '/blog/pageview.json',
+        //                 dataType: 'json',
+        //                 success: function(data) {
+        //                     console.log('Local page view used.');
+        //                     processPageView(data.rows);
+        //                 }
+        //             })
+        //         }
+        //     });
+        // }, 2000);
     });
 
     // add target="_blank" for external links
