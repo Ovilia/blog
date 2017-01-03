@@ -150,6 +150,20 @@ if (typeof loadJs === 'object') {
         if (typeof loadJs[i] === 'string') {
             // no callback
             LazyLoad.js(loadJs[i]);
+        } else if (typeof loadJs[i] === 'object') {
+            // array of js
+            var loadNext = function(j) {
+                if (j < loadJs[i][0].length - 1) {
+                    // load next js
+                    LazyLoad.js(loadJs[i][0][j], function () {
+                        loadNext(j + 1);
+                    });
+                }
+                else {
+                    // callback
+                    LazyLoad.js(loadJs[i][0][j], loadJs[i][1]);
+                }
+            }
         } else {
             LazyLoad.js(loadJs[i][0], loadJs[i][1]);
         }
