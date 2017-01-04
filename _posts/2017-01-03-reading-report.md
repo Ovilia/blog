@@ -33,6 +33,8 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
 
 <div class="chart" id="general-chart"></div>
 
+*（本文所有图表都是使用 ECharts 制作的，可以在 [ECharts Gallery](http://gallery.echartsjs.com/explore.html?u=bd-4013131402&type=work#tags=xianzhe-reading-2016~sort=createTime~timeframe=all~author=all) 查看源码。）*
+
 **在今年读的 44 本书中，主要都是四星五星的。**
 
 一方面是因为，我一般会先看一下豆瓣评分，小于 7.5 分的我一般就会比较质疑。另一方面，如果读了个开头，觉得并不会吸引我，我也就不会坚持看下去，毕竟时间有限，而且阅读本来就该是件快乐的事，没必要为了这个折磨自己。
@@ -159,7 +161,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
 
 ## 年度非虚构推荐
 
-《我们时代的神经症人格》讲的是神经症人格的一些思维逻辑，因此引起了我这个女神经的很大共鸣，也是 2016 年读到的书中对我触动最大的一本。之前有写过[详细的书评]({{ site.url }}/2016/12/19/reviewing-the-neurotic-personality-of-our-time/)，这里不做赘述。
+[《我们时代的神经症人格》](https://book.douban.com/subject/6511362/)讲的是神经症人格的一些思维逻辑，因此引起了我这个女神经的很大共鸣，也是 2016 年读到的书中对我触动最大的一本。之前有写过[详细的书评]({{ site.url }}/2016/12/19/reviewing-the-neurotic-personality-of-our-time/)，这里不做赘述。
 
 <a href="https://book.douban.com/subject/26390189/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="https://img3.doubanio.com/lpic/s28106310.jpg" /></a>有一次在大众书局遇到[《如何看懂印象派》](https://book.douban.com/subject/26390189/)，一下子就被它的硫酸纸封面吸引了，正像印象派的朦胧感一样。这本书的作者是丰子恺，除了介绍一些印象派的知识之外，还会提到对现象更深入的解读，常常是别的地方看不到的新鲜理论。
 
@@ -197,7 +199,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
                 }, {
                     text: '2016 年买书花费\n2101.06 元',
                     left: '71%',
-                    top: '65%',
+                    top: '70%',
                     textAlign: 'center',
                     textBaseline: 'middle',
                     textStyle: {
@@ -207,7 +209,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
                 }, {
                     text: '读完\n44 本',
                     left: '27.5%',
-                    top: '35%',
+                    top: '40%',
                     textAlign: 'center',
                     textBaseline: 'middle',
                     textStyle: {
@@ -450,10 +452,10 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
                         left: 'center'
                     }, {
                         left: '50%',
-                        top: '57%'
+                        top: '60%'
                     }, {
                         left: '48%',
-                        top: '22%'
+                        top: '25%'
                     }],
                     series: [{
                         radius: ['42%', '48%'],
@@ -876,7 +878,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
                 bottom: 100
             },
             dataZoom: [{
-                bottom: 40,
+                bottom: 45,
                 fillerColor: 'rgba(126, 224, 209, 0.2)',
                 borderColor: 'rgba(126, 224, 209, 0.75)',
                 handleStyle: {
