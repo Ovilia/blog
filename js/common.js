@@ -146,26 +146,30 @@ if (typeof loadCss === 'object') {
     }
 }
 if (typeof loadJs === 'object') {
-    for (var i = 0, len = loadJs.length; i < len; ++i) {
-        if (typeof loadJs[i] === 'string') {
-            // no callback
-            LazyLoad.js(loadJs[i]);
-        } else if (typeof loadJs[i] === 'object') {
-            // array of js
-            var loadNext = function(j) {
-                if (j < loadJs[i][0].length - 1) {
-                    // load next js
-                    LazyLoad.js(loadJs[i][0][j], function () {
-                        loadNext(j + 1);
-                    });
-                }
-                else {
-                    // callback
-                    LazyLoad.js(loadJs[i][0][j], loadJs[i][1]);
-                }
+    for (var i = 0; i < loadJs.length; ++i) {
+        (function(i) {
+            if (typeof loadJs[i] === 'string') {
+                // no callback
+                LazyLoad.js(loadJs[i]);
+            } else if (typeof loadJs[i] === 'object') {
+                // array of js
+                var loadNext = function(j) {
+                    if (j < loadJs[i][0].length - 1) {
+                        // load next js
+                        LazyLoad.js(loadJs[i][0][j], function () {
+                            loadNext(j + 1);
+                        });
+                    }
+                    else {
+                        // callback
+                        LazyLoad.js(loadJs[i][0][j], loadJs[i][1]);
+                    }
+                };
+                loadNext(0);
+            } else {
+                // one js with callback
+                LazyLoad.js(loadJs[i][0], loadJs[i][1]);
             }
-        } else {
-            LazyLoad.js(loadJs[i][0], loadJs[i][1]);
-        }
+        })(i)
     }
 }
