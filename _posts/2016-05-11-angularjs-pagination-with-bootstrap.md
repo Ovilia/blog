@@ -47,7 +47,7 @@ angular.module('app')
 
 In HTML, we use `ng-if` to hide unnecessary tags, and `ng-class` to add class conditionally.
 
-{% highlight html %}
+```html
 <ul class="pagination">
     <li ng-class="{true:'disabled'}[vm.page.page === 1]">
         <a href="#">&laquo;</a>
@@ -63,29 +63,29 @@ In HTML, we use `ng-if` to hide unnecessary tags, and `ng-class` to add class co
         <a>...</a>
     </li>
     <li ng-if="vm.page.page>1">
-        <a href="#">{{ vm.page.page - 1 }}c</a>
+        <a href="#">{{ "{{ vm.page.page - 1 "}}}}c</a>
     </li>
     <li class="active">
-        <a href="#">{{ vm.page.page }}d</a>
+        <a href="#">{{ "{{ vm.page.page "}}}}d</a>
     </li>
     <li ng-if="vm.page.page<vm.page.total">
-        <a href="#">{{ vm.page.page + 1 }}e</a>
+        <a href="#">{{ "{{ vm.page.page + 1 "}}}}e</a>
     </li>
     <li ng-if="vm.page.page+1<vm.page.total-1-1">
         <a>...</a>
     </li>
 
     <li>
-        <a href="#" ng-if="vm.page.page+1<vm.page.total-1">{{ vm.page.total - 1 }}f</a>
+        <a href="#" ng-if="vm.page.page+1<vm.page.total-1">{{ "{{ vm.page.total - 1 "}}}}f</a>
     </li>
     <li>
-        <a href="#" ng-if="vm.page.page+1<vm.page.total">{{ vm.page.total }}g</a>
+        <a href="#" ng-if="vm.page.page+1<vm.page.total">{{ "{{ vm.page.total "}}}}g</a>
     </li>
     <li ng-class="{true:'disabled'}[vm.page.page === vm.page.total]">
         <a href="#">&raquo;</a>
     </li>
 </ul>
-{% endhighlight %}
+```
 
 I added `abcd..g` at the end for you to understand better.
 

@@ -28,7 +28,7 @@ layout: default
     {% endfor %}
 <div class="post-block{% if isZn %} cn{% endif %}{% for tag in post.tags %} tag-{{ tag }}{% endfor%}">
     <div class="timeago" title="{{ post.time | replace: '.', '-' | replace: ' ', 'T' }}+08:00">{{ post.time }}</div>
-    
+
     <h5 class="post-series">
         {% if post.series %}
         <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">
@@ -82,15 +82,16 @@ layout: default
       }
         return query_string;
     }
-    
+
     window.jQueryCallBack = function() {
         var query = queryString();
 
         if (query.tag !== undefined) {
             var tag = decodeURI(query.tag);
+            var tagClassName = tag.replace(new RegExp('\\.', 'g'), '\\.');
             $('.pageTitle').text('Posts tagged with ' + tag);
             $('h1').hide();
-            $('.post-block').not('.tag-' + tag).hide();
+            $('.post-block').not('.tag-' + tagClassName).hide();
         }
     };
 </script>

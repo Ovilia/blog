@@ -4,7 +4,7 @@ time: 2015.06.20 19:51:11
 layout: post
 tags:
 - JavaScript
-- ThreeJs
+- Three.js
 - WebGL
 - Shader
 series: Polyvia
@@ -29,14 +29,14 @@ We are going to introduce in the following steps.
 
 1.	Render local video to a plane in Three.js
 
-	1.1	Including files and set up environments  
-	1.2	Getting video from local camera using `getUserMedia`  
+	1.1	Including files and set up environments
+	1.2	Getting video from local camera using `getUserMedia`
 	1.3	Creating a plane and use video as texture
 
 2.	Set `THREE.EdgeShader` to video texture
 
-	2.1	Including shader files  
-	2.2	Using `Three.EffectComposer`  
+	2.1	Including shader files
+	2.2	Using `Three.EffectComposer`
 	2.3	Reading pixels
 
 By the end of this post, you will be able to implement the effect at <a href="{{ site.url }}/demo/2015-06-20-read-from-shader-texture-with-threejs-05.html" target="_blank">demo 2.3</a> and get the number of non-zero pixels on the screen.
@@ -60,7 +60,7 @@ We include the `three.js` file from <a href="https://github.com/mrdoob/three.js/
 <html>
     <head>
         <script type="text/javascript" src="http://zhangwenli.com/Polyvia/vendor/three.js"></script>
-        
+
         <script type="text/javascript">
             function init() {
                 var canvas = document.getElementById('mainCanvas');
@@ -69,7 +69,7 @@ We include the `three.js` file from <a href="https://github.com/mrdoob/three.js/
                 });
                 renderer.setClearColor(0x000000);
                 var tmpScene = new THREE.Scene();
-                
+
                 // camera
                 // canvas size is 400x300
                 var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
@@ -78,7 +78,7 @@ We include the `three.js` file from <a href="https://github.com/mrdoob/three.js/
             }
         </script>
     </head>
-    
+
     <body onload="init()">
         <canvas id="mainCanvas" width="400px" height="300px" ></canvas>
         <p>Black canvas is expected here.</p>
@@ -97,7 +97,7 @@ Next, we use `navigator.getUserMedia` to get the access to local camers.
 {% highlight js %}
 // local video
 var video = document.createElement('video');
-navigator.getUserMedia = navigator.getUserMedia 
+navigator.getUserMedia = navigator.getUserMedia
 	|| navigator.webkitGetUserMedia
     || navigator.mozGetUserMedia
     || navigator.msGetUserMedia;
@@ -231,7 +231,7 @@ And next, use `composer.render();` instead of `renderer.render(tmpScene, camera)
 
 ## 2.3 Reading pixels
 
-Then, we can read the pixels from this canvas to get pixel information from GPU to CPU. 
+Then, we can read the pixels from this canvas to get pixel information from GPU to CPU.
 
 **CAUTION!! This is extremely time-consuming!!**
 

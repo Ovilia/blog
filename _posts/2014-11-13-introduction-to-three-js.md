@@ -7,7 +7,7 @@ layout: post
 titleImg: /img/post/2014-11-13-introduction-to-three-js-1.jpg
 tags:
 - 中文
-- ThreeJs
+- Three.js
 - JavaScript
 - WebGL
 - Tutorial
