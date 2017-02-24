@@ -46,6 +46,13 @@ blockquote {
     color: $clr-def-darker;
   }
 
+  strong {
+    -webkit-text-emphasis: dot;
+    -webkit-text-emphasis-position: under;
+    text-emphasis: dot;
+    text-emphasis-position: under;
+  }
+
   a em {
     @extend a;
   }
