@@ -41,13 +41,9 @@
     {% for tag in page.tags %}<a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>{% endfor %}
     </div>
 
-    
-
     {% if page.series %}
         {% include series.html %}
     {% endif %}
-
-
 
     <div id="page-view"></div>
 
@@ -56,6 +52,13 @@
     {{ content }}
     <div class="clear"></div>
     {% if page.postClass != null %}</div>{% endif %}
+
+
+    <a style="text-align: center; display: block;" href="{{ site.url }}/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPostImg', window.location.pathname]);">
+        <img src="{{ site.url }}/img/tip.png" style="width: 80px" />
+    </a>
+    <div style="text-align: center; color: #666;">博文对你有帮助吗？如果有的话，要不要<a href="{{ site.url }}/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPost', window.location.pathname]);">送我一本书</a>呢？:heart_eyes:</div>
+
 
     {% if page.series %}
         {% include series.html %}
@@ -74,8 +77,7 @@
     {% endif %}
     <hr />
     
-    <p>微信公众号“羡辙部落格”（xianzheblog）提供本站优质非技术类博文推送。</p>
-    <p class="no-indent"><a href="{{ site.url }}/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPost', window.location.pathname]);">觉得博文很赞？来打赏一下我吧！——送羡辙一本书，让她写出更棒的作品！:heart_eyes: </a></p>
+    <p class="no-indent">微信公众号“羡辙部落格”（xianzheblog）提供本站优质非技术类博文推送。</p>
     
     <div class="social-share">
         <a class="social-share-element social-twitter" href="https://twitter.com/intent/tweet?text={% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}&url={{ url }}&via=OviliaZhang&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter" onclick="_gaq.push(['_trackEvent', 'Share', 'Twitter', window.location.pathname]);"></a>
