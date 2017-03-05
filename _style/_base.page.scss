@@ -51,6 +51,14 @@ iframe {
   border: 1px dashed $clr-light;
 }
 
+.page table {
+  width: 100%;
+
+  td {
+    border-bottom: 1px solid $clr-primary;
+  }
+}
+
 .music-panel {
   width: 320px;
   margin-right: 1em;
