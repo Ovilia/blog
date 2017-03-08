@@ -142,7 +142,7 @@ void main()
     vColor = color;
     vNormal = normalize(normalMatrix * normal);
 
-    vec4 viewLight = modelViewMatrix * vec4(light, 1.0);
+    vec4 viewLight = viewMatrix * vec4(light, 1.0);
     vLight = viewLight.xyz;
 
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
