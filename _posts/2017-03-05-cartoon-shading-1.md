@@ -223,7 +223,7 @@ void main()
     vColor = color;
     vNormal = normalize(normalMatrix * normal);
 
-    vec4 viewLight = modelViewMatrix * vec4(light, 1.0);
+    vec4 viewLight = viewMatrix * vec4(light, 1.0);
     vLight = viewLight.xyz;
 
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
@@ -240,7 +240,7 @@ void main()
 >
 > 好吧，你其实并不需要知道[背后的原理](http://www.lighthouse3d.com/tutorials/glsl-12-tutorial/the-normal-matrix/)，只需要知道，这是为了将物体坐标系下的法向量方向，转变成视图坐标系下的法向量方向。而之所以不能和光源位置 `light` 一样乘以 `modelViewMatrix`，本质上的区别是，它们虽然都是三维向量，但法向量表示的是一个方向，而光源位置表示的是一个坐标。如果用法向量乘以 `modelViewMatrix` 的话，得到的结果就可能不再垂直于面片了。
 
-接着，使用光源位置乘以模型视图矩阵，得到光源在视图坐标系下的位置，传递给 `vLight`。
+接着，使用光源位置乘以视图矩阵，得到光源在视图坐标系下的位置，传递给 `vLight`。
 
 最后，将 MVP 矩阵乘以顶点坐标 `position`（都由着色器提供）的结果赋值给 `gl_Position`。这句是最常用的顶点着色器中顶点位置的写法，如果你不需要改变顶点的位置，则都是这样写的。
 
