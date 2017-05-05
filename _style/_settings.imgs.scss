@@ -6,6 +6,91 @@ img, video {
   max-width: 100%;
 }
 
+  .book-img {
+    max-width: 150px;
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  .post-img {
+    max-width: 200px;
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  .inline-img {
+    float: right;
+    margin: 0 0 0.8em 0.8em;
+  }
+
+  .tip-book {
+    max-width: 80px;
+    max-height: 110px;
+  }
+
+  .single-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .half-img {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .toggle-img {
+    max-width: 300px;
+    float: left;
+    margin: 0 1em 1em 0;
+    transition: 1s;
+
+    @media screen and (min-device-width: 600px) {
+      border: 2px dotted $clr-contrast;
+      &:hover {
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (max-device-width: 600px) {
+      & {
+        max-width: 100%;
+      }
+    }
+  }
+
+p {
+  > {
+    img, a > img {
+      border: dashed;
+      border-width: 2px;
+      border-color: $clr-lighter;
+      max-width: 100%;
+      text-decoration: none;
+      @include transition-duration(0.5s);
+    }
+  }
+
+
+
+  > a > img:hover {
+    border-color: $clr-light;
+  }
+}
+
+figure {
+  text-align: center;
+
+  &.highlight {
+    text-align: left;
+  }
+}
+
+  figcaption {
+    color: $clr-def;
+    font-size: 0.8em;
+  }
+
+
 @media screen and (min-device-width: 600px) {
   .post-title-img {
     display: block;
@@ -68,83 +153,14 @@ img, video {
   .post-title-img {
     display: none;
   }
-}
-  
-  .book-img {
-    max-width: 150px;
-    float: right;
-    margin: 0 0 1em 1em;
-  }
 
-  .post-img {
-    max-width: 200px;
-    float: right;
-    margin: 0 0 1em 1em;
-  }
-  
-  .inline-img {
-    float: right;
-    margin: 0 0 0.8em 0.8em;
-  }
-  
-  .tip-book {
-    max-width: 80px;
-    max-height: 110px;
-  }
+  .half-img {
+    display: inline-block;
+    width: 100%;
+    margin-left: -2em;
 
-  .single-img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .toggle-img {
-    max-width: 300px;
-    float: left;
-    margin: 0 1em 1em 0;
-    transition: 1s;
-
-    @media screen and (min-device-width: 600px) {
-      border: 2px dotted $clr-contrast;
-      &:hover {
-        max-width: 100%;
-      }
-    }
-
-    @media screen and (max-device-width: 600px) {
-      & {
-        max-width: 100%;
-      }
+    + .half-img {
+      margin-left: 0;
     }
   }
-
-p {
-  > {
-    img, a > img {
-      border: dashed;
-      border-width: 2px;
-      border-color: $clr-lighter;
-      max-width: 100%;
-      text-decoration: none;
-      @include transition-duration(0.5s);
-    }
-  }
-
-
-
-  > a > img:hover {
-    border-color: $clr-light;
-  }
 }
-
-figure {
-  text-align: center;
-
-  &.highlight {
-    text-align: left;
-  }
-}
-
-  figcaption {
-    color: $clr-def;
-    font-size: 0.8em;
-  }

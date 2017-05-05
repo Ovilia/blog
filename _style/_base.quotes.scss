@@ -20,14 +20,15 @@ blockquote {
     padding: 0 10px 10px;
     height: 30px;
     font-size: 60px;
+    font-weight: bold;
     position: absolute;
     left: -127px;
     top: 0;
-    background-color: $clr-light;
-    box-shadow: 0px 0px 5px 1px #999;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(200, 200, 200, 0.5);
     z-index: -10;
   }
-  
+
   p {
     text-indent: 0;
     line-height: 1.75em;
@@ -37,11 +38,11 @@ blockquote {
     font-size: $ft-sz-qt;
     word-wrap: break-word;
   }
-  
+
   h2, h3, h4, h5, h6 {
     text-shadow: $sd-qt-h2-6;
   }
-  
+
   em {
     color: $clr-def-darker;
   }
@@ -56,11 +57,11 @@ blockquote {
   a em {
     @extend a;
   }
-  
+
   a {
     text-shadow: none;
   }
-  
+
   &.relatedPosts {
     font-size: 90%;
   }

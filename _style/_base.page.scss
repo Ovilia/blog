@@ -9,7 +9,10 @@
 }
 
 body {
-  background-color: $clr-primary;
+  background-color: lighten($clr-primary, 50%);
+  background-image: radial-gradient(ellipse farthest-corner at 50% 0,
+        #DBF5F1 0%, #9BE4D8 100%);
+
   color: $clr-def-darker;
   overflow-x: hidden;
   font-family: $ft-fm-def;
