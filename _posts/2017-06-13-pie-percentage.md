@@ -41,7 +41,7 @@ excerpt: 上周给 ECharts 修了一个挺有意思的 bug——饼图百分比�
 
 # 议会席位分配
 
-其实一开始看到[这个 issue](https://github.com/ecomfe/echarts/issues/5850) 的时候，我就想起了前阵子在读的《数据之巅》里面提到的——在美国初创期，分配议会席位的时候，根据各州人口比例决定议会席位。和饼图保留百分比的 bug 类似，由于席位只能精确到整数部分，这就不可避免地会有小数点上的争议。
+<a href="https://book.douban.com/subject/25871778/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="https://img3.doubanio.com/lpic/s27281543.jpg" />其实一开始看到[这个 issue](https://github.com/ecomfe/echarts/issues/5850) 的时候，我就想起了前阵子在读的《数据之巅》里面提到的——在美国初创期，分配议会席位的时候，根据各州人口比例决定议会席位。和饼图保留百分比的 bug 类似，由于席位只能精确到整数部分，这就不可避免地会有小数点上的争议。
 
 而议会的问题则比饼图复杂得多。而根本原因在于，一个席位之差对于一个州也是非常重要的。
 
