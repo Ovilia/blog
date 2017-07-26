@@ -47,7 +47,7 @@ blockquote {
     color: $clr-def-darker;
   }
 
-  strong {
+  .cn & strong {
     -webkit-text-emphasis: dot;
     -webkit-text-emphasis-position: under;
     text-emphasis: dot;
