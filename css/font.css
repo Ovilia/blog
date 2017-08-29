@@ -2,7 +2,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Light'), local('Lato-Light'), url('http://zhangwenli.com/blog/font/lato400.woff') format('woff');
+  src: local('Lato'), local('Lato'), url('http://zhangwenli.com/blog/font/lato400.woff') format('woff');
 }
 
 @font-face {
