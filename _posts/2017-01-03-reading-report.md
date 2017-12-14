@@ -122,13 +122,13 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
 这本书来自[《生命最后的读书会》](https://book.douban.com/subject/26842404/)的推荐——本身也是一本很感人的书。
 
 > <a href="https://book.douban.com/subject/10439392/" target="_blank"><img class="book-img" src="{{ site.loadingImg }}" data-src="https://img3.doubanio.com/lpic/s7525065.jpg" /></a>
-> 
+>
 > #### 内容简介
-> 
+>
 >《小王子》作者圣埃克苏佩里自传，讲述只属于他的沙漠与狐狸。
 >
 > 不死的欲望，疲惫生活里的英雄梦想。
-> 
+>
 > 这本书是圣埃克苏佩里在《小王子》之外最有名的两部作品《风沙星辰》和《夜间飞行》的合集。
 >
 > 《风沙星辰》是圣埃克苏佩里在为法国航空公司执行飞行任务中的旅行见闻和哲思，《夜间飞行》讲述的是一位飞行员与风暴的搏斗，充满无尽的勇气与哲理。
@@ -186,7 +186,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
 **愿你至少在精神上始终富足。**
 
 <script type="text/javascript">
-    var loadJs = [[['{{ site.url }}/js/echarts.3.3.2.js', 'https://cdn.rawgit.com/ecomfe/echarts-wordcloud/master/dist/echarts-wordcloud.js'], function() {
+    var loadJs = [[['{{ site.url }}/js/echarts.3.3.2.js', '{{ site.url }}/js/echarts-wordcloud.v1.0.2.min.js'], function() {
         var charts = [];
 
         var generalChart = echarts.init(document.getElementById('general-chart'));
@@ -620,7 +620,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
                         value: data[name]
                     });
                 }
-            
+
                 loadImage();
             });
         });
@@ -629,11 +629,11 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
             var leftImage = new Image();
             leftImage.onload = imageLoaded;
             leftImage.src = leftBook;
-            
+
             var rightImage = new Image();
             rightImage.onload = imageLoaded;
             rightImage.src = rightBook;
-            
+
             var loadedCnt = 0;
             function imageLoaded() {
                 ++loadedCnt;
@@ -847,7 +847,7 @@ excerpt: 2014 年开始把读书当作一个业余爱好，开始大规模广泛
             color: ['#9cece0', '#73d8c9', '#23c2aa', '#15a08b', '#0d6457'],
             tooltip: {
                 formatter: function(param) {
-                    return param.value[2] + '：' + param.value[0] 
+                    return param.value[2] + '：' + param.value[0]
                         + '页<br>豆瓣平均分' + param.value[1] + '，'
                         + param.seriesName;
                 }
