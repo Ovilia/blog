@@ -60,7 +60,7 @@ SleepBot 数据的一个缺点就在于记录睡觉和起床时间是手动的�
     var clrPrimary = '#22C3AA';
     var clrContrast = '#D0648A';
 
-    var loadJs = [['{{ site.url }}/js/echarts-all.js', function() {
+    var loadJs = [[['{{ site.url }}/js/echarts-all.js'], function() {
 
         var minHour = -11;
         var maxHour = 2;
@@ -284,7 +284,7 @@ SleepBot 数据的一个缺点就在于记录睡觉和起床时间是手动的�
                         var hour = Math.floor(hours);
                         var min = Math.floor((hours - hour) * 60) + '';
                         if (min.length < 2) {
-                            min = '0' + min; 
+                            min = '0' + min;
                         }
                         return hour + ':' + min;
                     }
