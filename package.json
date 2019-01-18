@@ -1,17 +1,18 @@
 {
-  "name": "OviliaBlog",
+  "name": "ovilia-blog",
   "version": "0.1.0",
   "description": "Ovilia's Blog",
   "main": "gulpfile.js",
   "author": "Ovilia",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "~3.9.0",
-    "gulp-sass": "~2.0.4",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "~3.0.0",
-    "gulp-uglify": "~1.4.1",
+    "gulp-jekyll": "~0.0.0",
     "gulp-rename": "~1.2.2",
-    "gulp-jekyll": "~0.0.0"
+    "gulp-sass": "~2.0.4",
+    "gulp-uglify": "^3.0.1",
+    "jekyll": "^3.0.0-beta1"
   },
   "repository": {
     "type": "git",
