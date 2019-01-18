@@ -3,7 +3,6 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var uglify      = require('gulp-uglify');
 var rename      = require('gulp-rename');
-var jekyll      = require('gulp-jekyll');
 
 /**
  * Compile files from _style into css
@@ -34,25 +33,12 @@ gulp.task('compress', function() {
 });
 
 /**
- * Build with Jekyll
- */
-gulp.task('jekyll', function () {
-    return gulp.src(['.'])
-        .pipe(jekyll({
-            source: '.',
-            destination: '_site'
-        }))
-        .pipe(gulp.dest('_site'));
-});
-
-/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('_style/*.scss', ['sass']);
     gulp.watch('js/common.js', ['compress']);
-    // gulp.watch(['js/*.js', 'css/*.css'], ['jekyll']);
     // gulp.watch(['*.html', '_posts/*', '_layouts/*', '_includes/*'], ['jekyll']);
 });
 

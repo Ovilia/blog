@@ -6,12 +6,11 @@
   "author": "Ovilia",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "~3.0.0",
-    "gulp-jekyll": "~0.0.0",
-    "gulp-rename": "~1.2.2",
+    "gulp": "~3.9.1",
     "gulp-sass": "~2.0.4",
-    "gulp-uglify": "^3.0.1",
+    "gulp-autoprefixer": "~3.0.0",
+    "gulp-uglify": "~1.4.1",
+    "gulp-rename": "~1.2.2",
     "jekyll": "^3.0.0-beta1"
   },
   "repository": {
