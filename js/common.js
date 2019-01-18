@@ -1,4 +1,4 @@
-setTimeout(loadMusic, 20000);
+setTimeout(loadMusic, 1000);
 function loadMusic() {
     if ($('#music-content')) {
         $('#music-content').append('<iframe frameborder="no" border="0"'
@@ -40,8 +40,8 @@ function processPageView(rows) {
                 var thatPath = rows[i][0];
                 var queryId = thatPath.indexOf('?');
                 var mainPath = queryId >= 0 ? thatPath.slice(0, queryId) : thatPath;
-                if (thatPath === myPath || mainPath === myPath 
-                        || mainPath === myPath + 'index.html' 
+                if (thatPath === myPath || mainPath === myPath
+                        || mainPath === myPath + 'index.html'
                         || myPath === mainPath + 'index.html') {
                     cnt += parseInt(rows[i][1]);
                 }
