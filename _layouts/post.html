@@ -59,6 +59,9 @@
     </a>
     <div style="text-align: center; color: #666;">博文对你有帮助吗？如果有的话，要不要<a href="{{ site.url }}/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPost', window.location.pathname]);">送我一本书</a>呢？:heart_eyes:</div>
 
+    <a href="http://zhangwenli.com/2019-typography-calendar/?ref=blog-post" style="display: block; margin: 20px 0;">
+        <img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/calendar-2019-post.png" />
+    </a>
 
     {% if page.series %}
         {% include series.html %}
@@ -76,9 +79,9 @@
         {% endfor %}
     {% endif %}
     <hr />
-    
+
     <p class="no-indent">微信公众号“羡辙部落格”（xianzheblog）提供本站优质非技术类博文推送。</p>
-    
+
     <div class="social-share">
         <a class="social-share-element social-twitter" href="https://twitter.com/intent/tweet?text={% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}&url={{ url }}&via=OviliaZhang&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter" onclick="_gaq.push(['_trackEvent', 'Share', 'Twitter', window.location.pathname]);"></a>
         <a class="social-share-element social-facebook" href="https://www.facebook.com/sharer/sharer.php?t={% if page.subtitle != null %}{{ page.subtitle }} {% endif %}{{ page.title }}&u={{ url }}" target="_blank" title="Share this post on Facebook" onclick="_gaq.push(['_trackEvent', 'Share', 'Facebook', window.location.pathname]);"></a>
