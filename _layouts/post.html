@@ -41,6 +41,10 @@
     {% for tag in page.tags %}<a href="{{ site.url }}/all?tag={{ tag }}" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">{{ tag }}</div></a>{% endfor %}
     </div>
 
+    <a href="http://zhangwenli.com/2019-typography-calendar/?ref=blog-post" style="display: block; margin: 20px 0;">
+        <img class="single-img" src="{{ site.loadingImg }}" data-src="{{ site.url }}/img/calendar-2019-post.png" />
+    </a>
+
     {% if page.series %}
         {% include series.html %}
     {% endif %}
