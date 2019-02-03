@@ -34,8 +34,9 @@ img, video {
   }
 
   .half-img {
-    display: inline-block;
     width: 45%;
+    float: right;
+    margin: 0 0 1em 1em;
   }
 
   .full-img {
