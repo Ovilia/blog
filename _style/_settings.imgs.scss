@@ -38,6 +38,11 @@ img, video {
     width: 45%;
   }
 
+  .full-img {
+    width: 100%;
+    display: block;
+  }
+
   .toggle-img {
     max-width: 300px;
     float: left;
