@@ -6,8 +6,9 @@ a {
   color: $clr-link;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: $sd-link;
   word-wrap: break-word;
+  background-color: #ddd;
+  display: inline-block;
 }
 
 a, .post-block h2>a>code {
@@ -17,15 +18,15 @@ a, .post-block h2>a>code {
   &:visited {
     color: $clr-link--visited;
   }
-  
+
   &:hover {
     color: $clr-link--hover;
   }
-  
+
   &:active {
     color: $clr-link--active;
   }
-  
+
   &:visited:hover {
     color: $clr-link--hover;
   }
@@ -46,23 +47,23 @@ h1>a {
   font-size: $ft-sz-sm;
   margin: 0 0.2em 0.5em 0.2em;
   display: inline-block;
-  
+
   &:visited {
     color: $clr-def-lighter;
   }
-  
+
   &:hover {
     color: $clr-def-lighter;
     background-color: $clr-contrast;
   }
-  
+
   &:visited:hover {
     color: $clr-def-lighter;
   }
-  
+
   &.def {
     background-color: $clr-def;
-    
+
     &:hover {
       color: $clr-def-lighter;
       background-color: $clr-contrast;
