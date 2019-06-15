@@ -49,9 +49,9 @@ blockquote {
 
   .cn & strong {
     -webkit-text-emphasis: dot;
-    -webkit-text-emphasis-position: under;
+    -webkit-text-emphasis-position: under left;
     text-emphasis: dot;
-    text-emphasis-position: under;
+    text-emphasis-position: under left;
   }
 
   a em {
