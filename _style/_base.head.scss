@@ -18,10 +18,8 @@ h1 {
   color: $clr-primary;
   position: relative;
   overflow: visible;
-  
+
   &:before {
-    background-image: url('../img/scissors.png');
-    background-repeat: no-repeat;
     display: block;
     content: attr(data-title);
     position: absolute;
@@ -34,7 +32,11 @@ h1 {
     display: none;
     transition: 0.5s;
   }
-  
+
+  &:hover a {
+    color: $clr-link;
+  }
+
   &:hover .h1-link {
     display: inline;
   }
@@ -45,10 +47,11 @@ h2 {
 }
 
 .page-post h2 {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 h3 {
+  margin-top: 2em;
   font-size: $ft-sz-h3;
 }
 
@@ -78,7 +81,7 @@ h6 {
 .pageHeadLine {
   font-size: 12rem;
   font-weight: bold;
-  color: #000;
+  color: $clr-darker;
   text-align: center;
 }
 
@@ -97,10 +100,10 @@ h6 {
   margin: 0.5em 0 0.25em 0;
   text-shadow: $sd-page-title;
   border-bottom-style: double;
-  border-bottom-color: #22C3AA;
+  border-bottom-color: $clr-light;
   border-bottom-width: 8px;
   padding-bottom: 0.2em;
-  color: #666;
+  color: $clr-dark;
 }
 
 

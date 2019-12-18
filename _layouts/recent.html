@@ -101,7 +101,7 @@
 </section>
 
 <section id="post-section-zn">
-    <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
+    <h1>中文博客<a class="title-img" href="{{ site.url }}/feed-cn.xml" title="订阅中文博客RSS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'CnRss', window.location.pathname]);">RSS</a></h1>
     {% for post in paginator.posts %}
         {% if post.hide != true %}
             {% assign isZn = false %}

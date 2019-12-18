@@ -24,8 +24,9 @@ blockquote {
     position: absolute;
     left: -127px;
     top: 0;
-    background-color: white;
-    box-shadow: 0px 0px 5px 1px rgba(200, 200, 200, 0.5);
+    background-color: $clr-darker;
+    color: $clr-page-back;
+    box-shadow: 0px 0px 5px 1px transparentize($clr-dark, 0.5);
     z-index: -10;
   }
 
@@ -36,15 +37,20 @@ blockquote {
     color: $clr-def;
     font-family: $ft-fm-quote;
     font-size: $ft-sz-qt;
+    font-weight: 600;
     word-wrap: break-word;
   }
 
   h2, h3, h4, h5, h6 {
-    text-shadow: $sd-qt-h2-6;
+    text-shadow: none;
   }
 
   em {
     color: $clr-def-darker;
+  }
+
+  ul, ol {
+    color: $clr-primary;
   }
 
   .cn & strong {
@@ -84,7 +90,7 @@ pre > code {
 code {
   border: dashed 1px $clr-primary;
   color: $clr-dark;
-  padding: 2px 8px;
+  padding: 4px 8px;
   margin: 5px 0;
   font-size: 0.85em;
   border-radius: 5px;

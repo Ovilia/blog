@@ -31,7 +31,7 @@ excerpt: 2014年1月29日-2014年6月25日读书小结。1月份生日的时候�
     <li><a href="http://book.douban.com/subject/1045818/" target="_blank">苏菲的世界</a></li>
     <li><a href="http://book.douban.com/subject/6539790/" target="_blank">你的剧本逊毙了！：100个化腐朽为神奇的对策</a></li>
     <li><a href="http://book.douban.com/subject/1344716/" target="_blank">找死的兔子</a></li>
-</ol>
+> </ol>
 >
 > **笔记**：152页A5
 >

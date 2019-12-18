@@ -42,7 +42,7 @@ ul, ol {
 
 li {
   line-height: 1.8em;
-  border-left: 2px solid $clr-light;
+  border-left: 2px solid transparentize($clr-primary, 0.8);
   padding-left: 0.5rem;
   transition: 0.5s;
 

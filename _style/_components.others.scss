@@ -4,8 +4,12 @@
 
 // post
 .post-block {
-  margin: 1.5em 0;
+  margin: 2em 0;
   border-top: 1px dashed $clr-contrast;
+
+  h2 a {
+    border-bottom: 0;
+  }
 }
 
 .recentPost {
@@ -20,7 +24,7 @@
 
 
 // friends
-#friendDiv {  
+#friendDiv {
   .friend {
     width: 128px;
     height: 128px;
@@ -31,13 +35,13 @@
     margin-bottom: 20px;
     position: relative;
     transition-duration: 0.5s;
-    
+
     &:hover {
       background-color: $clr-lighter;
       z-index: 10;
       box-shadow: 0 0 10px 1px $clr-light;
     }
-    
+
     > a {
       border: none;
       &:hover {

@@ -26,7 +26,7 @@
     margin-top: 16px;
     width: 80px;
     height: 80px;
-    background-color: $clr-def;
+    background-color: $clr-dark;
     box-sizing: border-box;
     border-radius: 50%;
     vertical-align: middle;
@@ -36,7 +36,6 @@
     cursor: default;
 
     &:hover {
-      background-color: $clr-link;
       @include rotateY(-360deg);
     }
 
