@@ -14,6 +14,10 @@ a {
     color: $clr-lighter;
     background-color: $clr-primary;
   }
+
+  .post-list-title & {
+    border-bottom: 0;
+  }
 }
 
 a, .post-block h2>a>code {
@@ -80,7 +84,7 @@ h1>a {
   text-align: center;
   display: block;
   border-bottom: 0;
-  margin: 5px 0;
+  margin: 50px 0 5px 0;
 
   &:hover {
     background: none;

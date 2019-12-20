@@ -6,10 +6,7 @@
 .post-block {
   margin: 2em 0;
   border-top: 1px dashed $clr-contrast;
-
-  h2 a {
-    border-bottom: 0;
-  }
+  position: relative;
 }
 
 .recentPost {

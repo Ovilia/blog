@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $ft-fm-def;
   font-weight: $ft-wt-bold;
   margin: 0.5em 0;
-  color: $clr-def;
+  color: $clr-def-darker;
 }
 
 h1 {
@@ -44,6 +44,11 @@ h1 {
 
 h2 {
   font-size: $ft-sz-h2;
+  color: $clr-def;
+
+  &.post-list-title a {
+    border-bottom: 0;
+  }
 }
 
 .page-post h2 {
@@ -53,6 +58,7 @@ h2 {
 h3 {
   margin-top: 2em;
   font-size: $ft-sz-h3;
+  color: $clr-def-dark;
 }
 
 h4 {

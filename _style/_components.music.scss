@@ -14,6 +14,7 @@
     background: url('../img/music.png');
     background-color: $clr-contrast;
     transition: 1sec;
+    cursor: pointer;
 
     // Fix the bug on fixed element with Chrome
     // Check https://github.com/Ovilia/blog/issues/5

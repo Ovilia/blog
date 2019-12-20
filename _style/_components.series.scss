@@ -36,8 +36,10 @@ a.series-recent {
 }
 
 .post-series {
-  margin: 0 0 0.5rem 0;
-  float: right;
+  margin: 0 0 0.5rem 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .seriesNote {

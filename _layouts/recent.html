@@ -31,7 +31,7 @@
 </section>
 
 <section id="post-section-en">
-    <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);"><img src="{{ site.url }}/img/rss-green.png" /></a></h1>
+    <h1>Technical Posts<a class="title-img" href="{{ site.url }}/feed-en.xml" title="RSS of Technical Posts" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToRss', 'EnRss', window.location.pathname]);">RSS</a></h1>
     {% comment %}
     {% assign start = -1 | times: paginator.per_page | times: paginator.page %}
     {% if paginator.page == paginator.total_pages %}
@@ -59,7 +59,7 @@
                     <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">Series: {{ post.series }}</a>
                     {% endif %}
                 </h5>
-                <h2>
+                <h2 class="post-list-title">
                     <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{% if post.subtitle != null %}{{ post.subtitle }} {% endif %}{{ post.title }}</a>
                 </h2>
 
@@ -121,7 +121,7 @@
                     <a href="{{ site.url }}{{ post.url }}" class="series-recent" onclick="_gaq.push(['_trackEvent', 'ToSeries', '{{ postCnt.size }}thPost', window.location.pathname]);">系列博文：{{ post.series }}</a>
                     {% endif %}
                 </h5>
-                <h2>
+                <h2 class="post-list-title">
                     <a href="{{ site.url }}{{ post.url }}" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', '{{ post.url }}">{{ post.title }}{% if post.subtitle != null %}：{{ post.subtitle }}{% endif %}</a>
                 </h2>
 
