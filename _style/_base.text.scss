@@ -36,8 +36,12 @@ strong {
 }
 
 ul, ol {
-  margin: 10px 2em;
+  margin: 5px 2em;
   font-family: $ft-fm-def;
+
+  ul, ol {
+    margin: 0 1em;
+  }
 }
 
 li {

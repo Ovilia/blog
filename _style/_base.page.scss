@@ -58,6 +58,12 @@ body {
   }
 }
 
+.post-content {
+  li {
+    border-left: none;
+  }
+}
+
 .music-panel {
   width: 320px;
   margin-right: 1em;

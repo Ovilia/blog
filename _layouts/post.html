@@ -47,12 +47,11 @@
 
     <div id="page-view"></div>
 
-
-    {% if page.postClass != null %}<div class="{{ page.postClass }}">{% endif %}
+    <div class="post-content {{ page.postClass }}">
     {{ content }}
-    <div class="clear"></div>
-    {% if page.postClass != null %}</div>{% endif %}
+    </div>
 
+    <div class="clear"></div>
 
     <a class="tip-btn" href="{{ site.url }}/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPostImg', window.location.pathname]);">
         <img src="{{ site.url }}/img/tip.png" style="width: 80px" />
